@@ -32,4 +32,7 @@ require_once('library/theme-support.php');
 // Add Header image
 require_once('library/custom-header.php');
 
+// Add Custom Post Types
+require_once('library/as-mission-post.php');
+
 ?>
