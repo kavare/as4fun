@@ -8,7 +8,7 @@ function as_set_mission_post() {
         'add_new_item'       => __( '建立新任務' ),
         'edit_item'          => __( '編輯任務' ),
         'new_item'           => __( '新任務' ),
-        'all_items'          => __( '全部任務' ),
+        'all_items'          => __( '所有任務' ),
         'view_item'          => __( '檢視任務' ),
         'search_items'       => __( '搜尋任務' ),
         'not_found'          => __( '沒有發現任何任務' ),
@@ -30,6 +30,19 @@ function as_set_mission_post() {
 }
 
 add_action( 'init', 'as_set_mission_post' );
+
+function as_new_mission_columns($mission_columns) {
+    $new_columns['cb'] = '<input type="checkbox" />';             
+    $new_columns['title'] = __('Title');    
+    $new_columns['author'] = __('Author');     
+    $new_columns['categories'] = __('Categories');
+    $new_columns['tags'] = __('Tags');    
+    $new_columns['comments'] = __('Commentss');    
+    $new_columns['date'] = __('Date');
+ 
+    return $new_columns;
+}
+add_filter('manage_edit-mission_columns', 'as_new_mission_columns');
 
 function as_mission_children() {
     $labels = array(
