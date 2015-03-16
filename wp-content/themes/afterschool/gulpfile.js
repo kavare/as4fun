@@ -2,7 +2,10 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var minifyCSS = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
+var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('browser-sync', function() {
   var files = [
@@ -18,7 +21,15 @@ gulp.task('browser-sync', function() {
 
 gulp.task('sass', function() {
   gulp.src('scss/**/*.scss')
-    .pipe(sass())
+    .pipe(sourcemaps.init())
+      .pipe(sass())
+      .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: true,
+        remove: true
+      }))
+      // .pipe(minifyCSS())
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('css/'))
     .pipe(reload({stream: true}));
 });
