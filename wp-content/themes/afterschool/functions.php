@@ -32,4 +32,20 @@ require_once('library/theme-support.php');
 // Add Header image
 require_once('library/custom-header.php');
 
+// Add Foundation Event Handler
+require_once('library/foundation-events.php');
+
+// Modify Excerpt Patterns
+require_once('library/custom-excerpt.php');
+
+// User Authentication
+require_once('library/authenticate.php');
+
+// Add Custom Post Types
+require_once('library/as-mission-post.php');
+require_once('library/as-event-post.php');
+require_once('library/as-meeting-post.php');
+require_once('library/as-partner-post.php');
+require_once('library/as-donation-post.php');
+
 ?>
