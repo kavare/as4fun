@@ -33,16 +33,28 @@ $jet         : #222222;
 $black       : #000000;
 
 // We use these as default colors throughout
-$primary-color: #008CBA;
-$secondary-color: #e7e7e7;
-$alert-color: #f04124;
-$success-color: #43AC6A;
-$warning-color: #f08a24;
-$info-color: #a0d3e8;
+$primary-color: #FED671;
+$primary-comp-color: #F0605C;
+
+$secondary-color: #16A1E4;
+$secondary-comp-color: #00CAC7;
+
+$red: #E16C6C;
+$orange: #EC774B;
+$yellow: #EDBF47;
+$green: #6FC191;
+$blue: #74CEE4;
+$purple: #C389CE;
+$gray: #9CADB6;
+
+$alert-color: darken($red, 0%);
+$success-color: darken($green, 0%);
+$warning-color: darken($orange, 0%);
+$info-color: darken($blue, 0%);
 
 // We use these to control various global styles
 $body-bg: $white;
-$body-font-color: $jet;
+$body-font-color: $aluminum;
 $body-font-family: $font-family-sans-serif;
 $body-font-weight: $font-weight-normal;
 $body-font-style: normal;
