@@ -1,0 +1,92 @@
+@import "../config/custom-settings";
+
+/**
+ * Fron Page Layout Settings
+ */
+.home {
+  .as-section-container {    
+    position: relative;
+    height: 100vh;
+    color: $card-text-color;
+    
+    .section-header {
+      margin-bottom: 2rem;
+
+      .section-title {        
+        position: absolute;
+        top: -2rem;
+        width: 100%;
+        min-width: 15rem;
+        color: $white;
+        background-color: $black;
+      }
+
+      .section-image {
+        position: absolute;
+        top: -15rem;
+        min-width: 25rem;
+        min-height: 25rem;
+        border: 0.5rem solid $white;
+        border-radius: 25rem;
+
+        background-image: url('../../assets/img/home.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+
+    .section-content {      
+      width: 50%;
+    }
+
+    .section-action-group {
+      clear: both;      
+    }
+
+    &.fp-first {
+      background-color: $white;
+    }
+
+    &.fp-right {
+      border-top: 5rem solid $blue;
+      background-color: $yellow;
+
+      .section-header {
+        .section-title {
+          text-align: right;
+        }
+
+        .section-image {
+          left: -5rem; 
+        }
+      }
+
+      .section-content,
+      .section-action-group {
+        float: right;
+      }
+    }
+
+    &.fp-left {
+      border-top: 5rem solid $red;
+      background-color: $green;
+
+      .section-header {
+        .section-title {
+          text-align: left;
+        }
+
+        .section-image {          
+          right: -5rem;   
+        }
+      }
+
+      .section-content,
+      .section-action-group {
+        float: left;
+      }
+    }
+
+  }
+}

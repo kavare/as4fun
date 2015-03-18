@@ -1,3 +1,58 @@
+/* 
+	My custom settings. These variables are copied from _settings.css
+	This file will only contain uncommented settings that are actually used in the theme.
+*/
+/**
+ * Fron Page Layout Settings
+ */
+.home .as-section-container {
+  position: relative;
+  height: 100vh;
+  color: #FFFFFF; }
+  .home .as-section-container .section-header {
+    margin-bottom: 2rem; }
+    .home .as-section-container .section-header .section-title {
+      position: absolute;
+      top: -2rem;
+      width: 100%;
+      min-width: 15rem;
+      color: #FFFFFF;
+      background-color: #000000; }
+    .home .as-section-container .section-header .section-image {
+      position: absolute;
+      top: -15rem;
+      min-width: 25rem;
+      min-height: 25rem;
+      border: 0.5rem solid #FFFFFF;
+      border-radius: 25rem;
+      background-image: url('../../assets/img/home.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+  .home .as-section-container .section-content {
+    width: 50%; }
+  .home .as-section-container .section-action-group {
+    clear: both; }
+  .home .as-section-container.fp-first {
+    background-color: #FFFFFF; }
+  .home .as-section-container.fp-right {
+    border-top: 5rem solid #74CEE4;
+    background-color: #EDBF47; }
+    .home .as-section-container.fp-right .section-header .section-title {
+      text-align: right; }
+    .home .as-section-container.fp-right .section-header .section-image {
+      left: -5rem; }
+    .home .as-section-container.fp-right .section-content, .home .as-section-container.fp-right .section-action-group {
+      float: right; }
+  .home .as-section-container.fp-left {
+    border-top: 5rem solid #E16C6C;
+    background-color: #6FC191; }
+    .home .as-section-container.fp-left .section-header .section-title {
+      text-align: left; }
+    .home .as-section-container.fp-left .section-header .section-image {
+      right: -5rem; }
+    .home .as-section-container.fp-left .section-content, .home .as-section-container.fp-left .section-action-group {
+      float: left; }
 
 
 /*# sourceMappingURL=../pages/front-page.css.map */

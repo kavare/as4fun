@@ -7688,9 +7688,6 @@ blockquote.alignright, img.alignright {
 #wpadminbar {
   position: fixed !important; }
 
-.top-bar-container, .tab-bar {
-  margin-bottom: 2rem; }
-
 .top-bar .name h1 a {
   font-weight: 500; }
 
