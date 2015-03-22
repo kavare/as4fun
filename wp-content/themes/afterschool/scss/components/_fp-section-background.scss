@@ -1,0 +1,4 @@
+@mixin fp-section-background($border-height: 0, $border-color: $white, $bg-color: $white) {
+  border-top: $border-height solid $border-color;
+  background-color: $bg-color;
+}
