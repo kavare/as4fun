@@ -1,0 +1,35 @@
+.as-contact-form {
+  margin-bottom: 2rem;
+
+  label {
+    padding-bottom: 0.3rem;
+    // font-weight: bold;
+    font-size: 1rem;
+  }
+
+  input[type="text"],
+  textarea {
+    border-width: 3px;
+
+
+    &:focus {
+    }
+  }
+
+  textarea {
+    min-height: 5rem;
+  }
+
+  input[type="submit"] {
+    @include cta-btn($blue);
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0;
+    margin-bottom: 0;
+
+    &:hover,
+    &:active {
+      margin-bottom: 0;
+    }
+  }
+}

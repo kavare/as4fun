@@ -1,5 +1,5 @@
 @mixin cta-btn($bg-color: $primary-color, $color: $white, $press-distance: 4px) {
-  min-width: 5rem;  
+  min-width: 5rem;
   border-radius: 8px;
   box-shadow: 0 $press-distance 0 0 darken($bg-color, 10%);
   background-color: $bg-color;
@@ -11,12 +11,12 @@
   &:hover {
     background-color: darken($bg-color, 7%);
     margin-top: $press-distance;
-    margin-bottom: -press-distance;
+    margin-bottom: -$press-distance;
   }
 
   &:active {
-    background-color: darken($bg-color, 10%);    
+    background-color: darken($bg-color, 10%);
     margin-top: $press-distance;
-    margin-bottom: -press-distance;
+    margin-bottom: -$press-distance;
   }
 }
