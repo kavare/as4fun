@@ -9,8 +9,8 @@
   Reducing the number of imported components will optimize page speed.
 */
 
-@import "config/settings"; // Default settings file. Uncomment each setting you need to change
-@import "config/custom-settings"; // Or copy the stuff you need to change to this file and uncomment
+@import "base/settings"; // Default settings file. Uncomment each setting you need to change
+@import "base/custom-settings"; // Or copy the stuff you need to change to this file and uncomment
 
 @import "../bower_components/foundation/scss/foundation/components/grid";
 @import "../bower_components/foundation/scss/foundation/components/accordion";
@@ -59,12 +59,16 @@
 
 
 /* 
-  My custom styles:
-  Add your scss files below to structure your project styles
+  AfterSchool Customized Style
+  1. base         [configuration and global settings]
+  2. components   [shared components]
+  3. helpers      [mixins or functions]
+  4. layouts      [uniersal components with less modification]
+  5. pages        [pages and templates specific styles]
 */ 
 
-@import "site/global"; 
-@import "site/wp-admin";
-@import "site/topbar";
-@import "site/hero";
-@import "site/footer";
+@import "base/global"; 
+@import "layouts/wp-admin";
+@import "layouts/header";
+@import "layouts/footer";
+@import "pages/hero";

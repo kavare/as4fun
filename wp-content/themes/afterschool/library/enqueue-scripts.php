@@ -37,7 +37,7 @@ if (!function_exists('page_specific_scripts')):
     function page_specific_scripts() {
         global $post;
 
-        if (is_home()) {
+        if (is_front_page() || is_home()) {
             wp_enqueue_script('front-page', get_template_directory_uri() . '/js/front-page.js', array(), '1.0.0', true );
             wp_enqueue_style('front-page', get_template_directory_uri() . '/css/pages/front-page.css', array(), '1.0.0' );
         }
