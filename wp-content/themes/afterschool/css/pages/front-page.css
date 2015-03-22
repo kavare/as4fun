@@ -2,6 +2,39 @@
 	My custom settings. These variables are copied from _settings.css
 	This file will only contain uncommented settings that are actually used in the theme.
 */
+.as-contact-form {
+  margin-bottom: 2rem; }
+  .as-contact-form label {
+    padding-bottom: 0.3rem;
+    font-size: 1rem; }
+  .as-contact-form input[type="text"], .as-contact-form textarea {
+    border-width: 3px; }
+  .as-contact-form textarea {
+    min-height: 5rem; }
+  .as-contact-form input[type="submit"] {
+    min-width: 5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 0 0 #49bfdc;
+    background-color: #74CEE4;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0;
+    margin-bottom: 0; }
+    .as-contact-form input[type="submit"]:hover {
+      background-color: #56c3de;
+      margin-top: 4px;
+      margin-bottom: -4px; }
+    .as-contact-form input[type="submit"]:active {
+      background-color: #49bfdc;
+      margin-top: 4px;
+      margin-bottom: -4px; }
+    .as-contact-form input[type="submit"]:hover, .as-contact-form input[type="submit"]:active {
+      margin-bottom: 0; }
+
 /* -------------------------------------------- \
   Front-page layouts settings
 \ --------------------------------------------- */
@@ -115,11 +148,11 @@
   .home .as-section-container .section-action-group #cta-2:hover {
     background-color: #56c3de;
     margin-top: 4px;
-    margin-bottom: -press-distance; }
+    margin-bottom: -4px; }
   .home .as-section-container .section-action-group #cta-2:active {
     background-color: #49bfdc;
     margin-top: 4px;
-    margin-bottom: -press-distance; }
+    margin-bottom: -4px; }
 .home .as-section-container .section-action-group #cta-3 {
   min-width: 5rem;
   border-radius: 8px;
@@ -132,11 +165,11 @@
   .home .as-section-container .section-action-group #cta-3:hover {
     background-color: #db4e4e;
     margin-top: 4px;
-    margin-bottom: -press-distance; }
+    margin-bottom: -4px; }
   .home .as-section-container .section-action-group #cta-3:active {
     background-color: #d84242;
     margin-top: 4px;
-    margin-bottom: -press-distance; }
+    margin-bottom: -4px; }
 .home .as-section-container .section-action-group #cta-4 {
   min-width: 5rem;
   border-radius: 8px;
@@ -149,11 +182,11 @@
   .home .as-section-container .section-action-group #cta-4:hover {
     background-color: #b670c4;
     margin-top: 4px;
-    margin-bottom: -press-distance; }
+    margin-bottom: -4px; }
   .home .as-section-container .section-action-group #cta-4:active {
     background-color: #b165bf;
     margin-top: 4px;
-    margin-bottom: -press-distance; }
+    margin-bottom: -4px; }
 .home .as-section-container .section-action-group #cta-5 {
   min-width: 5rem;
   border-radius: 8px;
@@ -166,11 +199,11 @@
   .home .as-section-container .section-action-group #cta-5:hover {
     background-color: #56c3de;
     margin-top: 4px;
-    margin-bottom: -press-distance; }
+    margin-bottom: -4px; }
   .home .as-section-container .section-action-group #cta-5:active {
     background-color: #49bfdc;
     margin-top: 4px;
-    margin-bottom: -press-distance; }
+    margin-bottom: -4px; }
 
 
 /*# sourceMappingURL=../pages/front-page.css.map */
