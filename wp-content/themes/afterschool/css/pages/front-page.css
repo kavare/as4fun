@@ -2,22 +2,25 @@
 	My custom settings. These variables are copied from _settings.css
 	This file will only contain uncommented settings that are actually used in the theme.
 */
-/**
- * Fron Page Layout Settings
- */
+/* -------------------------------------------- \
+  Front-page layouts settings
+\ --------------------------------------------- */
 .home .as-section-container {
   position: relative;
   height: 100vh;
   color: #FFFFFF; }
   .home .as-section-container .section-header {
-    margin-bottom: 2rem; }
+    margin-bottom: 4rem; }
     .home .as-section-container .section-header .section-title {
       position: absolute;
       top: -2rem;
       width: 100%;
       min-width: 15rem;
-      color: #FFFFFF;
-      background-color: #000000; }
+      padding: 0.2rem 1.5rem;
+      border-radius: 8px;
+      background-color: #000000;
+      font-weight: bold;
+      color: #FFFFFF; }
     .home .as-section-container .section-header .section-image {
       position: absolute;
       top: -15rem;
@@ -25,34 +28,149 @@
       min-height: 25rem;
       border: 0.5rem solid #FFFFFF;
       border-radius: 25rem;
-      background-image: url('../../assets/img/home.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center; }
   .home .as-section-container .section-content {
-    width: 50%; }
+    width: 55%;
+    font-weight: bold;
+    font-size: 1.5rem; }
   .home .as-section-container .section-action-group {
     clear: both; }
   .home .as-section-container.fp-first {
     background-color: #FFFFFF; }
-  .home .as-section-container.fp-right {
-    border-top: 5rem solid #74CEE4;
-    background-color: #EDBF47; }
-    .home .as-section-container.fp-right .section-header .section-title {
-      text-align: right; }
-    .home .as-section-container.fp-right .section-header .section-image {
-      left: -5rem; }
-    .home .as-section-container.fp-right .section-content, .home .as-section-container.fp-right .section-action-group {
-      float: right; }
-  .home .as-section-container.fp-left {
-    border-top: 5rem solid #E16C6C;
-    background-color: #6FC191; }
-    .home .as-section-container.fp-left .section-header .section-title {
-      text-align: left; }
-    .home .as-section-container.fp-left .section-header .section-image {
-      right: -5rem; }
-    .home .as-section-container.fp-left .section-content, .home .as-section-container.fp-left .section-action-group {
-      float: left; }
+  .home .as-section-container.fp-right .section-header .section-title {
+    text-align: right; }
+  .home .as-section-container.fp-right .section-header .section-image {
+    left: -5rem; }
+  .home .as-section-container.fp-right .section-content, .home .as-section-container.fp-right .section-action-group {
+    float: right; }
+  .home .as-section-container.fp-left .section-header .section-title {
+    text-align: left; }
+  .home .as-section-container.fp-left .section-header .section-image {
+    right: -5rem; }
+  .home .as-section-container.fp-left .section-content, .home .as-section-container.fp-left .section-action-group {
+    float: left; }
+
+/* -------------------------------------------- \
+  Front page head-fold style
+\ --------------------------------------------- */
+.home .fp-first .page-title {
+  margin-top: 24vh;
+  font-weight: bold;
+  font-size: 3.55rem;
+  color: #FFFFFF; }
+
+/* -------------------------------------------- \
+  Front page section background-color
+\ --------------------------------------------- */
+.home .as-section-container#fp-section-1 {
+  border-top: 0 solid #FFFFFF;
+  background-color: #FFFFFF; }
+.home .as-section-container#fp-section-2 {
+  border-top: 5rem solid #74CEE4;
+  background-color: #EDBF47; }
+.home .as-section-container#fp-section-3 {
+  border-top: 5rem solid #E16C6C;
+  background-color: #6FC191; }
+.home .as-section-container#fp-section-4 {
+  border-top: 5rem solid #C389CE;
+  background-color: #EC774B; }
+.home .as-section-container#fp-section-5 {
+  border-top: 5rem solid #74CEE4;
+  background-color: #EDBF47; }
+
+/* -------------------------------------------- \
+  Front page section image source
+\ --------------------------------------------- */
+#fp-section-1 {
+  background-image: url('../../assets/img/home.png');
+  background-position: 108% 10%;
+  background-size: 78%; }
+
+#fp-img-2 {
+  background-image: url('../../assets/img/ballon.png'); }
+
+#fp-img-3 {
+  background-image: url('../../assets/img/plane.png'); }
+
+#fp-img-4 {
+  background-image: url('../../assets/img/paperplane.png'); }
+
+#fp-img-5 {
+  background-image: url('../../assets/img/rocket.png'); }
+
+/* -------------------------------------------- \
+  Front page cta-btn style
+\ --------------------------------------------- */
+.home .as-section-container .section-action-group #cta-2 {
+  min-width: 5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 0 0 #49bfdc;
+  background-color: #74CEE4;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer; }
+  .home .as-section-container .section-action-group #cta-2:hover {
+    background-color: #56c3de;
+    margin-top: 4px;
+    margin-bottom: -press-distance; }
+  .home .as-section-container .section-action-group #cta-2:active {
+    background-color: #49bfdc;
+    margin-top: 4px;
+    margin-bottom: -press-distance; }
+.home .as-section-container .section-action-group #cta-3 {
+  min-width: 5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 0 0 #d84242;
+  background-color: #E16C6C;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer; }
+  .home .as-section-container .section-action-group #cta-3:hover {
+    background-color: #db4e4e;
+    margin-top: 4px;
+    margin-bottom: -press-distance; }
+  .home .as-section-container .section-action-group #cta-3:active {
+    background-color: #d84242;
+    margin-top: 4px;
+    margin-bottom: -press-distance; }
+.home .as-section-container .section-action-group #cta-4 {
+  min-width: 5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 0 0 #b165bf;
+  background-color: #C389CE;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer; }
+  .home .as-section-container .section-action-group #cta-4:hover {
+    background-color: #b670c4;
+    margin-top: 4px;
+    margin-bottom: -press-distance; }
+  .home .as-section-container .section-action-group #cta-4:active {
+    background-color: #b165bf;
+    margin-top: 4px;
+    margin-bottom: -press-distance; }
+.home .as-section-container .section-action-group #cta-5 {
+  min-width: 5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 0 0 #49bfdc;
+  background-color: #74CEE4;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer; }
+  .home .as-section-container .section-action-group #cta-5:hover {
+    background-color: #56c3de;
+    margin-top: 4px;
+    margin-bottom: -press-distance; }
+  .home .as-section-container .section-action-group #cta-5:active {
+    background-color: #49bfdc;
+    margin-top: 4px;
+    margin-bottom: -press-distance; }
 
 
 /*# sourceMappingURL=../pages/front-page.css.map */

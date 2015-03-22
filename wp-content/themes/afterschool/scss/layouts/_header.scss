@@ -1,0 +1,40 @@
+// Add some whitespace between top bar and content
+.top-bar-container, .tab-bar {
+	// margin-bottom: rem-calc(32);
+}
+
+.top-bar .name {
+	h1 a { font-weight: 500; }
+}
+
+// A more subtle background color for the active menu item
+.top-bar-section li.active:not(.has-form) a:not(.button)  {
+	background: #272727;
+}
+.top-bar-section li.active:not(.has-form) a:hover:not(.button) {
+	background: #202020;
+}
+
+
+/* -------------------------------------------- \
+  Page top rainbow border color
+\ --------------------------------------------- */
+$rainbow-border-height: 5px;
+
+.top-bar-container {
+  padding-top: $rainbow-border-height;  
+
+  &:before {
+    position: absolute;
+    top: 0;
+    content: '';
+    height: $rainbow-border-height;
+    width: 100%;
+    background-image: linear-gradient(90deg, #1abc9c 15%, #2ecc71 15%, #2ecc71 12%, #3498db 12%, #3498db 32%, #9b59b6 32%, #9b59b6 35%, #34495e 35%, #34495e 55%, #f1c40f 55%, #f1c40f 59%, #e67e22 59%, #e67e22 63%, #e74c3c 63%, #e74c3c 82%, #ecf0f1 82%, #ecf0f1 92%, #95a5a6 92%);
+    -webkit-background-size: 100% 5px;
+    -moz-background-size: 100% 5px;
+    background-size: 100% 5px;  
+    background-position-y: top;
+    z-index: 99999;
+  }
+}

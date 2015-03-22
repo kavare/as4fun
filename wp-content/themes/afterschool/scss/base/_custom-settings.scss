@@ -4,9 +4,13 @@
 */
 
 // We use these to define default font stacks
-$font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
-$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
+$font-family-serif: Georgia, Cambria, "Times New Roman", Times, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", serif;
+$font-family-monospace: Consolas, "Liberation Mono", Courier, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", monospace;
+
+// $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+// $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+// $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
 $font-weight-normal: normal !default;

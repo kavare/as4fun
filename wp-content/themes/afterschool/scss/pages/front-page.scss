@@ -1,24 +1,31 @@
-@import "../config/custom-settings";
+@import "../base/custom-settings";
+@import "../base/component-list";
+@import "../components/fp-section-background";
 
-/**
- * Fron Page Layout Settings
- */
+/* -------------------------------------------- \
+  Front-page layouts settings
+\ --------------------------------------------- */
 .home {
+  
   .as-section-container {    
     position: relative;
     height: 100vh;
     color: $card-text-color;
-    
+        
     .section-header {
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
 
       .section-title {        
         position: absolute;
         top: -2rem;
         width: 100%;
         min-width: 15rem;
-        color: $white;
+        padding: 0.2rem 1.5rem;
+        border-radius: 8px;
         background-color: $black;
+        font-weight: bold;
+        color: $white;
+
       }
 
       .section-image {
@@ -27,9 +34,7 @@
         min-width: 25rem;
         min-height: 25rem;
         border: 0.5rem solid $white;
-        border-radius: 25rem;
-
-        background-image: url('../../assets/img/home.jpg');
+        border-radius: 25rem;        
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -37,7 +42,9 @@
     }
 
     .section-content {      
-      width: 50%;
+      width: 55%;
+      font-weight: bold;
+      font-size: 1.5rem;
     }
 
     .section-action-group {
@@ -48,18 +55,10 @@
       background-color: $white;
     }
 
-    &.fp-right {
-      border-top: 5rem solid $blue;
-      background-color: $yellow;
-
+    &.fp-right {      
       .section-header {
-        .section-title {
-          text-align: right;
-        }
-
-        .section-image {
-          left: -5rem; 
-        }
+        .section-title { text-align: right; }
+        .section-image { left: -5rem; }
       }
 
       .section-content,
@@ -68,25 +67,77 @@
       }
     }
 
-    &.fp-left {
-      border-top: 5rem solid $red;
-      background-color: $green;
-
+    &.fp-left {      
       .section-header {
-        .section-title {
-          text-align: left;
-        }
-
-        .section-image {          
-          right: -5rem;   
-        }
+        .section-title { text-align: left; }
+        .section-image { right: -5rem; }
       }
 
       .section-content,
       .section-action-group {
-        float: left;
+        float: left;        
       }
     }
-
   }
 }
+
+/* -------------------------------------------- \
+  Front page head-fold style
+\ --------------------------------------------- */
+.home .fp-first {
+  .page-title {
+    margin-top: 24vh;
+    font-weight: bold;
+    font-size: 3.55rem;
+    color: $white;
+  }
+}
+
+/* -------------------------------------------- \
+  Front page section background-color
+\ --------------------------------------------- */
+$fp1-pri-color: $white;
+$fp1-sec-color: $white;
+$fp2-pri-color: $yellow;
+$fp2-sec-color: $blue;
+$fp3-pri-color: $green;
+$fp3-sec-color: $red;
+$fp4-pri-color: $orange;
+$fp4-sec-color: $purple;
+$fp5-pri-color: $yellow;
+$fp5-sec-color: $blue;
+
+.home .as-section-container {
+  &#fp-section-1 { @include fp-section-background(0, $fp1-sec-color, $fp1-pri-color) }
+  &#fp-section-2 { @include fp-section-background(5rem, $fp2-sec-color, $fp2-pri-color) }
+  &#fp-section-3 { @include fp-section-background(5rem, $fp3-sec-color, $fp3-pri-color) }
+  &#fp-section-4 { @include fp-section-background(5rem, $fp4-sec-color, $fp4-pri-color) }
+  &#fp-section-5 { @include fp-section-background(5rem, $fp5-sec-color, $fp5-pri-color) }
+}
+
+/* -------------------------------------------- \
+  Front page section image source
+\ --------------------------------------------- */
+#fp-section-1 { 
+  background-image: url('../../assets/img/home.png'); 
+  background-position: 108% 10%;
+  background-size: 78%;
+}
+
+#fp-img-2 { background-image: url('../../assets/img/ballon.png'); }
+#fp-img-3 { background-image: url('../../assets/img/plane.png'); }
+#fp-img-4 { background-image: url('../../assets/img/paperplane.png'); }
+#fp-img-5 { background-image: url('../../assets/img/rocket.png'); }
+
+/* -------------------------------------------- \
+  Front page cta-btn style
+\ --------------------------------------------- */
+.home .as-section-container .section-action-group{
+  #cta-1 {}
+  #cta-2 { @include cta-btn($fp2-sec-color) }
+  #cta-3 { @include cta-btn($fp3-sec-color) }
+  #cta-4 { @include cta-btn($fp4-sec-color) }
+  #cta-5 { @include cta-btn($fp5-sec-color) }
+}
+
+

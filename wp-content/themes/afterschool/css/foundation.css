@@ -383,7 +383,7 @@ body {
   color: #999999;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
@@ -1240,7 +1240,7 @@ select {
       color: #222222;
       padding: 1rem;
       display: block;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
       font-size: 1rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
         background: #e3e3e3; }
@@ -1633,7 +1633,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -2867,7 +2867,7 @@ select {
   border-color: #cccccc;
   padding: 0.5rem;
   font-size: 0.875rem;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
   color: rgba(0, 0, 0, 0.75);
   line-height: normal;
   border-radius: 0;
@@ -3312,7 +3312,7 @@ label.error {
 
 .label {
   font-weight: normal;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -3686,7 +3686,7 @@ ul.pagination {
     color: #EEEEEE;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif; }
   .pricing-table .price {
     background-color: #F6F6F6;
     padding: 0.9375rem 1.25rem;
@@ -3694,7 +3694,7 @@ ul.pagination {
     color: #333333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif; }
   .pricing-table .description {
     background-color: #FFFFFF;
     padding: 0.9375rem;
@@ -3943,7 +3943,7 @@ ul.pagination {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: outside;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem;
@@ -3959,7 +3959,7 @@ ul.pagination {
     .side-nav li.active > a:first-child:not(.button) {
       color: #fee29c;
       font-weight: normal;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -4077,7 +4077,7 @@ ul.pagination {
     float: left;
     margin-left: 1rem;
     margin-bottom: 0;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999999; }
@@ -4245,7 +4245,7 @@ table {
       background-color: #EFEFEF;
       color: #222222;
       padding: 1rem 2rem;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
       font-size: 1rem; }
       .tabs dd > a:hover, .tabs .tab-title > a:hover {
         background-color: #e1e1e1; }
@@ -4545,7 +4545,7 @@ meta.foundation-mq-topbar {
       color: #FFFFFF;
       padding: 12px 0 12px 0;
       padding-left: 0.9375rem;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
       font-size: 0.8125rem;
       font-weight: bold;
       text-transform: none; }
@@ -5033,7 +5033,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
   font-weight: 300;
   font-style: normal;
   color: #222222;
@@ -5092,7 +5092,7 @@ small {
   line-height: inherit; }
 
 code {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-family: Consolas, "Liberation Mono", Courier, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", monospace;
   font-weight: normal;
   color: #333333;
   background-color: #b8e3f8;
@@ -7645,8 +7645,12 @@ th.hide-for-touch {
   content: "\f23a"; }
 
 /* 
-  My custom styles:
-  Add your scss files below to structure your project styles
+  AfterSchool Customized Style
+  1. base         [configuration and global settings]
+  2. components   [shared components]
+  3. helpers      [mixins or functions]
+  4. layouts      [uniersal components with less modification]
+  5. pages        [pages and templates specific styles]
 */
 /* 
  Global styles for FoundationPress
@@ -7697,6 +7701,26 @@ blockquote.alignright, img.alignright {
 .top-bar-section li.active:not(.has-form) a:hover:not(.button) {
   background: #202020; }
 
+/* -------------------------------------------- \
+  Page top rainbow border color
+\ --------------------------------------------- */
+.top-bar-container {
+  padding-top: 5px; }
+  .top-bar-container:before {
+    position: absolute;
+    top: 0;
+    content: '';
+    height: 5px;
+    width: 100%;
+    background-image: linear-gradient(90deg, #1abc9c 15%, #2ecc71 15%, #2ecc71 12%, #3498db 12%, #3498db 32%, #9b59b6 32%, #9b59b6 35%, #34495e 35%, #34495e 55%, #f1c40f 55%, #f1c40f 59%, #e67e22 59%, #e67e22 63%, #e74c3c 63%, #e74c3c 82%, #ecf0f1 82%, #ecf0f1 92%, #95a5a6 92%);
+    background-size: 100% 5px;
+    background-position-y: top;
+    z-index: 99999; }
+
+@media only screen and (min-width:40.063em) {
+  footer.row {
+    margin-top: 3.75rem; } }
+
 #homepage-hero {
   background: url("http://foundation.zurb.com/assets/img/marquee-stars.svg") repeat scroll 0 0 #074E68;
   padding: 1.25rem 0;
@@ -7714,10 +7738,6 @@ blockquote.alignright, img.alignright {
     right: 6.25rem; }
   #homepage-hero .download {
     margin-top: 1.25rem; }
-
-@media only screen and (min-width:40.063em) {
-  footer.row {
-    margin-top: 3.75rem; } }
 
 
 /*# sourceMappingURL=foundation.css.map */
