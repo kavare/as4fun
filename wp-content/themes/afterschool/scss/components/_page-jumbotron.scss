@@ -1,0 +1,33 @@
+/**
+ * [jumbotron: the headline component for intro pages]
+ * @param  {[string]} $header-img [background image for headlines]
+ * @param  {[string]} $stamp-img  [background image for stamp image]
+ * @dependencies {[mixin]} stamp-image
+ */
+@mixin page-jumbotron($header-img, $stamp-img) {
+  .page-jumbotron-container {
+    position: relative;
+    height: 34vh;
+    margin-bottom: 10rem;
+    background-image: url('../../assets/img/#{$header-img}');
+    background-size: 100%;
+    background-position: 50% 50%;
+
+    .page-title {
+      position: absolute;
+      top: 37vh;
+      left: 26rem;
+      margin-top: 0;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .jumbo-stamp-image {
+      @include stamp-image(20rem, 0.5rem, $white);
+      position: absolute;
+      top: 7vh;
+      left: 5rem;
+      background-image: url('../../assets/img/#{$stamp-img}');
+    }
+  }
+}

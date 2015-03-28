@@ -37,27 +37,36 @@ if (!function_exists('page_specific_scripts')):
     function page_specific_scripts() {
         global $post;
 
-        if (is_front_page() || is_home()) {
+        if ( is_front_page() || is_home() ) {
             wp_enqueue_script('front-page', get_template_directory_uri() . '/js/front-page.js', array(), '1.0.0', true );
             wp_enqueue_style('front-page', get_template_directory_uri() . '/css/pages/front-page.css', array(), '1.0.0' );
         }
 
-        if( is_page() || is_single() ) {
-            switch($post->post_name) {
+        if ( is_page() ) {
+            global $template;
+            $template_name = basename($template, '.php');
+
+            switch( $template_name ):
+            case 'about':
+            case 'about-plans':
+                wp_enqueue_script( 'about', get_template_directory_uri() . '/js/about.js', array('jquery'), true );
+                wp_enqueue_style('about', get_template_directory_uri() . '/css/pages/about.css', array(), '1.0.0' );
+                break;
+            endswitch;
+        }
+
+        if( is_single() ) {
+            switch( $post->post_name ):
             case 'post':
                 wp_register_script( 'post', get_template_directory_uri() . '/js/post.js', array('jquery'), true );
                 wp_enqueue_style('post', get_template_directory_uri() . '/css/pages/post.css', array(), '1.0.0' );
-                break;
-            case 'about':
-                wp_register_script( 'about', get_template_directory_uri() . '/js/about.js', array('jquery'), true );
-                wp_enqueue_style('about', get_template_directory_uri() . '/css/pages/about.css', array(), '1.0.0' );
                 break;
             case 'some-post':
                 wp_register_script( 'some-post', get_template_directory_uri() . '/js/some-post.js', array('jquery'), true );
                 wp_enqueue_style('some-post', get_template_directory_uri() . '/css/pages/some-post.css', array(), '1.0.0' );
                 break;
-            }
-        } 
+            endswitch;
+        }
 
     }
 
