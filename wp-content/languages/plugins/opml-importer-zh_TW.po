@@ -1,0 +1,83 @@
+# Translation of Development (trunk) in Chinese (Taiwan)
+# This file is distributed under the same license as the Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2012-07-10 07:40:53+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: Development (trunk)\n"
+
+msgid "http://wordpress.org/extend/plugins/opml-importer/"
+msgstr "http://wordpress.org/extend/plugins/opml-importer/"
+
+#: opml-importer.php:47 opml-importer.php:99
+msgid "Cheatin&#8217; uh?"
+msgstr "喂！你想幹麼？"
+
+#: opml-importer.php:154
+msgid "You need to supply your OPML url. Press back on your browser and try again"
+msgstr "你得提供 OPML 網址。請回到瀏覽器的上一頁再重試一次。"
+
+msgid "wordpressdotorg"
+msgstr "wordpressdotorg"
+
+msgid "http://wordpress.org/"
+msgstr "http://tw.wordpress.org/"
+
+#: opml-importer.php:148
+msgid "Inserted %1$d links into category %2$s. All done! Go <a href=\"%3$s\">manage those links</a>."
+msgstr "已經將 %1$d 條鏈結插入到分類「%2$s」中。匯入完成！去<a href=\"%3$s\">管理這些鏈結</a>吧！"
+
+#: opml-importer.php:144
+msgid "Inserted <strong>%s</strong>"
+msgstr "已插入 <strong>%s</strong>"
+
+msgid "OPML Importer"
+msgstr "OPML 匯入程式"
+
+#: opml-importer.php:173
+msgid "Import links in OPML format."
+msgstr "自 OPML 檔案格式匯入鏈結。"
+
+#: opml-importer.php:173
+msgid "Blogroll"
+msgstr "鏈結"
+
+#: opml-importer.php:68
+msgid "Or choose from your local disk:"
+msgstr "或者自你的磁碟上選一個："
+
+#: opml-importer.php:63
+msgid "Specify an OPML URL:"
+msgstr "指定一個 OPML 網址："
+
+#: opml-importer.php:58
+msgid "If a program or website you use allows you to export your links or subscriptions as OPML you may import them here."
+msgstr "若是你所使用的程式或網站允許將你的鏈結或訂閱匯出成 OPML 檔案格式，你或許想要將它們從這兒匯入。"
+
+#: opml-importer.php:54
+msgid "Import your blogroll from another system"
+msgstr "從其他系統匯入鏈結清單"
+
+#: opml-importer.php:103
+msgid "Importing..."
+msgstr "正匯入中..."
+
+#: opml-importer.php:86
+msgid "Import OPML File"
+msgstr "匯入 OPML 檔案"
+
+#: opml-importer.php:75
+msgid "Category:"
+msgstr "分類："
+
+#: opml-importer.php:74
+msgid "Now select a category you want to put these links in."
+msgstr "請選擇你將要匯入的鏈結放置到那個分類。"
+
+#: opml-importer.php:28
+msgid "Import Blogroll"
+msgstr "匯入鏈結清單"
