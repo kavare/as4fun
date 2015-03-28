@@ -2,7 +2,7 @@
 <footer class="footer-container">
   <div class="row">
 	 <?php do_action('foundationPress_before_footer'); ?>
-	 <?php dynamic_sidebar("footer-widgets"); ?>
+   <?php dynamic_sidebar("footer-widgets"); ?>
    <article id="footer-contact" class="large-3 columns as-contact-form widget">
       <h6 class="widget-title">聯絡我們</h6>
       <form action="">

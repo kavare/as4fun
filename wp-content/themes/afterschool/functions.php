@@ -38,8 +38,8 @@ require_once('library/foundation-events.php');
 // Modify Excerpt Patterns
 require_once('library/custom-excerpt.php');
 
-// User Authentication
-require_once('library/authenticate.php');
+// Helper functions for AfterSchool theme
+require_once('library/helper.php');
 
 // Add Custom Post Types
 require_once('library/as-mission-post.php');

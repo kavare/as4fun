@@ -1,0 +1,9 @@
+@mixin stamp-image($size: 25rem, $border: 0, $border-color: $white) {
+  min-width: $size;
+  min-height: $size;
+  border: $border solid $border-color;
+  border-radius: $size;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
