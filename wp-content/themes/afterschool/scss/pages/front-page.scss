@@ -6,16 +6,16 @@
   Front-page layouts settings
 \ --------------------------------------------- */
 .home {
-  
-  .as-section-container {    
+
+  .as-section-container {
     position: relative;
     height: 100vh;
     color: $card-text-color;
-        
+
     .section-header {
       margin-bottom: 4rem;
 
-      .section-title {        
+      .section-title {
         position: absolute;
         top: -2rem;
         width: 100%;
@@ -31,31 +31,25 @@
       .section-image {
         position: absolute;
         top: -15rem;
-        min-width: 25rem;
-        min-height: 25rem;
-        border: 0.5rem solid $white;
-        border-radius: 25rem;        
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+        @include stamp-image(25rem, 0.5rem, $white);
       }
     }
 
-    .section-content {      
+    .section-content {
       width: 55%;
       font-weight: bold;
       font-size: 1.5rem;
     }
 
     .section-action-group {
-      clear: both;      
+      clear: both;
     }
 
     &.fp-first {
       background-color: $white;
     }
 
-    &.fp-right {      
+    &.fp-right {
       .section-header {
         .section-title { text-align: right; }
         .section-image { left: -5rem; }
@@ -67,7 +61,7 @@
       }
     }
 
-    &.fp-left {      
+    &.fp-left {
       .section-header {
         .section-title { text-align: left; }
         .section-image { right: -5rem; }
@@ -75,7 +69,7 @@
 
       .section-content,
       .section-action-group {
-        float: left;        
+        float: left;
       }
     }
   }
@@ -118,8 +112,8 @@ $fp5-sec-color: $blue;
 /* -------------------------------------------- \
   Front page section image source
 \ --------------------------------------------- */
-#fp-section-1 { 
-  background-image: url('../../assets/img/home.png'); 
+#fp-section-1 {
+  background-image: url('../../assets/img/home.png');
   background-position: 108% 10%;
   background-size: 78%;
 }

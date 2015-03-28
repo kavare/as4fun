@@ -35,8 +35,41 @@
     .as-contact-form input[type="submit"]:hover, .as-contact-form input[type="submit"]:active {
       margin-bottom: 0; }
 
+/**
+ * [jumbotron: the headline component for intro pages]
+ * @param  {[string]} $header-img [background image for headlines]
+ * @param  {[string]} $stamp-img  [background image for stamp image]
+ * @dependencies {[mixin]} stamp-image
+ */
 /* -------------------------------------------- \
   About template layouts settings
 \ --------------------------------------------- */
+.page .page-jumbotron-container {
+  position: relative;
+  height: 34vh;
+  margin-bottom: 10rem;
+  background-image: url('../../assets/img//headlines/children.jpg');
+  background-size: 100%;
+  background-position: 50% 50%; }
+  .page .page-jumbotron-container .page-title {
+    position: absolute;
+    top: 37vh;
+    left: 26rem;
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: bold; }
+  .page .page-jumbotron-container .jumbo-stamp-image {
+    min-width: 20rem;
+    min-height: 20rem;
+    border: 0.5rem solid #FFFFFF;
+    border-radius: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 7vh;
+    left: 5rem;
+    background-image: url('../../assets/img/rocket.png'); }
+
 
 /*# sourceMappingURL=../pages/about.css.map */

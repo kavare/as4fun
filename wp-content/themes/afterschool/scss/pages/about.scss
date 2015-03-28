@@ -1,7 +1,12 @@
 @import "../base/custom-settings";
 @import "../base/component-list";
-@import "../components/fp-section-background";
+@import "../components/page-jumbotron";
+
 
 /* -------------------------------------------- \
   About template layouts settings
 \ --------------------------------------------- */
+.page {
+  @include page-jumbotron('/headlines/children.jpg', 'rocket.png');
+
+}
