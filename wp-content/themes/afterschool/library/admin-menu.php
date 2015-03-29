@@ -39,6 +39,7 @@ function as_custom_menu_order($menu_ord) {
         'edit.php?post_type=connection', // Connection
         'edit.php?post_type=activity', // Acticity
         'edit.php?post_type=meeting', // Meeting
+        'edit.php?post_type=counsel', // Counsel
         'edit.php?post_type=donation', // Donation
         'separator2', // Second separator
         'upload.php', // Media

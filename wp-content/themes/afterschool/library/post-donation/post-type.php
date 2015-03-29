@@ -2,19 +2,19 @@
 
 function as_set_donation_post() {
     $labels = array(
-        'name'               => _x( '捐款', 'post type general name' ),
-        'singular_name'      => _x( '捐款', 'post type singular name' ),
-        'add_new'            => _x( '新增捐款', 'donations' ),
-        'add_new_item'       => __( '建立新捐款' ),
-        'edit_item'          => __( '編輯捐款' ),
-        'new_item'           => __( '新捐款' ),
-        'all_items'          => __( '所有捐款' ),
-        'view_item'          => __( '檢視捐款' ),
-        'search_items'       => __( '搜尋捐款' ),
-        'not_found'          => __( '沒有發現任何捐款項目' ),
-        'not_found_in_trash' => __( '沒有在垃圾桶中發現任何捐款項目' ),
+        'name'               => _x( '捐款', 'post type general name', 'AfterSchool' ),
+        'singular_name'      => _x( '捐款', 'post type singular name', 'AfterSchool' ),
+        'add_new'            => _x( '新增捐款', 'donations', 'AfterSchool' ),
+        'add_new_item'       => __( '建立新捐款', 'AfterSchool' ),
+        'edit_item'          => __( '編輯捐款', 'AfterSchool' ),
+        'new_item'           => __( '新捐款', 'AfterSchool' ),
+        'all_items'          => __( '所有捐款', 'AfterSchool' ),
+        'view_item'          => __( '檢視捐款', 'AfterSchool' ),
+        'search_items'       => __( '搜尋捐款', 'AfterSchool' ),
+        'not_found'          => __( '沒有發現任何捐款項目', 'AfterSchool' ),
+        'not_found_in_trash' => __( '沒有在垃圾桶中發現任何捐款項目', 'AfterSchool' ),
         'parent_item_colon'  => '',
-        'menu_name'          => '捐款'
+        'menu_name'          => '捐款明細'
     );
 
     $args = array(

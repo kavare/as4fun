@@ -74,4 +74,10 @@ require_once('library/post-volunteer/taxonomy.php');
 require_once('library/post-volunteer/metabox.php');
 require_once('library/post-volunteer/admin-column.php');
 
+// Add Counsel post type
+require_once('library/post-counsel/post-type.php');
+require_once('library/post-counsel/taxonomy.php');
+require_once('library/post-counsel/metabox.php');
+require_once('library/post-counsel/admin-column.php');
+
 ?>
