@@ -50,10 +50,28 @@ require_once('library/post-connection/taxonomy.php');
 require_once('library/post-connection/metabox.php');
 require_once('library/post-connection/admin-column.php');
 
-// Add Custom Post Types
-require_once('library/as-volunteer-post.php');
-require_once('library/as-activity-post.php');
-require_once('library/as-meeting-post.php');
-require_once('library/as-donation-post.php');
+// Add Activity post type
+require_once('library/post-activity/post-type.php');
+require_once('library/post-activity/taxonomy.php');
+require_once('library/post-activity/metabox.php');
+require_once('library/post-activity/admin-column.php');
+
+// Add Donation post type
+require_once('library/post-donation/post-type.php');
+require_once('library/post-donation/taxonomy.php');
+require_once('library/post-donation/metabox.php');
+require_once('library/post-donation/admin-column.php');
+
+// Add Meeting post type
+require_once('library/post-meeting/post-type.php');
+require_once('library/post-meeting/taxonomy.php');
+require_once('library/post-meeting/metabox.php');
+require_once('library/post-meeting/admin-column.php');
+
+// Add Volunteer post type
+require_once('library/post-volunteer/post-type.php');
+require_once('library/post-volunteer/taxonomy.php');
+require_once('library/post-volunteer/metabox.php');
+require_once('library/post-volunteer/admin-column.php');
 
 ?>
