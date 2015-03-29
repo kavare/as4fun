@@ -32,6 +32,9 @@ require_once('library/theme-support.php');
 // Add Header image
 require_once('library/custom-header.php');
 
+// Modfiy backend admin menu
+require_once('library/admin-menu.php');
+
 // Add Foundation Event Handler
 require_once('library/foundation-events.php');
 
@@ -41,11 +44,40 @@ require_once('library/custom-excerpt.php');
 // Helper functions for AfterSchool theme
 require_once('library/helper.php');
 
-// Add Custom Post Types
-require_once('library/as-mission-post.php');
-require_once('library/as-event-post.php');
-require_once('library/as-meeting-post.php');
-require_once('library/as-partner-post.php');
-require_once('library/as-donation-post.php');
+// Add Connection post type
+require_once('library/post-connection/post-type.php');
+require_once('library/post-connection/taxonomy.php');
+require_once('library/post-connection/metabox.php');
+require_once('library/post-connection/admin-column.php');
+
+// Add Activity post type
+require_once('library/post-activity/post-type.php');
+require_once('library/post-activity/taxonomy.php');
+require_once('library/post-activity/metabox.php');
+require_once('library/post-activity/admin-column.php');
+
+// Add Donation post type
+require_once('library/post-donation/post-type.php');
+require_once('library/post-donation/taxonomy.php');
+require_once('library/post-donation/metabox.php');
+require_once('library/post-donation/admin-column.php');
+
+// Add Meeting post type
+require_once('library/post-meeting/post-type.php');
+require_once('library/post-meeting/taxonomy.php');
+require_once('library/post-meeting/metabox.php');
+require_once('library/post-meeting/admin-column.php');
+
+// Add Volunteer post type
+require_once('library/post-volunteer/post-type.php');
+require_once('library/post-volunteer/taxonomy.php');
+require_once('library/post-volunteer/metabox.php');
+require_once('library/post-volunteer/admin-column.php');
+
+// Add Counsel post type
+require_once('library/post-counsel/post-type.php');
+require_once('library/post-counsel/taxonomy.php');
+require_once('library/post-counsel/metabox.php');
+require_once('library/post-counsel/admin-column.php');
 
 ?>
