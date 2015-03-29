@@ -44,9 +44,14 @@ require_once('library/custom-excerpt.php');
 // Helper functions for AfterSchool theme
 require_once('library/helper.php');
 
+// Add Connection post type
+require_once('library/post-connection/post-type.php');
+require_once('library/post-connection/taxonomy.php');
+require_once('library/post-connection/metabox.php');
+require_once('library/post-connection/admin-column.php');
+
 // Add Custom Post Types
 require_once('library/as-volunteer-post.php');
-require_once('library/as-connection-post.php');
 require_once('library/as-activity-post.php');
 require_once('library/as-meeting-post.php');
 require_once('library/as-donation-post.php');
