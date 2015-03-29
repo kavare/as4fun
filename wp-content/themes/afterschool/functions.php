@@ -42,10 +42,10 @@ require_once('library/custom-excerpt.php');
 require_once('library/helper.php');
 
 // Add Custom Post Types
-require_once('library/as-mission-post.php');
-require_once('library/as-event-post.php');
+require_once('library/as-volunteer-post.php');
+require_once('library/as-connection-post.php');
+require_once('library/as-activity-post.php');
 require_once('library/as-meeting-post.php');
-require_once('library/as-partner-post.php');
 require_once('library/as-donation-post.php');
 
 ?>
