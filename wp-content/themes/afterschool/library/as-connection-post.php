@@ -22,6 +22,7 @@ function as_set_connection_post() {
         'description'   => '',
         'public'        => true,
         'menu_position' => 5,
+        'menu_icon'     => 'dashicons-admin-home',
         'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
         'has_archive'   => true,
     );

@@ -22,6 +22,7 @@ function as_set_activity_post() {
         'description'   => '',
         'public'        => true,
         'menu_position' => 5,
+        'menu_icon'     => 'dashicons-megaphone',
         'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
         'has_archive'   => true,
     );

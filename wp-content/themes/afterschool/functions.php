@@ -32,6 +32,9 @@ require_once('library/theme-support.php');
 // Add Header image
 require_once('library/custom-header.php');
 
+// Modfiy backend admin menu
+require_once('library/admin-menu.php');
+
 // Add Foundation Event Handler
 require_once('library/foundation-events.php');
 
