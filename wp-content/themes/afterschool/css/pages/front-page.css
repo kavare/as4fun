@@ -1,4 +1,4 @@
-/* 
+/*
 	My custom settings. These variables are copied from _settings.css
 	This file will only contain uncommented settings that are actually used in the theme.
 */
@@ -14,8 +14,8 @@
   .as-contact-form input[type="submit"] {
     min-width: 5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 0 0 #49bfdc;
-    background-color: #74CEE4;
+    box-shadow: 0 4px 0 0 #e8af19;
+    background-color: #EDBF47;
     color: #FFFFFF;
     font-weight: bold;
     font-size: 1.3rem;
@@ -25,11 +25,11 @@
     padding: 0.3rem 0;
     margin-bottom: 0; }
     .as-contact-form input[type="submit"]:hover {
-      background-color: #56c3de;
+      background-color: #eab426;
       margin-top: 4px;
       margin-bottom: -4px; }
     .as-contact-form input[type="submit"]:active {
-      background-color: #49bfdc;
+      background-color: #e8af19;
       margin-top: 4px;
       margin-bottom: -4px; }
     .as-contact-form input[type="submit"]:hover, .as-contact-form input[type="submit"]:active {
@@ -107,11 +107,11 @@
   border-top: 5rem solid #E16C6C;
   background-color: #6FC191; }
 .home .as-section-container#fp-section-4 {
-  border-top: 5rem solid #C389CE;
-  background-color: #EC774B; }
-.home .as-section-container#fp-section-5 {
   border-top: 5rem solid #74CEE4;
   background-color: #EDBF47; }
+.home .as-section-container#fp-section-5 {
+  border-top: 5rem solid #C389CE;
+  background-color: #EC774B; }
 
 /* -------------------------------------------- \
   Front page section image source
@@ -173,35 +173,35 @@
 .home .as-section-container .section-action-group #cta-4 {
   min-width: 5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 0 0 #b165bf;
-  background-color: #C389CE;
-  color: #FFFFFF;
-  font-weight: bold;
-  font-size: 1.3rem;
-  cursor: pointer; }
-  .home .as-section-container .section-action-group #cta-4:hover {
-    background-color: #b670c4;
-    margin-top: 4px;
-    margin-bottom: -4px; }
-  .home .as-section-container .section-action-group #cta-4:active {
-    background-color: #b165bf;
-    margin-top: 4px;
-    margin-bottom: -4px; }
-.home .as-section-container .section-action-group #cta-5 {
-  min-width: 5rem;
-  border-radius: 8px;
   box-shadow: 0 4px 0 0 #49bfdc;
   background-color: #74CEE4;
   color: #FFFFFF;
   font-weight: bold;
   font-size: 1.3rem;
   cursor: pointer; }
-  .home .as-section-container .section-action-group #cta-5:hover {
+  .home .as-section-container .section-action-group #cta-4:hover {
     background-color: #56c3de;
     margin-top: 4px;
     margin-bottom: -4px; }
-  .home .as-section-container .section-action-group #cta-5:active {
+  .home .as-section-container .section-action-group #cta-4:active {
     background-color: #49bfdc;
+    margin-top: 4px;
+    margin-bottom: -4px; }
+.home .as-section-container .section-action-group #cta-5 {
+  min-width: 5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 0 0 #b165bf;
+  background-color: #C389CE;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer; }
+  .home .as-section-container .section-action-group #cta-5:hover {
+    background-color: #b670c4;
+    margin-top: 4px;
+    margin-bottom: -4px; }
+  .home .as-section-container .section-action-group #cta-5:active {
+    background-color: #b165bf;
     margin-top: 4px;
     margin-bottom: -4px; }
 

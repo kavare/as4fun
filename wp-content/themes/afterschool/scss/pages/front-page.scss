@@ -96,10 +96,10 @@ $fp2-pri-color: $yellow;
 $fp2-sec-color: $blue;
 $fp3-pri-color: $green;
 $fp3-sec-color: $red;
-$fp4-pri-color: $orange;
-$fp4-sec-color: $purple;
-$fp5-pri-color: $yellow;
-$fp5-sec-color: $blue;
+$fp4-pri-color: $yellow;
+$fp4-sec-color: $blue;
+$fp5-pri-color: $orange;
+$fp5-sec-color: $purple;
 
 .home .as-section-container {
   &#fp-section-1 { @include fp-section-background(0, $fp1-sec-color, $fp1-pri-color) }

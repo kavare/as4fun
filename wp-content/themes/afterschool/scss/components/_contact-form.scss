@@ -21,7 +21,7 @@
   }
 
   input[type="submit"] {
-    @include cta-btn($blue);
+    @include cta-btn($yellow);
     display: block;
     width: 100%;
     padding: 0.3rem 0;

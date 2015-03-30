@@ -323,7 +323,7 @@ td, th {
   Import the building blocks you need for your project. 
   Reducing the number of imported components will optimize page speed.
 */
-/* 
+/*
 	My custom settings. These variables are copied from _settings.css
 	This file will only contain uncommented settings that are actually used in the theme.
 */
@@ -380,7 +380,7 @@ html, body {
 
 body {
   background: #FFFFFF;
-  color: #999999;
+  color: #333333;
   padding: 0;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "WenQuanYi Zen Hei", "Heiti TC", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
@@ -5154,7 +5154,7 @@ dl dd {
 abbr, acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #999999;
+  color: #333333;
   cursor: help; }
 
 abbr {
@@ -7718,6 +7718,7 @@ blockquote.alignright, img.alignright {
     z-index: 99999; }
 
 .footer-container {
+  background-color: #74CEE4;
   padding-top: 1.5rem;
   /* -------------------------------------------- \
     Footer sitemaps style
@@ -7742,7 +7743,7 @@ blockquote.alignright, img.alignright {
     margin-left: 0;
     list-style: none; }
     .footer-container .widget .menu a {
-      color: #999999;
+      color: #FFFFFF;
       font-weight: bold; }
       .footer-container .widget .menu a:hover {
         color: #a6a6a6;
