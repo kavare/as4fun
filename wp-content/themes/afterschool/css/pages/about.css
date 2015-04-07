@@ -1,4 +1,4 @@
-/* 
+/*
 	My custom settings. These variables are copied from _settings.css
 	This file will only contain uncommented settings that are actually used in the theme.
 */
@@ -14,8 +14,8 @@
   .as-contact-form input[type="submit"] {
     min-width: 5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 0 0 #49bfdc;
-    background-color: #74CEE4;
+    box-shadow: 0 4px 0 0 #e8af19;
+    background-color: #EDBF47;
     color: #FFFFFF;
     font-weight: bold;
     font-size: 1.3rem;
@@ -25,11 +25,11 @@
     padding: 0.3rem 0;
     margin-bottom: 0; }
     .as-contact-form input[type="submit"]:hover {
-      background-color: #56c3de;
+      background-color: #eab426;
       margin-top: 4px;
       margin-bottom: -4px; }
     .as-contact-form input[type="submit"]:active {
-      background-color: #49bfdc;
+      background-color: #e8af19;
       margin-top: 4px;
       margin-bottom: -4px; }
     .as-contact-form input[type="submit"]:hover, .as-contact-form input[type="submit"]:active {
@@ -44,32 +44,36 @@
 /* -------------------------------------------- \
   About template layouts settings
 \ --------------------------------------------- */
-.page .page-jumbotron-container {
-  position: relative;
-  height: 34vh;
-  margin-bottom: 10rem;
-  background-image: url('../../assets/img//headlines/children.jpg');
-  background-size: 100%;
-  background-position: 50% 50%; }
-  .page .page-jumbotron-container .page-title {
-    position: absolute;
-    top: 37vh;
-    left: 26rem;
-    margin-top: 0;
-    font-size: 3rem;
-    font-weight: bold; }
-  .page .page-jumbotron-container .jumbo-stamp-image {
-    min-width: 20rem;
-    min-height: 20rem;
-    border: 0.5rem solid #FFFFFF;
-    border-radius: 20rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: absolute;
-    top: 7vh;
-    left: 5rem;
-    background-image: url('../../assets/img/rocket.png'); }
+.page {
+  font-size: 1.1rem; }
+  .page .page-jumbotron-container {
+    position: relative;
+    height: 34vh;
+    margin-bottom: 10rem;
+    background-image: url('../../assets/img//headlines/children.jpg');
+    background-size: 100%;
+    background-position: 50% 54%; }
+    .page .page-jumbotron-container .page-title {
+      position: absolute;
+      top: 37vh;
+      left: 26rem;
+      margin-top: 0;
+      font-size: 3rem;
+      font-weight: bold; }
+    .page .page-jumbotron-container .jumbo-stamp-image {
+      min-width: 20rem;
+      min-height: 20rem;
+      border: 0.5rem solid #FFFFFF;
+      border-radius: 20rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      position: absolute;
+      top: 7vh;
+      left: 5rem;
+      background-image: url('../../assets/img/rocket.png'); }
+  .page .entry-conten p {
+    font-size: 1.2rem; }
 
 
 /*# sourceMappingURL=../pages/about.css.map */
