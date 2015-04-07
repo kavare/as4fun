@@ -8,5 +8,9 @@
 \ --------------------------------------------- */
 .page {
   @include page-jumbotron('/headlines/children.jpg', 'rocket.png');
+  font-size: 1.1rem;
 
+  .entry-conten p {
+    font-size: 1.2rem;
+  }
 }
