@@ -46,38 +46,24 @@
  * @param  {[string]} $header-img [background image for headlines]
  */
 /* -------------------------------------------- \
-  About template layouts settings
+  archive-connection layouts settings
 \ --------------------------------------------- */
-.page {
+.archive {
   font-size: 1.1rem; }
-  .page .page-jumbotron-container {
+  .archive .page-heading-container {
     position: relative;
     height: 34vh;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
     background-image: url('../../assets/img//headlines/children.jpg');
     background-size: 100%;
     background-position: 50% 54%; }
-    .page .page-jumbotron-container .page-title {
+    .archive .page-heading-container .page-title {
       position: absolute;
-      top: 37vh;
-      left: 26rem;
-      margin-top: 0;
-      font-size: 3rem;
+      top: 14vh;
+      left: 16.4vw;
       font-weight: bold; }
-    .page .page-jumbotron-container .jumbo-stamp-image {
-      min-width: 20rem;
-      min-height: 20rem;
-      border: 0.5rem solid #FFFFFF;
-      border-radius: 20rem;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-      position: absolute;
-      top: 7vh;
-      left: 5rem;
-      background-image: url('../../assets/img/rocket.png'); }
-  .page .entry-content p {
+  .archive .entry-content p {
     font-size: 1.2rem; }
 
 
-/*# sourceMappingURL=../pages/about.css.map */
+/*# sourceMappingURL=../pages/archive-connection.css.map */

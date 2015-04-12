@@ -1,0 +1,21 @@
+/**
+ * [heading: the headline component for pages without stamps]
+ * @param  {[string]} $header-img [background image for headlines]
+ */
+@mixin page-heading($header-img) {
+  .page-heading-container {
+    position: relative;
+    height: 34vh;
+    margin-bottom: 4rem;
+    background-image: url('../../assets/img/#{$header-img}');
+    background-size: 100%;
+    background-position: 50% 54%;
+
+    .page-title {
+      position: absolute;
+      top: 14vh;
+      left: 16.4vw;
+      font-weight: bold
+    }
+  }
+}

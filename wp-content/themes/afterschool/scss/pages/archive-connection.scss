@@ -1,12 +1,11 @@
 @import "../base/custom-settings";
 @import "../base/component-list";
 
-
 /* -------------------------------------------- \
-  About template layouts settings
+  archive-connection layouts settings
 \ --------------------------------------------- */
-.page {
-  @include page-jumbotron('/headlines/children.jpg', 'rocket.png');
+.archive {
+  @include page-heading('/headlines/children.jpg');
   font-size: 1.1rem;
 
   .entry-content p {
