@@ -1,6 +1,5 @@
 @import "../base/custom-settings";
 @import "../base/component-list";
-@import "../components/page-jumbotron";
 
 
 /* -------------------------------------------- \
@@ -10,7 +9,7 @@
   @include page-jumbotron('/headlines/children.jpg', 'rocket.png');
   font-size: 1.1rem;
 
-  .entry-conten p {
+  .entry-content p {
     font-size: 1.2rem;
   }
 }

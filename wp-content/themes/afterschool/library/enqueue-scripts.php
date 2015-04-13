@@ -103,7 +103,39 @@ if (!function_exists('page_specific_scripts')):
             endswitch;
         }
 
-        if( is_single() ) {
+        if ( is_archive() ) {
+
+            if (is_post_type_archive( 'connection' )):
+                wp_enqueue_style('archive-connection', get_template_directory_uri() . '/css/pages/archive-connection.css', array(), '1.0.0' );
+            elseif (is_post_type_archive( 'activity' )):
+                wp_enqueue_style('archive-activity', get_template_directory_uri() . '/css/pages/archive-activity.css', array(), '1.0.0' );
+            elseif (is_post_type_archive( 'counsel' )):
+                wp_enqueue_style('archive-counsel', get_template_directory_uri() . '/css/pages/archive-counsel.css', array(), '1.0.0' );
+            else:
+
+            endif;
+
+            wp_enqueue_script( 'archive', get_template_directory_uri() . '/js/archive.js', array('jquery'), '1.0.0', true );
+        }
+
+        if ( is_tax() ) {
+
+            if (is_tax( 'connection_target' )):
+                wp_enqueue_style('archive-connection', get_template_directory_uri() . '/css/pages/archive-connection.css', array(), '1.0.0' );
+            // elseif (is_tax( 'activity_type' )):
+            //     wp_enqueue_style('archive-activity', get_template_directory_uri() . '/css/pages/archive-activity.css', array(), '1.0.0' );
+            // elseif (is_tax( 'metting_stage' )):
+            //     wp_enqueue_style('archive-counsel', get_template_directory_uri() . '/css/pages/archive-counsel.css', array(), '1.0.0' );
+            // elseif (is_tax( 'volunteer_record' )):
+            //     wp_enqueue_style('archive-counsel', get_template_directory_uri() . '/css/pages/archive-counsel.css', array(), '1.0.0' );
+            else:
+                wp_enqueue_style('archive', get_template_directory_uri() . '/css/pages/archive.css', array(), '1.0.0' );
+            endif;
+
+            wp_enqueue_script( 'archive', get_template_directory_uri() . '/js/archive.js', array('jquery'), '1.0.0', true );
+        }
+
+        if ( is_single() ) {
             switch( $post->post_name ):
             case 'post':
                 wp_register_script( 'post', get_template_directory_uri() . '/js/post.js', array('jquery'), '1.0.0', true );
