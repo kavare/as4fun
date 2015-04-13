@@ -41,6 +41,10 @@
  * @param  {[string]} $stamp-img  [background image for stamp image]
  * @dependencies {[mixin]} stamp-image
  */
+/**
+ * [heading: the headline component for pages without stamps]
+ * @param  {[string]} $header-img [background image for headlines]
+ */
 /* -------------------------------------------- \
   About template layouts settings
 \ --------------------------------------------- */
@@ -72,7 +76,7 @@
       top: 7vh;
       left: 5rem;
       background-image: url('../../assets/img/rocket.png'); }
-  .page .entry-conten p {
+  .page .entry-content p {
     font-size: 1.2rem; }
 
 

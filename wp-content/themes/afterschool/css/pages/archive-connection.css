@@ -1,0 +1,130 @@
+/*
+	My custom settings. These variables are copied from _settings.css
+	This file will only contain uncommented settings that are actually used in the theme.
+*/
+.as-contact-form {
+  margin-bottom: 2rem; }
+  .as-contact-form label {
+    padding-bottom: 0.3rem;
+    font-size: 1rem; }
+  .as-contact-form input[type="text"], .as-contact-form textarea {
+    border-width: 3px; }
+  .as-contact-form textarea {
+    min-height: 5rem; }
+  .as-contact-form input[type="submit"] {
+    min-width: 5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 0 0 #e8af19;
+    background-color: #EDBF47;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0;
+    margin-bottom: 0; }
+    .as-contact-form input[type="submit"]:hover {
+      background-color: #eab426;
+      margin-top: 4px;
+      margin-bottom: -4px; }
+    .as-contact-form input[type="submit"]:active {
+      background-color: #e8af19;
+      margin-top: 4px;
+      margin-bottom: -4px; }
+    .as-contact-form input[type="submit"]:hover, .as-contact-form input[type="submit"]:active {
+      margin-bottom: 0; }
+
+/**
+ * [jumbotron: the headline component for intro pages]
+ * @param  {[string]} $header-img [background image for headlines]
+ * @param  {[string]} $stamp-img  [background image for stamp image]
+ * @dependencies {[mixin]} stamp-image
+ */
+/**
+ * [heading: the headline component for pages without stamps]
+ * @param  {[string]} $header-img [background image for headlines]
+ */
+/* -------------------------------------------- \
+  archive-connection layouts settings
+\ --------------------------------------------- */
+.archive {
+  font-size: 1.1rem; }
+  .archive .page-heading-container {
+    position: relative;
+    height: 34vh;
+    margin-bottom: 4rem;
+    background-image: url('../../assets/img//headlines/children.jpg');
+    background-size: 100%;
+    background-position: 50% 54%; }
+    .archive .page-heading-container .page-title {
+      position: absolute;
+      top: 14vh;
+      left: 16.4vw;
+      font-weight: bold; }
+  .archive .entry-content p {
+    font-size: 1.2rem; }
+  .archive .card-container .card-item {
+    margin-bottom: 2rem; }
+    .archive .card-container .card-item .card-header .card-image-container {
+      position: relative;
+      height: 12rem;
+      overflow-y: hidden; }
+    .archive .card-container .card-item .card-header .card-image {
+      position: absolute;
+      top: -11%;
+      width: 100%;
+      border-radius: 5px 5px 0 0; }
+    .archive .card-container .card-item .card-header .card-title {
+      margin: 0;
+      padding: 0.4rem 0.75rem;
+      border-radius: 0 0 5px 5px;
+      background-color: #EDBF47;
+      color: #FFFFFF;
+      font-size: 1.5rem;
+      text-align: center; }
+    .archive .card-container .card-item .meta-container {
+      padding: 0.8em 0.2rem;
+      overflow: auto; }
+      .archive .card-container .card-item .meta-container .author, .archive .card-container .card-item .meta-container .updated {
+        font-size: 1rem; }
+      .archive .card-container .card-item .meta-container .author {
+        float: left; }
+      .archive .card-container .card-item .meta-container .updated {
+        float: right; }
+      .archive .card-container .card-item .meta-container a {
+        color: #74CEE4; }
+    .archive .card-container .card-item .card-content {
+      padding: 0.75rem 0.2rem; }
+      .archive .card-container .card-item .card-content > p {
+        max-height: 11em;
+        overflow: hidden;
+        line-height: 1.8;
+        letter-spacing: 0.6px; }
+    .archive .card-container .card-item .card-footer {
+      text-align: center; }
+      .archive .card-container .card-item .card-footer .button {
+        min-width: 5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 0 0 #49bfdc;
+        background-color: #74CEE4;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 1.3rem;
+        cursor: pointer;
+        padding: 0.75rem 1.25rem;
+        font-size: 1rem; }
+        .archive .card-container .card-item .card-footer .button:hover {
+          background-color: #56c3de;
+          margin-top: 4px;
+          margin-bottom: -4px; }
+        .archive .card-container .card-item .card-footer .button:active {
+          background-color: #49bfdc;
+          margin-top: 4px;
+          margin-bottom: -4px; }
+        .archive .card-container .card-item .card-footer .button:hover, .archive .card-container .card-item .card-footer .button:active {
+          margin-top: 4px;
+          margin-bottom: 16px; }
+
+
+/*# sourceMappingURL=../pages/archive-connection.css.map */

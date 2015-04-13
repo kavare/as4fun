@@ -35,6 +35,16 @@
     .as-contact-form input[type="submit"]:hover, .as-contact-form input[type="submit"]:active {
       margin-bottom: 0; }
 
+/**
+ * [jumbotron: the headline component for intro pages]
+ * @param  {[string]} $header-img [background image for headlines]
+ * @param  {[string]} $stamp-img  [background image for stamp image]
+ * @dependencies {[mixin]} stamp-image
+ */
+/**
+ * [heading: the headline component for pages without stamps]
+ * @param  {[string]} $header-img [background image for headlines]
+ */
 /* -------------------------------------------- \
   Front-page layouts settings
 \ --------------------------------------------- */
