@@ -1,6 +1,13 @@
 <?php get_header(); ?>
+<?php if ( has_post_thumbnail() ): ?>
+	<div class="row">
+		<div class="small-12 large-9 column">
+			<?php the_post_thumbnail('', array('class' => 'th')); ?>
+		</div>
+	</div>
+<?php endif; ?>
 <div class="row">
-	<div class="small-12 large-8 columns" role="main">
+	<div class="small-12 large-9 columns" role="main">
 
 	<?php do_action('foundationPress_before_content'); ?>
 
@@ -12,14 +19,6 @@
 			</header>
 			<?php do_action('foundationPress_post_before_entry_content'); ?>
 			<div class="entry-content">
-
-			<?php if ( has_post_thumbnail() ): ?>
-				<div class="row">
-					<div class="column">
-						<?php the_post_thumbnail('', array('class' => 'th')); ?>
-					</div>
-				</div>
-			<?php endif; ?>
 
 			<?php the_content(); ?>
 			</div>
