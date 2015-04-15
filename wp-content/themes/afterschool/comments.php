@@ -1,14 +1,14 @@
-<?php 
-if ( have_comments() ) : 
+<?php
+if ( have_comments() ) :
 	if( (is_page() || is_single()) && (!is_home() && !is_front_page()) ) :
 ?>
-	<section id="comments"><?php 	
-		
-				
+	<section id="comments"><?php
+
+
 		wp_list_comments(
-			
+
 			array(
-				'walker'            => new FoundationPress_comments(), 
+				'walker'            => new FoundationPress_comments(),
 				'max_depth'         => '',
 				'style'             => 'ol',
 				'callback'          => null,
@@ -20,17 +20,17 @@ if ( have_comments() ) :
 				'avatar_size'       => 48,
 				'reverse_top_level' => null,
 				'reverse_children'  => '',
-				'format'            => 'html5', 
-				'short_ping'        => false, 
-				'echo'  	    => true,							
-				'moderation' 	    => __('Your comment is awaiting moderation.', 'FoundationPress'),					
+				'format'            => 'html5',
+				'short_ping'        => false,
+				'echo'  	    => true,
+				'moderation' 	    => __('Your comment is awaiting moderation.', 'FoundationPress'),
 			)
 		);
-		
+
 		?>
 
  	</section>
-<?php 
+<?php
 	endif;
 endif;
 ?>
@@ -51,8 +51,8 @@ endif;
 	}
 ?>
 
-<?php 
-if ( comments_open() ) : 
+<?php
+if ( comments_open() ) :
 	if( (is_page() || is_single()) && (!is_home() && !is_front_page()) ) :
 ?>
 <section id="respond">
@@ -82,14 +82,14 @@ if ( comments_open() ) :
 			<label for="comment"><?php _e('Comment', 'FoundationPress'); ?></label>
 			<textarea name="comment" id="comment" tabindex="4"></textarea>
 		</p>
-		<p id="allowed_tags" class="small"><strong>XHTML:</strong> <?php _e('You can use these tags:','FoundationPress'); ?> <code><?php echo allowed_tags(); ?></code></p>
+		<!-- <p id="allowed_tags" class="small"><strong>XHTML:</strong> <?php _e('You can use these tags:','FoundationPress'); ?> <code><?php echo allowed_tags(); ?></code></p> -->
 		<p><input name="submit" class="button" type="submit" id="submit" tabindex="5" value="<?php esc_attr_e('Submit Comment', 'FoundationPress'); ?>"></p>
 		<?php comment_id_fields(); ?>
 		<?php do_action('comment_form', $post->ID); ?>
 	</form>
 	<?php endif; // If registration required and not logged in ?>
 </section>
-<?php 
+<?php
 	endif; // if you delete this the sky will fall on your head
-endif; // if you delete this the sky will fall on your head 
+endif; // if you delete this the sky will fall on your head
 ?>

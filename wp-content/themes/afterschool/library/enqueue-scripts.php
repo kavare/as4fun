@@ -136,16 +136,28 @@ if (!function_exists('page_specific_scripts')):
         }
 
         if ( is_single() ) {
-            switch( $post->post_name ):
+            switch( $post->post_type ):
             case 'post':
-                wp_register_script( 'post', get_template_directory_uri() . '/js/post.js', array('jquery'), '1.0.0', true );
                 wp_enqueue_style('post', get_template_directory_uri() . '/css/pages/post.css', array(), '1.0.0' );
                 break;
-            case 'some-post':
-                wp_register_script( 'some-post', get_template_directory_uri() . '/js/some-post.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('some-post', get_template_directory_uri() . '/css/pages/some-post.css', array(), '1.0.0' );
+            case 'activity':
+                wp_enqueue_style('single-activity', get_template_directory_uri() . '/css/pages/single-activity.css', array(), '1.0.0' );
+                break;
+            case 'connection':
+                wp_enqueue_style('single-connection', get_template_directory_uri() . '/css/pages/single-connection.css', array(), '1.0.0' );
+                break;
+            case 'counsel':
+                wp_enqueue_style('single-counsel', get_template_directory_uri() . '/css/pages/single-counsel.css', array(), '1.0.0' );
+                break;
+            case 'donation':
+                wp_enqueue_style('single-donation', get_template_directory_uri() . '/css/pages/single-donation.css', array(), '1.0.0' );
+                break;
+            case 'volunteer':
+                wp_enqueue_style('single-volunteer', get_template_directory_uri() . '/css/pages/single-volunteer.css', array(), '1.0.0' );
                 break;
             endswitch;
+
+            wp_register_script( 'post', get_template_directory_uri() . '/js/post.js', array('jquery'), '1.0.0', true );
         }
 
     }
