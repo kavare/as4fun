@@ -37,9 +37,10 @@
 					</div>
 				</div>
 			</div>
-			<footer>
-				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
-				<p><?php the_tags(); ?></p>
+			<footer class="entry-meta">
+				<?php get_template_part( 'parts/content', 'author' ); ?>
+				<?php get_template_part( 'parts/content', 'tags' ); ?>
+				<?php // wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
 			</footer>
 			<?php do_action('foundationPress_post_before_comments'); ?>
 			<?php comments_template(); ?>
