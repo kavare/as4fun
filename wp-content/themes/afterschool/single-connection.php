@@ -25,23 +25,16 @@
 
 			<div class="entry-meta">
 				<div class="row">
-					<div class="small-12 medium-6 column">
-						<div class="author-card">
-
-						</div>
+					<div class="small-12 column">
+						<?php get_template_part( 'parts/content', 'author' ); ?>
 					</div>
-					<div class="small-12 medium-6 column">
-						<div class="tag-group">
-
-						</div>
+					<div class="small-12 column">
+						<?php get_template_part( 'parts/content', 'tags' ); ?>
 					</div>
 				</div>
 			</div>
-			<footer class="entry-meta">
-				<?php get_template_part( 'parts/content', 'author' ); ?>
-				<?php get_template_part( 'parts/content', 'tags' ); ?>
-				<?php // wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
-			</footer>
+			<?php // wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
+
 			<?php do_action('foundationPress_post_before_comments'); ?>
 			<?php comments_template(); ?>
 			<?php do_action('foundationPress_post_after_comments'); ?>
