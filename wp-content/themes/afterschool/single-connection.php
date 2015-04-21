@@ -34,6 +34,26 @@
 				</div>
 			</div>
 			<?php // wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
+			<?php
+			$queryObject = new WP_Query( 'post_type=connection&posts_per_page=5' );
+			// The Loop!
+			if ($queryObject->have_posts()) {
+			    ?>
+			    <ul>
+			    <?php
+			    while ($queryObject->have_posts()) {
+			        $queryObject->the_post();
+			        ?>
+
+			        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+			    <?php
+			    }
+			    ?>
+			    </ul>
+			    <div><a href="#">View More</a></div>
+			    <?php
+			}
+			?>
 
 			<?php do_action('foundationPress_post_before_comments'); ?>
 			<?php comments_template(); ?>
