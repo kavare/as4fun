@@ -41,6 +41,9 @@ require_once('library/foundation-events.php');
 // Modify Excerpt Patterns
 require_once('library/custom-excerpt.php');
 
+// Add Custom Recently Post for Single Post
+require_once('library/recently-post.php');
+
 // Helper functions for AfterSchool theme
 require_once('library/helper.php');
 
