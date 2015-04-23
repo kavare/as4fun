@@ -86,24 +86,33 @@
   .single .main-container .entry-content > p {
     font-size: 1.2rem;
     line-height: 2; }
-  .single .main-container .entry-meta .author-card {
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    background-color: #EDBF47;
-    box-shadow: #bdc3c7 0 5px 5px; }
-    .single .main-container .entry-meta .author-card .avatar {
-      display: block;
-      width: 6rem;
-      height: 6rem;
-      margin: 0 auto;
-      border-radius: 6rem; }
-    .single .main-container .entry-meta .author-card .author-link {
-      display: block;
-      padding: 0.5rem;
-      text-align: center;
-      color: #74CEE4;
-      font-size: 1.5rem;
-      font-weight: bold; }
+  .single .main-container .entry-meta {
+    margin: 2rem 0; }
+    .single .main-container .entry-meta .author-card {
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      background-color: #EDBF47;
+      box-shadow: #bdc3c7 0 5px 5px; }
+      .single .main-container .entry-meta .author-card .avatar {
+        float: left;
+        display: block;
+        width: 6rem;
+        height: 6rem;
+        margin: 0 auto;
+        border: 0.4rem solid #FFFFFF;
+        border-radius: 6rem; }
+      .single .main-container .entry-meta .author-card .author-link {
+        float: left;
+        display: block;
+        margin: 0.75rem 1rem;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 2.5rem;
+        font-weight: bold; }
+      .single .main-container .entry-meta .author-card .author-intro {
+        clear: both;
+        padding-top: 1rem;
+        line-height: 2; }
 .single #disqus_thread {
   margin: 2rem 0; }
 

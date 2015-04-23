@@ -28,7 +28,7 @@
 					<div class="small-12 column">
 						<?php get_template_part( 'parts/content', 'author' ); ?>
 					</div>
-					<div class="small-12 column">
+					<div class="small-12 medium-4 column">
 						<?php get_template_part( 'parts/content', 'tags' ); ?>
 					</div>
 				</div>
