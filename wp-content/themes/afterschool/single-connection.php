@@ -28,13 +28,13 @@
 					<div class="small-12 column">
 						<?php get_template_part( 'parts/content', 'author' ); ?>
 					</div>
-					<div class="small-12 column">
+					<div class="small-12 medium-4 column">
 						<?php get_template_part( 'parts/content', 'tags' ); ?>
 					</div>
 				</div>
 			</div>
 			<?php // wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
-			<?php as_show_recently_post('connection', 4) ?>
+			<?php as_show_recently_post('connection', 3) ?>
 
 			<?php do_action('foundationPress_post_before_comments'); ?>
 			<?php comments_template(); ?>

@@ -4,14 +4,25 @@ if(!function_exists('as_show_recently_post')) :
       $queryObject = new WP_Query( 'post_type=' . $post_type . '&posts_per_page=' . $num );
 
       if ($queryObject->have_posts()) :
-          echo '<ul>';
-
+          echo '<div class="recently-post">';
+          echo '<h2 class="section-title">相關文章</h2>';
+          echo '<ul class="post-list">';
           while ($queryObject->have_posts()) :
               $queryObject->the_post();
-              echo '<li><a href="' . get_the_permalink() . '">' . get_the_title() . '</a></li>';
+              echo '<li class="post-item"><a href="' . get_the_permalink() . '">';
+                echo '<div class="post-image-container">';
+                  if ( has_post_thumbnail() ):
+                    the_post_thumbnail('', array('class' => 'post-image') );
+                  else:
+                    echo '<img src="' . get_template_directory_uri() .'/assets/img/ballon.png" alt="放心窩協會" class="post-image">';
+                  endif;
+                echo '</div>';
+                echo '<h4 class="post-title">' . get_the_title() . '</h4>';
+                echo '<div class="post-content">' . get_the_excerpt() . '</div>';
+              echo '</a></li>';
           endwhile;
-
           echo '</ul>';
+          echo '</div>';
       endif;
 
     }
