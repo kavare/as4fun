@@ -45,6 +45,31 @@
  * [heading: the headline component for pages without stamps]
  * @param  {[string]} $header-img [background image for headlines]
  */
+.recently-post {
+  margin-top: 2.5rem; }
+  .recently-post .section-title {
+    font-weight: bold; }
+  .recently-post .post-list {
+    margin-left: 0;
+    list-style: none; }
+    .recently-post .post-list .post-item {
+      height: 11rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid #9CADB6; }
+      .recently-post .post-list .post-item .post-image-container {
+        position: relative;
+        float: left;
+        width: 10rem;
+        height: 100%;
+        margin-right: 1rem;
+        overflow: hidden; }
+        .recently-post .post-list .post-item .post-image-container .post-image {
+          position: absolute;
+          width: 100%; }
+      .recently-post .post-list .post-item .post-content {
+        line-height: 1.6;
+        color: #999999; }
+
 /* -------------------------------------------- \
   About template layouts settings
 \ --------------------------------------------- */
