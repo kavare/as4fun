@@ -27,6 +27,7 @@ if (!function_exists('FoundationPress_scripts')) :
         wp_enqueue_script('fastclick');
         wp_enqueue_script('jquery');
         wp_enqueue_script('foundation');
+        wp_enqueue_script( 'facebook', get_template_directory_uri() . '/js/core/facebook.js', array('jquery'), '2.3.0', false );
 
     }
 
