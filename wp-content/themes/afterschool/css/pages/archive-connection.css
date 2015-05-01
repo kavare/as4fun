@@ -2,6 +2,22 @@
 	My custom settings. These variables are copied from _settings.css
 	This file will only contain uncommented settings that are actually used in the theme.
 */
+/**
+ * Mixins
+ */
+/**
+ * [jumbotron: the headline component for intro pages]
+ * @param  {[string]} $header-img [background image for headlines]
+ * @param  {[string]} $stamp-img  [background image for stamp image]
+ * @dependencies {[mixin]} stamp-image
+ */
+/**
+ * [heading: the headline component for pages without stamps]
+ * @param  {[string]} $header-img [background image for headlines]
+ */
+/**
+ * UI Components
+ */
 .as-contact-form {
   margin-bottom: 2rem; }
   .as-contact-form label {
@@ -35,16 +51,6 @@
     .as-contact-form input[type="submit"]:hover, .as-contact-form input[type="submit"]:active {
       margin-bottom: 0; }
 
-/**
- * [jumbotron: the headline component for intro pages]
- * @param  {[string]} $header-img [background image for headlines]
- * @param  {[string]} $stamp-img  [background image for stamp image]
- * @dependencies {[mixin]} stamp-image
- */
-/**
- * [heading: the headline component for pages without stamps]
- * @param  {[string]} $header-img [background image for headlines]
- */
 .recently-post {
   margin-top: 2.5rem; }
   .recently-post .section-title {
@@ -69,6 +75,80 @@
       .recently-post .post-list .post-item .post-content {
         line-height: 1.6;
         color: #999999; }
+
+.social-icons {
+  list-style: none;
+  margin: 0; }
+  .social-icons li {
+    float: right; }
+  .social-icons .icon-email {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    color: #FFFFFF;
+    margin: 0 0.5rem 0 0;
+    border-radius: 0.15rem;
+    background: #EC774B;
+    text-align: center; }
+    .social-icons .icon-email:before {
+      display: inline-block;
+      font-family: "fontawesome";
+      content: "\f0e0";
+      font-size: 2rem;
+      font-style: normal;
+      color: #FFFFFF; }
+  .social-icons .icon-facebook {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    color: #FFFFFF;
+    margin: 0 0.5rem 0 0;
+    border-radius: 0.15rem;
+    background: #3b5998;
+    text-align: center; }
+    .social-icons .icon-facebook:before {
+      display: inline-block;
+      font-family: "fontawesome";
+      content: "\f09a";
+      font-size: 2rem;
+      font-style: normal;
+      color: #FFFFFF; }
+  .social-icons .icon-twitter {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    color: #FFFFFF;
+    margin: 0 0.5rem 0 0;
+    border-radius: 0.15rem;
+    background: #5ea9dd;
+    text-align: center; }
+    .social-icons .icon-twitter:before {
+      display: inline-block;
+      font-family: "fontawesome";
+      content: "\f099";
+      font-size: 2rem;
+      font-style: normal;
+      color: #FFFFFF; }
+  .social-icons .icon-line {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    color: #FFFFFF;
+    margin: 0 0.5rem 0 0;
+    border-radius: 0.15rem;
+    background: #00c300;
+    text-align: center; }
+    .social-icons .icon-line:before {
+      display: inline-block;
+      font-family: "fontawesome";
+      content: "\f075";
+      font-size: 2rem;
+      font-style: normal;
+      color: #FFFFFF; }
 
 /* -------------------------------------------- \
   archive-connection layouts settings
