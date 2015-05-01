@@ -1,0 +1,27 @@
+/**
+ * [Icons: customized icon fonts based on FontAwesome 4.3.0]
+ * @param  {[string]} $content   [the unicode for icon font]
+ * @param  {[rem]}    $font-size [the size of the icon]
+ * @param  {[color]}  $bgcolor   [the background color of the icon]
+ * @param  {[color]}  $color     [the color of the icon]
+ */
+@mixin fa-icon($content, $font-size, $bgcolor, $color) {
+  position: relative;
+  display: inline-block;
+  width: $font-size * 1.5;
+  height: $font-size * 1.5;
+  color: $color;
+  margin: 0 0.5rem 0 0;
+  border-radius: 0.15rem;
+  background: $bgcolor;
+  text-align: center;
+
+  &:before {
+    display: inline-block;
+    font-family: "fontawesome";
+    content: $content;
+    font-size: $font-size;
+    font-style: normal;
+    color: $color;
+  }
+}

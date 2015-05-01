@@ -1,0 +1,1 @@
+!function(o){o(function(){o(".share-facebook").on("click",function(){FB.ui({method:"share_open_graph",action_type:"og.shares",action_properties:JSON.stringify({object:location.href})},function(){}),console.log("Share Clicked")})})}(jQuery);

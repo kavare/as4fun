@@ -26,12 +26,20 @@
         本網站所有插圖皆來自<a href="http://www.freepik.com/">Freepik</a>
       </p>
       <div class="small-12 medium-6 columns">
-        <!-- <ul class="social-icons">
-          <li><i class="fa fa-facebook-square fa-2x fa-fw"></i></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul> -->
+        <ul class="social-icons clearfix">
+          <li><a href="www.line.com" target="_blank">
+            <i class="icon-line"></i>
+          </a></li>
+          <li><a href="www.twitter.com" target="_blank">
+            <i class="icon-twitter"></i>
+          </a></li>
+          <li><a href="www.facebook.com" target="_blank">
+            <i class="icon-facebook"></i>
+          </a></li>
+          <li><a href="mailto:nest4fun@gmail.com?subject=[建議] 關於放心窩">
+            <i class="icon-email"></i>
+          </a></li>
+        </ul>
       </div>
     </div>
   </div>

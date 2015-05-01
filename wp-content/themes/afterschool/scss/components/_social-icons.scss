@@ -1,0 +1,25 @@
+.social-icons {
+  list-style: none;
+  margin: 0;
+
+  li {
+    float: right;
+  }
+
+  .icon-email {
+    @include fa-icon("\f0e0", 2rem, $orange, $white);
+  }
+
+  .icon-facebook {
+    @include fa-icon("\f09a", 2rem, #3b5998, $white);
+  }
+
+  .icon-twitter {
+    @include fa-icon("\f099", 2rem, #5ea9dd, $white);
+  }
+
+  .icon-line {
+    @include fa-icon("\f075", 2rem, #00c300, $white);
+  }
+
+}
