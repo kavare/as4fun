@@ -1,0 +1,41 @@
+.share-icons-container {
+  float: right;
+  margin-bottom: 1rem;
+
+  .share-icons-title {
+    display: inline-block;
+    vertical-align: 60%;
+    font-size: 1.25rem;
+  }
+
+  .share-icons {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+
+    li {
+      float: right;
+    }
+
+    .icon-email {
+      @include fa-icon("\f0e0", 1.5rem, $orange, $white);
+    }
+
+    .icon-facebook {
+      @include fa-icon("\f09a", 1.5rem, #3b5998, $white);
+    }
+
+    .icon-twitter {
+      @include fa-icon("\f099", 1.5rem, #5ea9dd, $white);
+    }
+
+    .icon-line {
+      display: inline-block;
+      width: 2.25rem;
+      height: 2.25rem;
+      background-image: url(../../assets/img/icons/line-30.png);
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+  }
+}

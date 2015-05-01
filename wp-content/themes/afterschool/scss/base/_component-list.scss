@@ -1,7 +1,17 @@
-@import "../components/stamp-image";
-@import "../components/cta-button";
+/**
+ * Mixins
+ */
+@import "../mixins/fa-icons";
+@import "../mixins/stamp-image";
+@import "../mixins/cta-button";
+@import "../mixins/fp-section-background";
+@import "../mixins/page-jumbotron";
+@import "../mixins/page-heading";
+
+/**
+ * UI Components
+ */
 @import "../components/contact-form";
-@import "../components/fp-section-background";
-@import "../components/page-jumbotron";
-@import "../components/page-heading";
 @import "../components/recently-post";
+@import "../components/social-icons";
+@import "../components/share-icons";
