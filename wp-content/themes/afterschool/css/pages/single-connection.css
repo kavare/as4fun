@@ -6,6 +6,13 @@
  * Mixins
  */
 /**
+ * [Icons: customized icon fonts based on FontAwesome 4.3.0]
+ * @param  {[string]} $content   [the unicode for icon font]
+ * @param  {[rem]}    $font-size [the size of the icon]
+ * @param  {[color]}  $bgcolor   [the background color of the icon]
+ * @param  {[color]}  $color     [the color of the icon]
+ */
+/**
  * [jumbotron: the headline component for intro pages]
  * @param  {[string]} $header-img [background image for headlines]
  * @param  {[string]} $stamp-img  [background image for stamp image]
@@ -150,6 +157,78 @@
       font-style: normal;
       color: #FFFFFF; }
 
+.share-icons-container {
+  float: right;
+  margin-bottom: 1rem; }
+  .share-icons-container .share-icons-title {
+    display: inline-block;
+    vertical-align: 60%;
+    font-size: 1.25rem; }
+  .share-icons-container .share-icons {
+    display: inline-block;
+    margin: 0;
+    list-style: none; }
+    .share-icons-container .share-icons li {
+      float: right; }
+    .share-icons-container .share-icons .icon-email {
+      position: relative;
+      display: inline-block;
+      width: 2.25rem;
+      height: 2.25rem;
+      color: #FFFFFF;
+      margin: 0 0.5rem 0 0;
+      border-radius: 0.15rem;
+      background: #EC774B;
+      text-align: center; }
+      .share-icons-container .share-icons .icon-email:before {
+        display: inline-block;
+        font-family: "fontawesome";
+        content: "\f0e0";
+        font-size: 1.5rem;
+        font-style: normal;
+        color: #FFFFFF; }
+    .share-icons-container .share-icons .icon-facebook {
+      position: relative;
+      display: inline-block;
+      width: 2.25rem;
+      height: 2.25rem;
+      color: #FFFFFF;
+      margin: 0 0.5rem 0 0;
+      border-radius: 0.15rem;
+      background: #3b5998;
+      text-align: center; }
+      .share-icons-container .share-icons .icon-facebook:before {
+        display: inline-block;
+        font-family: "fontawesome";
+        content: "\f09a";
+        font-size: 1.5rem;
+        font-style: normal;
+        color: #FFFFFF; }
+    .share-icons-container .share-icons .icon-twitter {
+      position: relative;
+      display: inline-block;
+      width: 2.25rem;
+      height: 2.25rem;
+      color: #FFFFFF;
+      margin: 0 0.5rem 0 0;
+      border-radius: 0.15rem;
+      background: #5ea9dd;
+      text-align: center; }
+      .share-icons-container .share-icons .icon-twitter:before {
+        display: inline-block;
+        font-family: "fontawesome";
+        content: "\f099";
+        font-size: 1.5rem;
+        font-style: normal;
+        color: #FFFFFF; }
+    .share-icons-container .share-icons .icon-line {
+      display: inline-block;
+      width: 2.25rem;
+      height: 2.25rem;
+      background-image: url(../../assets/img/icons/line-30.png);
+      background-position: 50% 50%;
+      background-size: cover; }
+
 /* -------------------------------------------- \
   single-connection layouts settings
 \ --------------------------------------------- */
@@ -163,9 +242,11 @@
   margin-top: 2rem; }
   .single .main-container .entry-title {
     font-weight: bold; }
-  .single .main-container .entry-content > p {
-    font-size: 1.2rem;
-    line-height: 2; }
+  .single .main-container .entry-content {
+    clear: both; }
+    .single .main-container .entry-content > p {
+      font-size: 1.2rem;
+      line-height: 2; }
   .single .main-container .entry-meta {
     margin: 2rem 0; }
     .single .main-container .entry-meta .author-card {

@@ -26,7 +26,7 @@
         本網站所有插圖皆來自<a href="http://www.freepik.com/">Freepik</a>
       </p>
       <div class="small-12 medium-6 columns">
-        <ul class="social-icons">
+        <ul class="social-icons clearfix">
           <li><a href="www.line.com" target="_blank">
             <i class="icon-line"></i>
           </a></li>

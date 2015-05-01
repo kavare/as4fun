@@ -1,24 +1,3 @@
-@mixin fa-icon($content, $font-size, $bgcolor, $color) {
-  position: relative;
-  display: inline-block;
-  width: $font-size * 1.5;
-  height: $font-size * 1.5;
-  color: $color;
-  margin: 0 0.5rem 0 0;
-  border-radius: 0.15rem;
-  background: $bgcolor;
-  text-align: center;
-
-  &:before {
-    display: inline-block;
-    font-family: "fontawesome";
-    content: $content;
-    font-size: $font-size;
-    font-style: normal;
-    color: $color;
-  }
-}
-
 .social-icons {
   list-style: none;
   margin: 0;
