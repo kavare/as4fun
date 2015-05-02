@@ -9,9 +9,16 @@
 @import "../mixins/page-heading";
 
 /**
- * UI Components
+ * UI Components (universal)
  */
 @import "../components/contact-form";
-@import "../components/recently-post";
 @import "../components/social-icons";
+
+/**
+ * UI Components (post)
+ */
+@import "../components/post-meta";
 @import "../components/share-icons";
+@import "../components/author-card";
+@import "../components/tags-group";
+@import "../components/recently-post";
