@@ -22,14 +22,18 @@
 			<div class="entry-content">
 				<?php the_content(); ?>
 			</div>
-			<?php get_template_part( 'parts/content', 'share-icons' ); ?>
 			<div class="entry-meta">
+				<div class="row">
+					<div class="small-12 medium-6 column">
+						<?php get_template_part( 'parts/content', 'tags' ); ?>
+					</div>
+					<div class="small-12 medium-6 column">
+						<?php get_template_part( 'parts/content', 'share-icons' ); ?>
+					</div>
+				</div>
 				<div class="row">
 					<div class="small-12 column">
 						<?php get_template_part( 'parts/content', 'author' ); ?>
-					</div>
-					<div class="small-12 column">
-						<?php get_template_part( 'parts/content', 'tags' ); ?>
 					</div>
 				</div>
 			</div>

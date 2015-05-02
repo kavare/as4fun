@@ -28,6 +28,7 @@ function as_set_connection_post() {
         'supports'      => $supports,
         'has_archive'   => true,
         'rewrite'       => array( 'slug' => 'connection' ),
+        'taxonomies'    => array( 'post_tag' ),
     );
 
     register_post_type( 'connection', $args );

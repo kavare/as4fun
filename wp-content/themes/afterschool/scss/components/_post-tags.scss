@@ -1,0 +1,26 @@
+.tags-group-bottom {
+  margin: 0;
+  list-style: none;
+
+  .tag {
+    display: inline-block;
+
+    > a {
+      display: block;
+      margin-right: 0.4rem;
+      margin-bottom: 0.6rem;
+      padding: 0.2rem 0.4rem;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      background-color: $green;
+      color: $white;
+
+      &:hover,
+      &:active {
+        background-color: darken($green, 10%);
+        transition: all 0.2s ease-in;
+      }
+    }
+  }
+}

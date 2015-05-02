@@ -15,6 +15,10 @@
 
     li {
       float: right;
+
+      > a {
+        display: block;
+      }
     }
 
     .icon-email {
