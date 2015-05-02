@@ -43,12 +43,26 @@ endif;
  * @link http://css-tricks.com/snippets/php/get-current-page-url/
  * @version Refactored by @AlexParraSilva
  */
-function as_getUrl() {
-    $url  = isset( $_SERVER['HTTPS'] ) && 'on' === $_SERVER['HTTPS'] ? 'https' : 'http';
-    $url .= '://' . $_SERVER['SERVER_NAME'];
-    $url .= in_array( $_SERVER['SERVER_PORT'], array('80', '443') ) ? '' : ':' . $_SERVER['SERVER_PORT'];
-    $url .= $_SERVER['REQUEST_URI'];
-    return $url;
-}
+if (!function_exists('as_getUrl')):
+    function as_getUrl() {
+        $url  = isset( $_SERVER['HTTPS'] ) && 'on' === $_SERVER['HTTPS'] ? 'https' : 'http';
+        $url .= '://' . $_SERVER['SERVER_NAME'];
+        $url .= in_array( $_SERVER['SERVER_PORT'], array('80', '443') ) ? '' : ':' . $_SERVER['SERVER_PORT'];
+        $url .= $_SERVER['REQUEST_URI'];
+        return $url;
+    }
+endif;
+
+/**
+ * Return the default email content for sharing link
+ */
+if (!function_exists('as_mailto')) :
+  function as_mailto($subject, $body, $mail_address = 'nest4fun@gmail.com') {
+    $mail = 'mailto:' . $mail_address . '?subject=' . $subject . '&body=' . $body;
+
+    return $mail;
+  }
+endif;
+
 
 ?>
