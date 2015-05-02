@@ -1,11 +1,11 @@
 .share-icons-container {
-  float: right;
+  float: left;
   margin-bottom: 1rem;
 
   .share-icons-title {
     display: inline-block;
-    vertical-align: 60%;
-    font-size: 1.25rem;
+    vertical-align: 80%;
+    font-size: 1rem;
   }
 
   .share-icons {
@@ -37,9 +37,23 @@
       display: inline-block;
       width: 2.25rem;
       height: 2.25rem;
+      margin-right: 0.5rem;
       background-image: url(../../assets/img/icons/line-30.png);
       background-position: 50% 50%;
       background-size: cover;
     }
+  }
+}
+
+@media #{$small-only} {
+  .share-icons-container { margin-top: 1rem; }
+}
+
+
+@media #{$large-up} {
+  .share-icons-container {
+    float: right;
+
+    .share-icons-title { vertical-align: 50%; }
   }
 }
