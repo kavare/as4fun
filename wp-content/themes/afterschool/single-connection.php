@@ -16,20 +16,24 @@
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 				<?php // FoundationPress_entry_meta(); ?>
+				<?php get_template_part( 'parts/content', 'meta' ); ?>
 			</header>
-			<?php get_template_part( 'parts/content', 'share-icons' ); ?>
 			<?php do_action('foundationPress_post_before_entry_content'); ?>
 			<div class="entry-content">
 				<?php the_content(); ?>
 			</div>
-			<?php get_template_part( 'parts/content', 'share-icons' ); ?>
 			<div class="entry-meta">
+				<div class="row">
+					<div class="small-12 medium-6 column">
+						<?php get_template_part( 'parts/content', 'tags' ); ?>
+					</div>
+					<div class="small-12 medium-6 column">
+						<?php get_template_part( 'parts/content', 'share-icons' ); ?>
+					</div>
+				</div>
 				<div class="row">
 					<div class="small-12 column">
 						<?php get_template_part( 'parts/content', 'author' ); ?>
-					</div>
-					<div class="small-12 column">
-						<?php get_template_part( 'parts/content', 'tags' ); ?>
 					</div>
 				</div>
 			</div>
