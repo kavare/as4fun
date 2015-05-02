@@ -19,7 +19,7 @@
     <li class="hide-for-large-up"><a href="http://line.me/R/msg/text/?<?php the_title(); ?>%0D%0A<?php the_permalink(); ?>">
       <i class="icon-line"></i>
     </a></li>
-    <li><a href="mailto:nest4fun@gmail.com?subject=[分享]<?php echo the_title(); ?>&body=<?php the_content(); ?>" class="share-email">
+    <li><a href="<?php echo as_mailto('[分享]' . get_the_title(), '放心窩協會 - ' . get_the_title() . ': ' . get_the_permalink() ); ?>" class="share-email">
       <i class="icon-email"></i>
     </a></li>
   </ul>
