@@ -35,10 +35,10 @@
 					</div>
 				</div>
 				<?php // wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
-				<?php as_show_recently_post('connection', 4) ?>
 				<?php do_action('foundationPress_post_before_comments'); ?>
 				<?php comments_template(); ?>
 				<?php do_action('foundationPress_post_after_comments'); ?>
+				<?php as_show_recently_post('connection', 4) ?>
 			</article>
 		<?php endwhile;?>
 		<?php do_action('foundationPress_after_content'); ?>

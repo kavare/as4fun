@@ -20,6 +20,13 @@
       <?php echo $categorybox; ?>
     </ul>
   </article>
+
   <?php get_template_part( 'parts/sidebar', 'tagbox' ); ?>
+
+  <article class="widget widget_recently_post">
+    <h6>相關文章</h6>
+    <?php as_show_recently_post('connection', 4, true) ?>
+  </article>
+
 	<?php do_action('foundationPress_after_sidebar'); ?>
 </aside>
