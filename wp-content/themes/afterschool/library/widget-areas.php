@@ -3,7 +3,7 @@ if (!function_exists('foundationpress_sidebar_widgets')) :
 function foundationpress_sidebar_widgets() {
   register_sidebar(array(
       'id' => 'sidebar-widgets',
-      'name' => __('Sidebar widgets', 'FoundationPress'),
+      'name' => __('Post Sidebar widgets', 'FoundationPress'),
       'description' => __('會顯示在文章頁面側欄的小工具', 'FoundationPress'),
       'before_widget' => '<article id="%1$s" class="row widget %2$s"><div class="small-12 columns">',
       'after_widget' => '</div></article>',
@@ -22,8 +22,8 @@ function foundationpress_sidebar_widgets() {
   ));
 
   register_sidebar(array(
-      'id' => 'sidebar-list-widgets',
-      'name' => __('Sidebar widgets', 'FoundationPress'),
+      'id' => 'sidebar-archive-widgets',
+      'name' => __('Archive Sidebar widgets', 'FoundationPress'),
       'description' => __('會顯示在列表頁面側欄的小工具', 'FoundationPress'),
       'before_widget' => '<article id="%1$s" class="row widget %2$s"><div class="small-12 columns">',
       'after_widget' => '</div></article>',

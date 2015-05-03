@@ -7,12 +7,15 @@
 @import "../mixins/fp-section-background";
 @import "../mixins/page-jumbotron";
 @import "../mixins/page-heading";
+@import "../mixins/sidebar-box";
 
 /**
  * UI Components (universal)
  */
 @import "../components/contact-form";
 @import "../components/social-icons";
+@import "../components/sidebar";
+@import "../components/sidebar-searchbox";
 
 /**
  * UI Components (post)
@@ -22,3 +25,6 @@
 @import "../components/author-card";
 @import "../components/tags-group";
 @import "../components/recently-post";
+@import "../components/sidebar-tagbox";
+@import "../components/sidebar-categorybox";
+@import "../components/sidebar-recently-post";
