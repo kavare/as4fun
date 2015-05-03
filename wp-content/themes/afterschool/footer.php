@@ -36,7 +36,7 @@
           <li><a href="www.facebook.com" target="_blank">
             <i class="icon-facebook"></i>
           </a></li>
-          <li><a href="mailto:nest4fun@gmail.com?subject=[建議] 關於放心窩">
+          <li><a href="<?php echo as_mailto('[建議] 關於放心窩', ''); ?>">
             <i class="icon-email"></i>
           </a></li>
         </ul>
