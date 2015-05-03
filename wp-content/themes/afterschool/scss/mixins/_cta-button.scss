@@ -11,12 +11,12 @@
   &:hover {
     background-color: darken($bg-color, 7%);
     margin-top: $press-distance;
-    margin-bottom: -$press-distance;
+    margin-bottom: 20px - $press-distance;
   }
 
   &:active {
     background-color: darken($bg-color, 10%);
     margin-top: $press-distance;
-    margin-bottom: -$press-distance;
+    margin-bottom: 20px - $press-distance;
   }
 }
