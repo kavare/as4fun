@@ -14,13 +14,11 @@
     $categorybox = wp_list_categories( $args );
     $categorybox = preg_replace('/<\/a> \(([0-9]+)\)/', ' <span class="count">\\1</span></a>', $categorybox);
   ?>
-  <article class="row widget widget_categorybox">
-    <div class="small-12 columns">
-      <h6>窩友活動</h6>
-      <ul>
-        <?php echo $categorybox; ?>
-      </ul>
-    </div>
+  <article class="widget widget_categorybox">
+    <h6>窩友活動</h6>
+    <ul class="categories-container">
+      <?php echo $categorybox; ?>
+    </ul>
   </article>
   <?php get_template_part( 'parts/sidebar', 'tagbox' ); ?>
 	<?php do_action('foundationPress_after_sidebar'); ?>

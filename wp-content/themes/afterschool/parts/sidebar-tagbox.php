@@ -13,11 +13,9 @@
   $tagbox = wp_list_categories( $args );
   $tagbox = preg_replace('/<\/a> \(([0-9]+)\)/', ' <span class="count">\\1</span></a>', $tagbox);
 ?>
-<article class="row widget widget_tagbox">
-  <div class="small-12 columns">
-    <h6>標籤</h6>
-    <ul>
-      <?php echo $tagbox; ?>
-    </ul>
-  </div>
+<article class="widget widget_tagbox">
+  <h6>標籤</h6>
+  <ul class="tags-container clearfix">
+    <?php echo $tagbox; ?>
+  </ul>
 </article>

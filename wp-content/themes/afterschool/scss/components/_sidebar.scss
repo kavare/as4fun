@@ -1,3 +1,118 @@
 .sidebar {
+  .widget {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: $snow;
+    box-shadow: 0px 4px 0px 0px #f1f1f1;
 
+    h6 {
+      margin: 0;
+      padding: 1rem;
+      border-radius: 5px 5px 0 0;
+      line-height: 1.5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $white;
+      background-color: $blue;
+    }
+  }
+
+  .widget_search {
+    h6 { background-color: $yellow; }
+
+    .searchform {
+      padding: 0.6rem 1.2rem;
+
+      .screen-reader-text { display: none; }
+      input[type="text"] {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.6rem 1.2rem;
+        border: 0;
+        box-shadow: 0px 4px 0px 0px #e5e5e5;
+        border-radius: 5px;
+        font-size: 1rem;
+        background-color: #f1f1f1;
+        color: $text-color;
+      }
+
+      input[type="submit"] {
+        @include cta-btn($orange);
+
+        &:hover,
+        &:active {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .widget_categorybox {
+    .categories-container {
+      margin: 0;
+      padding: 0.6rem 1.2rem;
+      list-style: none;
+
+      .cat-item {
+        width: 100%;
+
+        > a {
+          position: relative;
+          display: block;
+          margin: 0.6rem 0.3rem;
+          padding: 0.3rem 0.6rem;
+          border-radius: 5px;
+          line-height: 1.6rem;
+          box-shadow: 0px 4px 0px 0px #e5e5e5;
+          background-color: #f1f1f1;
+          color: $text-color;
+        }
+
+        .count {
+          position: absolute;
+          right: 3%;
+          display: inline-block;
+          min-width: 1.5rem;
+          border-radius: 3px;
+          font-size: 0.75rem;
+          font-weight: bold;
+          text-align: center;
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  .widget_tagbox {
+    .tags-container {
+      margin: 0;
+      padding: 0.6rem 1.2rem;
+      list-style: none;
+
+      .cat-item {
+        float: left;
+
+        > a {
+          display: inline-block;
+          margin: 0.6rem 0.3rem;
+          padding: 0.3rem 0.6rem;
+          border-radius: 5px;
+          box-shadow: 0px 4px 0px 0px darken($green, 10%);
+          background-color: $green;
+          color: $card-text-color;
+        }
+
+        .count {
+          display: inline-block;
+          min-width: 1.5rem;
+          border-radius: 3px;
+          font-size: 0.75rem;
+          font-weight: bold;
+          text-align: center;
+          background-color: lighten($green, 10%);
+          color: $card-text-color;
+        }
+      }
+    }
+  }
 }
