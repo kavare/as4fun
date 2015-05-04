@@ -38,7 +38,9 @@
 				<?php do_action('foundationPress_post_before_comments'); ?>
 				<?php comments_template(); ?>
 				<?php do_action('foundationPress_post_after_comments'); ?>
-				<?php as_show_recently_post('connection', 4) ?>
+				<div class="show-for-large-up">
+					<?php as_show_recently_post('connection', 4) ?>
+				</div>
 			</article>
 		<?php endwhile;?>
 		<?php do_action('foundationPress_after_content'); ?>
