@@ -71,10 +71,18 @@ $header-font-weight: 300;
 $header-text-rendering: optimizeLegibility;
 $topbar-link-weight: bold;
 
+@import "../../bower_components/foundation/scss/foundation/functions";
+
+// b. Grid
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+$row-width: rem-calc(1200);
+$total-columns: 12;
+$column-gutter: rem-calc(40);
+
+
 //
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-@import "../../bower_components/foundation/scss/foundation/functions";
 
 $small-range: (0, 40em);
 $medium-range: (40.063em, 64em);
