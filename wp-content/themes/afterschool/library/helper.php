@@ -64,5 +64,14 @@ if (!function_exists('as_mailto')) :
   }
 endif;
 
+/**
+ * Return the customize page title if there's no default one
+ */
+if (!function_exists('as_show_single_title')):
+    function as_show_single_title($title) {
+        $origin = single_cat_title('' , false);
+        echo ($origin == '') ? $title : $origin;
+    }
+endif;
 
 ?>

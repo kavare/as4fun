@@ -4,17 +4,19 @@
 <div class="row">
 <!-- Row for main content area -->
 	<div class="small-12 large-8 columns" role="main">
-	<?php if ( have_posts() ) : ?>
+		<div class="row card-container">
+			<?php if ( have_posts() ) : ?>
 
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'parts/content', 'card' ); ?>
-		<?php endwhile; ?>
+				<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'parts/content', 'card' ); ?>
+				<?php endwhile; ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'parts/content', 'none' ); ?>
+				<?php else : ?>
+					<?php get_template_part( 'parts/content', 'none' ); ?>
 
-	<?php endif; // end have_posts() check ?>
+			<?php endif; // end have_posts() check ?>
+		</div>
 
 	<?php /* Display navigation to next/previous pages when applicable */ ?>
 	<?php if ( function_exists('FoundationPress_pagination') ) { FoundationPress_pagination(); } else if ( is_paged() ) { ?>
