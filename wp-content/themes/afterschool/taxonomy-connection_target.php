@@ -3,7 +3,7 @@
 <?php get_template_part( 'parts/content', 'heading' ); ?>
 <div class="row">
 <!-- Row for main content area -->
-	<div class="small-12 large-9 columns" role="main">
+	<div class="small-12 large-8 columns" role="main">
 		<div class="row card-container">
 			<?php if ( have_posts() ) : ?>
 
