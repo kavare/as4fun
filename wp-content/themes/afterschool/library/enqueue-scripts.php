@@ -113,6 +113,8 @@ if (!function_exists('page_specific_scripts')):
                 wp_enqueue_style('archive-activity', get_template_directory_uri() . '/css/pages/archive-activity.css', array(), '1.0.0' );
             elseif (is_post_type_archive( 'counsel' )):
                 wp_enqueue_style('archive-counsel', get_template_directory_uri() . '/css/pages/archive-counsel.css', array(), '1.0.0' );
+            elseif (is_post_type_archive( 'volunteer' )):
+                wp_enqueue_style('archive-volunteer', get_template_directory_uri() . '/css/pages/archive-volunteer.css', array(), '1.0.0' );
             else:
 
             endif;
@@ -128,8 +130,8 @@ if (!function_exists('page_specific_scripts')):
             //     wp_enqueue_style('archive-activity', get_template_directory_uri() . '/css/pages/archive-activity.css', array(), '1.0.0' );
             // elseif (is_tax( 'metting_stage' )):
             //     wp_enqueue_style('archive-counsel', get_template_directory_uri() . '/css/pages/archive-counsel.css', array(), '1.0.0' );
-            // elseif (is_tax( 'volunteer_record' )):
-            //     wp_enqueue_style('archive-counsel', get_template_directory_uri() . '/css/pages/archive-counsel.css', array(), '1.0.0' );
+            elseif (is_tax( 'volunteer_record' ) or is_tax( 'volunteer_tag' )):
+                wp_enqueue_style('archive-counsel', get_template_directory_uri() . '/css/pages/archive-volunteer.css', array(), '1.0.0' );
             else:
                 wp_enqueue_style('archive', get_template_directory_uri() . '/css/pages/archive.css', array(), '1.0.0' );
             endif;
