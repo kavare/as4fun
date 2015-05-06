@@ -1,0 +1,98 @@
+@import "../base/custom-settings";
+@import "../base/component-list";
+
+/* -------------------------------------------- \
+  archive-volunteer layouts settings
+\ --------------------------------------------- */
+.archive {
+  @include page-heading('/headlines/children.jpg');
+  font-size: 1.1rem;
+
+  .entry-content p {
+    font-size: 1.2rem;
+  }
+
+  .card-container {
+
+    .card-item {
+      margin-bottom: 2rem;
+
+      .card-header {
+
+        .card-image-container {
+          position: relative;
+          height: 12rem;
+          overflow-y: hidden;
+        }
+
+        .card-image {
+          position: absolute;
+          top: -11%;
+          width: 100%;
+          border-radius: 5px 5px 0 0;
+        }
+
+        .card-title {
+          margin: 0;
+          padding: 0.4rem 0.75rem;
+          border-radius: 0 0 5px 5px;
+          background-color: $yellow;
+          color: $white;
+          font-size: 1.5rem;
+          text-align: center;
+        }
+      }
+
+      .meta-container {
+        padding: 0.8em 0.2rem;
+        overflow: auto;
+
+        .author,
+        .updated {
+          font-size: 1rem;
+        }
+
+        .author {
+          float: left;
+        }
+
+        .updated {
+          float: right;
+        }
+
+        a {
+          color: $blue;
+        }
+      }
+
+      .card-content {
+        padding: 0.75rem 0.2rem;
+
+        > p {
+          max-height: 11em;
+          overflow: hidden;
+          line-height: 1.8;
+          letter-spacing: 0.6px;
+        }
+      }
+
+      .card-footer {
+        text-align: center;
+
+        .button {
+          @include cta-btn($blue);
+          padding: 0.75rem 1.25rem;
+          font-size: 1rem;
+
+          &:hover,
+          &:active {
+            margin-top: 4px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+
+
+}
