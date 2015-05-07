@@ -2,7 +2,10 @@
     <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
             <li class="name">
-                <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+                <h1><a href="<?php echo home_url(); ?>">
+                    <!-- <img src="<?php as_img_src("logo.png"); ?>" alt=""> -->
+                    <?php bloginfo('name'); ?>
+                </a></h1>
             </li>
         </ul>
         <section class="top-bar-section">
