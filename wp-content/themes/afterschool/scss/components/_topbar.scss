@@ -1,0 +1,30 @@
+.top-bar-container {
+  .top-bar {
+
+    /**
+     * Logo and Brand Name
+     */
+    .title-area {
+
+    }
+
+    /**
+     * Dropdown Menu
+     */
+    .top-bar-menu {
+
+      .menu-item {
+
+        > a {
+
+        }
+
+        &.has-dropdown > a {
+
+        }
+
+
+      }
+    }
+  }
+}
