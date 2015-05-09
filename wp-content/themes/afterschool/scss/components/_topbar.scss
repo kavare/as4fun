@@ -5,7 +5,19 @@
      * Logo and Brand Name
      */
     .title-area {
+      .name {
+        padding-right: 0.5rem;
+      }
 
+      .header-logo {
+        max-width: 12rem;
+        background: url(../../assets/img/logos/logo-white.png) no-repeat;
+        background-size: 75%;
+        background-position: 50% 50%;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      }
     }
 
     /**
@@ -28,10 +40,11 @@
 
         &.active > a {
           background-color: $primary-color;
+          color: $black;
 
           &:hover {
             background-color: darken($primary-color, 10%);
-            color: $black;
+            color: $white;
             transition: all 0.2s ease-in;
           }
         }
@@ -46,19 +59,21 @@
 
 @media #{$medium-up} {
   .top-bar-container .top-bar {
-    .title-areat {
+    .title-area {
 
     }
 
     .top-bar-menu {
 
       .sub-menu {
-        left: -20%;
-        min-width: 140%;
+        left: -15%;
+        min-width: 130%;
+
+        .parent-link {
+          display: none;
+        }
 
         .menu-item {
-
-
           & > a {
             text-align: center;
             border-bottom: 1px solid lighten($topbar-bg-color, 10%);
@@ -66,12 +81,12 @@
 
           &:first-of-type,
           &:first-of-type > a {
-            border-radius: 1.5rem 1.5rem 0 0;
+            border-radius: 0.5rem 0.5rem 0 0;
           }
 
           &:last-of-type,
           &:last-of-type > a {
-            border-radius: 0 0 1.5rem 1.5rem;
+            border-radius: 0 0 0.5rem 0.5rem;
           }
 
           &:last-of-type > a {
@@ -79,6 +94,19 @@
           }
         }
       }
+    }
+  }
+}
+
+@media #{$medium-only} {
+  .top-bar-container .top-bar {
+    .title-area .header-logo {
+      max-width: 10rem;
+    }
+
+    .top-bar-menu .menu-item > a {
+      padding: 0 0.6rem;
+      font-size: 1.1rem;
     }
   }
 }
