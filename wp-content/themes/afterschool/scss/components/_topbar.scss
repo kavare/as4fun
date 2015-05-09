@@ -5,7 +5,19 @@
      * Logo and Brand Name
      */
     .title-area {
+      .name {
+        padding-right: 0.5rem;
+      }
 
+      .header-logo {
+        max-width: 12rem;
+        background: url(../../assets/img/logos/logo-white.png) no-repeat;
+        background-size: 75%;
+        background-position: 50% 50%;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+      }
     }
 
     /**
@@ -46,7 +58,7 @@
 
 @media #{$medium-up} {
   .top-bar-container .top-bar {
-    .title-areat {
+    .title-area {
 
     }
 
@@ -79,6 +91,19 @@
           }
         }
       }
+    }
+  }
+}
+
+@media #{$medium-only} {
+  .top-bar-container .top-bar {
+    .title-area .header-logo {
+      max-width: 10rem;
+    }
+
+    .top-bar-menu .menu-item > a {
+      padding: 0 0.6rem;
+      font-size: 1.1rem;
     }
   }
 }

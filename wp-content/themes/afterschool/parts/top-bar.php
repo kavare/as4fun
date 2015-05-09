@@ -2,7 +2,7 @@
     <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
             <li class="name">
-                <h1><a href="<?php echo home_url(); ?>">
+                <h1><a href="<?php echo home_url(); ?>" class="header-logo">
                     <!-- <img src="<?php as_img_src("logo.png"); ?>" alt=""> -->
                     <?php bloginfo('name'); ?>
                 </a></h1>
