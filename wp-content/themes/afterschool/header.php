@@ -45,19 +45,8 @@
 
 	<?php do_action('foundationPress_layout_start'); ?>
 
-	<nav class="tab-bar show-for-small-only">
-		<section class="left-small">
-			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-		</section>
-		<section class="middle tab-bar-section">
-
-			<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
-
-		</section>
-	</nav>
-
+	<?php get_template_part('parts/tab-bar'); ?>
 	<?php get_template_part('parts/off-canvas-menu'); ?>
-
 	<?php get_template_part('parts/top-bar'); ?>
 
 <section class="container" role="document">
