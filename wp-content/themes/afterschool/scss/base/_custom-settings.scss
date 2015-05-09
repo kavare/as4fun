@@ -132,7 +132,7 @@ $topbar-title-font-size: rem-calc(20);
 $topbar-dropdown-bg: $topbar-bg-color;
 // $topbar-dropdown-link-color: $white;
 $topbar-dropdown-link-bg: $topbar-bg-color;
-$topbar-dropdown-link-bg-hover: lighten($topbar-bg-color, 10%);
+$topbar-dropdown-link-bg-hover: darken($topbar-bg-color, 10%);
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;
