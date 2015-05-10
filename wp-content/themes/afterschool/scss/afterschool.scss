@@ -3,9 +3,9 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import "normalize";
 
-/*  
+/*
   ZURB Foundation components:
-  Import the building blocks you need for your project. 
+  Import the building blocks you need for your project.
   Reducing the number of imported components will optimize page speed.
 */
 
@@ -50,7 +50,7 @@
 @import "../bower_components/foundation/scss/foundation/components/offcanvas";
 @import "../bower_components/foundation/scss/foundation/components/visibility";
 
-/* 
+/*
   Font Awesome - (http://fontawesome.io/) :
   Feel free to remove the import statement below if you don't plan to use icon-fonts in your project
 */
@@ -58,17 +58,36 @@
 @import "../assets/fontawesome/scss/font-awesome.scss";
 
 
-/* 
+/*
   AfterSchool Customized Style
   1. base         [configuration and global settings]
-  2. components   [shared components]
-  3. helpers      [mixins or functions]
-  4. layouts      [uniersal components with less modification]
-  5. pages        [pages and templates specific styles]
-*/ 
+  2. layouts      [uniersal components with less modification]
+  3. components   [shared components]
+  4. helpers      [utility helpers class that used in html directly]
+*/
 
-@import "base/global"; 
+@import "base/global";
+@import "base/mixins";
+
 @import "layouts/wp-admin";
 @import "layouts/header";
 @import "layouts/footer";
-@import "pages/hero";
+
+/**
+ * UI Components (universal)
+ */
+@import "components/topbar";
+@import "components/tabbar";
+@import "components/contact-form";
+@import "components/social-icons";
+@import "components/sidebar";
+
+/**
+ * UI Components (post)
+ */
+@import "components/post-meta";
+@import "components/share-icons";
+@import "components/author-card";
+@import "components/tags-group";
+@import "components/recently-post";
+
