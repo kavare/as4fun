@@ -47,6 +47,9 @@ require_once('library/recently-post.php');
 // Helper functions for AfterSchool theme
 require_once('library/helper.php');
 
+// Setup opengraph info for social platforms api
+require_once('library/opengraph.php');
+
 // Add Connection post type
 require_once('library/post-connection/post-type.php');
 require_once('library/post-connection/taxonomy.php');
