@@ -3,7 +3,7 @@
 function fb_opengraph() {
     global $post;
 
-    $img_src = get_stylesheet_directory_uri() . '/assets/img/logo.png';
+    $img_src = get_stylesheet_directory_uri() . '/assets/img/logos/logo.png';
     $excerpt = get_bloginfo('name') . get_bloginfo('description');
 
     if ( is_single() ) {
