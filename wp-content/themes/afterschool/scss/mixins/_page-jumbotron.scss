@@ -8,26 +8,39 @@
   .page-jumbotron-container {
     position: relative;
     height: 34vh;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     background-image: url('../../assets/img/#{$header-img}');
     background-size: 100%;
     background-position: 50% 54%;
 
     .page-title {
-      position: absolute;
-      top: 37vh;
-      left: 26rem;
-      margin-top: 0;
+      padding-top: 34vh;
       font-size: 3rem;
       font-weight: bold;
     }
+  }
 
-    .jumbo-stamp-image {
-      @include stamp-image(20rem, 0.5rem, $white);
-      position: absolute;
-      top: 7vh;
-      left: 5rem;
-      background-image: url('../../assets/img/#{$stamp-img}');
+  @media #{$large-up} {
+    .page-jumbotron-container {
+      margin-bottom: 10rem;
+
+      .jumbo-stamp-image {
+        @include stamp-image(20rem, 0.5rem, $white);
+        position: absolute;
+        top: 7vh;
+        left: 5rem;
+        background-image: url('../../assets/img/#{$stamp-img}');
+      }
+
+      .page-title {
+        position: absolute;
+        top: 37vh;
+        left: 26rem;
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 3rem;
+        font-weight: bold;
+      }
     }
   }
 }
