@@ -115,6 +115,8 @@ if (!function_exists('page_specific_scripts')):
                 wp_enqueue_style('archive-counsel', get_template_directory_uri() . '/css/pages/archive-counsel.css', array(), '1.0.0' );
             elseif (is_post_type_archive( 'volunteer' )):
                 wp_enqueue_style('archive-volunteer', get_template_directory_uri() . '/css/pages/archive-volunteer.css', array(), '1.0.0' );
+            elseif (is_post_type_archive( 'donation' )):
+                wp_enqueue_style('archive-donation', get_template_directory_uri() . '/css/pages/archive-donation.css', array(), '1.0.0');
             else:
 
             endif;

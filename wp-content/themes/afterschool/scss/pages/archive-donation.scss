@@ -1,0 +1,47 @@
+@import "../base/mixins";
+
+/* -------------------------------------------- \
+  archive-donation layouts settings
+\ --------------------------------------------- */
+.archive {
+  @include page-heading('/headlines/children.jpg');
+  font-size: 1.1rem;
+
+  .donation-table {
+    margin-bottom: 5rem;
+    table-layout: fixed;
+
+    th {
+      font-size: 1rem;
+      font-weight: bold;
+
+      &:last-child {
+        text-align: center;
+      }
+    }
+
+    td {
+      font-size: 1rem;
+
+      &:nth-child(1) { width: 25%; }
+      &:nth-child(2) { width: 10%; }
+      &:nth-child(3) { width: 20%; }
+      &:nth-child(4) { width: 35%; }
+      &:nth-child(5) { width: 10%; }
+
+      &:last-child {
+        text-align: center;
+      }
+    }
+
+    a {
+      color: $link-color;
+
+      &:hover,
+      &:active {
+        color: darken($link-color, 10%);
+        transition: all 0.2s ease-in;
+      }
+    }
+  }
+}
