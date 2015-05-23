@@ -1,0 +1,11 @@
+.footable .pagination {
+  display: inline-block;
+
+  .disabled {
+    @extend .unavailable;
+  }
+
+  .active {
+    @extend .current;
+  }
+}

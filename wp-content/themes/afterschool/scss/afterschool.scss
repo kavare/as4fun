@@ -57,6 +57,10 @@
 
 @import "../assets/fontawesome/scss/font-awesome.scss";
 
+/*
+  Thrid party components from bower
+*/
+@import "../bower_components/footable/css/footable.core.css";
 
 /*
   AfterSchool Customized Style
@@ -81,6 +85,9 @@
 @import "components/contact-form";
 @import "components/social-icons";
 @import "components/sidebar";
+@import "components/responsive-table";
+@import "components/footable-pagination";
+@import "components/filter-group";
 
 /**
  * UI Components (post)

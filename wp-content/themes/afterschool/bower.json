@@ -7,6 +7,7 @@
   "ignore": [],
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "fontawesome": "~4.3.0"
+    "fontawesome": "~4.3.0",
+    "footable": "~2.0.3"
   }
 }

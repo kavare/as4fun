@@ -56,7 +56,7 @@ $success-color: darken($green, 0%);
 $warning-color: darken($orange, 0%);
 $info-color: darken($blue, 0%);
 
-$link-color: $blue;
+$link-color: darken($blue, 15%);
 $text-color: $aluminum;
 $card-text-color: $white;
 

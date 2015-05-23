@@ -1,0 +1,1 @@
+$(function(){$(".footable").footable().bind("footable_filtering",function(e){var t=$(".footable-filter").find(":selected").text();t&&t.length>0&&(e.filter+=e.filter&&e.filter.length>0?" "+t:t,e.clear=!e.filter)}),$(".footable-filter").change(function(e){e.preventDefault(),$(".footable").trigger("footable_filter",{filter:$("#filter").val()})})});
