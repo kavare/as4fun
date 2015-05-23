@@ -1,0 +1,19 @@
+.filter-container {
+  .filter-item {
+    label {
+      display: inline-block;
+      width: 5rem;
+      margin-right: 0.4rem;
+      font-size: 1rem;
+      font-weight: bold;
+
+    }
+
+    select,
+    input[type="text"] {
+      float: right;
+      display: inline-block;
+      width: calc(100% - 6rem);
+    }
+  }
+}
