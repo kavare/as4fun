@@ -7,25 +7,41 @@
   @include page-heading('/headlines/children.jpg');
   font-size: 1.1rem;
 
-  .list-container {
+  .donation-table {
+    margin-bottom: 5rem;
+    table-layout: fixed;
 
-    .list-item {
-      min-height: 12rem;
+    th {
+      font-size: 1rem;
+      font-weight: bold;
 
-      .list-title {
-
+      &:last-child {
+        text-align: center;
       }
+    }
 
-      .list-meta-container {
-        .updated {
+    td {
+      font-size: 1rem;
 
-        }
+      &:nth-child(1) { width: 25%; }
+      &:nth-child(2) { width: 10%; }
+      &:nth-child(3) { width: 20%; }
+      &:nth-child(4) { width: 35%; }
+      &:nth-child(5) { width: 10%; }
+
+      &:last-child {
+        text-align: center;
       }
+    }
 
-      .list-content {
+    a {
+      color: $link-color;
 
+      &:hover,
+      &:active {
+        color: darken($link-color, 10%);
+        transition: all 0.2s ease-in;
       }
-
     }
   }
 }

@@ -1,25 +1,37 @@
 <?php get_header(); ?>
 
-<?php get_template_part( 'parts/content', 'heading' ); ?>
+<div class="page-heading-container">
+  <h1 class="page-title">放心窩協會 捐款明細</h1>
+</div>
 <div class="row">
 <!-- Row for main content area -->
 	<!-- <div class="small-12 columns" role="main">
 		<?php get_template_part( 'searchform' ); ?>
 	</div> -->
 	<div class="small-12 columns" role="main">
-		<div class="row list-container">
-			<?php if ( have_posts() ) : ?>
-
+		<?php if ( have_posts() ) : ?>
+			<table class="responsive donation-table">
+				<thead>
+					<tr>
+						<th>捐款名目</th>
+						<th>捐款類型</th>
+						<th>公佈日期</th>
+						<th>捐款摘要</th>
+						<th>明細下載</th>
+					</tr>
+				</thead>
+				<tbody>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part( 'parts/content', 'list' ); ?>
+					<?php get_template_part( 'parts/content', 'table' ); ?>
 				<?php endwhile; ?>
+				</tbody>
+			</table>
 
-				<?php else : ?>
-					<?php get_template_part( 'parts/content', 'none' ); ?>
+			<?php else : ?>
+				<?php get_template_part( 'parts/content', 'none' ); ?>
 
-			<?php endif; // end have_posts() check ?>
-		</div>
+		<?php endif; // end have_posts() check ?>
 
 	<?php /* Display navigation to next/previous pages when applicable */ ?>
 	<?php if ( function_exists('FoundationPress_pagination') ) { FoundationPress_pagination(); } else if ( is_paged() ) { ?>
