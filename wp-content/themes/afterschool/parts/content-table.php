@@ -24,7 +24,9 @@
     <?php the_excerpt(); ?>
   </td>
   <td>
-    <a href="#"><i class="fa fa-download fa-lg"></i></a>
+    <a href="#"><i class="fa fa-download fa-lg"></i>
+      <?php echo get_post_meta(get_the_ID(), 'wp_custom_attachment', true); ?>
+    </a>
   </td>
 </tr>
 
