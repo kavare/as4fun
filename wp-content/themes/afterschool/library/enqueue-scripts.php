@@ -134,6 +134,8 @@ if (!function_exists('page_specific_scripts')):
             //     wp_enqueue_style('archive-counsel', get_template_directory_uri() . '/css/pages/archive-counsel.css', array(), '1.0.0' );
             elseif (is_tax( 'volunteer_record' ) or is_tax( 'volunteer_tag' )):
                 wp_enqueue_style('archive-counsel', get_template_directory_uri() . '/css/pages/archive-volunteer.css', array(), '1.0.0' );
+            elseif (is_tax( 'donation_type' )):
+                wp_enqueue_style('archive-donation', get_template_directory_uri() . '/css/pages/archive-donation.css', array(), '1.0.0' );
             else:
                 wp_enqueue_style('archive', get_template_directory_uri() . '/css/pages/archive.css', array(), '1.0.0' );
             endif;

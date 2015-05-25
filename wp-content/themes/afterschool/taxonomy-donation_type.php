@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="page-heading-container">
-  <h1 class="page-title">放心窩協會 捐款明細</h1>
+  <h1 class="page-title"><?php echo $wp_query->queried_object->name;; ?>明細</h1>
 </div>
 <div class="row filter-container">
 	<div class="small-6 large-3 large-push-6 columns filter-item">
