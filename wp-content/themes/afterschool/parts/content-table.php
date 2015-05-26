@@ -25,7 +25,7 @@
   <td>
     <?php the_excerpt(); ?>
   </td>
-  <td>
+  <td class="donation-download">
     <?php $file = get_post_meta($post->ID, 'as_donation_file', true); ?>
     <?php if($file): ?>
       <a href="<?php echo $file['url'] ?>"><i class="fa fa-download fa-lg"></i>
