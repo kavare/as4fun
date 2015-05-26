@@ -4,11 +4,11 @@
   <h1 class="page-title">放心窩協會 捐款明細</h1>
 </div>
 <div class="row filter-container">
-	<div class="small-6 large-3 large-push-6 columns filter-item">
+	<div class="small-12 medium-6 large-3 large-push-6 columns filter-item">
 		<label for="tabel_search">明細搜尋：</label>
 		<input type="text" name="tabel_search" id="filter">
 	</div>
-	<div class="small-6 large-3 columns filter-item">
+	<div class="small-12 medium-6 large-3 columns filter-item">
 		<label for="table_filter">明細類型：</label>
 		<select name="table_filter" class="footable-filter">
 			<option value=""></option>
@@ -37,7 +37,7 @@
 						<th>捐款類型</th>
 						<th>公佈日期</th>
 						<th data-sort-ignore="true" data-hide="phone">捐款摘要</th>
-						<th data-sort-ignore="true">明細下載</th>
+						<th data-sort-ignore="true" data-hide="phone">明細下載</th>
 					</tr>
 				</thead>
 				<tbody>

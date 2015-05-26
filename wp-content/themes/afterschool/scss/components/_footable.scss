@@ -1,0 +1,48 @@
+/**
+ * Customized Footable styling
+ */
+
+/**
+ * First column icon in mobile layout
+ */
+.footable.breakpoint {
+  .footable-first-column {
+    .footable-toggle {
+      float: left;
+      width: 18%;
+      margin-right: 7%;
+    }
+
+    > a {
+      float: left;
+      width: 75%;
+    }
+  }
+
+  .footable-row-detail {
+    .footable-row-detail-name {
+      width: 25%;
+      text-align: left;
+    }
+
+    .footable-row-detail-value {
+      width: 75%;
+      text-align: left;
+    }
+  }
+}
+
+/**
+ * Pagination in table footer
+ */
+.footable .pagination {
+  display: inline-block;
+
+  .disabled {
+    @extend .unavailable;
+  }
+
+  .active {
+    @extend .current;
+  }
+}
