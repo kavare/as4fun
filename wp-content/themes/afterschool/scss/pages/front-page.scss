@@ -11,63 +11,84 @@
     color: $card-text-color;
 
     .section-header {
-      margin-bottom: 4rem;
+      margin-top: -1.4rem;
+      margin-bottom: 2rem;
 
       .section-title {
-        position: absolute;
-        top: -2rem;
         width: 100%;
-        min-width: 15rem;
+        margin-bottom: 2rem;
         padding: 0.2rem 1.5rem;
-        border-radius: 8px;
-        background-color: $black;
+        text-align: center;
         font-weight: bold;
+        background-color: $black;
         color: $white;
-
+        border-radius: 8px;
       }
 
       .section-image {
-        position: absolute;
-        top: -15rem;
-        @include stamp-image(25rem, 0.5rem, $white);
+        @include stamp-image(35vw, 0.5rem, $white);
+        margin: 0 auto;
       }
     }
 
     .section-content {
-      width: 55%;
-      font-weight: bold;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
 
     .section-action-group {
       clear: both;
     }
+  }
+}
 
-    &.fp-first {
-      background-color: $white;
-    }
-
-    &.fp-right {
+@media #{$large-up} {
+  .home {
+    .as-section-container {
       .section-header {
-        .section-title { text-align: right; }
-        .section-image { left: -5rem; }
+        margin-bottom: 4rem;
+
+        .section-title {
+          position: absolute;
+          top: -2rem;
+          min-width: 15rem;
+          padding: 0.2rem 1.5rem;
+        }
+
+        .section-image {
+          position: absolute;
+          top: -15rem;
+          @include stamp-image(25rem, 0.5rem, $white);
+        }
       }
 
-      .section-content,
-      .section-action-group {
-        float: right;
-      }
-    }
-
-    &.fp-left {
-      .section-header {
-        .section-title { text-align: left; }
-        .section-image { right: -5rem; }
+      .section-content {
+        width: 55%;
+        font-weight: bold;
+        font-size: 1.5rem;
       }
 
-      .section-content,
-      .section-action-group {
-        float: left;
+      &.fp-right {
+        .section-header {
+          .section-title { text-align: right; }
+          .section-image { left: -5rem; }
+        }
+
+        .section-content,
+        .section-action-group {
+          float: right;
+        }
+      }
+
+      &.fp-left {
+        .section-header {
+          .section-title { text-align: left; }
+          .section-image { right: -5rem; }
+        }
+
+        .section-content,
+        .section-action-group {
+          float: left;
+        }
       }
     }
   }
@@ -78,17 +99,40 @@
 \ --------------------------------------------- */
 .home .fp-first {
   .page-title {
-    margin-top: 24vh;
+    margin-top: 10vh;
+    padding-left: 5vw;
     font-weight: bold;
-    font-size: 3.55rem;
     color: $white;
+
+    .main-msg {
+      display: block;
+      padding-bottom: 1rem;
+      font-size: 3rem;
+    }
+
+    .sub-msg {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media #{$large-up} {
+  .home .fp-first {
+    .page-title {
+      margin-top: 24vh;
+
+      .main-msg,
+      .sub-msg {
+        font-size: 3.55rem;
+      }
+    }
   }
 }
 
 /* -------------------------------------------- \
   Front page section background-color
 \ --------------------------------------------- */
-$fp1-pri-color: $white;
+$fp1-pri-color: #00cac7;
 $fp1-sec-color: $white;
 $fp2-pri-color: $yellow;
 $fp2-sec-color: $blue;
@@ -101,10 +145,21 @@ $fp5-sec-color: $purple;
 
 .home .as-section-container {
   &#fp-section-1 { @include fp-section-background(0, $fp1-sec-color, $fp1-pri-color) }
-  &#fp-section-2 { @include fp-section-background(5rem, $fp2-sec-color, $fp2-pri-color) }
-  &#fp-section-3 { @include fp-section-background(5rem, $fp3-sec-color, $fp3-pri-color) }
-  &#fp-section-4 { @include fp-section-background(5rem, $fp4-sec-color, $fp4-pri-color) }
-  &#fp-section-5 { @include fp-section-background(5rem, $fp5-sec-color, $fp5-pri-color) }
+  &#fp-section-2 { @include fp-section-background(0rem, $fp2-sec-color, $fp2-pri-color) }
+  &#fp-section-3 { @include fp-section-background(0rem, $fp3-sec-color, $fp3-pri-color) }
+  &#fp-section-4 { @include fp-section-background(0rem, $fp4-sec-color, $fp4-pri-color) }
+  &#fp-section-5 { @include fp-section-background(0rem, $fp5-sec-color, $fp5-pri-color) }
+
+}
+
+@media #{$large-up} {
+  .home .as-section-container {
+    &#fp-section-1 { border-top-width: 5rem; }
+    &#fp-section-2 { border-top-width: 5rem; }
+    &#fp-section-3 { border-top-width: 5rem; }
+    &#fp-section-4 { border-top-width: 5rem; }
+    &#fp-section-5 { border-top-width: 5rem; }
+  }
 }
 
 /* -------------------------------------------- \
@@ -112,8 +167,9 @@ $fp5-sec-color: $purple;
 \ --------------------------------------------- */
 #fp-section-1 {
   background-image: url('../../assets/img/home.png');
-  background-position: 108% 10%;
-  background-size: 78%;
+  background-position: 0% 95%;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #fp-img-2 { background-image: url('../../assets/img/ballon.png'); }
@@ -121,10 +177,17 @@ $fp5-sec-color: $purple;
 #fp-img-4 { background-image: url('../../assets/img/paperplane.png'); }
 #fp-img-5 { background-image: url('../../assets/img/rocket.png'); }
 
+@media #{$large-up} {
+  #fp-section-1 {
+    background-position: 108% 10%;
+    background-size: 78%;
+  }
+}
+
 /* -------------------------------------------- \
   Front page cta-btn style
 \ --------------------------------------------- */
-.home .as-section-container .section-action-group{
+.home .as-section-container .section-action-group {
   #cta-1 {}
   #cta-2 { @include cta-btn($fp2-sec-color) }
   #cta-3 { @include cta-btn($fp3-sec-color) }
