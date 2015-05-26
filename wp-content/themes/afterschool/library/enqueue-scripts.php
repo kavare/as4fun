@@ -174,4 +174,14 @@ if (!function_exists('page_specific_scripts')):
 
 endif;
 
+if (!function_exists('as_admin_style')):
+    function as_admin_style() {
+        if( is_admin() ):
+            wp_enqueue_style('backend_ui', get_template_directory_uri() . '/css/backend/admin.css', array(), '1.0.0' );
+        endif;
+    }
+
+    add_action( 'admin_print_styles', 'as_admin_style' );
+endif;
+
 ?>
