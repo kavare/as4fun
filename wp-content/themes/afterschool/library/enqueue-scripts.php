@@ -13,7 +13,7 @@ if (!function_exists('FoundationPress_scripts')) :
         wp_register_script( 'fastclick', get_template_directory_uri() . '/js/vendor/fastclick.js', array(), '1.0.0', false );
 
         // CDN hosted jQuery placed in the header, as some plugins require that jQuery is loaded in the header.
-        wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js', array(), '2.1.0', false );
+        // wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js', array(), '2.1.0', false );
 
         // Self hosted jQuery placed in the footer. (Comment the script above and uncomment the script below if you want to switch).
         //wp_register_script( 'jquery', get_template_directory_uri() . '/js/vendor/jquery.js', array(), '2.1.3', true );
