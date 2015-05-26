@@ -7,7 +7,7 @@
 
   .as-section-container {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     color: $card-text-color;
 
     .section-header {
@@ -26,16 +26,17 @@
       }
 
       .section-image {
-        @include stamp-image(35vw, 0.5rem, $white);
+        @include stamp-image(40vw, 0.5rem, $white);
         margin: 0 auto;
       }
     }
 
     .section-content {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
 
     .section-action-group {
+      margin: 3rem 0 5rem;
       clear: both;
     }
   }
@@ -43,6 +44,7 @@
 
 @media #{$large-up} {
   .home {
+
     .as-section-container {
       .section-header {
         margin-bottom: 4rem;
@@ -61,8 +63,13 @@
         }
       }
 
-      .section-content {
+      .section-content,
+      .section-action-group {
         width: 55%;
+        margin-top: 2rem;
+      }
+
+      .section-content {
         font-weight: bold;
         font-size: 1.5rem;
       }
@@ -70,7 +77,7 @@
       &.fp-right {
         .section-header {
           .section-title { text-align: right; }
-          .section-image { left: -5rem; }
+          .section-image { left: -2rem; }
         }
 
         .section-content,
@@ -82,7 +89,7 @@
       &.fp-left {
         .section-header {
           .section-title { text-align: left; }
-          .section-image { right: -5rem; }
+          .section-image { right: -3rem; }
         }
 
         .section-content,
@@ -143,23 +150,17 @@ $fp4-sec-color: $blue;
 $fp5-pri-color: $orange;
 $fp5-sec-color: $purple;
 
-.home .as-section-container {
-  &#fp-section-1 { @include fp-section-background(0, $fp1-sec-color, $fp1-pri-color) }
-  &#fp-section-2 { @include fp-section-background(0rem, $fp2-sec-color, $fp2-pri-color) }
-  &#fp-section-3 { @include fp-section-background(0rem, $fp3-sec-color, $fp3-pri-color) }
-  &#fp-section-4 { @include fp-section-background(0rem, $fp4-sec-color, $fp4-pri-color) }
-  &#fp-section-5 { @include fp-section-background(0rem, $fp5-sec-color, $fp5-pri-color) }
-
-}
+#fp-section-1 { @include fp-section-background(0, $fp1-sec-color, $fp1-pri-color) }
+#fp-section-2 { @include fp-section-background(3rem, $fp2-sec-color, $fp2-pri-color, $black) }
+#fp-section-3 { @include fp-section-background(3rem, $fp3-sec-color, $fp3-pri-color) }
+#fp-section-4 { @include fp-section-background(3rem, $fp4-sec-color, $fp4-pri-color, $black) }
+#fp-section-5 { @include fp-section-background(3rem, $fp5-sec-color, $fp5-pri-color) }
 
 @media #{$large-up} {
-  .home .as-section-container {
-    &#fp-section-1 { border-top-width: 5rem; }
-    &#fp-section-2 { border-top-width: 5rem; }
-    &#fp-section-3 { border-top-width: 5rem; }
-    &#fp-section-4 { border-top-width: 5rem; }
-    &#fp-section-5 { border-top-width: 5rem; }
-  }
+  #fp-section-2 { border-top-width: 5rem; }
+  #fp-section-3 { border-top-width: 5rem; }
+  #fp-section-4 { border-top-width: 5rem; }
+  #fp-section-5 { border-top-width: 5rem; }
 }
 
 /* -------------------------------------------- \
