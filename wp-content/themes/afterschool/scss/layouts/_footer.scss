@@ -52,9 +52,36 @@
 
     .copyright-content {
       margin-bottom: 0;
+      text-align: center;
+
+      .content {
+        display: inline-block;
+
+        &.site ,
+        &.source {
+          width: 100%;
+        }
+      }
+
+      .designer-block {
+        clear: both;
+      }
+
+      a {
+        font-weight: bold;
+        color: #3b5998;
+
+        &:hover {
+          color: lighten(#3b5998, 15%);
+          transition: color 0.2s ease-in;
+        }
+      }
     }
 
-    a { color: $link-color; }
+    .social-icons {
+      width: 13.6rem;
+      margin: 1rem auto;
+    }
   }
 }
 
@@ -64,4 +91,25 @@
 	footer.row {
 		margin-top: rem-calc(60);
 	}
+
+  .footer-container .copyright {
+    .copyright-content {
+      text-align: left;
+
+      .content {
+
+        &.site,
+        &.source {
+          float: left;
+          width: auto;
+          margin-right: 1.5rem;
+        }
+      }
+    }
+
+    .social-icons {
+      width: 100%;
+      margin: 0;
+    }
+  }
 }

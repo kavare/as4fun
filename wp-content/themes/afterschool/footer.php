@@ -19,13 +19,15 @@
   </div>
   <div class="copyright">
     <div class="row">
-      <p class="small-12 medium-6 columns copyright-content">
-        2015 放心窩協會 After school for fun &copy; 版權所有<br>
-        design by <a href="http://kavare.github.io/portfolio">kavare</a>
-        &nbsp;&nbsp;&nbsp;
-        本網站所有插圖皆來自<a href="http://www.freepik.com/">Freepik</a>
-      </p>
-      <div class="small-12 medium-6 columns">
+      <div class="small-12 large-8 columns copyright-content">
+        <span class="content site">2015 放心窩協會 After school for fun &copy; 版權所有</span>
+        <span class="content source">本網站所有插圖皆來自<a href="http://www.freepik.com/">Freepik</a></span>
+        <div class="designer-block">
+          <span class="content designer">Design by <a href="http://kavare.github.io/portfolio">kavare</a></span>
+          <span class="content designer">Logo by <a href="#">蔡孟諭</a></span>
+        </div>
+      </div>
+      <div class="small-12 large-4 columns">
         <ul class="social-icons clearfix">
           <li><a href="www.line.com" target="_blank">
             <i class="icon-line"></i>

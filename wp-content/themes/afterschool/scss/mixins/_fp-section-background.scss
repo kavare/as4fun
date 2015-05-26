@@ -1,4 +1,10 @@
-@mixin fp-section-background($border-height: 0, $border-color: $white, $bg-color: $white) {
+@mixin fp-section-background($border-height: 0, $border-color: $white, $bg-color: $white, $content-color: false) {
   border-top: $border-height solid $border-color;
   background-color: $bg-color;
+
+  @if ($content-color) {
+    .section-content {
+      color: $content-color;
+    }
+  }
 }
