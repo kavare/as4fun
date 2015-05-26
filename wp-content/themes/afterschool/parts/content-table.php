@@ -1,6 +1,6 @@
 <?php
 /**
- * The list template for displaying list layouts in list page.
+ * The table template for displaying table layouts in list page.
  *
  * @subpackage AfterSchool
  * @since AfterSchool 1.0
@@ -8,6 +8,8 @@
 ?>
 
 <?php $as_post_class = '' ?>
+
+
 <tr id="post-<?php the_ID(); ?>" <?php post_class($as_post_class); ?>>
   <td>
     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -23,8 +25,13 @@
   <td>
     <?php the_excerpt(); ?>
   </td>
-  <td>
-    <a href="#"><i class="fa fa-download fa-lg"></i></a>
+  <td class="donation-download">
+    <?php $file = get_post_meta($post->ID, 'as_donation_file', true); ?>
+    <?php if($file): ?>
+      <a href="<?php echo $file['url'] ?>"><i class="fa fa-download fa-lg"></i>
+        <?php echo basename($file['file']) ?>
+      </a>
+    <?php endif; ?>
   </td>
 </tr>
 
