@@ -17,15 +17,18 @@ function as_set_activity_post() {
         'menu_name'          => '社區活動'
     );
 
+    $supports = array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' );
+
     $args = array(
         'labels'        => $labels,
         'description'   => '',
         'public'        => true,
         'menu_position' => 5,
         'menu_icon'     => 'dashicons-megaphone',
-        'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+        'supports'      => $supports,
         'has_archive'   => true,
         'rewrite'       => array( 'slug' => 'activity'),
+        'taxonomies'    => array( 'post_tag' ),
     );
 
     register_post_type( 'activity', $args );

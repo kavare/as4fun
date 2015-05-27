@@ -17,13 +17,15 @@ function as_set_counsel_post() {
         'menu_name'          => '諮商記錄'
     );
 
+    $supports = array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' );
+
     $args = array(
         'labels'        => $labels,
         'description'   => '',
         'public'        => true,
         'menu_position' => 5,
         'menu_icon'     => 'dashicons-smiley',
-        'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+        'supports'      => $supports,
         'has_archive'   => true,
         'rewrite'       => array( 'slug' => 'counsel'),
     );
