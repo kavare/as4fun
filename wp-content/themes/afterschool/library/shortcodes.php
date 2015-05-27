@@ -44,27 +44,24 @@ function as_shortcode_community_link($atts, $content = null) {
   $signature = array(
     'title' => '',
     'url' => '',
-  );
-  extract(shortcode_atts($signature, $atts));
-
-  $link =
-  '<a href="' . $url . '">' .
-    do_shortcode($content) .
-    '<h3 class="section-title">' . $title . '</h3>' .
-  '</a>';
-
-  return $link;
-}
-
-function as_shortcode_link_image($atts, $content = null) {
-  $signature = array(
     'src' => '',
   );
   extract(shortcode_atts($signature, $atts));
 
-  $img = '<img src="' . $src . '" alt="' . $src . '">';
+  $link =
+  '<article class="small-12 large-6 columns end">' .
+    '<a class="brick-item clearfix" href="' . $url . '">' .
+      '<div class="brick-image-container">' .
+        '<img class="brick-image" src="' . $src . '" alt="' . $title . '">' .
+      '</div>' .
+      '<div class="brick-content">' .
+        '<h2 class="brick-title">' . $title . '</h2>' .
+        '<p class="brick-text">' . $content . '</p>' .
+      '</div>' .
+    '</a>' .
+  '</article>';
 
-  return $img;
+  return $link;
 }
 
 
@@ -74,7 +71,6 @@ function as_shortcode_link_image($atts, $content = null) {
 function as_register_shortcodes(){
    add_shortcode('home-section', 'as_shortcode_home_section');
    add_shortcode('community-link', 'as_shortcode_community_link');
-   add_shortcode('link-image', 'as_shortcode_link_image');
 }
 
 add_action('init', 'as_register_shortcodes');
