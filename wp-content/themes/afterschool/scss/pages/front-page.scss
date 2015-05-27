@@ -31,8 +31,9 @@
       }
     }
 
-    .section-content {
-      font-size: 1.3rem;
+    .section-content,
+    .section-content p {
+      font-size: 1.2rem;
     }
 
     .section-action-group {
@@ -58,7 +59,7 @@
 
         .section-image {
           position: absolute;
-          top: -15rem;
+          top: -10.7rem;
           @include stamp-image(25rem, 0.5rem, $white);
         }
       }
@@ -69,15 +70,16 @@
         margin-top: 2rem;
       }
 
-      .section-content {
+      .section-content,
+      .section-content > p {
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
 
       &.fp-right {
         .section-header {
           .section-title { text-align: right; }
-          .section-image { left: -2rem; }
+          .section-image { left: -2vw; }
         }
 
         .section-content,
@@ -89,7 +91,7 @@
       &.fp-left {
         .section-header {
           .section-title { text-align: left; }
-          .section-image { right: -3rem; }
+          .section-image { right: -2vw; }
         }
 
         .section-content,

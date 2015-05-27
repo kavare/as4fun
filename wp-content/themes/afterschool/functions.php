@@ -1,9 +1,8 @@
 <?php
 /*
-Author: Ole Fredrik Lie
-URL: http://olefredrik.com
+  Author: kavare (revised from Ole Fredrik Lie)
+  URL: http://kavare.github.io/portfolio
 */
-
 
 // Various clean up functions
 require_once('library/cleanup.php');
@@ -47,6 +46,9 @@ require_once('library/recently-post.php');
 // Helper functions for AfterSchool theme
 require_once('library/helper.php');
 
+// Shortcodes register block for content components
+require_once('library/shortcodes.php');
+
 // Setup opengraph info for social platforms api
 require_once('library/opengraph.php');
 
@@ -86,4 +88,3 @@ require_once('library/post-counsel/taxonomy.php');
 require_once('library/post-counsel/metabox.php');
 require_once('library/post-counsel/admin-column.php');
 
-?>
