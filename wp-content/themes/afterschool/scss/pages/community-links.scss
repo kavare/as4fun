@@ -1,0 +1,86 @@
+@import "../base/mixins";
+
+/* -------------------------------------------- \
+  Community-links template layouts settings
+\ --------------------------------------------- */
+$brick-height: 11rem;
+$brick-gap: $brick-height * .1;
+
+.page-template-community-links {
+  @include page-jumbotron('/headlines/children.jpg', 'rocket.png');
+
+  .bricks-container {
+
+    .brick-item {
+      display: block;
+      margin-bottom: 2rem;
+      background-color: $yellow;
+      box-shadow: 0 4px 0 0 darken($yellow, 10%);
+
+      .brick-image-container {
+        position: relative;
+        float: left;
+        width: $brick-height;
+        height: $brick-height;
+
+        .brick-image {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          max-width: 80%;
+          max-height: 80%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .brick-content {
+        float: left;
+        width: calc(100% - 11rem);
+        padding: $brick-gap 0;
+
+        .brick-title {
+          font-size: 1.8125rem;
+          font-weight: bold;
+          color: $white;
+          transform: translate3d(0, 0, 0);
+
+          &:after {
+            display: none;
+            margin-left: 1rem;
+            font-family: 'fontawesome';
+            content: '\f08e';
+          }
+        }
+
+        .brick-text {
+          max-height: 4.3rem;
+          padding-right: $brick-gap;
+          color: $black;
+          overflow: hidden;
+        }
+      }
+
+      &:hover {
+        .brick-image {
+          opacity: 0;
+          transition: all 0.2s ease-in;
+        }
+
+        .brick-text {
+          color: $yellow;
+          transition: all 0.2s ease-in;
+        }
+
+        .brick-title {
+          color: $link-color;
+          transform: translateY(100%) scale(1.5);
+          transition: all 0.2s ease-in;
+
+          &:after {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
