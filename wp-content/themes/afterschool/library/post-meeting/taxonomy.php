@@ -27,4 +27,10 @@ function as_meeting_stage() {
 }
 add_action( 'init', 'as_meeting_stage', 0 );
 
+function as_meeting_columns( $taxonomies ) {
+    $taxonomies[] = 'stage';
+    return $taxonomies;
+}
+add_filter( 'manage_taxonomies_for_meeting_columns', 'as_meeting_columns' );
+
 ?>
