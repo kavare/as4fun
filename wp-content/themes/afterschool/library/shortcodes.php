@@ -28,9 +28,31 @@ function as_shortcode_home_section($atts, $content = null) {
   return $section;
 }
 
+function as_shortcode_community_links($atts, $content = null) {
+  $signature = array(
+    'url' => '',
+    'img' => '',
+    'title' => ''
+  );
+  extract(shortcode_atts($signature, $atts));
+
+  $link =
+  '<a href="' . $url . '">' .
+    '<img src="' . $img . '" alt="' . $title . '">' .
+    '<h3 class="section-title">' . $title . '</h3>' .
+    '<div class="section-content">' . $content . '</div>' .
+  '</a>';
+
+  var_dump($url);
+  var_dump($img);
+  die;
+
+  return $link;
+}
 
 function as_register_shortcodes(){
    add_shortcode('home-section', 'as_shortcode_home_section');
+   add_shortcode('community-link', 'as_shortcode_community_links');
 }
 
 add_action('init', 'as_register_shortcodes');
