@@ -18,6 +18,7 @@ function as_activity_type() {
     $args = array(
         'labels' => $labels,
         'hierarchical' => true,
+        'show_ui' => true,
         'show_admin_column' => true,
         'rewrite' => array( 'slug' => 'activity-type' ),
     );
@@ -26,5 +27,10 @@ function as_activity_type() {
 }
 add_action( 'init', 'as_activity_type', 0 );
 
+function as_activity_columns( $taxonomies ) {
+    $taxonomies[] = 'type';
+    return $taxonomies;
+}
+add_filter( 'manage_taxonomies_for_activity_columns', 'as_activity_columns' );
 
 ?>

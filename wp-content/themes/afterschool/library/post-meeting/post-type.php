@@ -17,15 +17,18 @@ function as_set_meeting_post() {
         'menu_name'          => '社區會議'
     );
 
+    $supports = array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' );
+
     $args = array(
         'labels'        => $labels,
         'description'   => '',
         'public'        => true,
         'menu_position' => 5,
         'menu_icon'     => 'dashicons-clipboard',
-        'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+        'supports'      => $supports,
         'has_archive'   => true,
         'rewrite'       => array( 'slug' => 'meeting'),
+        'taxonomies'    => array( 'post_tag' ),
     );
 
     register_post_type( 'meeting', $args );
