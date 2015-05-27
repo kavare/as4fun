@@ -1,3 +1,33 @@
+@import "../base/mixins";
+
+/* -------------------------------------------- \
+  Community-links template layouts settings
+\ --------------------------------------------- */
 .page-template-community-links {
+  @include page-jumbotron('/headlines/children.jpg', 'rocket.png');
+
+  .bricks-container {
+
+    .brick-item {
+      background-color: $yellow;
+
+      .brick-image-container {
+        width: 20%;
+        height: 100%;
+
+        .brick-image {
+          width: 100%;
+        }
+      }
+
+      .brick-title {
+
+      }
+
+      .brick-content {
+
+      }
+    }
+  }
 
 }
