@@ -29,6 +29,8 @@ function as_set_donation_post() {
         'has_archive'   => true,
         'rewrite'       => array( 'slug' => 'donation'),
         // 'taxonomies'    => array( 'post_tag' ),
+        'map_meta_cap'  => true,
+        'capability_type' => 'donation'
     );
 
     register_post_type( 'donation', $args );

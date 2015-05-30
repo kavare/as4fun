@@ -27,7 +27,9 @@ function as_set_counsel_post() {
         'menu_icon'     => 'dashicons-smiley',
         'supports'      => $supports,
         'has_archive'   => true,
-        'rewrite'       => array( 'slug' => 'counsel'),
+        'rewrite'       => array( 'slug' => 'counsel' ),
+        'map_meta_cap'  => true,
+        'capability_type' => 'counsel'
     );
 
     register_post_type( 'counsel', $args );
