@@ -74,4 +74,21 @@ if (!function_exists('as_show_single_title')):
     }
 endif;
 
+/**
+ * [clean_unwanted_caps clean up unwanted caps which already saved in database]
+ * @param  [array] $deleted_caps [a list of unwanted capabilities]
+ * @return [void]
+ */
+if (!function_exists('as_clean_unwanted_caps')):
+function as_clean_unwanted_caps( $deleted_caps ){
+    global $wp_roles;
+    foreach ($delete_caps as $cap) {
+        foreach (array_keys($wp_roles->roles) as $role) {
+            $wp_roles->remove_cap($role, $cap);
+        }
+    }
+}
+endif;
+// add_action( 'admin_init', 'as_clean_unwanted_caps' );
+
 ?>
