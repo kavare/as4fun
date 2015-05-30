@@ -80,7 +80,20 @@ endif;
  * @return [void]
  */
 if (!function_exists('as_clean_unwanted_caps')):
-function as_clean_unwanted_caps( $deleted_caps ){
+function as_clean_unwanted_caps(){
+    $delete_caps = array(
+        'delete_connections',
+        'delete_others_connections',
+        'delete_private_connections',
+        'delete_published_connections',
+        'edit_connections',
+        'edit_other_connections',
+        'edit_private_connections',
+        'edit_published_connections',
+        'publish_connections',
+        'read_private_connections',
+    );
+
     global $wp_roles;
     foreach ($delete_caps as $cap) {
         foreach (array_keys($wp_roles->roles) as $role) {
@@ -90,5 +103,6 @@ function as_clean_unwanted_caps( $deleted_caps ){
 }
 endif;
 // add_action( 'admin_init', 'as_clean_unwanted_caps' );
+
 
 ?>

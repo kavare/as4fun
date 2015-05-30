@@ -25,7 +25,9 @@ function as_set_volunteer_post() {
         'menu_icon'     => 'dashicons-nametag',
         'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
         'has_archive'   => true,
-        'rewrite'       => array( 'slug' => 'volunteer')
+        'rewrite'       => array( 'slug' => 'volunteer'),
+        'map_meta_cap'  => true,
+        'capability_type' => 'volunteer'
     );
 
     register_post_type( 'volunteer', $args );
