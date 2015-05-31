@@ -1,3 +1,4 @@
+<?php as_post_access_check('view_volunteer_posts') ?>
 <?php get_header(); ?>
 
 <?php get_template_part( 'parts/content', 'heading' ); ?>
