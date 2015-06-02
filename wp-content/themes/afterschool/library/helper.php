@@ -105,4 +105,18 @@ endif;
 // add_action( 'admin_init', 'as_clean_unwanted_caps' );
 
 
-?>
+/**
+ * [as_post_access_check description]
+ * @param  [string] $cap    [whether current user has this capability]
+ * @param  [number] $status [the error code for redirection, should be 401 or 403]
+ * @return [void]
+ */
+if (!function_exists('as_post_access_check')):
+function as_post_access_check($cap, $status = 403) {
+    if (!current_user_can( $cap )):
+        wp_redirect( $status, $status );
+        get_template_part('parts/content', $status);
+        exit;
+    endif;
+}
+endif;
