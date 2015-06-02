@@ -3,12 +3,12 @@ function as_search_filter($query) {
     if (!is_search()) return $query;
 
     $full_access = array(
-        'page', 'post', 'attachment',
+        'page', 'post', 'attachment', 'nav_menu_item',
         'connection', 'activity', 'donation', 'meeting', 'volunteer', 'counsel',
     );
 
     $least_access = array(
-        'page', 'post', 'attachment',
+        'page', 'post', 'attachment', 'nav_menu_item',
         'connection', 'activity', 'donation',
     );
 
@@ -18,15 +18,15 @@ function as_search_filter($query) {
         'contributor' => $least_access,
         'subscriber' => $least_access,
         'author' => array(
-            'page', 'post', 'attachment',
+            'page', 'post', 'attachment', 'nav_menu_item',
             'connection', 'activity', 'donation', 'meeting', 'volunteer',
         ),
         'volunteer' => array(
-            'page', 'post', 'attachment',
+            'page', 'post', 'attachment', 'nav_menu_item',
             'connection', 'activity', 'donation', 'meeting', 'volunteer',
         ),
         'counselor' => array(
-            'page', 'post', 'attachment',
+            'page', 'post', 'attachment', 'nav_menu_item',
             'connection', 'activity', 'donation', 'meeting', 'counsel',
         ),
     );
