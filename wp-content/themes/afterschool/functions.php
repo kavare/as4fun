@@ -46,6 +46,9 @@ require_once('library/recently-post.php');
 // Helper functions for AfterSchool theme
 require_once('library/helper.php');
 
+// Set hidden rule for search results
+require_once('library/search-filter.php');
+
 // Shortcodes register block for content components
 require_once('library/shortcodes.php');
 
