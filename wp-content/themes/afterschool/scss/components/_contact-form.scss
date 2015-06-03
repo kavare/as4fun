@@ -33,3 +33,56 @@
     }
   }
 }
+
+/**
+ * [Contact Form 7 - Footer Contact Form]
+ */
+.footer-container .wpcf7-form {
+  margin-bottom: 2rem;
+
+  label {
+    padding-bottom: 0.3rem;
+    font-size: 1rem;
+  }
+
+  .wpcf7-form-control-wrap {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+
+    .wpcf7-form-control {
+      margin: 0;
+      border-width: 3px;
+
+      &.wpcf7-not-valid {
+        border-color: $red;
+      }
+    }
+
+    .wpcf7-not-valid-tip {
+      color: $red;
+    }
+  }
+
+  textarea {
+    min-height: 6rem;
+  }
+
+  input[type="submit"] {
+    @include cta-btn($yellow);
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0;
+    margin-bottom: 0;
+    border-color: transparent;
+
+    &:hover,
+    &:active {
+      margin-bottom: -4px;
+    }
+  }
+
+  .div.wpcf7-response-output {
+    margin: 0;
+    border-radius: 3px;
+  }
+}

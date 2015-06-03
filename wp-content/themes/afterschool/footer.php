@@ -3,7 +3,7 @@
   <div class="row">
 	 <?php do_action('foundationPress_before_footer'); ?>
    <?php dynamic_sidebar("footer-widgets"); ?>
-   <article id="footer-contact" class="large-3 columns as-contact-form widget">
+   <!-- <article id="footer-contact" class="large-3 columns as-contact-form widget">
       <h6 class="widget-title">聯絡我們</h6>
       <form action="">
         <label for="contact-email">您的email:</label>
@@ -14,7 +14,7 @@
                   placeholder="您任何寶貴的意見我們都會立刻回應"></textarea>
         <input type="submit" value="送出" class="button">
       </form>
-   </article>
+   </article> -->
 	 <?php do_action('foundationPress_after_footer'); ?>
   </div>
   <div class="copyright">
