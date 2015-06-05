@@ -1,23 +1,37 @@
 (function($) {
   $(function() {
-    $('.wpcf7').on('invalid.wpcf7', function(e) {
-      console.log('invalid');
-    });
+    var asWpcf7 = asWpcf7 || {};
 
-    $('.wpcf7').on('spam.wpcf7', function(e) {
-      console.log('spam');
-    });
+    asWpcf7 = {
+      selector: {
+        widget: $('.wpcf7'),
+        submitBtn: $('.wpcf7-submit')
+      },
 
-    $('.wpcf7').on('mailsent.wpcf7', function(e) {
-      console.log('mailsent');
-    });
+      timer: null,
 
-    $('.wpcf7').on('mailfailed.wpcf7', function(e) {
-      console.log('mailfailed');
-    });
+      initEventHandler: function() {
+        asWpcf7.selector.widget.on('invalid.wpcf7 spam.wpcf7 mailsent.wpcf7 mailfailed.wpcf7', function(e) {
+          clearTimeout(asWpcf7.timer);
+          asWpcf7.hideWpcf7Message();
+        });
 
-    $('.wpcf7').on('submit.wpcf7', function(e) {
-      console.log('submit');
-    });
+        asWpcf7.selector.widget.on('submit.wpcf7', function(e) {
+
+        });
+
+        asWpcf7.selector.submitBtn.on('click', function() {
+
+        });
+      },
+
+      hideWpcf7Message: function() {
+        asWpcf7.timer = setTimeout(function() {
+          $('.wpcf7-response-output').slideUp(400);
+        }, 5000);
+      }
+    };
+
+    asWpcf7.initEventHandler();
   });
 })(jQuery);
