@@ -118,7 +118,7 @@ if (!function_exists('page_specific_scripts')):
             elseif (is_post_type_archive( 'donation' )):
                 wp_enqueue_style('archive-donation', get_template_directory_uri() . '/css/pages/archive-donation.css', array(), '1.0.0');
             else:
-
+                wp_enqueue_style('archive-blog', get_template_directory_uri() . '/css/pages/archive-blog.css', array(), '1.0.0');
             endif;
 
             wp_enqueue_script( 'archive', get_template_directory_uri() . '/js/archive.js', array('jquery'), '1.0.0', true );
