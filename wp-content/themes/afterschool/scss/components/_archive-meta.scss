@@ -3,6 +3,7 @@
   overflow: auto;
 
   .author,
+  .author a,
   .updated {
     font-size: 1rem;
   }
@@ -13,9 +14,11 @@
 
   .updated {
     float: right;
+    font-weight: bold;
   }
 
   a {
     color: $blue;
+    font-weight: bold;
   }
 }

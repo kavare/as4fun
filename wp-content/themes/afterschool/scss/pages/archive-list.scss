@@ -9,44 +9,60 @@
 
   .list-container {
     .list-item {
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $text-color;
+      height: auto;
 
       .list-image-container {
         position: relative;
-        width: 32.5%;
-        height: 16rem;
-        float: left;
+        height: 12rem;
         margin-right: 2.5%;
         overflow-y: hidden;
 
         .list-image {
           position: absolute;
+          top: .75rem;
           width: 100%;
-          top: 50%;
-          left: 50%;
           border-radius: 5px;
-          transform: translate(-50%, -50%);
         }
-      }
-
-      .list-title a {
-        font-weight: bold;
-        color: $link-color;
-
-        &:hover {
-          color: lighten($link-color, 10%);
-          transition: all 0.2s ease-in;
-        }
-      }
-
-      .meta-container {
-
       }
 
       .list-content {
-        width: 65%;
-        float: left;
+
+        .list-title a {
+          font-weight: bold;
+          color: $link-color;
+          @include ellipsis(2.3125rem);
+
+          &:hover {
+            color: lighten($link-color, 10%);
+            transition: all 0.2s ease-in;
+          }
+        }
+
+        .meta-container {
+          padding-top: 0;
+        }
       }
+    }
+  }
+}
+
+@media #{$medium-up} {
+  .archive .list-container .list-item {
+    height: 20rem;
+    border-bottom-width: 0;
+
+    .list-image-container {
+      width: 32.5%;
+      height: 100%;
+      float: left;
+    }
+
+    .list-content {
+      width: 65%;
+      float: left;
     }
   }
 }
