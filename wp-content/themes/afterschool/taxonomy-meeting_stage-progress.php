@@ -1,18 +1,21 @@
-<?php as_post_access_check('view_counsel_posts') ?>
+<?php as_post_access_check('view_meeting_progress') ?>
 <?php get_header(); ?>
 
 <?php get_template_part( 'parts/content', 'heading' ); ?>
 <div class="row">
 <!-- Row for main content area -->
 	<div class="small-12 large-8 columns" role="main">
-		<div class="row list-container">
+		<div class="row card-container">
 			<?php if ( have_posts() ) : ?>
+
 				<?php /* Start the Loop */ ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-						<?php get_template_part( 'parts/content', 'list' ); ?>
-					<?php endwhile; ?>
-			<?php else : ?>
-				<?php get_template_part( 'parts/content', 'none' ); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'parts/content', 'card' ); ?>
+				<?php endwhile; ?>
+
+				<?php else : ?>
+					<?php get_template_part( 'parts/content', 'none' ); ?>
+
 			<?php endif; // end have_posts() check ?>
 		</div>
 
@@ -25,6 +28,7 @@
 	<?php } ?>
 
 	</div>
-	<?php get_sidebar('counsel-archive'); ?>
+	<?php get_sidebar('connection-archive'); ?>
 </div>
 <?php get_footer(); ?>
+

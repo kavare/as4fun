@@ -1,4 +1,3 @@
-<?php as_post_access_check('view_counsel_posts') ?>
 <?php get_header(); ?>
 
 <?php get_template_part( 'parts/content', 'heading' ); ?>
@@ -25,6 +24,6 @@
 	<?php } ?>
 
 	</div>
-	<?php get_sidebar('counsel-archive'); ?>
+	<?php get_sidebar(); ?>
 </div>
 <?php get_footer(); ?>
