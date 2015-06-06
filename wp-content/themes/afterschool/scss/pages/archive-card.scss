@@ -1,15 +1,11 @@
 @import "../base/mixins";
 
 /* -------------------------------------------- \
-  archive-volunteer layouts settings
+  archive-connection layouts settings
 \ --------------------------------------------- */
 .archive {
   @include page-heading('/headlines/children.jpg');
   font-size: 1.1rem;
-
-  .entry-content p {
-    font-size: 1.2rem;
-  }
 
   .card-container {
 
@@ -42,33 +38,12 @@
         }
       }
 
-      .meta-container {
-        padding: 0.8em 0.2rem;
-        overflow: auto;
-
-        .author,
-        .updated {
-          font-size: 1rem;
-        }
-
-        .author {
-          float: left;
-        }
-
-        .updated {
-          float: right;
-        }
-
-        a {
-          color: $blue;
-        }
-      }
-
       .card-content {
         padding: 0.75rem 0.2rem;
 
         > p {
-          max-height: 11em;
+          max-height: 11rem;
+          min-height: 7rem;
           overflow: hidden;
           line-height: 1.8;
           letter-spacing: 0.6px;
@@ -92,6 +67,4 @@
       }
     }
   }
-
-
 }
