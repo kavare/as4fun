@@ -46,6 +46,6 @@
 		<?php endwhile;?>
 		<?php do_action('foundationPress_after_content'); ?>
 	</div>
-	<?php get_sidebar('counsel-single'); ?>
+	<?php get_sidebar('counsel'); ?>
 </div>
 <?php get_footer(); ?>

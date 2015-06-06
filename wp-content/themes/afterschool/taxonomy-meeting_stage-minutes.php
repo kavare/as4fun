@@ -25,6 +25,6 @@
 	<?php } ?>
 
 	</div>
-	<?php get_sidebar(); ?>
+	<?php get_sidebar('meeting'); ?>
 </div>
 <?php get_footer(); ?>

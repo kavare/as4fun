@@ -25,6 +25,6 @@
 	<?php } ?>
 
 	</div>
-	<?php get_sidebar('counsel-archive'); ?>
+	<?php get_sidebar('counsel'); ?>
 </div>
 <?php get_footer(); ?>

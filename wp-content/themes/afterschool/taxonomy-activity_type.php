@@ -27,6 +27,6 @@
 	<?php } ?>
 
 	</div>
-	<?php get_sidebar('connection-archive'); ?>
+	<?php get_sidebar('activity'); ?>
 </div>
 <?php get_footer(); ?>
