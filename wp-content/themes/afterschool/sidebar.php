@@ -3,7 +3,7 @@
 	<?php dynamic_sidebar("sidebar-widgets"); ?>
   <?php
     $args = array(
-      'taxonomy'     => 'connection_target',
+      'taxonomy'     => 'category',
       'orderby'      => 'name',
       'show_count'   => 1,
       'pad_counts'   => 0,
@@ -15,7 +15,7 @@
     $categorybox = preg_replace('/<\/a> \(([0-9]+)\)/', ' <span class="count">\\1</span></a>', $categorybox);
   ?>
   <article class="widget widget_categorybox">
-    <h6>窩友活動</h6>
+    <h6>放心窩部落格</h6>
     <ul class="categories-container">
       <?php echo $categorybox; ?>
     </ul>
@@ -25,7 +25,7 @@
 
   <article class="widget widget_recently_post">
     <h6>相關文章</h6>
-    <?php as_show_recently_post('connection', 4, true) ?>
+    <?php as_show_recently_post('post', 4, true) ?>
   </article>
 
 	<?php do_action('foundationPress_after_sidebar'); ?>

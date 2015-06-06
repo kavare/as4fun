@@ -1,9 +1,9 @@
-<aside id="sidebar-archive" class="sidebar small-12 large-4 columns">
+<aside class="sidebar small-12 large-4 columns">
   <?php do_action('foundationPress_before_sidebar'); ?>
   <?php dynamic_sidebar("sidebar-widgets"); ?>
   <?php
     $args = array(
-      'taxonomy'     => 'connection_target',
+      'taxonomy'     => 'activity_type',
       'orderby'      => 'name',
       'show_count'   => 1,
       'pad_counts'   => 0,
@@ -15,7 +15,7 @@
     $categorybox = preg_replace('/<\/a> \(([0-9]+)\)/', ' <span class="count">\\1</span></a>', $categorybox);
   ?>
   <article class="widget widget_categorybox">
-    <h6>窩友活動</h6>
+    <h6>社區活動</h6>
     <ul class="categories-container">
       <?php echo $categorybox; ?>
     </ul>

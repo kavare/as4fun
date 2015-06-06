@@ -28,7 +28,6 @@ function as_set_meeting_post() {
         'supports'      => $supports,
         'has_archive'   => true,
         'rewrite'       => array( 'slug' => 'meeting'),
-        'taxonomies'    => array( 'post_tag' ),
     );
 
     register_post_type( 'meeting', $args );

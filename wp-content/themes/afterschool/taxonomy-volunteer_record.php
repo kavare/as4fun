@@ -28,6 +28,6 @@
 	<?php } ?>
 
 	</div>
-	<?php get_sidebar('volunteer-archive'); ?>
+	<?php get_sidebar('volunteer'); ?>
 </div>
 <?php get_footer(); ?>

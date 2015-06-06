@@ -1,0 +1,20 @@
+@mixin ellipsis($font-size: 1rem, $line-height: 1.4, $lines-to-show: 2) {
+  position: relative;
+  display: block; /* Fallback for non-webkit */
+  max-width: 100%;
+  max-height: $font-size * $line-height * $lines-to-show;
+  font-size: $font-size;
+  line-height: $line-height;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: $font-size * $line-height;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+  }
+}
