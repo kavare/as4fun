@@ -1,6 +1,7 @@
 @mixin cta-btn($bg-color: $primary-color, $color: $white, $press-distance: 4px) {
   display: block;
   min-width: 5rem;
+  outline: none;
   border-radius: 8px;
   box-shadow: 0 $press-distance 0 0 darken($bg-color, 10%);
   background-color: $bg-color;
