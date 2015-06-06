@@ -15,7 +15,7 @@ function foundationpress_sidebar_widgets() {
       'id' => 'footer-widgets',
       'name' => __('Footer widgets', 'FoundationPress'),
       'description' => __('會顯示在頁尾的網站地圖區塊', 'FoundationPress'),
-      'before_widget' => '<article id="%1$s" class="large-3 columns widget %2$s">',
+      'before_widget' => '<article id="%1$s" class="small-6 large-3 columns widget %2$s">',
       'after_widget' => '</article>',
       'before_title' => '<h6 class="widget-title">',
       'after_title' => '</h6>'

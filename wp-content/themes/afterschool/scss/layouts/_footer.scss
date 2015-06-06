@@ -23,7 +23,7 @@
 
     .widget-title {
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
 
     .menu {
@@ -31,6 +31,7 @@
       list-style: none;
 
       a {
+        font-size: 1.25rem;
         color: $white;
         font-weight: bold;
 
@@ -39,6 +40,10 @@
           transition: color 0.2s ease-in;
         }
       }
+    }
+
+    &:last-child {
+      width: 100%;
     }
   }
 
@@ -86,30 +91,40 @@
 }
 
 
-// Add some whitespace above the footer for medium-up screens
 @media #{$medium-up} {
+
+  // Add some whitespace above the footer for medium-up screens
 	footer.row {
 		margin-top: rem-calc(60);
 	}
 
-  .footer-container .copyright {
-    .copyright-content {
-      text-align: left;
+  .footer-container {
+    .widget {
 
-      .content {
-
-        &.site,
-        &.source {
-          float: left;
-          width: auto;
-          margin-right: 1.5rem;
-        }
-      }
+      .widget-title { font-size: 1.2rem; }
+      .menu a { font-size: 1rem; }
+      &:last-child { width: 25%; }
     }
 
-    .social-icons {
-      width: 100%;
-      margin: 0;
+    .copyright {
+      .copyright-content {
+        text-align: left;
+
+        .content {
+
+          &.site,
+          &.source {
+            float: left;
+            width: auto;
+            margin-right: 1.5rem;
+          }
+        }
+      }
+
+      .social-icons {
+        width: 100%;
+        margin: 0;
+      }
     }
   }
 }
