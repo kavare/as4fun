@@ -31,6 +31,6 @@
 		<?php endwhile;?>
 		<?php do_action('foundationPress_after_content'); ?>
 	</div>
-	<?php get_sidebar('donation-single'); ?>
+	<?php get_sidebar('donation'); ?>
 </div>
 <?php get_footer(); ?>

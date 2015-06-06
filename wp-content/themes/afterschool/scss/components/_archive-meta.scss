@@ -1,0 +1,24 @@
+.meta-container {
+  padding: 0.8em 0.2rem;
+  overflow: auto;
+
+  .author,
+  .author a,
+  .updated {
+    font-size: 1rem;
+  }
+
+  .author {
+    float: left;
+  }
+
+  .updated {
+    float: right;
+    font-weight: bold;
+  }
+
+  a {
+    color: $blue;
+    font-weight: bold;
+  }
+}

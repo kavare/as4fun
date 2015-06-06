@@ -105,20 +105,14 @@ if (!function_exists('page_specific_scripts')):
             endswitch;
         }
 
-        if ( is_archive() ) {
+        if ( is_archive() and !is_tax() ) {
 
-            if (is_post_type_archive( 'connection' )):
-                wp_enqueue_style('archive-connection', get_template_directory_uri() . '/css/pages/archive-connection.css', array(), '1.0.0' );
-            elseif (is_post_type_archive( 'activity' )):
-                wp_enqueue_style('archive-activity', get_template_directory_uri() . '/css/pages/archive-activity.css', array(), '1.0.0' );
-            elseif (is_post_type_archive( 'counsel' )):
-                wp_enqueue_style('archive-counsel', get_template_directory_uri() . '/css/pages/archive-counsel.css', array(), '1.0.0' );
-            elseif (is_post_type_archive( 'volunteer' )):
-                wp_enqueue_style('archive-volunteer', get_template_directory_uri() . '/css/pages/archive-volunteer.css', array(), '1.0.0' );
+            if (is_post_type_archive( 'connection' ) or is_post_type_archive( 'volunteer' ) or is_post_type_archive( 'activity' )):
+                wp_enqueue_style('archive-card', get_template_directory_uri() . '/css/pages/archive-card.css', array(), '1.0.0' );
             elseif (is_post_type_archive( 'donation' )):
-                wp_enqueue_style('archive-donation', get_template_directory_uri() . '/css/pages/archive-donation.css', array(), '1.0.0');
+                wp_enqueue_style('archive-table', get_template_directory_uri() . '/css/pages/archive-table.css', array(), '1.0.0');
             else:
-
+                wp_enqueue_style('archive-list', get_template_directory_uri() . '/css/pages/archive-list.css', array(), '1.0.0');
             endif;
 
             wp_enqueue_script( 'archive', get_template_directory_uri() . '/js/archive.js', array('jquery'), '1.0.0', true );
@@ -126,18 +120,12 @@ if (!function_exists('page_specific_scripts')):
 
         if ( is_tax() ) {
 
-            if (is_tax( 'connection_target' )):
-                wp_enqueue_style('archive-connection', get_template_directory_uri() . '/css/pages/archive-connection.css', array(), '1.0.0' );
-            // elseif (is_tax( 'activity_type' )):
-            //     wp_enqueue_style('archive-activity', get_template_directory_uri() . '/css/pages/archive-activity.css', array(), '1.0.0' );
-            // elseif (is_tax( 'metting_stage' )):
-            //     wp_enqueue_style('archive-counsel', get_template_directory_uri() . '/css/pages/archive-counsel.css', array(), '1.0.0' );
-            elseif (is_tax( 'volunteer_record' ) or is_tax( 'volunteer_tag' )):
-                wp_enqueue_style('archive-counsel', get_template_directory_uri() . '/css/pages/archive-volunteer.css', array(), '1.0.0' );
+            if (is_tax( 'connection_target' ) or is_tax( 'volunteer_record' ) or is_tax( 'volunteer_tag' ) or is_tax( 'activity_type' ) or is_tax( 'meeting_stage', 'progress' )):
+                wp_enqueue_style('archive-card', get_template_directory_uri() . '/css/pages/archive-card.css', array(), '1.0.0' );
             elseif (is_tax( 'donation_type' )):
-                wp_enqueue_style('archive-donation', get_template_directory_uri() . '/css/pages/archive-donation.css', array(), '1.0.0' );
+                wp_enqueue_style('archive-table', get_template_directory_uri() . '/css/pages/archive-table.css', array(), '1.0.0' );
             else:
-                wp_enqueue_style('archive', get_template_directory_uri() . '/css/pages/archive.css', array(), '1.0.0' );
+                wp_enqueue_style('archive-list', get_template_directory_uri() . '/css/pages/archive-list.css', array(), '1.0.0' );
             endif;
 
             wp_enqueue_script( 'archive', get_template_directory_uri() . '/js/archive.js', array('jquery'), '1.0.0', true );
@@ -145,24 +133,23 @@ if (!function_exists('page_specific_scripts')):
 
         if ( is_single() ) {
             switch( $post->post_type ):
-            case 'post':
+            // case 'activity':
+            //     wp_enqueue_style('single-activity', get_template_directory_uri() . '/css/pages/single-activity.css', array(), '1.0.0' );
+            //     break;
+            // case 'connection':
+            //     wp_enqueue_style('single-connection', get_template_directory_uri() . '/css/pages/single-connection.css', array(), '1.0.0' );
+            //     break;
+            // case 'counsel':
+            //     wp_enqueue_style('single-counsel', get_template_directory_uri() . '/css/pages/single-counsel.css', array(), '1.0.0' );
+            //     break;
+            // case 'donation':
+            //     wp_enqueue_style('single-donation', get_template_directory_uri() . '/css/pages/single-donation.css', array(), '1.0.0' );
+            //     break;
+            // case 'volunteer':
+            //     wp_enqueue_style('single-volunteer', get_template_directory_uri() . '/css/pages/single-volunteer.css', array(), '1.0.0' );
+            //     break;
+            default:
                 wp_enqueue_style('post', get_template_directory_uri() . '/css/pages/post.css', array(), '1.0.0' );
-                break;
-            case 'activity':
-                wp_enqueue_style('single-activity', get_template_directory_uri() . '/css/pages/single-activity.css', array(), '1.0.0' );
-                break;
-            case 'connection':
-                wp_enqueue_style('single-connection', get_template_directory_uri() . '/css/pages/single-connection.css', array(), '1.0.0' );
-                break;
-            case 'counsel':
-                wp_enqueue_style('single-counsel', get_template_directory_uri() . '/css/pages/single-counsel.css', array(), '1.0.0' );
-                break;
-            case 'donation':
-                wp_enqueue_style('single-donation', get_template_directory_uri() . '/css/pages/single-donation.css', array(), '1.0.0' );
-                break;
-            case 'volunteer':
-                wp_enqueue_style('single-volunteer', get_template_directory_uri() . '/css/pages/single-volunteer.css', array(), '1.0.0' );
-                break;
             endswitch;
 
             wp_register_script( 'post', get_template_directory_uri() . '/js/post.js', array('jquery'), '1.0.0', true );

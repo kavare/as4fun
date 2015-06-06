@@ -1,3 +1,8 @@
+<?php
+	$terms = get_the_terms( $post->id, 'meeting_stage' );
+	$slug = array_shift($terms)->slug;
+	if($slug === 'minutes' or $slug == 'progress') as_post_access_check('view_counsel_posts');
+?>
 <?php get_header(); ?>
 
 <?php if ( has_post_thumbnail() ): ?>
@@ -39,12 +44,13 @@
 				<?php comments_template(); ?>
 				<?php do_action('foundationPress_post_after_comments'); ?>
 				<div class="show-for-large-up">
-					<?php as_show_recently_post('activity', 4) ?>
+					<?php as_show_recently_post('meeting', 4) ?>
 				</div>
 			</article>
 		<?php endwhile;?>
 		<?php do_action('foundationPress_after_content'); ?>
 	</div>
-	<?php get_sidebar('activity-single'); ?>
+	<?php get_sidebar('meeting'); ?>
 </div>
 <?php get_footer(); ?>
+

@@ -1,4 +1,4 @@
-<aside id="sidebar-archive" class="sidebar small-12 large-4 columns">
+<aside class="sidebar small-12 large-4 columns">
   <?php do_action('foundationPress_before_sidebar'); ?>
   <?php dynamic_sidebar("sidebar-widgets"); ?>
   <?php
@@ -41,5 +41,10 @@
     </ul>
   </article>
 
+  <article class="widget widget_recently_post">
+    <h6>最新故事</h6>
+    <?php as_show_recently_post('volunteer', 4, true) ?>
+  </article>
   <?php do_action('foundationPress_after_sidebar'); ?>
 </aside>
+

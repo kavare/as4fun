@@ -1,31 +1,68 @@
 @import "../base/mixins";
 
 /* -------------------------------------------- \
-  archive-donation layouts settings
+  archive-blog layouts settings
 \ --------------------------------------------- */
 .archive {
   @include page-heading('/headlines/children.jpg');
   font-size: 1.1rem;
 
   .list-container {
-
     .list-item {
-      min-height: 12rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $text-color;
+      height: auto;
 
-      .list-title {
+      .list-image-container {
+        position: relative;
+        height: 12rem;
+        margin-right: 2.5%;
+        overflow-y: hidden;
 
-      }
-
-      .list-meta-container {
-        .updated {
-
+        .list-image {
+          position: absolute;
+          top: .75rem;
+          width: 100%;
+          border-radius: 5px;
         }
       }
 
       .list-content {
 
-      }
+        .list-title a {
+          font-weight: bold;
+          color: $link-color;
+          @include ellipsis(2.3125rem);
 
+          &:hover {
+            color: lighten($link-color, 10%);
+            transition: all 0.2s ease-in;
+          }
+        }
+
+        .meta-container {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media #{$medium-up} {
+  .archive .list-container .list-item {
+    height: 20rem;
+    border-bottom-width: 0;
+
+    .list-image-container {
+      width: 32.5%;
+      height: 100%;
+      float: left;
+    }
+
+    .list-content {
+      width: 65%;
+      float: left;
     }
   }
 }

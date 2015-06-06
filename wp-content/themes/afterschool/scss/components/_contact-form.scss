@@ -98,7 +98,7 @@
 
     &.wpcf7-mail-sent-ok { color: $green; }
     &.wpcf7-validation-errors { color: $red; }
-    &.wpcf7-mail-failed { color: $green; }
+    &.wpcf7-mail-sent-ng { color: $red; }
     &.wpcf7-spam { color: $red; }
   }
 

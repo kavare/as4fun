@@ -39,10 +39,14 @@ $brick-gap: $brick-height * .1;
         padding: $brick-gap 0;
 
         .brick-title {
+          width: 85%;
           font-size: 1.8125rem;
           font-weight: bold;
           color: $white;
           transform: translate3d(0, 0, 0);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
 
           &:after {
             display: none;
@@ -59,26 +63,31 @@ $brick-gap: $brick-height * .1;
           overflow: hidden;
         }
       }
+    }
+  }
+}
 
-      &:hover {
-        .brick-image {
-          opacity: 0;
-          transition: all 0.2s ease-in;
-        }
+@media #{$large-up} {
+  .page-template-community-links .bricks-container {
 
-        .brick-text {
-          color: $yellow;
-          transition: all 0.2s ease-in;
-        }
+    .brick-item:hover {
+      .brick-image {
+        opacity: 0;
+        transition: all 0.2s ease-in;
+      }
 
-        .brick-title {
-          color: $link-color;
-          transform: translateY(100%) scale(1.5);
-          transition: all 0.2s ease-in;
+      .brick-text {
+        color: $yellow;
+        transition: all 0.2s ease-in;
+      }
 
-          &:after {
-            display: inline-block;
-          }
+      .brick-title {
+        color: $link-color;
+        transform: translate(-16%, 110%) scale(1.5);
+        transition: all 0.2s ease-in;
+
+        &:after {
+          display: inline-block;
         }
       }
     }
