@@ -105,6 +105,11 @@ if (!function_exists('page_specific_scripts')):
             endswitch;
         }
 
+        if ( is_search() ) {
+            wp_enqueue_style('search-result', get_template_directory_uri() . '/css/pages/search-result.css', array(), '1.0.0');
+            wp_enqueue_script( 'archive', get_template_directory_uri() . '/js/archive.js', array('jquery'), '1.0.0', true );
+        }
+
         if ( is_archive() and !is_tax() ) {
 
             if (is_post_type_archive( 'connection' ) or is_post_type_archive( 'volunteer' ) or is_post_type_archive( 'activity' )):

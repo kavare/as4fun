@@ -1,0 +1,21 @@
+@import "../base/mixins";
+@import "archive-list";
+
+/* -------------------------------------------- \
+  Search result page layouts settings
+\ --------------------------------------------- */
+.search {
+  @extend .archive;
+
+  .search-title {
+    margin-bottom: 2.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $text-color;
+    font-weight: bold;
+
+    .search-keyword {
+      font-size: 3rem;
+      color: $green;
+    }
+  }
+}

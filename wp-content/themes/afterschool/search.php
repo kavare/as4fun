@@ -1,21 +1,26 @@
 <?php get_header(); ?>
+
+<?php get_template_part( 'parts/content', 'heading' ); ?>
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
 
 		<?php do_action('foundationPress_before_content'); ?>
 
-		<h2><?php _e('Search Results for', 'FoundationPress'); ?> "<?php echo get_search_query(); ?>"</h2>
+		<h2 class="search-title">
+			<span class="search-keyword"><?php echo get_search_query(); ?> </span>
+			的搜尋結果
+		</h2>
 
-	<?php if ( have_posts() ) : ?>
-
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'parts/content', get_post_format() ); ?>
-		<?php endwhile; ?>
-
-		<?php else : ?>
-			<?php get_template_part( 'parts/content', 'none' ); ?>
-
-	<?php endif;?>
+		<div class="row list-container">
+			<?php if ( have_posts() ) : ?>
+				<?php /* Start the Loop */ ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+						<?php get_template_part( 'parts/content', 'list' ); ?>
+					<?php endwhile; ?>
+			<?php else : ?>
+				<?php get_template_part( 'parts/content', 'none' ); ?>
+			<?php endif; // end have_posts() check ?>
+		</div>
 
 	<?php do_action('foundationPress_before_pagination'); ?>
 
