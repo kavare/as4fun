@@ -9,6 +9,7 @@
 		<h2 class="search-title">
 			<span class="search-keyword"><?php echo get_search_query(); ?> </span>
 			的搜尋結果
+			<span class="search-meta">約有<span class="search-count"><?php echo $wp_query->found_posts; ?></span>個結果</span>
 		</h2>
 
 		<div class="row list-container">

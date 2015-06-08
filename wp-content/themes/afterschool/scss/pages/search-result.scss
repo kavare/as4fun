@@ -15,7 +15,25 @@
 
     .search-keyword {
       font-size: 3rem;
-      color: $green;
+      color: $orange;
+    }
+
+    .search-meta {
+      display: block;
+      font-size: 1.5rem;
+
+      .search-count {
+        font-weight: bold;
+        color: $orange;
+      }
+    }
+  }
+
+  .list-item {
+    .keyword {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: $orange;
     }
   }
 }
