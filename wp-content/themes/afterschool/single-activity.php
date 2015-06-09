@@ -28,23 +28,18 @@
 							<?php get_template_part( 'parts/content', 'share-icons' ); ?>
 						</div>
 					</div>
-					<div class="row">
-						<div class="small-12 column">
-							<?php get_template_part( 'parts/content', 'author' ); ?>
-						</div>
-					</div>
 				</div>
 				<?php // wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
 				<?php do_action('foundationPress_post_before_comments'); ?>
 				<?php comments_template(); ?>
 				<?php do_action('foundationPress_post_after_comments'); ?>
 				<div class="show-for-large-up">
-					<?php as_show_recently_post('activity', 4) ?>
+					<?php as_show_recently_post('activity', 4, false, '其他活動') ?>
 				</div>
 			</article>
 		<?php endwhile;?>
 		<?php do_action('foundationPress_after_content'); ?>
 	</div>
-	<?php get_sidebar('activity-single'); ?>
+	<?php get_sidebar('activity'); ?>
 </div>
 <?php get_footer(); ?>

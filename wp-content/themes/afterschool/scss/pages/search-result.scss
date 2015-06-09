@@ -1,0 +1,62 @@
+@import "../base/mixins";
+@import "archive-list";
+
+/* -------------------------------------------- \
+  Search result page layouts settings
+\ --------------------------------------------- */
+.search {
+  @extend .archive;
+
+  .search-header {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid $text-color;
+
+    .search-title {
+      font-weight: bold;
+      margin-bottom: 1.25rem;
+
+      .search-keyword {
+        font-size: 2.5rem;
+        color: $orange;
+      }
+    }
+
+    .search-meta {
+      margin: 1.5rem 0;
+      font-size: 1.2rem;
+
+      .search-count {
+        padding: 0 .2rem;
+        font-weight: bold;
+        color: $green;
+      }
+
+      .search-suggestion {
+        display: block;
+        margin: .5rem 0;
+
+        > a {color: $link-color; }
+      }
+    }
+  }
+
+  .list-item {
+    .keyword {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: $orange;
+    }
+  }
+
+  .search-nothing {
+    margin: 5rem 0;
+
+    .search-nothing-content {
+      color: $green;
+    }
+
+    .search-nothing-img {
+      float: right;
+    }
+  }
+}
