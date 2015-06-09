@@ -7,24 +7,27 @@
 .search {
   @extend .archive;
 
-  .search-title {
-    margin-bottom: 2.5rem;
-    padding-bottom: 0.5rem;
+  .search-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid $text-color;
-    font-weight: bold;
 
-    .search-keyword {
-      font-size: 3rem;
-      color: $orange;
-    }
+    .search-title {
+      font-weight: bold;
+      margin-bottom: 1.25rem;
 
-    .search-meta {
-      display: block;
-      font-size: 1.5rem;
-
-      .search-count {
-        font-weight: bold;
+      .search-keyword {
+        font-size: 2.5rem;
         color: $orange;
+      }
+
+      .search-meta {
+        font-size: 1.5rem;
+
+        .search-count {
+          font-weight: bold;
+          color: $orange;
+        }
       }
     }
   }
