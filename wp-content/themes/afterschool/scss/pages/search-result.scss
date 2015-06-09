@@ -9,7 +9,6 @@
 
   .search-header {
     margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
     border-bottom: 1px solid $text-color;
 
     .search-title {
@@ -20,14 +19,23 @@
         font-size: 2.5rem;
         color: $orange;
       }
+    }
 
-      .search-meta {
-        font-size: 1.5rem;
+    .search-meta {
+      margin: 1.5rem 0;
+      font-size: 1.2rem;
 
-        .search-count {
-          font-weight: bold;
-          color: $orange;
-        }
+      .search-count {
+        padding: 0 .2rem;
+        font-weight: bold;
+        color: $green;
+      }
+
+      .search-suggestion {
+        display: block;
+        margin: .5rem 0;
+
+        > a {color: $link-color; }
       }
     }
   }
@@ -37,6 +45,18 @@
       font-size: 1.1rem;
       font-weight: bold;
       color: $orange;
+    }
+  }
+
+  .search-nothing {
+    margin: 5rem 0;
+
+    .search-nothing-content {
+      color: $green;
+    }
+
+    .search-nothing-img {
+      float: right;
     }
   }
 }

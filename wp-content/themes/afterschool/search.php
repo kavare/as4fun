@@ -14,19 +14,25 @@
 				<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" class="search-input" placeholder="請輸入搜尋內容">
 				<input type="submit" id="searchsubmit" value="搜尋" class="button search-btn">
 			</form>
-			<span class="search-meta">
+			<h4 class="search-meta">
+				<span class="search-suggestion">
+					<?php
+						if (function_exists('relevanssi_didyoumean')) :
+							relevanssi_didyoumean(get_search_query(), "你要找的是: ", "嗎？", 100);
+						endif;
+					?>
+				</span>
 				約有<span class="search-count"><?php echo $wp_query->found_posts; ?></span>個結果，
 				<?php
 					$page = get_query_var('paged');
 					$total_pages = $wp_query->max_num_pages;
 
-					echo '這是第' . $page . '頁';
-					echo '（共' . $total_pages . '頁）';
+					echo '這是第<span class="search-count">' . $page . '</span>頁';
+					echo '（共<span class="search-count">' . $total_pages . '</span>頁）';
 				?>
-			</span>
+			</h4>
 
 		</header>
-
 		<div class="row list-container">
 			<?php if ( have_posts() ) : ?>
 				<?php /* Start the Loop */ ?>
@@ -34,7 +40,11 @@
 						<?php get_template_part( 'parts/content', 'list' ); ?>
 					<?php endwhile; ?>
 			<?php else : ?>
-				<?php get_template_part( 'parts/content', 'none' ); ?>
+				<div class="small-12 columns end search-nothing">
+					<h3 class="search-nothing-content">對不起，但我們什麼也沒找到...<br>再搜尋一次看看吧！
+					<img src="<?php as_img_src( 'logos/logo.png' ); ?>" alt="放心窩" class="search-nothing-img">
+				</div>
+				<?php // get_template_part( 'parts/content', 'none' ); ?>
 			<?php endif; // end have_posts() check ?>
 		</div>
 
