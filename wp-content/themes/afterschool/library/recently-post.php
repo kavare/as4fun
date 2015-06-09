@@ -1,13 +1,13 @@
 <?php
 if(!function_exists('as_show_recently_post')) :
-    function as_show_recently_post($post_type, $num, $excerpt = false) {
+    function as_show_recently_post($post_type, $num, $excerpt = false, $title = '相關文章') {
       $queryObject = new WP_Query( 'post_type=' . $post_type . '&posts_per_page=' . $num );
 
       if ($queryObject->have_posts()) :
           echo '<div class="recently-post">';
 
           if(!$excerpt):
-            echo '<h2 class="section-title">相關文章</h2>';
+            echo '<h2 class="section-title">' . $title . '</h2>';
           endif;
 
           echo '<ul class="post-list">';

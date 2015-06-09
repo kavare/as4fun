@@ -1,0 +1,32 @@
+.searchbar {
+  margin-bottom: 0.75rem;
+
+  .search-input {
+    float: left;
+    width: 82%;
+    margin-bottom: 0;
+    padding: 1.23rem 1.2rem;
+    border: 0;
+    box-shadow: 0 4px 0 0 #e5e5e5;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.2rem;
+    background-color: #f1f1f1;
+    color: $black;
+  }
+
+  .search-btn {
+    display: block;
+    float: left;
+    width: 18%;
+    margin-bottom: 0;
+    padding: 0.4rem 0;
+    outline: 0;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 0 0 #e7541d;
+    background-color: #EC774B;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+}
