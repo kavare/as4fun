@@ -1,0 +1,96 @@
+.ninja-forms-form-wrap {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: $snow;
+  box-shadow: 0px 4px 0px 0px #f1f1f1;
+
+  .ninja-forms-form-title {
+    margin: 0;
+    padding: .75rem;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+    text-align: center;
+    color: $white;
+    background-color: $purple;
+  }
+
+  .ninja-forms-all-fields-wrap {
+    padding: .75rem;
+
+    /**
+     * [Show required message]
+     */
+    .ninja-forms-required-items {
+      padding: .5rem;
+
+      .ninja-forms-req-symbol {
+
+      }
+    }
+
+    /**
+     * [Set the basic layout for labels and fields]
+     */
+    .field-wrap {
+
+      label {
+        display: inline-block;
+        width: 20%;
+      }
+
+      input {
+        display: inline-block;
+        width: 60%;
+      }
+
+      .ninja-forms-field-description {
+        p {
+
+        }
+      }
+
+      .ninja-forms-field-error {
+
+      }
+
+      .input-counter {
+        > span {
+
+        }
+      }
+    }
+
+    /**
+     * [Show form description under form title]
+     */
+    .form-description {
+      font-size: 1.1rem;
+      padding: .5rem;
+    }
+
+    .submit-btn-wrap {
+      min-height: 3rem;
+
+      .submit-btn {
+        @include cta-btn($yellow);
+        display: block;
+        padding: .3rem .5rem;
+        margin-bottom: 0;
+        border-color: transparent;
+
+        &:hover,
+        &:active {
+          margin-top: 1.5rem;
+          margin-bottom: -1.5rem;
+        }
+      }
+    }
+
+    /**
+     * Hide optional input fields
+     */
+    .friends-num-wrap {
+      display: none;
+    }
+  }
+}
