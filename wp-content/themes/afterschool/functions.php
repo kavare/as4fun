@@ -55,6 +55,9 @@ require_once('library/shortcodes.php');
 // Setup opengraph info for social platforms api
 require_once('library/opengraph.php');
 
+// Customized ninja-form default setting
+require_once('library/ninja-form.php');
+
 // Add Connection post type
 require_once('library/post-connection/post-type.php');
 require_once('library/post-connection/taxonomy.php');

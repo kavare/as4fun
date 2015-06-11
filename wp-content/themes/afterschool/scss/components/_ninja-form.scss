@@ -1,0 +1,202 @@
+.ninja-forms-form-wrap {
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: $snow;
+  box-shadow: 0px 4px 0px 0px #f1f1f1;
+
+  .ninja-forms-form-title {
+    margin: 0;
+    padding: .75rem;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+    text-align: center;
+    color: $white;
+    background-color: $purple;
+  }
+
+  .ninja-forms-all-fields-wrap {
+    padding: 1.5rem;
+
+    /**
+     * [Show required message]
+     */
+    .ninja-forms-required-items {
+      float: right;
+      margin-right: .5rem;
+      margin-bottom: 1rem;
+      padding: .05rem .25rem;
+      border-radius: 5px;
+      background-color: $yellow;
+
+      .ninja-forms-req-symbol {
+
+      }
+    }
+
+    /**
+     * [Set the basic layout for labels and fields]
+     */
+    .field-wrap {
+      margin-bottom: 2rem;
+
+      label {
+        font-size: 1.1rem;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      textarea {
+        box-sizing: border-box;
+        padding: 0.6rem 1.2rem;
+        border: 0;
+        box-shadow: 0 4px 0 0 #e5e5e5;
+        border-radius: 5px;
+        font-size: 1rem;
+        background-color: $white;
+        color: $input-color;
+      }
+
+      .ninja-forms-field-description {
+
+        p {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    /**
+     * [Show form description under form title]
+     */
+    .form-description {
+      clear: both;
+    }
+
+    /**
+     * [Text input specific style]
+     */
+    .form-text-wrap {
+      label {
+
+      }
+
+      input {
+        width: 35%;
+      }
+    }
+
+    /**
+     * [Radio options specific style]
+     */
+    .form-radio-wrap {
+
+      ul > li {
+        display: inline-block;
+        margin-right: 1rem;
+      }
+
+      label {
+
+      }
+
+      input {
+
+      }
+    }
+
+    .form-agree-wrap {
+      margin-bottom: 0;
+    }
+
+    /**
+     * [Optional input fields]
+     */
+    .friends-num-wrap {
+      display: none;
+      padding: .75rem;
+      background-color: #cfcfcf;
+      border-radius: 5px;
+    }
+
+    /**
+     * [Hide textarea input counter]
+     */
+    .input-counter {
+      display: none;
+    }
+
+    /**
+     * [Set form controls error style]
+     */
+    .ninja-forms-error {
+      padding: .5rem;
+      border-radius: 5px;
+      background-color: lighten($red, 20%);
+
+      input[type="text"],
+      input[type="number"],
+      textarea {
+        border: 1px solid $red;
+        box-shadow: 0 4px 0 0 darken($red, 10%);
+      }
+
+      .ninja-forms-field-error {
+        padding: 0 .5rem;
+        color: #ff0000;
+        font-weight: bold;
+      }
+    }
+
+    .submit-btn-wrap {
+      @extend .clearfix;
+
+      .submit-btn {
+        @include cta-btn($yellow);
+        position: relative;
+        top: 0;
+        display: block;
+        float: right;
+        padding: .3rem .5rem;
+        margin-bottom: 0;
+        border-color: transparent;
+        font-size: 1.2rem;
+
+        &:hover,
+        &:active {
+          top: .25rem;
+          margin: 0;
+          transition: all 0.2s ease-in;
+        }
+      }
+    }
+  }
+
+  /**
+   *[Set the form response message box]
+   */
+  .ninja-forms-response-msg {
+    display: none;
+
+    &.ninja-forms-success-msg,
+    &.ninja-forms-error-msg {
+      display: block;
+      padding: 1.5rem;
+      border-radius: 0 0 5px 5px;
+
+      p {
+        margin-bottom: 0;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+    }
+
+    &.ninja-forms-error-msg {
+      background-color: $red;
+      color: $white;
+    }
+
+    &.ninja-forms-success-msg {
+      background-color: $green;
+      color: $white;
+    }
+  }
+}
