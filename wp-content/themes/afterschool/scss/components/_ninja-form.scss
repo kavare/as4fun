@@ -21,7 +21,7 @@
      * [Show required message]
      */
     .ninja-forms-required-items {
-      float: right;
+      float: left;
       margin-right: .5rem;
       margin-bottom: 1rem;
       padding: .05rem .25rem;
@@ -80,7 +80,7 @@
       }
 
       input {
-        width: 35%;
+        width: 100%;
       }
     }
 
@@ -155,8 +155,9 @@
         top: 0;
         display: block;
         float: right;
-        padding: .3rem .5rem;
+        width: 100%;
         margin-bottom: 0;
+        padding: .3rem .5rem;
         border-color: transparent;
         font-size: 1.2rem;
 
@@ -197,6 +198,22 @@
     &.ninja-forms-success-msg {
       background-color: $green;
       color: $white;
+    }
+  }
+}
+
+@media #{$medium-up} {
+  .ninja-forms-form-wrap .ninja-forms-all-fields-wrap {
+    .ninja-forms-required-items {
+      float: right;
+    }
+
+    .form-text-wrap {
+      input { width: 35%; }
+    }
+
+    .submit-btn-wrap .submit-btn {
+      width: auto;
     }
   }
 }
