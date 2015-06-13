@@ -160,30 +160,11 @@
         padding: .3rem .5rem;
         border-color: transparent;
         font-size: 1.2rem;
-        transition: all 0.2s ease-in;
-
-        &:hover,
-        &:active {
-          top: .25rem;
-          margin: 0;
-        }
 
         &.active {
           box-shadow: 0 0 0 0 darken($green, 10%);
           animation: stretch .1s;
           animation-fill-mode: forwards;
-        }
-
-        @keyframes stretch {
-          from {
-            width: 8em;
-            background-color: $yellow;
-          }
-
-          to {
-            width: 100%;
-            background-color: $green;
-          }
         }
       }
     }
@@ -241,6 +222,24 @@
 
     .submit-btn-wrap .submit-btn {
       width: 8em;
+
+      &:hover {
+        top: .25rem;
+        margin: 0;
+        transition: all 0.1s ease-in;
+      }
     }
+  }
+}
+
+@keyframes stretch {
+  from {
+    width: 8em;
+    background-color: $yellow;
+  }
+
+  to {
+    width: 100%;
+    background-color: $green;
   }
 }

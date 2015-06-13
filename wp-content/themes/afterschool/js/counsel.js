@@ -1,0 +1,1 @@
+!function(n){n(function(){console.log("counsel")})}(jQuery);
