@@ -21,7 +21,7 @@
      * [Show required message]
      */
     .ninja-forms-required-items {
-      float: right;
+      float: left;
       margin-right: .5rem;
       margin-bottom: 1rem;
       padding: .05rem .25rem;
@@ -80,7 +80,7 @@
       }
 
       input {
-        width: 35%;
+        width: 100%;
       }
     }
 
@@ -155,19 +155,47 @@
         top: 0;
         display: block;
         float: right;
-        padding: .3rem .5rem;
+        width: 100%;
         margin-bottom: 0;
+        padding: .3rem .5rem;
         border-color: transparent;
         font-size: 1.2rem;
+        transition: all 0.2s ease-in;
 
         &:hover,
         &:active {
           top: .25rem;
           margin: 0;
-          transition: all 0.2s ease-in;
+        }
+
+        &.active {
+          box-shadow: 0 0 0 0 darken($green, 10%);
+          animation: stretch .1s;
+          animation-fill-mode: forwards;
+        }
+
+        @keyframes stretch {
+          from {
+            width: 8em;
+            background-color: $yellow;
+          }
+
+          to {
+            width: 100%;
+            background-color: $green;
+          }
         }
       }
     }
+  }
+
+  /**
+   * [sending icon when ninja form is sending]
+   */
+  .ninja-loading {
+    display: block;
+    width: auto;
+    margin: -2rem auto 2.5rem;
   }
 
   /**
@@ -197,6 +225,22 @@
     &.ninja-forms-success-msg {
       background-color: $green;
       color: $white;
+    }
+  }
+}
+
+@media #{$medium-up} {
+  .ninja-forms-form-wrap .ninja-forms-all-fields-wrap {
+    .ninja-forms-required-items {
+      float: right;
+    }
+
+    .form-text-wrap {
+      input { width: 35%; }
+    }
+
+    .submit-btn-wrap .submit-btn {
+      width: 8em;
     }
   }
 }

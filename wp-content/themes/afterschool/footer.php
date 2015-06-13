@@ -3,18 +3,6 @@
   <div class="row">
 	 <?php do_action('foundationPress_before_footer'); ?>
    <?php dynamic_sidebar("footer-widgets"); ?>
-   <!-- <article id="footer-contact" class="large-3 columns as-contact-form widget">
-      <h6 class="widget-title">聯絡我們</h6>
-      <form action="">
-        <label for="contact-email">您的email:</label>
-        <input type="text" name="contact-email" id="contact-email" required
-          placeholder="例：test@example.com">
-        <label for="contact-content">您的留言</label>
-        <textarea name="contact-content" id="contact-content" required
-                  placeholder="您任何寶貴的意見我們都會立刻回應"></textarea>
-        <input type="submit" value="送出" class="button">
-      </form>
-   </article> -->
 	 <?php do_action('foundationPress_after_footer'); ?>
   </div>
   <div class="copyright">
@@ -29,7 +17,7 @@
       </div>
       <div class="small-12 large-4 columns">
         <ul class="social-icons clearfix">
-          <li><a href="www.line.com" target="_blank">
+          <li class="hide-for-large-up"><a href="www.line.com" target="_blank">
             <i class="icon-line"></i>
           </a></li>
           <li><a href="www.twitter.com" target="_blank">
