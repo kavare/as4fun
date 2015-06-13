@@ -1,7 +1,7 @@
 @import "../base/mixins";
 
 /* -------------------------------------------- \
-  About template layouts settings
+  Counsel related templates layouts settings
 \ --------------------------------------------- */
 .page {
   @include page-jumbotron('/headlines/children.jpg', 'rocket.png');

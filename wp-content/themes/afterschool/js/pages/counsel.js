@@ -1,5 +1,5 @@
 (function($) {
   $(function() {
-    console.log('counsel-terms');
+    console.log('counsel');
   });
 })(jQuery);

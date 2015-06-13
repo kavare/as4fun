@@ -71,12 +71,10 @@ if (!function_exists('page_specific_scripts')):
                 wp_enqueue_style('connection-elderly', get_template_directory_uri() . '/css/pages/connection-elderly.css', array(), '1.0.0' );
                 break;
             case 'counsel-contacts':
-                wp_enqueue_script( 'counsel-contacts', get_template_directory_uri() . '/js/counsel-contacts.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('counsel-contacts', get_template_directory_uri() . '/css/pages/counsel-contacts.css', array(), '1.0.0' );
-                break;
             case 'counsel-terms':
-                wp_enqueue_script( 'counsel-terms', get_template_directory_uri() . '/js/counsel-terms.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('counsel-terms', get_template_directory_uri() . '/css/pages/counsel-terms.css', array(), '1.0.0' );
+            case 'form-counsel':
+                wp_enqueue_script( 'counsel-terms', get_template_directory_uri() . '/js/counsel.js', array('jquery'), '1.0.0', true );
+                wp_enqueue_style('counsel-terms', get_template_directory_uri() . '/css/pages/counsel.css', array(), '1.0.0' );
                 break;
             case 'donation-receipts':
                 wp_enqueue_script( 'donation-receipts', get_template_directory_uri() . '/js/donation-receipts.js', array('jquery'), '1.0.0', true );
@@ -85,10 +83,6 @@ if (!function_exists('page_specific_scripts')):
             case 'donation-terms':
                 wp_enqueue_script( 'donation-terms', get_template_directory_uri() . '/js/donation-terms.js', array('jquery'), '1.0.0', true );
                 wp_enqueue_style('donation-terms', get_template_directory_uri() . '/css/pages/donation-terms.css', array(), '1.0.0' );
-                break;
-            case 'form-counsel':
-                wp_enqueue_script( 'form', get_template_directory_uri() . '/js/form.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('form-counsel', get_template_directory_uri() . '/css/pages/form-counsel.css', array(), '1.0.0' );
                 break;
             case 'form-events':
                 wp_enqueue_script( 'form', get_template_directory_uri() . '/js/form.js', array('jquery'), '1.0.0', true );
