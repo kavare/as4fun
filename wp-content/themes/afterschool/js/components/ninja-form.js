@@ -5,6 +5,7 @@
     asNinjaForm = {
       init: function() {
         asNinjaForm.showOtherInput('.with-friends', '.friends-num-wrap');
+        asNinjaForm.addSendingIcon('.ninja-forms-form-wrap');
         asNinjaForm.registerSubmitCallback();
       },
 
@@ -20,22 +21,26 @@
       registerSubmitCallback: function() {
         $('.ninja-forms-form').on('submit', function() {
           var $this = $(this);
-          var path = location.origin + '/wp-content/themes/afterschool/assets/img/loader/poi.gif';
-
           $('.ninja-forms-form .submit-btn').addClass('active');
-          $this.parent().append('<img src="' + path + '" alt="form sending" class="ninja-loading">');
+          $('.ninja-loading').show();
         });
 
         $('.ninja-forms-form').on('submitResponse', function(e, response) {
-            var $this = $(this);
-            var success = response.success;
-            var errors = response.errors;
 
-            $('.ninja-loading').remove();
-            $('.ninja-forms-form .submit-btn').removeClass('active');
+          // NOTICE: this is the response object returned by ninja-form
+          // var success = response.success;
+          // var errors = response.errors;
+          // success ? alert(success['success_msg-成功訊息']) : alert(errors['required-general'].msg);
 
-            // success ? alert(success['success_msg-成功訊息']) : alert(errors['required-general'].msg);
+          $('.ninja-loading').hide();
+          $('.ninja-forms-form .submit-btn').removeClass('active');
         });
+      },
+
+      addSendingIcon: function(element) {
+        var path = location.origin + '/wp-content/themes/afterschool/assets/img/loader/poi.gif';
+        $(element).append('<img src="' + path + '" alt="form sending" class="ninja-loading">');
+        $('.ninja-loading').hide();
       }
     };
 
