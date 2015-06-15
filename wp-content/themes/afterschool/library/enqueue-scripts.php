@@ -54,6 +54,10 @@ if (!function_exists('page_specific_scripts')):
                 wp_enqueue_script( 'about', get_template_directory_uri() . '/js/about.js', array('jquery'), '1.0.0', true );
                 wp_enqueue_style('about', get_template_directory_uri() . '/css/pages/about.css', array(), '1.0.0' );
                 break;
+            case 'contact-us':
+                wp_enqueue_script( 'contact-us', get_template_directory_uri() . '/js/contact-us.js', array('jquery'), '1.0.0', true );
+                wp_enqueue_style('contact-us', get_template_directory_uri() . '/css/pages/contact-us.css', array(), '1.0.0' );
+                break;
             case 'community-links':
                 wp_enqueue_script( 'links', get_template_directory_uri() . '/js/links.js', array('jquery'), '1.0.0', true );
                 wp_enqueue_style('links', get_template_directory_uri() . '/css/pages/community-links.css', array(), '1.0.0' );
