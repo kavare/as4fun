@@ -55,7 +55,6 @@ if (!function_exists('page_specific_scripts')):
                 wp_enqueue_style('about', get_template_directory_uri() . '/css/pages/about.css', array(), '1.0.0' );
                 break;
             case 'contact-us':
-                wp_enqueue_script( 'contact-us', get_template_directory_uri() . '/js/contact-us.js', array('jquery'), '1.0.0', true );
                 wp_enqueue_style('contact-us', get_template_directory_uri() . '/css/pages/contact-us.css', array(), '1.0.0' );
                 break;
             case 'community-links':

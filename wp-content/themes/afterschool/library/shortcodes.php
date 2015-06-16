@@ -73,22 +73,32 @@ function as_shortcode_community_link($atts, $content = null) {
 function as_shortcode_contact_card($atts, $content = null) {
   $signature = array(
     'title' => '',
-    'address' => '',
+    'address1' => '',
+    'address2' => '',
     'note' => '',
-    'img' => ''
+    'img' => '',
+    'round' => false,
+    'icon1' => false,
+    'icon2' => false,
+    'icon3' => false,
   );
   extract(shortcode_atts($signature, $atts));
 
   $img = get_template_directory_uri() . '/assets/img/' . $img;
+  $shape = ($round) ? 'round' : 'square';
+
   $link =
-  '<div class="small-12 large-4 columns brick-item">' .
-    '<div class="brick-image-container">' .
-      '<img class="brick-image" src="' . $img . '" alt="' . $title . '">' .
-    '</div>' .
-    '<div class="brick-content">' .
-      '<h3 class="brick-title">' . $title . '</h3>' .
-      '<p class="brick-text">' . $address . '</p>' .
-      '<p class="brick-text">' . $note . '</p>' .
+  '<div class="small-12 columns">' .
+    '<div class="brick-item clearfix">' .
+      '<div class="brick-image-container">' .
+        '<img class="brick-image ' . $shape . '" src="' . $img . '" alt="' . $title . '">' .
+      '</div>' .
+      '<div class="brick-content">' .
+        '<h3 class="brick-title">' . $title . '</h3>' .
+        '<p class="brick-text"><i class="fa fa-fw fa-' . $icon1 . '"></i>' . $address1 . '</p>' .
+        '<p class="brick-text"><i class="fa fa-fw fa-' . $icon2 . '"></i>' . $address2 . '</p>' .
+        '<p class="brick-text"><i class="fa fa-fw fa-' . $icon3 . '"></i>' . $note . '</p>' .
+      '</div>' .
     '</div>' .
   '</div>';
 
