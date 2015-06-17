@@ -35,6 +35,7 @@
   </div>
 </footer>
 <a class="exit-off-canvas"></a>
+<a href="#" class="go-to-top"></a>
 
 	<?php do_action('foundationPress_layout_end'); ?>
 	</div>

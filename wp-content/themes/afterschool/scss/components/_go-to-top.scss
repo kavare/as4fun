@@ -1,0 +1,53 @@
+.go-to-top {
+  position: fixed;
+  right: .75rem;
+  bottom: 2.5rem;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5px;
+  background-color: $yellow;
+  box-shadow: 0 1px 5px rgba(0,0,0,.28);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s 0s ease-in, visibility 0s .3s;
+
+  &:after {
+    position: absolute;
+    top: 10%;
+    left: 24%;
+    content: '\f077';
+    font-family: 'fontawesome';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $white;
+  }
+
+  &.is-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s 0s ease-in, visibility 0s 0s;
+  }
+}
+
+@media #{$medium-up} {
+  .go-to-top {
+    right: 1.25rem;
+    bottom: 1.25rem;
+  }
+}
+
+@media #{$large-up} {
+  .go-to-top {
+    right: 2rem;
+    bottom: 2.5rem;
+
+    &:hover {
+      background-color: darken($yellow, 10%);
+      transform: scale(1.1);
+      transition: all 400ms ease,
+                  transform 400ms cubic-bezier(.175,.885,.32,1.275),
+                  background-color 400ms ease;
+    }
+  }
+}
