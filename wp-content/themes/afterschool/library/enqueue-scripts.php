@@ -99,6 +99,7 @@ if (!function_exists('page_specific_scripts')):
                 wp_enqueue_script( 'form', get_template_directory_uri() . '/js/form.js', array('jquery'), '1.0.0', true );
                 wp_enqueue_style('form-talks', get_template_directory_uri() . '/css/pages/form-talks.css', array(), '1.0.0' );
                 break;
+
             endswitch;
         }
 

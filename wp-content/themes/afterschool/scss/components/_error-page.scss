@@ -1,0 +1,77 @@
+.error-page-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  .error-pagetitle {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .error-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .error-content {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .error-img {
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .error-main {
+    background-color: $snow;
+    border-radius: 5px;
+    padding: 3rem 2rem;
+  }
+
+  .error-section {
+    margin-top: 2rem;
+  }
+
+  .button-group {
+    min-height: 4rem;
+
+    .btn-home {
+      @include cta-btn($blue);
+      display: inline-block;
+      padding: .4rem 1rem;
+      margin-bottom: 0;
+
+      &:hover,
+      &:active {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .btn-back {
+      @include cta-btn($green);
+      display: inline-block;
+      padding: .4rem 1rem;
+      margin-bottom: 0;
+
+      &:hover,
+      &:active {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media #{$large-up} {
+  .error-page-container {
+    .error-pagetitle {
+      text-align: left;
+    }
+
+    .error-img {
+      margin: 0;
+    }
+  }
+}
