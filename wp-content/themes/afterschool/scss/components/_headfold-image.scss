@@ -1,4 +1,21 @@
 /* -------------------------------------------- \
+  [Afterschool Page Headfold Image]
+  @type [template] page-template-*
+\ --------------------------------------------- */
+.page-template-about { @include page-jumbotron('/headlines/family.png', 'rocket.png', 0, 67%); }
+.page-template-about-plans { @include page-jumbotron('/headlines/family.png', 'rocket.png', 0, 67%); }
+.page-template-contact-us { @include page-jumbotron('/headlines/elderly.png', 'paperplane.png', 0, 13%); }
+.page-template-community-links { @include page-jumbotron('/headlines/toys.png', 'plane.png', 0, 88%); }
+.page-template-privacy { @include page-jumbotron('/headlines/toys.png', 'ballon.png', 0, 88%); }
+
+.page-template-counsel-terms { @include page-jumbotron('/headlines/newborn.png', 'paperplane.png', 0, 8%); }
+.page-template-counsel-contacts { @include page-jumbotron('/headlines/newborn.png', 'paperplane.png', 0, 8%); }
+.page-template-form-counsel { @include page-jumbotron('/headlines/newborn.png', 'paperplane.png', 0, 8%); }
+
+.page-template-donation-terms { @include page-jumbotron('/headlines/donate.png', 'paperplane.png', 0, 30%); }
+.page-template-donation-receipts { @include page-jumbotron('/headlines/donate.png', 'paperplane.png', 0, 30%); }
+
+/* -------------------------------------------- \
   [Connection Headfold Image]
   @type [archive] archive-connection
   @type [tax]     connection_target

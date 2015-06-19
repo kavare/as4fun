@@ -7,7 +7,6 @@ $brick-height: 11rem;
 $brick-gap: $brick-height * .1;
 
 .page-template-community-links {
-  @include page-jumbotron('/headlines/children.jpg', 'rocket.png');
 
   .bricks-container {
 
