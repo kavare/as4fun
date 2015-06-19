@@ -4,7 +4,6 @@
   About template layouts settings
 \ --------------------------------------------- */
 .page {
-  @include page-jumbotron('/headlines/children.jpg', 'rocket.png');
   font-size: 1.1rem;
 
   .entry-content p {

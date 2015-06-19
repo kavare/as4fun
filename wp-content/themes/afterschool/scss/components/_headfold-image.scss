@@ -1,0 +1,80 @@
+/* -------------------------------------------- \
+  [Afterschool Page Headfold Image]
+  @type [template] page-template-*
+\ --------------------------------------------- */
+.page-template-about { @include page-jumbotron('/headlines/family.png', 'rocket.png', 0, 67%); }
+.page-template-about-plans { @include page-jumbotron('/headlines/family.png', 'rocket.png', 0, 67%); }
+.page-template-contact-us { @include page-jumbotron('/headlines/elderly.png', 'paperplane.png', 0, 13%); }
+.page-template-community-links { @include page-jumbotron('/headlines/toys.png', 'plane.png', 0, 88%); }
+.page-template-privacy { @include page-jumbotron('/headlines/toys.png', 'ballon.png', 0, 88%); }
+
+.page-template-counsel-terms { @include page-jumbotron('/headlines/newborn.png', 'paperplane.png', 0, 8%); }
+.page-template-counsel-contacts { @include page-jumbotron('/headlines/newborn.png', 'paperplane.png', 0, 8%); }
+.page-template-form-counsel { @include page-jumbotron('/headlines/newborn.png', 'paperplane.png', 0, 8%); }
+
+.page-template-donation-terms { @include page-jumbotron('/headlines/donate.png', 'paperplane.png', 0, 30%); }
+.page-template-donation-receipts { @include page-jumbotron('/headlines/donate.png', 'paperplane.png', 0, 30%); }
+
+/* -------------------------------------------- \
+  [Connection Headfold Image]
+  @type [archive] archive-connection
+  @type [tax]     connection_target
+  @type [term]    children, teens, elderly
+\ --------------------------------------------- */
+.post-type-archive-connection { @include page-heading('/headlines/classroom.png', post, 0, 0); }
+.tax-connection_target { @include page-heading('/headlines/classroom.png', post, 0, 0); }
+.term-children { @include page-heading('/headlines/children.png', post, 0, 49%); }
+.term-teens { @include page-heading('/headlines/classroom.png', post, 0, 0); }
+.term-elderly { @include page-heading('/headlines/elderly.png', post, 0 , 13%); }
+
+/* -------------------------------------------- \
+  [Activity Headfold Image]
+  @type [archive] archive-activity
+  @type [tax]     activity_type
+  @type [term]    talks, events
+\ --------------------------------------------- */
+.post-type-archive-activity { @include page-heading('/headlines/activity.png', post, 0, 85%); }
+.tax-activity_type { @include page-heading('/headlines/activity.png', post, 0, 85%); }
+.term-talks { @include page-heading('/headlines/talks.png', post, 0, 39%); }
+.term-events { @include page-heading('/headlines/activity.png', post, 0, 85%); }
+
+/* -------------------------------------------- \
+  [Meeting Headfold Image]
+  @type [archive] archive-meeting
+  @type [tax]     meeting_stage
+  @type [term]    bulletins, minutes, progress
+\ --------------------------------------------- */
+.post-type-archive-meeting { @include page-heading('/headlines/family.png', post, 0, 67%); }
+.tax-meeting_stage { @include page-heading('/headlines/family.png', post, 0, 67%); }
+.term-bulletins { @include page-heading('/headlines/family.png', post, 0, 67%); }
+.term-minutes { @include page-heading('/headlines/family.png', post, 0, 67%); }
+.term-progress { @include page-heading('/headlines/family.png', post, 0, 67%); }
+
+/* -------------------------------------------- \
+  [Counel Headfold Image]
+  @type [archive] archive-counsel
+\ --------------------------------------------- */
+.post-type-archive-counsel { @include page-heading('/headlines/newborn.png', post, 0, 8%); }
+
+/* -------------------------------------------- \
+  [Donation Headfold Image]
+  @type [archive] archive-donation
+\ --------------------------------------------- */
+.post-type-archive-donation { @include page-heading('/headlines/donate.png', post, 0, 30%); }
+
+/* -------------------------------------------- \
+  [Volunteer Headfold Image]
+  @type [tax]     volunteer_record
+  @type [term]    story, announcement, administration
+\ --------------------------------------------- */
+.tax-volunteer_record { @include page-heading('/headlines/activity.png', post, 0, 85%); }
+.term-story { @include page-heading('/headlines/activity.png', post, 0, 85%); }
+.term-announcement { @include page-heading('/headlines/activity.png', post, 0, 85%); }
+.term-administration { @include page-heading('/headlines/activity.png', post, 0, 85%); }
+
+/* -------------------------------------------- \
+  [Category Headfold Image]
+  @type [category]    blog, press
+\ --------------------------------------------- */
+.category-blog { @include page-heading('/headlines/toys.png', post, 0, 88%); }
+.category-press { @include page-heading('/headlines/talks.png', post, 0, 39%); }

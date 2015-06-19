@@ -17,7 +17,7 @@
             the_post_thumbnail('', array('class' => 'card-image') );
           else:
         ?>
-          <img src="<?php as_img_src( 'ballon.png' ) ?>"
+          <img src="<?php as_img_src( 'headlines/activity.png' ) ?>"
                alt="放心窩協會" class="card-image">
         <?php endif; ?>
       </div>
