@@ -15,7 +15,7 @@
         the_post_thumbnail('', array('class' => 'list-image') );
       else:
     ?>
-      <img src="<?php as_img_src( 'ballon.png' ) ?>"
+      <img src="<?php as_img_src( 'headlines/family.png' ) ?>"
            alt="放心窩協會" class="list-image">
     <?php endif; ?>
   </div>

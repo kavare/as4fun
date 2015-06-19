@@ -1,10 +1,9 @@
 @import "../base/mixins";
 
 /* -------------------------------------------- \
-  archive-donation layouts settings
+  archive-table layout settings
 \ --------------------------------------------- */
 .archive {
-  @include page-heading('/headlines/children.jpg');
   font-size: 1.1rem;
 
   .donation-table {

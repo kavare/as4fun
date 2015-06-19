@@ -4,17 +4,17 @@
  * @param  {[string]} $stamp-img  [background image for stamp image]
  * @dependencies {[mixin]} stamp-image
  */
-@mixin page-jumbotron($header-img, $stamp-img) {
+@mixin page-jumbotron($header-img, $stamp-img, $pos-x: 50%, $pos-y: 54%) {
   .page-jumbotron-container {
     position: relative;
     height: 34vh;
-    margin-bottom: 5rem;
-    background-image: url('../../assets/img/#{$header-img}');
-    background-size: 100%;
-    background-position: 50% 54%;
+    margin-bottom: 7rem;
+    background-image: url('../assets/img/#{$header-img}');
+    background-size: cover;
+    background-position: $pos-x $pos-y;
 
     .page-title {
-      padding-top: 35vh;
+      padding-top: 36.5vh;
       padding-left: 1.25rem;
       font-size: 3rem;
       font-weight: bold;
@@ -30,7 +30,7 @@
         position: absolute;
         top: 7vh;
         left: 5rem;
-        background-image: url('../../assets/img/#{$stamp-img}');
+        background-image: url('../assets/img/#{$stamp-img}');
       }
 
       .page-title {
