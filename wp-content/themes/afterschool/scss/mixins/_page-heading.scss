@@ -2,20 +2,30 @@
  * [heading: the headline component for pages without stamps]
  * @param  {[string]} $header-img [background image for headlines]
  */
-@mixin page-heading($header-img) {
+@mixin page-heading($header-img, $type: page, $pos-x: 50%, $pos-y: 54%) {
   .page-heading-container {
     position: relative;
     height: 34vh;
     margin-bottom: 4rem;
-    background-image: url('../../assets/img/#{$header-img}');
-    background-size: 100%;
-    background-position: 50% 54%;
+    @if $type == page {
+      background-image: url('../../assets/img/#{$header-img}');
+    } @elseif $type == post {
+      background-image: url('../assets/img/#{$header-img}');
+    } @else {
+      background-image: url('../../assets/img/#{$header-img}');
+    }
+    background-size: cover;
+    background-position: $pos-x $pos-y;
 
     .page-title {
       position: absolute;
       top: 14vh;
-      left: 16.4vw;
-      font-weight: bold
+      left: 9.7vw;
+      padding: .25rem 1.25rem;
+      font-weight: bold;
+      background-color: $black;
+      color: $white;
+      border-radius: 5px;
     }
   }
 }

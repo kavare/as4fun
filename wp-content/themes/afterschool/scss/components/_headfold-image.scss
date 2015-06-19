@@ -1,0 +1,63 @@
+/* -------------------------------------------- \
+  [Connection Headfold Image]
+  @type [archive] archive-connection
+  @type [tax]     connection_target
+  @type [term]    children, teens, elderly
+\ --------------------------------------------- */
+.post-type-archive-connection { @include page-heading('/headlines/classroom.png', post, 0, 0); }
+.tax-connection_target { @include page-heading('/headlines/classroom.png', post, 0, 0); }
+.term-children { @include page-heading('/headlines/children.png', post, 0, 49%); }
+.term-teens { @include page-heading('/headlines/classroom.png', post, 0, 0); }
+.term-elderly { @include page-heading('/headlines/elderly.png', post, 0 , 13%); }
+
+/* -------------------------------------------- \
+  [Activity Headfold Image]
+  @type [archive] archive-activity
+  @type [tax]     activity_type
+  @type [term]    talks, events
+\ --------------------------------------------- */
+.post-type-archive-activity { @include page-heading('/headlines/children.jpg', post, 0, 0); }
+.tax-activity_type { @include page-heading('/headlines/children.jpg', post, 0, 0); }
+.term-talks { @include page-heading('/headlines/children.jpg', post, 0, 0); }
+.term-events { @include page-heading('/headlines/children.jpg', post, 0, 0); }
+
+/* -------------------------------------------- \
+  [Meeting Headfold Image]
+  @type [archive] archive-meeting
+  @type [tax]     meeting_stage
+  @type [term]    bulletins, minutes, progress
+\ --------------------------------------------- */
+.post-type-archive-meeting { @include page-heading('/headlines/children.jpg'); }
+.tax-meeting_stage { @include page-heading('/headlines/children.jpg'); }
+.term-bulletins { @include page-heading('/headlines/children.jpg'); }
+.term-minutes { @include page-heading('/headlines/children.jpg'); }
+.term-progress { @include page-heading('/headlines/children.jpg'); }
+
+/* -------------------------------------------- \
+  [Counel Headfold Image]
+  @type [archive] archive-counsel
+\ --------------------------------------------- */
+.post-type-archive-counsel { @include page-heading('/headlines/children.jpg'); }
+
+/* -------------------------------------------- \
+  [Donation Headfold Image]
+  @type [archive] archive-donation
+\ --------------------------------------------- */
+.post-type-archive-donation { @include page-heading('/headlines/children.jpg'); }
+
+/* -------------------------------------------- \
+  [Volunteer Headfold Image]
+  @type [tax]     volunteer_record
+  @type [term]    story, announcement, administration
+\ --------------------------------------------- */
+.tax-volunteer_record { @include page-heading('/headlines/children.jpg'); }
+.term-story { @include page-heading('/headlines/children.jpg'); }
+.term-announcement { @include page-heading('/headlines/children.jpg'); }
+.term-administration { @include page-heading('/headlines/children.jpg'); }
+
+/* -------------------------------------------- \
+  [Category Headfold Image]
+  @type [category]    blog, press
+\ --------------------------------------------- */
+.category-blog { @include page-heading('/headlines/children.jpg'); }
+.category-press { @include page-heading('/headlines/children.jpg'); }

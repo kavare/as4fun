@@ -1,10 +1,9 @@
 @import "../base/mixins";
 
 /* -------------------------------------------- \
-  archive-connection layouts settings
+  archive-card layout settings
 \ --------------------------------------------- */
 .archive {
-  @include page-heading('/headlines/children.jpg');
   font-size: 1.1rem;
 
   .card-container {
