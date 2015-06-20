@@ -1,0 +1,81 @@
+@import "../base/mixins";
+
+/* -------------------------------------------- \
+  archive-gallery layout settings
+\ --------------------------------------------- */
+.archive {
+  font-size: 1.1rem;
+
+  .gallery-container {
+    margin-bottom: 3rem;
+
+    .gallery-item {
+      position: relative;
+      display: block;
+      margin-bottom: 1.5rem;
+
+      .gallery-image {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+      }
+
+      .gallery-info {
+        width: 100%;
+        padding: .5rem;
+        background-color: rgba(0, 0, 0, .6);
+        color: $white;
+        border-radius: 0 0 5px 5px;
+
+        .gallery-title {
+          margin-top: 0;
+          font-size: 1.75rem;
+          font-weight: bold;
+          color: $white;
+        }
+
+        p {
+          margin: 0;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+@media #{$large-up} {
+  .archive .gallery-container {
+    .gallery-item {
+      height: 15rem;
+      margin-bottom: 0;
+      overflow: hidden;
+
+      .gallery-image {
+        border-radius: 5px;
+      }
+
+      .gallery-info {
+        position: absolute;
+        bottom: -4.5rem;
+
+        .gallery-title {
+          font-size: 2rem;
+          text-align: center;
+        }
+
+        .gallery-content {
+          padding: 0 1.25rem;
+          height: 4rem;
+          overflow: hidden;
+        }
+      }
+
+      &:hover {
+        .gallery-info {
+          bottom: 0;
+          background-color: rgba(0, 0, 0, .9);
+          transition: all 0.2s ease-in;
+        }
+      }
+    }
+  }
+}
