@@ -7,6 +7,7 @@
 .page-template-contact-us { @include page-jumbotron('/headlines/elderly.png', 'paperplane.png', 0, 13%); }
 .page-template-community-links { @include page-jumbotron('/headlines/toys.png', 'plane.png', 0, 88%); }
 .page-template-privacy { @include page-jumbotron('/headlines/toys.png', 'ballon.png', 0, 88%); }
+.page-template-gallery { @include page-jumbotron('/headlines/toys.png', 'ballon.png', 0, 88%); }
 
 .page-template-counsel-terms { @include page-jumbotron('/headlines/newborn.png', 'paperplane.png', 0, 8%); }
 .page-template-counsel-contacts { @include page-jumbotron('/headlines/newborn.png', 'paperplane.png', 0, 8%); }
@@ -78,3 +79,23 @@
 \ --------------------------------------------- */
 .category-blog { @include page-heading('/headlines/toys.png', post, 0, 88%); }
 .category-press { @include page-heading('/headlines/talks.png', post, 0, 39%); }
+
+/* -------------------------------------------- \
+  [Tag Headfold Image]
+  @type [tag]
+\ --------------------------------------------- */
+.tag { @include page-heading('/headlines/toys.png', post, 0, 88%); }
+
+/* -------------------------------------------- \
+  [Author Headfold Image]
+  @type [author]
+\ --------------------------------------------- */
+.author { @include page-heading('/headlines/toys.png', post, 0, 88%); }
+
+/* -------------------------------------------- \
+  [Gallery Headfold Image]
+  @type [archive] archive-gallery
+  @type [tax]     gallery_tag
+\ --------------------------------------------- */
+.post-type-archive-gallery { @include page-heading('/headlines/toys.png', post, 0, 88%); }
+.tax-gallery_tag { @include page-heading('/headlines/toys.png', post, 0, 88%); }

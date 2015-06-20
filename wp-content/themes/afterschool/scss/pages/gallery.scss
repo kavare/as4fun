@@ -1,0 +1,16 @@
+@import "../base/mixins";
+
+/* -------------------------------------------- \
+  Gallery template layout settings
+\ --------------------------------------------- */
+.page {
+  font-size: 1.1rem;
+
+  .entry-content p {
+    font-size: 1.2rem;
+  }
+
+  .gallery-container {
+    margin-bottom: 3rem;
+  }
+}

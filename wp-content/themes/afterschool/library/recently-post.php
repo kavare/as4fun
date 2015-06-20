@@ -20,7 +20,7 @@ if(!function_exists('as_show_recently_post')) :
                   if ( has_post_thumbnail() ):
                     the_post_thumbnail('', array('class' => 'post-image') );
                   else:
-                    echo '<img src="' . get_template_directory_uri() .'/assets/img/ballon.png" alt="放心窩協會" class="post-image">';
+                    echo '<img src="' . get_template_directory_uri() .'/assets/img/headlines/family.png" alt="放心窩協會" class="post-image">';
                   endif;
                 echo '</div>';
 

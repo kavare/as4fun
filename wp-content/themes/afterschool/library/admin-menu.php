@@ -8,12 +8,12 @@ function as_edit_admin_menus() {
     global $menu;
     global $submenu;
 
-    $menu[5][0] = "公開文章";
-    $menu[20][0] = "公告頁面";
+    $menu[5][0] = "部落格及新聞稿";
+    $menu[20][0] = "獨立頁面";
 
-    $menu[10][0] = "相簿";
-    $submenu['upload.php'][5][0] = "全部照片";
-    $submenu['upload.php'][10][0] = "新增照片";
+    $menu[10][0] = "文章圖片";
+    $submenu['upload.php'][5][0] = "全部文章圖片";
+    $submenu['upload.php'][10][0] = "新增文章圖片";
 
 
     // remove_menu_page( $menu_slug );
@@ -41,6 +41,7 @@ function as_custom_menu_order($menu_ord) {
         'edit.php?post_type=meeting', // Meeting
         'edit.php?post_type=counsel', // Counsel
         'edit.php?post_type=donation', // Donation
+        'edit.php?post_type=gallery', // Gallery
         'separator2', // Second separator
         'upload.php', // Media
         'link-manager.php', // Links

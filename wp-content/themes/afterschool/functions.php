@@ -94,3 +94,8 @@ require_once('library/post-counsel/taxonomy.php');
 require_once('library/post-counsel/metabox.php');
 require_once('library/post-counsel/admin-column.php');
 
+// Add Gallery post type
+require_once('library/post-gallery/post-type.php');
+require_once('library/post-gallery/taxonomy.php');
+require_once('library/post-gallery/metabox.php');
+require_once('library/post-gallery/admin-column.php');
