@@ -7,24 +7,24 @@
  */
 ?>
 
-<header class="page-header">
-	<h1 class="page-title"><?php _e( '對不起，但我們什麼也沒找到', 'FoundationPress' ); ?></h1>
-</header>
+<div class="row error-page-container">
+  <div class="small-12 columns">
+    <h1 class="error-pagetitle">對不起，但我們什麼也沒找到</h1>
+  </div>
+	  <div class="small-10 small-push-1 large-push-0 columns end error-main" role="main">
+	    <p class="error-content">這裡什麼也沒有...試試別的地方吧！</p>
+	    <div class="error-section">
+	      <p class="error-content">你可以試著再找找看...</p>
+	      <form role="search" method="get" id="searchform" class="searchform searchbar clearfix" action="<?php echo home_url('/'); ?>">
+	        <input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" class="search-input" placeholder="請輸入搜尋內容">
+	        <input type="submit" id="searchsubmit" value="搜尋" class="button search-btn">
+	      </form>
+	    </div>
 
-<div class="page-content">
-	<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
-
-	<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'FoundationPress' ), admin_url( 'post-new.php' ) ); ?></p>
-
-	<?php elseif ( is_search() ) : ?>
-
-	<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'FoundationPress' ); ?></p>
-	<?php get_search_form(); ?>
-
-	<?php else : ?>
-
-	<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'FoundationPress' ); ?></p>
-	<?php get_search_form(); ?>
-
-	<?php endif; ?>
+	    <div class="error-section button-group">
+	      <p class="error-content">你也可以...</p>
+	      <a href="javascript:history.back()" class="button btn-back">回上一頁</a>
+	      <a href="<?php echo home_url(); ?>" class="button btn-home">回到首頁</a>
+	    </div>
+	  </div>
 </div>
