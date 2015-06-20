@@ -85,5 +85,5 @@
   @type [archive] archive-gallery
   @type [tax]     gallery_tag
 \ --------------------------------------------- */
-.post-type-archive-gallery { @include page-jumbotron('/headlines/toys.png', 'ballon.png', 0, 88%); }
-.tax-gallery_tag { @include page-jumbotron('/headlines/toys.png', 'ballon.png', 0, 88%); }
+.post-type-archive-gallery { @include page-heading('/headlines/toys.png', post, 0, 88%); }
+.tax-gallery_tag { @include page-heading('/headlines/toys.png', post, 0, 88%); }

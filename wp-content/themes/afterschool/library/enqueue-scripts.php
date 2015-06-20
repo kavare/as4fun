@@ -95,6 +95,8 @@ if (!function_exists('page_specific_scripts')):
                 wp_enqueue_style('archive-card', get_template_directory_uri() . '/css/pages/archive-card.css', array(), '1.0.0' );
             elseif (is_post_type_archive( 'donation' )):
                 wp_enqueue_style('archive-table', get_template_directory_uri() . '/css/pages/archive-table.css', array(), '1.0.0');
+            elseif (is_post_type_archive( 'gallery' )):
+                wp_enqueue_style('archive-gallery', get_template_directory_uri() . '/css/pages/archive-gallery.css', array(), '1.0.0');
             else:
                 wp_enqueue_style('archive-list', get_template_directory_uri() . '/css/pages/archive-list.css', array(), '1.0.0');
             endif;
@@ -108,6 +110,8 @@ if (!function_exists('page_specific_scripts')):
                 wp_enqueue_style('archive-card', get_template_directory_uri() . '/css/pages/archive-card.css', array(), '1.0.0' );
             elseif (is_tax( 'donation_type' )):
                 wp_enqueue_style('archive-table', get_template_directory_uri() . '/css/pages/archive-table.css', array(), '1.0.0' );
+            elseif (is_tax( 'gallery_tag' )):
+                wp_enqueue_style('archive-gallery', get_template_directory_uri() . '/css/pages/archive-gallery.css', array(), '1.0.0');
             else:
                 wp_enqueue_style('archive-list', get_template_directory_uri() . '/css/pages/archive-list.css', array(), '1.0.0' );
             endif;
