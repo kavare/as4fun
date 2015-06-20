@@ -79,3 +79,11 @@
 \ --------------------------------------------- */
 .category-blog { @include page-heading('/headlines/toys.png', post, 0, 88%); }
 .category-press { @include page-heading('/headlines/talks.png', post, 0, 39%); }
+
+/* -------------------------------------------- \
+  [Gallery Headfold Image]
+  @type [archive] archive-gallery
+  @type [tax]     gallery_tag
+\ --------------------------------------------- */
+.post-type-archive-gallery { @include page-jumbotron('/headlines/toys.png', 'ballon.png', 0, 88%); }
+.tax-gallery_tag { @include page-jumbotron('/headlines/toys.png', 'ballon.png', 0, 88%); }

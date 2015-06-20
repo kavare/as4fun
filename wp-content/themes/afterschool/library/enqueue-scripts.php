@@ -52,53 +52,34 @@ if (!function_exists('page_specific_scripts')):
             case 'about':
             case 'about-plans':
                 wp_enqueue_script( 'about', get_template_directory_uri() . '/js/about.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('about', get_template_directory_uri() . '/css/pages/about.css', array(), '1.0.0' );
+                wp_enqueue_style( 'about', get_template_directory_uri() . '/css/pages/about.css', array(), '1.0.0' );
                 break;
             case 'contact-us':
-                wp_enqueue_style('contact-us', get_template_directory_uri() . '/css/pages/contact-us.css', array(), '1.0.0' );
+                wp_enqueue_style( 'contact-us', get_template_directory_uri() . '/css/pages/contact-us.css', array(), '1.0.0' );
                 break;
             case 'community-links':
                 wp_enqueue_script( 'links', get_template_directory_uri() . '/js/links.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('links', get_template_directory_uri() . '/css/pages/community-links.css', array(), '1.0.0' );
-                break;
-            case 'connection-children':
-                wp_enqueue_script( 'connection', get_template_directory_uri() . '/js/connection.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('connection-children', get_template_directory_uri() . '/css/pages/connection-children.css', array(), '1.0.0' );
-                break;
-            case 'connection-teens':
-                wp_enqueue_script( 'connection', get_template_directory_uri() . '/js/connection.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('connection-teens', get_template_directory_uri() . '/css/pages/connection-teens.css', array(), '1.0.0' );
-                break;
-            case 'connection-elderly':
-                wp_enqueue_script( 'connection', get_template_directory_uri() . '/js/connection.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('connection-elderly', get_template_directory_uri() . '/css/pages/connection-elderly.css', array(), '1.0.0' );
+                wp_enqueue_style( 'links', get_template_directory_uri() . '/css/pages/community-links.css', array(), '1.0.0' );
                 break;
             case 'counsel-contacts':
             case 'counsel-terms':
             case 'form-counsel':
                 wp_enqueue_script( 'counsel-terms', get_template_directory_uri() . '/js/counsel.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('counsel-terms', get_template_directory_uri() . '/css/pages/counsel.css', array(), '1.0.0' );
+                wp_enqueue_style( 'counsel-terms', get_template_directory_uri() . '/css/pages/counsel.css', array(), '1.0.0' );
                 break;
             case 'donation-receipts':
                 wp_enqueue_script( 'donation-receipts', get_template_directory_uri() . '/js/donation-receipts.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('donation-receipts', get_template_directory_uri() . '/css/pages/donation-receipts.css', array(), '1.0.0' );
+                wp_enqueue_style( 'donation-receipts', get_template_directory_uri() . '/css/pages/donation-receipts.css', array(), '1.0.0' );
                 break;
             case 'donation-terms':
                 wp_enqueue_script( 'donation-terms', get_template_directory_uri() . '/js/donation-terms.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('donation-terms', get_template_directory_uri() . '/css/pages/donation-terms.css', array(), '1.0.0' );
+                wp_enqueue_style( 'donation-terms', get_template_directory_uri() . '/css/pages/donation-terms.css', array(), '1.0.0' );
                 break;
-            case 'form-events':
-                wp_enqueue_script( 'form', get_template_directory_uri() . '/js/form.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('form-events', get_template_directory_uri() . '/css/pages/form-events.css', array(), '1.0.0' );
+            case 'gallery':
+                wp_enqueue_style( 'gallery', get_template_directory_uri() . '/css/pages/gallery.css', array(), '1.0.0' );
                 break;
-            case 'form-meetings':
-                wp_enqueue_script( 'form', get_template_directory_uri() . '/js/form.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('form-meetings', get_template_directory_uri() . '/css/pages/form-meetings.css', array(), '1.0.0' );
-                break;
-            case 'form-talks':
-                wp_enqueue_script( 'form', get_template_directory_uri() . '/js/form.js', array('jquery'), '1.0.0', true );
-                wp_enqueue_style('form-talks', get_template_directory_uri() . '/css/pages/form-talks.css', array(), '1.0.0' );
-                break;
+
+            default:
 
             endswitch;
         }
