@@ -99,3 +99,13 @@
 \ --------------------------------------------- */
 .post-type-archive-gallery { @include page-heading('/headlines/toys.png', post, 0, 88%); }
 .tax-gallery_tag { @include page-heading('/headlines/toys.png', post, 0, 88%); }
+
+/* -------------------------------------------- \
+  [The Event Calendar Headfold Image]
+  @type [archive] events-list
+  @type [single]  events-single
+\ --------------------------------------------- */
+.tribe-theme-afterschool {
+  &.events-archive { @include page-heading('/headlines/activity.png', post, 0, 85%); }
+  &.events-single { @include page-heading('/headlines/activity.png', post, 0, 85%); }
+}
