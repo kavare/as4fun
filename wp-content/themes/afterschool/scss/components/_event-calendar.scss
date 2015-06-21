@@ -24,11 +24,17 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+
+        &:hover {
+          color: darken($link-color, 10%);
+          transition: color 0.2s ease-in;
+        }
       }
     }
 
     .tribe-events-event-meta {
-      padding: 0;
+      width: 100%;
+      padding: .25rem;
 
       .time-details {
         font-size: 0.9375rem;
@@ -57,16 +63,17 @@
   }
 
   .tribe-events-read-more {
-    @include cta-btn($yellow);
+    @include cta-btn($orange);
     display: inline-block;
     float: right;
     width: 100%;
     padding: .25rem 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    text-align: center;
 
     &:hover,
     &:active {
-      margin-bottom: 0;
+      margin: 0;
     }
   }
 }
@@ -82,6 +89,20 @@
 
     .tribe-events-read-more {
       width: auto;
+      padding: .1rem .5rem;
+    }
+  }
+}
+
+.tribe-events-sub-nav {
+  li > a {
+    @include cta-btn($gray);
+    padding: .25rem 1rem;
+    box-shadow: 0;
+
+    &:hover,
+    &:active {
+      margin: 0;
     }
   }
 }
