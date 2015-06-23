@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header(); ?>
 
 <?php get_template_part( 'parts/content', 'heading' ); ?>
-  <div class="row">
+  <div class="row event-container">
     <div class="small-12 large-8 columns">
       <div id="tribe-events-pg-template">
         <?php tribe_events_before_html(); ?>

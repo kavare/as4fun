@@ -1,4 +1,15 @@
 /**
+ * [Tribe Event Archive Page Global Settings]
+ */
+.event-container {
+  margin-bottom: 3rem;
+}
+
+.event-archive {
+  .tribe-events-ical { display: none; }
+}
+
+/**
  * [Tribe The Event Calendar List Page]
  */
 .events-list {
