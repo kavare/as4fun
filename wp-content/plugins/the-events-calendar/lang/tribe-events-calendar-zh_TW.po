@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: The Events Calendar 3.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-25 11:19+0800\n"
-"PO-Revision-Date: 2015-06-25 12:35+0800\n"
+"PO-Revision-Date: 2015-06-25 21:53+0800\n"
 "Last-Translator: \n"
 "Language-Team: Modern Tribe, Inc. <pro@tri.be>\n"
 "Language: zh_TW\n"
@@ -323,7 +323,7 @@ msgstr "設定已儲存。"
 
 #: ../src/Tribe/List_Widget.php:30
 msgid "A widget that displays upcoming events."
-msgstr "一個顯示即將來臨活動的小工具。"
+msgstr "一個顯示近期活動的小工具。"
 
 #: ../src/Tribe/List_Widget.php:38
 msgid "Events List"
@@ -331,7 +331,7 @@ msgstr "活動列表"
 
 #: ../src/Tribe/List_Widget.php:171
 msgid "Upcoming Events"
-msgstr "即將來臨活動"
+msgstr "近期活動"
 
 #: ../src/Tribe/Main.php:487 ../src/functions/template-tags/venue.php:52
 #: ../src/io/csv/admin-views/import.php:45
@@ -1023,7 +1023,7 @@ msgid ""
 "No upcoming %s listed under %s. Check out upcoming %s for this category or "
 "view the full calendar."
 msgstr ""
-"沒有接近的 %s 在 %s 列表中。請檢查這個類別即將來到的 %s 或檢視完整的時間表。"
+"沒有接近的 %s 在 %s 列表中。請檢查這個類別的近期 %s 或檢視完整的時間表。"
 
 #: ../src/Tribe/Template_Factory.php:359 ../src/Tribe/Template_Factory.php:364
 #, php-format
@@ -3788,7 +3788,7 @@ msgstr "顯示："
 
 #: ../src/admin-views/widget-admin-list.php:28
 msgid "Show widget only if there are upcoming events:"
-msgstr "僅於如果有即將來臨活動時顯示小工具："
+msgstr "僅於如果有近期活動時顯示小工具："
 
 #: ../src/functions/advanced-functions/meta_registration.php:16
 #: ../src/views/modules/meta/details.php:30
@@ -3853,7 +3853,7 @@ msgstr "行事曆由 %sThe Events Calendar%s 所提供"
 #: ../src/functions/template-tags/loop.php:131
 #, php-format
 msgid "Upcoming %s"
-msgstr "即將到來的 %s"
+msgstr "近期%s"
 
 #: ../src/functions/template-tags/loop.php:145
 #, php-format

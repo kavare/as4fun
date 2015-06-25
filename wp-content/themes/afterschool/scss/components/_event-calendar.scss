@@ -24,12 +24,14 @@
 /**
  * [Tribe Event Archive Page Global Settings]
  */
-.event-container {
-  margin-bottom: 3rem;
-}
-
 .events-archive {
   .tribe-events-ical { display: none !important; }
+}
+
+@media #{$large-up} {
+  .event-container {
+    margin-bottom: 3rem;
+  }
 }
 
 /**
