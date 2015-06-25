@@ -1,4 +1,27 @@
 /**
+ * [Tribe Event Page Global Settings]
+ */
+ @media #{$large-up} {
+   .events-archive,
+   .events-single {
+     .tribe-events-sub-nav {
+       li > a {
+         @include cta-btn($gray);
+         margin-bottom: 0;
+         padding: .25rem 1rem;
+         box-shadow: 0;
+         font-size: 1.1rem;
+
+         &:hover,
+         &:active {
+           margin: 0;
+         }
+       }
+     }
+   }
+ }
+
+/**
  * [Tribe Event Archive Page Global Settings]
  */
 .event-container {
@@ -7,34 +30,13 @@
 
 .events-archive {
   .tribe-events-ical { display: none !important; }
-
-  .tribe-events-sub-nav {
-
-  }
-}
-
-
-@media #{$large-up} {
-  .events-archive {
-    .tribe-events-sub-nav {
-      li > a {
-        @include cta-btn($gray);
-        margin-bottom: 0;
-        padding: .25rem 1rem;
-        box-shadow: 0;
-        font-size: 1.1rem;
-
-        &:hover,
-        &:active {
-          margin: 0;
-        }
-      }
-    }
-  }
 }
 
 /**
  * [Tribe The Event Calendar List Page]
+ * @type: list
+ * @type: day
+ * @type: category
  */
 .events-list .type-tribe_events,
 .tribe-events-day .type-tribe_events {
@@ -146,4 +148,11 @@
       padding: .1rem .5rem;
     }
   }
+}
+
+/**
+ * [Tribe The Event Calendar Single Page]
+ */
+.events-single {
+
 }
