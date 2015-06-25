@@ -64,12 +64,6 @@ require_once('library/post-connection/taxonomy.php');
 require_once('library/post-connection/metabox.php');
 require_once('library/post-connection/admin-column.php');
 
-// Add Activity post type
-require_once('library/post-activity/post-type.php');
-require_once('library/post-activity/taxonomy.php');
-require_once('library/post-activity/metabox.php');
-require_once('library/post-activity/admin-column.php');
-
 // Add Donation post type
 require_once('library/post-donation/post-type.php');
 require_once('library/post-donation/taxonomy.php');
