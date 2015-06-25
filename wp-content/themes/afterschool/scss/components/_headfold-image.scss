@@ -29,17 +29,6 @@
 .term-elderly { @include page-heading('/headlines/elderly.png', post, 0 , 13%); }
 
 /* -------------------------------------------- \
-  [Activity Headfold Image]
-  @type [archive] archive-activity
-  @type [tax]     activity_type
-  @type [term]    talks, events
-\ --------------------------------------------- */
-.post-type-archive-activity { @include page-heading('/headlines/activity.png', post, 0, 85%); }
-.tax-activity_type { @include page-heading('/headlines/activity.png', post, 0, 85%); }
-.term-talks { @include page-heading('/headlines/talks.png', post, 0, 39%); }
-.term-events { @include page-heading('/headlines/activity.png', post, 0, 85%); }
-
-/* -------------------------------------------- \
   [Meeting Headfold Image]
   @type [archive] archive-meeting
   @type [tax]     meeting_stage
@@ -72,6 +61,12 @@
 .term-story { @include page-heading('/headlines/activity.png', post, 0, 85%); }
 .term-announcement { @include page-heading('/headlines/activity.png', post, 0, 85%); }
 .term-administration { @include page-heading('/headlines/activity.png', post, 0, 85%); }
+
+/* -------------------------------------------- \
+  [Search Results Page Headfold Image]
+  @type [type]    search-results
+\ --------------------------------------------- */
+.search-results { @include page-heading('/headlines/activity.png', post, 0, 85%); }
 
 /* -------------------------------------------- \
   [Category Headfold Image]

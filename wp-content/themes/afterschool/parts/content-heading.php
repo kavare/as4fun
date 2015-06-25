@@ -5,7 +5,7 @@
       /**
        * [The Title for The Event Calendar]
        */
-      if (tribe_is_event()):
+      if (tribe_is_event() && !is_search()):
         if( tribe_is_month() && !is_tax() ): // The Main Calendar Page
             echo '社區活動時間表';
         elseif( tribe_is_month() && is_tax() ): // Calendar Category Pages
@@ -20,7 +20,9 @@
        * [The Original Title]
        */
       else:
-        if (is_category( 'blog' ) or is_category( 'press' )):
+        if (is_search()):
+          echo '搜尋結果';
+        elseif (is_category( 'blog' ) or is_category( 'press' )):
           single_cat_title();
         elseif (is_archive() and !is_tax()):
           post_type_archive_title();
