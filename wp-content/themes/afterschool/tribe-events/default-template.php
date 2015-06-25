@@ -26,6 +26,6 @@ get_header(); ?>
       </div> <!-- #tribe-events-pg-template -->
     </div>
 
-    <?php get_sidebar( 'activity' ); ?>
+    <?php get_sidebar( 'event' ); ?>
   </div>
 <?php get_footer(); ?>

@@ -3,7 +3,7 @@
   <?php dynamic_sidebar("sidebar-widgets"); ?>
   <?php
     $args = array(
-      'taxonomy'     => 'activity_type',
+      'taxonomy'     => 'tribe_events_cat',
       'orderby'      => 'name',
       'show_count'   => 1,
       'pad_counts'   => 0,
