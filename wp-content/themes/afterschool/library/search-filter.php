@@ -10,12 +10,14 @@ function as_search_filter($query) {
 
     $full_access = array(
         'page', 'post', 'attachment', 'nav_menu_item',
-        'connection', 'activity', 'donation', 'meeting', 'volunteer', 'counsel',
+        'connection', 'donation', 'meeting', 'volunteer', 'counsel',
+        'tribe_events',
     );
 
     $least_access = array(
         'page', 'post', 'attachment', 'nav_menu_item',
-        'connection', 'activity', 'donation',
+        'connection', 'donation',
+        'tribe_events',
     );
 
     $role_access = array(
@@ -25,15 +27,18 @@ function as_search_filter($query) {
         'subscriber' => $least_access,
         'author' => array(
             'page', 'post', 'attachment', 'nav_menu_item',
-            'connection', 'activity', 'donation', 'meeting', 'volunteer',
+            'connection', 'donation', 'meeting', 'volunteer',
+            'tribe_events',
         ),
         'volunteer' => array(
             'page', 'post', 'attachment', 'nav_menu_item',
-            'connection', 'activity', 'donation', 'meeting', 'volunteer',
+            'connection', 'donation', 'meeting', 'volunteer',
+            'tribe_events',
         ),
         'counselor' => array(
             'page', 'post', 'attachment', 'nav_menu_item',
-            'connection', 'activity', 'donation', 'meeting', 'counsel',
+            'connection', 'donation', 'meeting', 'counsel',
+            'tribe_events',
         ),
     );
 
