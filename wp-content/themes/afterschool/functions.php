@@ -34,6 +34,9 @@ require_once('library/custom-header.php');
 // Modfiy backend admin menu
 require_once('library/admin-menu.php');
 
+// Modfiy backend admin menu color theme
+require_once('library/admin-theme.php');
+
 // Add Foundation Event Handler
 require_once('library/foundation-events.php');
 
