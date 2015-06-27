@@ -102,12 +102,12 @@
       margin-bottom: 1rem;
       padding: 1.5rem 1.5rem 2rem;
       border-radius: 5px;
-      background-color: $snow;
-      box-shadow: 0px 4px 0px 0px #f1f1f1;
+      background-color: $form-bg-color;
+      box-shadow: 0 4px 0 0 $form-bg-shadow;
 
 
       label {
-        padding-bottom: 0.3rem;
+        padding-bottom: .3rem;
         font-size: 1.1rem;
         font-weight: bold;
       }
@@ -154,7 +154,7 @@
         @include cta-btn($yellow);
         display: block;
         width: 100%;
-        padding: 0.3rem 0;
+        padding: .3rem 0;
         margin-bottom: 0;
         border-color: transparent;
 
@@ -172,7 +172,7 @@
 
       .wpcf7-response-output {
         margin: 0 0 1em;
-        padding: 0.2em 1em 0;
+        padding: .2em 1em 0;
         background-color: #f1f1f1;
         border-radius: 5px;
         font-weight: bold;

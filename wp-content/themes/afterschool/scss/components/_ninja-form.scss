@@ -1,8 +1,8 @@
 .ninja-forms-form-wrap {
   margin-bottom: 1rem;
   border-radius: 5px;
-  background-color: $snow;
-  box-shadow: 0px 4px 0px 0px #f1f1f1;
+  background-color: $form-bg-color;
+  box-shadow: 0 4px 0 0 $form-bg-shadow;
 
   .ninja-forms-form-title {
     margin: 0;

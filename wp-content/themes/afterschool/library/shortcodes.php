@@ -25,7 +25,7 @@ function as_shortcode_home_section($atts, $content = null) {
         '</header>' .
         '<div class="section-content">' . $content . '</div>' .
         '<div class="section-action-group">' .
-          '<a href="" id="cta-' . $id . '" class="button">' . $cta .'</a>' .
+          '<a href="' . $url . '" id="cta-' . $id . '" class="button">' . $cta .'</a>' .
         '</div>' .
       '</div>' .
     '</div>' .
