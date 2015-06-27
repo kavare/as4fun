@@ -31,8 +31,17 @@ require_once('library/theme-support.php');
 // Add Header image
 require_once('library/custom-header.php');
 
+// Restrict admin access
+require_once('library/admin-access.php');
+
 // Modfiy backend admin menu
 require_once('library/admin-menu.php');
+
+// Modfiy backend admin menu color theme
+require_once('library/admin-theme.php');
+
+// Modify wp-login style
+require_once('library/admin-login.php');
 
 // Add Foundation Event Handler
 require_once('library/foundation-events.php');

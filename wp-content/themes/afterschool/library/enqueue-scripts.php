@@ -78,6 +78,11 @@ if (!function_exists('page_specific_scripts')):
             case 'gallery':
                 wp_enqueue_style( 'gallery', get_template_directory_uri() . '/css/pages/gallery.css', array(), '1.0.0' );
                 break;
+            case 'member-register':
+            case 'member-login':
+            case 'member-profile':
+                wp_enqueue_style( 'member', get_template_directory_uri() . '/css/pages/member.css', array(), '1.0.0' );
+                break;
 
             default:
 

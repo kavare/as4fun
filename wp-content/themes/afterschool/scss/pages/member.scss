@@ -1,0 +1,267 @@
+@import "../base/mixins";
+
+/* -------------------------------------------- \
+  member pages global settings
+\ --------------------------------------------- */
+.wpmem_msg {
+  width: 100%;
+  padding: .5rem;
+  border-radius: 5px;
+  background-color: lighten($blue, 20%);
+
+  > p {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: $text-color;
+  }
+
+  &.error {
+    background-color: lighten($red, 20%);
+    transition: all .2s ease-in;
+
+    > p { color: $red; }
+  }
+}
+
+#wpmem_msg {
+  width: 100%;
+  margin: 0 auto;
+  padding: .5rem;
+  border-radius: 5px;
+  background-color: lighten($red, 20%);
+  color: $red;
+
+  > h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $red;
+  }
+
+  > p {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    a { display: none; }
+  }
+}
+
+@media #{$medium-up} {
+  .wpmem_msg {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #wpmem_msg {
+    width: 25rem;
+  }
+}
+
+/* -------------------------------------------- \
+  member-register layout settings
+\ --------------------------------------------- */
+#wpmem_reg {
+  width: 100%;
+  margin: 0 auto 3rem;
+
+  .form {
+
+    fieldset {
+      border: 0;
+      border-radius: 5px;
+      background-color: $form-bg-color;
+      box-shadow: 0 4px 0 0 $form-bg-shadow;
+
+      legend {
+        font-size: 2rem;
+        background-color: transparent;
+      }
+
+      .req {
+        display: inline-block;
+        margin: 0 .2rem;
+        color: $red;
+        font-weight: bold;
+      }
+
+      .req-text { display: none; }
+    }
+
+    label {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="phone"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    .noinput {
+      box-sizing: border-box;
+      padding: 0.6rem 1.2rem;
+      border: 0;
+      box-shadow: 0 4px 0 0 #e5e5e5;
+      border-radius: 5px;
+      font-size: 1rem;
+      background-color: $white;
+      color: $input-color;
+    }
+
+    .noinput { background-color: $iron; }
+
+    input[type="submit"] {
+      @include cta-btn($yellow);
+      position: relative;
+      top: 0;
+      display: block;
+      clear: both;
+      float: right;
+      width: 100%;
+      margin-bottom: 0;
+      padding: .3rem .5rem;
+      border-color: transparent;
+      font-size: 1.2rem;
+
+      &.active {
+        margin: 1.5rem 0 0;
+        box-shadow: 0 0 0 0 darken($green, 10%);
+        animation: stretch .1s;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    .register-loading {
+      display: block;
+      width: auto;
+      margin: -2rem auto 2.5rem;
+    }
+
+    .recaptchatable {
+      float: left;
+    }
+  }
+}
+
+@media #{$medium-up} {
+  #wpmem_reg {
+    width: 80%;
+
+    .form {
+      input[type="text"],
+      input[type="number"],
+      input[type="phone"],
+      input[type="email"],
+      input[type="password"],
+      .noinput {
+        width: 35%;
+      }
+
+      input[type="submit"] {
+        width: 8em;
+
+        &:hover {
+          top: .25rem;
+          margin: 0;
+          transition: all 0.1s ease-in;
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------------------------- \
+  member-login layout settings
+\ --------------------------------------------- */
+#wpmem_login {
+  width: 90%;
+  margin: 0 auto 3rem;
+
+  .form {
+
+    fieldset {
+      border: 0;
+      border-radius: 5px;
+      background-color: $form-bg-color;
+      box-shadow: 0 4px 0 0 $form-bg-shadow;
+
+      legend {
+        font-size: 2rem;
+        background-color: transparent;
+      }
+
+      .req {
+        display: inline-block;
+        margin: 0 .2rem;
+        color: $red;
+        font-weight: bold;
+      }
+
+      .req-text { display: none; }
+    }
+
+    label {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="phone"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.6rem 1.2rem;
+      border: 0;
+      box-shadow: 0 4px 0 0 #e5e5e5;
+      border-radius: 5px;
+      font-size: 1rem;
+      background-color: $white;
+      color: $input-color;
+    }
+
+    input[type="submit"] {
+      @include cta-btn($yellow);
+      position: relative;
+      top: 0;
+      display: block;
+      clear: both;
+      width: 100%;
+      margin-bottom: 0;
+      padding: .3rem .5rem;
+      border-color: transparent;
+      font-size: 1.2rem;
+    }
+
+    .button_div {
+      margin: 1.75rem 0;
+    }
+
+    .link-text {
+      float: left;
+      margin: .15rem 0;
+    }
+  }
+}
+
+@media #{$medium-up} {
+  #wpmem_login {
+    width: 25rem;
+
+    .form {
+
+      input[type="submit"] {
+        width: 6em;
+        float: right;
+
+        &:hover {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

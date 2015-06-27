@@ -16,6 +16,10 @@
 .page-template-donation-terms { @include page-jumbotron('/headlines/donate.png', 'paperplane.png', 0, 30%); }
 .page-template-donation-receipts { @include page-jumbotron('/headlines/donate.png', 'paperplane.png', 0, 30%); }
 
+.page-template-member-register { @include page-heading('/headlines/family.png', post, 0, 67%); }
+.page-template-member-login { @include page-heading('/headlines/family.png', post, 0, 67%); }
+.page-template-member-profile { @include page-heading('/headlines/family.png', post, 0, 67%); }
+
 /* -------------------------------------------- \
   [Connection Headfold Image]
   @type [archive] archive-connection
@@ -67,6 +71,7 @@
   @type [type]    search-results
 \ --------------------------------------------- */
 .search-results { @include page-heading('/headlines/activity.png', post, 0, 85%); }
+.search-no-results { @include page-heading('/headlines/activity.png', post, 0, 85%); }
 
 /* -------------------------------------------- \
   [Category Headfold Image]

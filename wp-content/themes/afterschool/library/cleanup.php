@@ -24,13 +24,13 @@ function FoundationPress_start_cleanup() {
 
     // clean up gallery output in wp
     add_filter('FoundationPress_gallery_style', 'FoundationPress_gallery_style');
-    
+
     // additional post related cleaning
     add_filter('get_FoundationPress_image_tag_class', 'FoundationPress_image_tag_class', 0, 4);
     add_filter('get_image_tag', 'FoundationPress_image_editor', 0, 4);
     add_filter( 'the_content', 'img_unautop', 30 );
 
-} 
+}
 add_action('after_setup_theme','FoundationPress_start_cleanup');
 endif;
 /**
@@ -49,7 +49,7 @@ function FoundationPress_cleanup_head() {
 
     // Post and comment feed links
     remove_action( 'wp_head', 'feed_links', 2 );
-    
+
     // Windows Live Writer
     remove_action( 'wp_head', 'wlwmanifest_link' );
 
@@ -81,9 +81,9 @@ function FoundationPress_cleanup_head() {
     add_filter( 'script_loader_src', 'FoundationPress_remove_wp_ver_css_js', 9999 );
 
     // Prevent unneccecary info from being displayed
-    add_filter('login_errors',create_function('$a', "return null;"));
+    // add_filter('login_errors', create_function('$a', "return null;"));
 
-} 
+}
 endif;
 
 // remove WP version from RSS
@@ -190,7 +190,7 @@ function FoundationPress_image_editor($html, $id, $alt, $title) {
             'alt="' . $title . '"'
         ),
         $html);
-} 
+}
 endif;
 
 // Wrap images with figure tag - Credit: Robert O'Rourke - http://bit.ly/1q0WHFs

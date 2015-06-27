@@ -1,10 +1,10 @@
 <?php
 
 /**
- * [as_edit_admin_menus: edit existing menu item name]
+ * [as_edit_admin_menu_name: edit existing menu item name]
  * @return [void] [description]
  */
-function as_edit_admin_menus() {
+function as_edit_admin_menu_name() {
     global $menu;
     global $submenu;
     global $wp_post_types;
@@ -15,8 +15,8 @@ function as_edit_admin_menus() {
     $menu['35.1337'][0] = "報名表單";
 
     $menu[10][0] = "文章圖片";
-    $submenu['upload.php'][5][0] = "全部文章圖片";
-    $submenu['upload.php'][10][0] = "新增文章圖片";
+    // $submenu['upload.php'][5][0] = "全部文章圖片";
+    // $submenu['upload.php'][10][0] = "新增文章圖片";
 
     $labels = $wp_post_types['tribe_events']->labels;
     $labels->name = "社區活動";
@@ -30,19 +30,16 @@ function as_edit_admin_menus() {
     $labels->all_items = "社區活動";
     $labels->name_admin_bar = "社區活動";
     $labels->menu_name = "社區活動";
-
-    // remove_menu_page( $menu_slug );
-    // remove_submenu_page( $menu_slug, $submenu_slug );
 }
 
-add_action('admin_menu', 'as_edit_admin_menus');
+add_action('admin_menu', 'as_edit_admin_menu_name');
 
 /**
- * [as_custom_menu_order: change the order of admin menu items]
+ * [as_edit_admin_menu_order: change the order of admin menu items]
  * @param  [type]  $menu_ord [original menu order list]
  * @return [array]           [the array for menu order list]
  */
-function as_custom_menu_order($menu_ord) {
+function as_edit_admin_menu_order($menu_ord) {
     if (!$menu_ord) return true;
 
     return array(
@@ -70,7 +67,27 @@ function as_custom_menu_order($menu_ord) {
         'options-general.php', // Settings
     );
 }
-add_filter('custom_menu_order', 'as_custom_menu_order'); // Activate custom_menu_order
-add_filter('menu_order', 'as_custom_menu_order');
+add_filter('custom_menu_order', 'as_edit_admin_menu_order'); // Activate custom_menu_order
+add_filter('menu_order', 'as_edit_admin_menu_order');
+
+/**
+ * [as_remove_admin_menu_item: remove admin menu items]
+ * @return [void] [description]
+ */
+function as_remove_admin_menu_item() {
+    if(!current_user_can( 'administrator' ) and !current_user_can( 'editor' )) remove_menu_page( 'index.php' );
+}
+add_action('admin_menu', 'as_remove_admin_menu_item');
+
+/**
+ * [as_remove_dashboard_meta description: remove metabox from admin dashboard]
+ * @return [voie] [description]
+ */
+function as_remove_dashboard_meta() {
+  remove_meta_box( 'tribe_dashboard_widget', 'dashboard', 'side' );
+  remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );
+  remove_meta_box( 'dashboard_custom_feed', 'dashboard', 'side' );
+}
+add_action( 'admin_init', 'as_remove_dashboard_meta' );
 
 ?>
