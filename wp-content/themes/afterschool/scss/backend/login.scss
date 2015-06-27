@@ -32,8 +32,8 @@ body.login {
   #loginform {
     border: 0;
     border-radius: 5px;
-    background-color: $snow;
-    box-shadow: 0 4px 0 0 #f1f1f1;
+    background-color: $form-bg-color;
+    box-shadow: 0 4px 0 0 $form-bg-shadow;
 
     label {
       font-size: 1.1rem;

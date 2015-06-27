@@ -70,8 +70,8 @@
     fieldset {
       border: 0;
       border-radius: 5px;
-      background-color: $snow;
-      box-shadow: 0 4px 0 0 #f1f1f1;
+      background-color: $form-bg-color;
+      box-shadow: 0 4px 0 0 $form-bg-shadow;
 
       legend {
         font-size: 2rem;
@@ -110,7 +110,7 @@
       color: $input-color;
     }
 
-    .noinput { background-color: $smoke; }
+    .noinput { background-color: $iron; }
 
     input[type="submit"] {
       @include cta-btn($yellow);
@@ -184,8 +184,8 @@
     fieldset {
       border: 0;
       border-radius: 5px;
-      background-color: $snow;
-      box-shadow: 0 4px 0 0 #f1f1f1;
+      background-color: $form-bg-color;
+      box-shadow: 0 4px 0 0 $form-bg-shadow;
 
       legend {
         font-size: 2rem;

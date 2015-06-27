@@ -71,6 +71,7 @@
   @type [type]    search-results
 \ --------------------------------------------- */
 .search-results { @include page-heading('/headlines/activity.png', post, 0, 85%); }
+.search-no-results { @include page-heading('/headlines/activity.png', post, 0, 85%); }
 
 /* -------------------------------------------- \
   [Category Headfold Image]
