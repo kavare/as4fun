@@ -4,7 +4,7 @@ Template Name: Member Profile
 */
 get_header(); ?>
 
-<?php get_template_part( 'parts/content', 'jumbotron' ); ?>
+<?php get_template_part( 'parts/content', 'heading' ); ?>
 <div class="row">
   <div class="small-12 large-12 columns" role="main">
 

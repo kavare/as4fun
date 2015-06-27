@@ -15,12 +15,46 @@
     font-weight: bold;
     color: $text-color;
   }
+
+  &.error {
+    background-color: lighten($red, 20%);
+    transition: all .2s ease-in;
+
+    > p { color: $red; }
+  }
+}
+
+#wpmem_msg {
+  width: 100%;
+  margin: 0 auto;
+  padding: .5rem;
+  border-radius: 5px;
+  background-color: lighten($red, 20%);
+  color: $red;
+
+  > h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $red;
+  }
+
+  > p {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    a { display: none; }
+  }
 }
 
 @media #{$medium-up} {
   .wpmem_msg {
     width: 80%;
     margin: 0 auto;
+  }
+
+  #wpmem_msg {
+    width: 25rem;
   }
 }
 
@@ -40,7 +74,8 @@
       box-shadow: 0 4px 0 0 #f1f1f1;
 
       legend {
-        display: none;
+        font-size: 2rem;
+        background-color: transparent;
       }
 
       .req {
@@ -89,6 +124,19 @@
       padding: .3rem .5rem;
       border-color: transparent;
       font-size: 1.2rem;
+
+      &.active {
+        margin: 1.5rem 0 0;
+        box-shadow: 0 0 0 0 darken($green, 10%);
+        animation: stretch .1s;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    .register-loading {
+      display: block;
+      width: auto;
+      margin: -2rem auto 2.5rem;
     }
 
     .recaptchatable {
@@ -203,7 +251,6 @@
 @media #{$medium-up} {
   #wpmem_login {
     width: 25rem;
-    // margin-top: -3rem;
 
     .form {
 
