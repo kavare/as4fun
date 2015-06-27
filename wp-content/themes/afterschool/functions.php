@@ -31,6 +31,9 @@ require_once('library/theme-support.php');
 // Add Header image
 require_once('library/custom-header.php');
 
+// Restrict admin access
+require_once('library/admin-access.php');
+
 // Modfiy backend admin menu
 require_once('library/admin-menu.php');
 
