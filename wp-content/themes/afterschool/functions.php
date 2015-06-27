@@ -40,6 +40,9 @@ require_once('library/admin-menu.php');
 // Modfiy backend admin menu color theme
 require_once('library/admin-theme.php');
 
+// Modify wp-login style
+require_once('library/admin-login.php');
+
 // Add Foundation Event Handler
 require_once('library/foundation-events.php');
 
