@@ -51,6 +51,65 @@
     }
   }
 
+  .widget_mc4wp_widget {
+    h6 { background-color: $purple; }
+
+    form {
+      padding: .6rem 1.2rem;
+      @extend .clearfix;
+
+      .edm-content {
+
+      }
+
+      .edm-label {
+
+      }
+
+      .edm-field {
+        float: left;
+        box-sizing: border-box;
+        width: 75%;
+        padding: .6rem 1.2rem;
+        border: 0;
+        border-radius: 5px 0 0 5px;
+        font-size: 1rem;
+        background-color: $smoke;
+        box-shadow: 0 4px 0 0 $form-bg-shadow;
+        color: $input-color;
+      }
+
+      .edm-cta {
+        @include cta-btn($orange);
+        width: 20%;
+        padding: .4rem;
+        border: 0;
+        float: left;
+        border-radius: 0 5px 5px 0;
+
+        &:hover,
+        &:active {
+          margin: 0;
+        }
+      }
+    }
+
+    .mc4wp-alert {
+      padding: .6rem 1.2rem;
+      font-size: 1.1rem;
+
+      &.mc4wp-success {
+        background-color: $success-color;
+        color: $white;
+      }
+
+      &.mc4wp-error {
+        background-color: $alert-color;
+        color: $white;
+      }
+    }
+  }
+
   .widget_categorybox {
     .categories-container {
       margin: 0;

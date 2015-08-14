@@ -9,7 +9,7 @@ function as_edit_admin_menu_name() {
     global $submenu;
     global $wp_post_types;
 
-    $menu[5][0] = "部落格及新聞稿";
+    $menu[5][0] = "文章分享";
     $menu[20][0] = "獨立頁面";
     $menu[6][0] = "社區活動";
     $menu['35.1337'][0] = "報名表單";

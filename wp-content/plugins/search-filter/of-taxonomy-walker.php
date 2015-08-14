@@ -47,7 +47,7 @@ class Taxonomy_Walker extends Walker_Category {
 		{
 			extract($args);
 			
-			$cat_name = esc_attr( $category->sf_name );
+			$cat_name = esc_attr( $sf_name );
 			$cat_name = apply_filters( 'list_cats', $cat_name, $category );
 			$link = '<a href="' . esc_url( get_term_link($category) ) . '" ';
 			if ( $use_desc_for_title == 0 || empty($category->description) )
@@ -161,8 +161,8 @@ class Taxonomy_Walker extends Walker_Category {
 		else if($this->type=="multiselect")
 		{
 			extract($args);
-
-			$cat_name = esc_attr( $category->sf_name );
+			
+			$cat_name = esc_attr( $category->name );
 			$cat_id = esc_attr( $category->term_id );
 			$cat_name = apply_filters( 'list_cats', $cat_name, $category );
 			

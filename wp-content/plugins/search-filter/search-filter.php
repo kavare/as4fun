@@ -5,7 +5,7 @@ Plugin URI: http://www.designsandcode.com/447/wordpress-search-filter-plugin-for
 Description: Search and Filtering system for Pages, Posts, Categories, Tags and Taxonomies
 Author: Designs & Code
 Author URI: http://www.designsandcode.com/
-Version: 1.2.6
+Version: 1.2.7
 Text Domain: searchandfilter
 License: GPLv2
 */
@@ -16,7 +16,7 @@ License: GPLv2
 * Set up Plugin Globals
 */
 if (!defined('SEARCHANDFILTER_VERSION_NUM'))
-    define('SEARCHANDFILTER_VERSION_NUM', '1.2.6');
+    define('SEARCHANDFILTER_VERSION_NUM', '1.2.7');
 
 if (!defined('SEARCHANDFILTER_THEME_DIR'))
     define('SEARCHANDFILTER_THEME_DIR', ABSPATH . 'wp-content/themes/' . get_template());
@@ -638,6 +638,8 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 				}
 			}
 			
+			$taxcount = 0;
+			
 			/* CATEGORIES */
 			if((isset($_POST[SF_FPRE.'category']))&&($this->has_form_posted))
 			{
@@ -689,7 +691,7 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 					
 					$categories = implode($operator,$catarr);
 
-					if(get_option('permalink_structure'))
+					if(get_option('permalink_structure')&&($taxcount==0))
 					{
 						//$catrel = trim(str_replace(home_url(), "", get_category_link()), "/").$categories."/"; //get full category link, remvoe the home url to get relative, trim traling slashed, the append slash at the end
 						$category_base = (get_option( 'category_base' )=="") ? "category" : get_option( 'category_base' );
@@ -707,51 +709,17 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 						{
 							$this->urlparams .= "&";
 						}
+						
 						$this->urlparams .= "category_name=".$categories;
 					}
+					
+					$taxcount++;
 				}
-			}
-
-			/* SEARCH BOX */
-			if((isset($_POST[SF_FPRE.'search']))&&($this->has_form_posted))
-			{
-				$this->searchterm = trim(stripslashes($_POST[SF_FPRE.'search']));
-
-				if($this->searchterm!="")
-				{
-					if(!$this->hasqmark)
-					{
-						$this->urlparams .= "?";
-						$this->hasqmark = true;
-					}
-					else
-					{
-						$this->urlparams .= "&";
-					}
-					$this->urlparams .= "s=".urlencode($this->searchterm);
-					$this->hassearchquery = true;
-				}
-			}
-			if(!$this->hassearchquery)
-			{
 				
-				if((isset($_POST[SF_FPRE.'add_search_param']))&&($this->has_form_posted))
-				{//this is only set when a search box is displayed - it tells S&F to append a blank search to the URL to indicate a search has been submitted with no terms, however, still load the search template
-					
-					
-					
-					if(!$this->hasqmark)
-					{
-						$this->urlparams .= "?";
-						$this->hasqmark = true;
-					}
-					else
-					{
-						$this->urlparams .= "&";
-					}
-					$this->urlparams .= "s=";
-				}
+				
 			}
+			
+			
 			
 			/* TAGS */
 			if((isset($_POST[SF_FPRE.'post_tag']))&&($this->has_form_posted))
@@ -803,7 +771,132 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 					}
 					
 					$tags = implode($operator,$tagarr);
+					
+					if(get_option('permalink_structure')&&($taxcount==0))
+					{
+						$tag_path = "tag/".$tags."/";
+						$this->urlparams .= $tag_path;
+					}
+					else
+					{
+						if(!$this->hasqmark)
+						{
+							$this->urlparams .= "?";
+							$this->hasqmark = true;
+						}
+						else
+						{
+							$this->urlparams .= "&";
+						}
+						$this->urlparams .= "tag=".$tags;
+					}
+						
+					$taxcount++;
+				}
+			}
+			
+			//now we have dealt with the all the special case fields - search, tags, categories, post_types, post_date
 
+			//loop through the posts - double check that it is the search form that has been posted, otherwise we could be looping through the posts submitted from an entirely unrelated form
+			if($this->has_form_posted)
+			{
+				foreach($_POST as $key=>$val)
+				{
+					if(!in_array($key, $this->frmreserved))
+					{//if the key is not in the reserved array (ie, on a custom taxonomy - not tags, categories, search term, post type & post date)
+						
+						// strip off all prefixes for custom fields - we just want to do a redirect - no processing
+						if (strpos($key, SF_FPRE) === 0)
+						{
+							$key = substr($key, strlen(SF_FPRE));
+						}
+
+						$the_post_tax = $val;
+						
+						
+						//make the post an array for easy looping
+						if(!is_array($val))
+						{
+							$post_tax[] = $the_post_tax;
+						}
+						else
+						{
+							$post_tax = $the_post_tax;
+						}
+						$taxarr = array();
+
+						foreach ($post_tax as $tax)
+						{
+							$tax = esc_attr($tax);
+							$taxobj = get_term_by('id',$tax,$key);
+
+							if(isset($taxobj->slug))
+							{
+								$taxarr[] = $taxobj->slug;
+							}
+						}
+						
+						if(count($taxarr)>0)
+						{
+							$operator = "+"; //default behaviour
+					
+							//check to see if an operator has been specified - only applies with fields that use multiple selects such as checkboxes or multi selects
+							if(isset($_POST[SF_FPRE.$key.'_operator']))
+							{
+								if($_POST[SF_FPRE.$key.'_operator']=="and")
+								{
+									$operator = "+";
+								}
+								else if($_POST[SF_FPRE.$key.'_operator']=="or")
+								{
+									$operator = ",";
+								}
+								else
+								{
+									$operator = "+";
+								}
+							}
+						
+							$taxs = implode($operator,$taxarr);
+							
+							//**due to some new wierd rewrite in WordPress, the first taxonomy which get rewritten to /taxonomyname/taxonomyvalue only uses the first value of an array - so do it manually
+							if(get_option('permalink_structure')&&($taxcount==0))
+							{
+								$tax_path = $key."/".$taxs."/";
+								$this->urlparams .= $tax_path;
+							}
+							else
+							{
+								if(!$this->hasqmark)
+								{
+									$this->urlparams .= "?";
+									$this->hasqmark = true;
+								}
+								else
+								{
+									$this->urlparams .= "&";
+								}
+								$this->urlparams .=  $key."=".$taxs;
+							}
+							
+							$taxcount++;
+
+						}
+					}
+				}
+				
+				
+			}
+			
+			
+			
+			/* SEARCH BOX */
+			if((isset($_POST[SF_FPRE.'search']))&&($this->has_form_posted))
+			{
+				$this->searchterm = trim(stripslashes($_POST[SF_FPRE.'search']));
+
+				if($this->searchterm!="")
+				{
 					if(!$this->hasqmark)
 					{
 						$this->urlparams .= "?";
@@ -813,11 +906,30 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 					{
 						$this->urlparams .= "&";
 					}
-					$this->urlparams .= "tag=".$tags;
-
+					$this->urlparams .= "s=".urlencode($this->searchterm);
+					$this->hassearchquery = true;
 				}
 			}
-			
+			if(!$this->hassearchquery)
+			{
+				
+				if((isset($_POST[SF_FPRE.'add_search_param']))&&($this->has_form_posted))
+				{//this is only set when a search box is displayed - it tells S&F to append a blank search to the URL to indicate a search has been submitted with no terms, however, still load the search template
+					
+					
+					
+					if(!$this->hasqmark)
+					{
+						$this->urlparams .= "?";
+						$this->hasqmark = true;
+					}
+					else
+					{
+						$this->urlparams .= "&";
+					}
+					$this->urlparams .= "s=";
+				}
+			}
 			
 			/* POST TYPES */
 			if((isset($_POST[SF_FPRE.'post_types']))&&($this->has_form_posted))
@@ -847,23 +959,6 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 				if(count($post_types_arr)>0)
 				{
 					$operator = ","; //default behaviour
-						
-					//check to see if an operator has been specified - only applies with fields that use multiple selects such as checkboxes or multi selects
-					/*if(isset($_POST[SF_FPRE.'post_types_operator']))
-					{
-						if($_POST[SF_FPRE.'post_types_operator']=="and")
-						{
-							$operator = "+";
-						}
-						else if($_POST[SF_FPRE.'post_types_operator']=="or")
-						{
-							$operator = ",";
-						}
-						else
-						{
-							$operator = "+";
-						}
-					}*/
 					
 					$post_types = implode($operator,$post_types_arr);
 					
@@ -955,88 +1050,6 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 				}
 			}
 			
-			
-			//now we have dealt with the all the special case fields - search, tags, categories, post_types, post_date
-
-			//loop through the posts - double check that it is the search form that has been posted, otherwise we could be looping through the posts submitted from an entirely unrelated form
-			if($this->has_form_posted)
-			{
-				foreach($_POST as $key=>$val)
-				{
-					if(!in_array($key, $this->frmreserved))
-					{//if the key is not in the reserved array (ie, on a custom taxonomy - not tags, categories, search term, post type & post date)
-						
-						// strip off all prefixes for custom fields - we just want to do a redirect - no processing
-						if (strpos($key, SF_FPRE) === 0)
-						{
-							$key = substr($key, strlen(SF_FPRE));
-						}
-
-						$the_post_tax = $val;
-
-						//make the post an array for easy looping
-						if(!is_array($val))
-						{
-							$post_tax[] = $the_post_tax;
-						}
-						else
-						{
-							$post_tax = $the_post_tax;
-						}
-						$taxarr = array();
-
-						foreach ($post_tax as $tax)
-						{
-							$tax = esc_attr($tax);
-							$taxobj = get_term_by('id',$tax,$key);
-
-							if(isset($taxobj->slug))
-							{
-								$taxarr[] = $taxobj->slug;
-							}
-						}
-						
-						
-						if(count($taxarr)>0)
-						{
-							$operator = "+"; //default behaviour
-					
-							//check to see if an operator has been specified - only applies with fields that use multiple selects such as checkboxes or multi selects
-							if(isset($_POST[SF_FPRE.$key.'_operator']))
-							{
-								if($_POST[SF_FPRE.$key.'_operator']=="and")
-								{
-									$operator = "+";
-								}
-								else if($_POST[SF_FPRE.$key.'_operator']=="or")
-								{
-									$operator = ",";
-								}
-								else
-								{
-									$operator = "+";
-								}
-							}
-						
-							$tags = implode($operator,$taxarr);
-
-							if(!$this->hasqmark)
-							{
-								$this->urlparams .= "?";
-								$this->hasqmark = true;
-							}
-							else
-							{
-								$this->urlparams .= "&";
-							}
-							$this->urlparams .=  $key."=".$tags;
-
-						}
-					}
-				}
-			}
-			
-			
 			if($this->has_form_posted)
 			{//if the search has been posted, redirect to the newly formed url with all the right params
 			
@@ -1057,6 +1070,7 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 				}
 				
 				wp_redirect((home_url().$this->urlparams));
+				exit;
 			}
 		}
 	
@@ -1287,7 +1301,6 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 			}
 			else if($types[$i]=="checkbox")
 			{
-				
 				$returnvar .= $this->generate_checkbox($taxonomychildren, $field, $this->tagid);
 			}
 			else if($types[$i]=="radio")
@@ -1397,9 +1410,9 @@ if ( ! class_exists( 'SearchAndFilter' ) )
 					$args['title_li'] = '';
 					$args['defaults'] = "";
 					
-					if(isset($this->defaults[$args['name']]))
+					if(isset($this->defaults[$args['sf_name']]))
 					{
-						$args['defaults'] = $this->defaults[$args['name']];
+						$args['defaults'] = $this->defaults[$args['sf_name']];
 					}
 					
 					$returnvar .= $this->generate_wp_multiselect($args, $taxonomy, $this->tagid, $taxonomydata->labels);

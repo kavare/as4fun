@@ -22,7 +22,7 @@
       else:
         if (is_search()):
           echo '搜尋結果';
-        elseif (is_category( 'blog' ) or is_category( 'press' )):
+        elseif (is_category( 'blog' ) or is_category( 'news' )):
           single_cat_title();
         elseif (is_archive() and !is_tax()):
           post_type_archive_title();

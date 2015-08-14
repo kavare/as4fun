@@ -1,5 +1,5 @@
-# Translation of Development in Chinese (Taiwan)
-# This file is distributed under the same license as the Development package.
+# Translation of Development (trunk) in Chinese (Taiwan)
+# This file is distributed under the same license as the Development (trunk) package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2015-01-08 04:44:58+0000\n"
@@ -7,18 +7,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/1.0-alpha-1000\n"
-"Project-Id-Version: Development\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Development (trunk)\n"
 
-#: views/notice.php:109
+#: views/notice.php:94
+msgid "Your API key is no longer valid. Please enter a new key or contact support@akismet.com."
+msgstr ""
+
+#: views/notice.php:113
 msgid "To continue your service, <a href=\"%s\" target=\"_blank\">upgrade to an Enterprise subscription</a>, which covers an unlimited number of sites."
 msgstr ""
 
-#: views/notice.php:102
+#: views/notice.php:106
 msgid "Your Pro subscription allows the use of Akismet on only one site. Please <a href=\"%s\" target=\"_blank\">purchase additional Pro subscriptions</a> or upgrade to an Enterprise subscription that allows the use of Akismet on unlimited sites."
 msgstr ""
 
-#: views/notice.php:81 views/notice.php:104 views/notice.php:111
+#: views/notice.php:81 views/notice.php:108 views/notice.php:115
 msgid "Please <a href=\"%s\" target=\"_blank\">contact our support team</a> with any questions."
 msgstr ""
 
@@ -74,11 +78,11 @@ msgstr ""
 msgid "Akismet re-checked and cleared this comment."
 msgstr ""
 
-#: views/notice.php:94
+#: views/notice.php:98
 msgid "The key you entered could not be verified."
 msgstr ""
 
-#: views/notice.php:95
+#: views/notice.php:99
 msgid "The connection to akismet.com cannot be established. Please refer to <a href=\"%s\" target=\"_blank\">our guide about firewalls</a> and check your server configuration."
 msgstr ""
 
@@ -123,7 +127,7 @@ msgstr ""
 msgid "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from comment and trackback spam</strong>. It keeps your site protected from spam even while you sleep. To get started: 1) Click the \"Activate\" link to the left of this description, 2) <a href=\"http://akismet.com/get/\">Sign up for an Akismet API key</a>, and 3) Go to your Akismet configuration page, and save your API key."
 msgstr ""
 
-#: class.akismet-admin.php:781
+#: class.akismet-admin.php:785
 msgid "Please check your <a href=\"%s\">Akismet configuration</a> and contact your web host if problems persist."
 msgstr "請檢查你的 <a href=\"%s\">Akismet 設定</a>。如果問題持續發生，請聯絡你的網頁主機商。"
 
@@ -207,11 +211,11 @@ msgstr "留言"
 msgid "Your subscription is missing."
 msgstr "你的訂閱已遺失。"
 
-#: views/notice.php:100
+#: views/notice.php:104
 msgid "You&#8217;re using your Akismet key on more sites than your Pro subscription allows."
 msgstr ""
 
-#: views/notice.php:107
+#: views/notice.php:111
 msgid "You&#8217;re using Akismet on far too many sites for your Pro subscription."
 msgstr ""
 
@@ -361,10 +365,10 @@ msgstr ""
 msgid "Comment History"
 msgstr "迴響歷史紀錄"
 
-#. #-#-#-#-#  akismet.pot (Akismet 3.1.2a1)  #-#-#-#-#
+#. #-#-#-#-#  tmp-akismet.pot (Akismet 3.1.4a1)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: class.akismet-admin.php:76 class.akismet-admin.php:78
-#: class.akismet-admin.php:838 views/config.php:3
+#: class.akismet-admin.php:842 views/config.php:3
 msgid "Akismet"
 msgstr "Akismet"
 
@@ -578,19 +582,19 @@ msgstr[0] "%s 則已核准"
 msgid "%s ago"
 msgstr "%s 之前"
 
-#: class.akismet-admin.php:868
+#: class.akismet-admin.php:880
 msgid "Cleaning up spam takes time."
 msgstr "清除垃圾需要一點時間。"
 
-#: class.akismet-admin.php:871
+#: class.akismet-admin.php:883
 msgid "Since you joined us, Akismet has saved you %s days!"
 msgstr "自從你加入我們之後，你已在 Akismet 的保護下度過 %s 天！"
 
-#: class.akismet-admin.php:873
+#: class.akismet-admin.php:885
 msgid "Since you joined us, Akismet has saved you %d hours!"
 msgstr "自從你加入我們之後，你已在 Akismet 的保護下度過 %d 小時！"
 
-#: class.akismet-admin.php:875
+#: class.akismet-admin.php:887
 msgid "Since you joined us, Akismet has saved you %d minutes!"
 msgstr "自從你加入我們之後，你已在 Akismet 的保護下度過 %d 分鐘！"
 
@@ -627,11 +631,11 @@ msgstr "經過自動重新檢查，Akismet 認定這是垃圾迴響。"
 msgid "Akismet cleared this comment during an automatic retry."
 msgstr "Akismet 在自動重試時已清除此迴響。"
 
-#: class.akismet.php:1011
+#: class.akismet.php:1029
 msgid "Akismet %s requires WordPress %s or higher."
 msgstr "Akismet %s 需要 WordPress %s 或以上版本。"
 
-#: class.akismet.php:1011 views/notice.php:27
+#: class.akismet.php:1029 views/notice.php:27
 msgid "Please <a href=\"%1$s\">upgrade WordPress</a> to a current version, or <a href=\"%2$s\">downgrade to version 2.4 of the Akismet plugin</a>."
 msgstr "請將 <a href=\"%1$s\">WordPress 升級</a>至最新版本，或<a href=\"%2$s\">將 Akismet 外掛程式降級為 2.4 版</a>。"
 
