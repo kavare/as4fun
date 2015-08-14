@@ -1,9 +1,9 @@
-﻿=== WP-Members ===
+﻿=== WP-Members: WordPress Membership Framework ===
 Contributors: cbutlerjr
 Tags: access, authentication, content, login, member, membership, password, protect, register, registration, restriction, subscriber
 Requires at least: 3.1
-Tested up to: 4.2.2
-Stable tag: 3.0.0.3
+Tested up to: 4.3
+Stable tag: 3.0.2
 License: GPLv2
 
 WP-Members&trade; is a free membership management framework for WordPress&reg; that restricts content to registered users.
@@ -111,7 +111,7 @@ Premium priority support is available at the plugin's site [RocketGeek.com](http
 
 == Upgrade Notice ==
 
-WP-Members 3.0.0.3 is bug fix release. See the change log for detail.
+WP-Members 3.0.2 is feature and fix release. See the change log for detail.
 WP-Members 3.0.0 is a major version release. Please be sure you have reviewed the changelog before upgrading.  http://rkt.bz/v30
 
 == Screenshots ==
@@ -130,25 +130,26 @@ WP-Members 3.0.0 is a major version release. Please be sure you have reviewed th
 
 7. Posts > Edit Post - The plugin adds a meta box to the post/page editor allowing you to set an individual post to be blocked or unblocked (the opposite of whatver your default setting is).
 
+8. Responsive forms.
+
 
 == Changelog ==
 
-= 3.0.0.3 =
+= 3.0.2 =
 
-* Removed sortable user columns. This class needs to be rebuilt to accommodate custom user columns outside of WP-Members.
-* Removed native support for Custom Post Types (CPTs). Native CPT support was to be included in 3.0. However, it became appearant during the initial rollout that there are some additional considerations that need to be made regarding CPT support. It is being rolled back until the issues that have come up can be addressed.
-* Changed the order of update functions for users upgrading from previous versions so that the rebuild of the plugin's settings happens first. The most critical function in 3.x updating is to rebuild the plugin's main options array to the new 3.0 format.
-* When settings are loaded, added a check to make sure that version 3 settings are there. If not, it runs the update script. (Resolves issues related to the "update now" link.)
+* Added reCAPTCHA version 2 as an option. v1 will remain available for now, to be fully deprecated later.
+* Fixed widget to use __construct for WP 4.3 compatibility.
+* Added error checking for WP reserved names when adding new custom fields.
+* Added wpmem_wp_reserved_terms filter for overriding reserved terms list.
+* Added trim whitespace to password reset and password change form validation.
 
-= 3.0.0.2 =
+= 3.0.1 =
 
-* Patch correcting logic flaw in the login form shortcode that caused the form to not display at all if "show login" was turned off (should not effect the shortcode forms).
-* Patch correcting bad path for reCAPTCHA php library include.
-* Update to the reCAPTCHA library to avoid namespace collision until reCAPTCHA can be updated to 2.x.
-
-= 3.0.0.1 =
-
-* Patch release correcting a logic flaw in the user profile page shortcode. The flaw causes the registration form to be shown or not shown opposite of the "show registration" setting for the post type the shortcode is used on.
+* Fixed use of wp_signon() for ssl.
+* Fixed [wpmem_msurl] email shortcode.
+* Fixed admin js and css load (removed unnecessary slash).
+* Fixed autoexcerpt to use setting from object and not wpmemembers_autoex option.
+* Added filter to remove comments array if content is blocked.
 
 = 3.0.0 =
 

@@ -7,6 +7,24 @@
 ( function( $ ) {
 	"use strict";
 
+	$.fn.wcGalleryMasonryImagesReveal = function( $items ) {
+		var msnry = this.data('masonry');
+
+		$.each( $items, function( key, item ) {
+			var $item = $(this);
+
+			$item.imagesLoaded().always( function( instance ) {
+				// un-hide item
+				$item.show();
+
+				// masonry does its thing
+				msnry.layout();
+			});
+		});
+
+		return this;
+	};
+
 	var body = $( 'body' ),
 		_window = $( window );
 
@@ -49,14 +67,12 @@
 		return {columnWidth: columnWidth, gutterWidth: gutterWidth, columns: columns};
 	}
 
-	var runMasonry = function( duration, $container) {
-		var $postBox = $container.children('.gallery-item');
-
+	var runMasonry = function( duration, $container, $posts ) {
 		var o = calculateGrid($container);
 
-		$postBox.css({'width':o.columnWidth+'px', 'margin-bottom':o.gutterWidth+'px', 'padding':'0'});
+		$posts.css({'width':o.columnWidth+'px', 'margin-bottom':o.gutterWidth+'px', 'padding':'0'});
 
-		$container.masonry( {
+		$container = $container.masonry( {
 			itemSelector: '.gallery-item',
 			columnWidth: o.columnWidth,
 			gutter: o.gutterWidth,
@@ -64,30 +80,24 @@
 		} );
 	}
 
-
 	var initGallery = function() {
 		$('.gallery-masonry').each( function() {
 			var $container = $(this);
+			var $posts = $container.children('.gallery-item');
 
-			if ( $container.is(':hidden') ) {
-				return;
-			}
+			$posts.hide();
 
-			if ( $container.hasClass( 'masonry' ) ) {
-				return;
-			}
+			// keeps the media elements from calculating for the full width of the post
+			runMasonry(0, $container, $posts);
 
-			imagesLoaded( $container, function() {
-				runMasonry(0, $container);
-
-				$container.css('visibility', 'visible');
-			});
+			// we are going to append masonry items as the images load
+			$container.wcGalleryMasonryImagesReveal( $posts );
 
 			$(window).resize(function() {
-				runMasonry(0, $container);
-			});
-		});
+				runMasonry(0, $container, $posts);
+			}); 
 
+		});
 
 		if( jQuery().magnificPopup) {
 			$('.gallery-link-file').each( function() {
@@ -142,7 +152,7 @@
 
 				gutterWidth = parseInt( gutterWidth );
 
-				// imagesLoaded( $flex, function() {
+				imagesLoaded( $flex, function() {
 					if ( $flex.hasClass('wcslider') ) {
 						$flex.wcflexslider({
 							prevText: "",
@@ -211,7 +221,7 @@
 							}
 						});
 					}
-				// });
+				});
 			});
 		}
 		if( jQuery().owlCarousel) {

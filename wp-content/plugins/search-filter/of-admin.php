@@ -47,7 +47,7 @@
 		echo '<div class="of-caption">
 				Search &amp; Filter is a simple search and filtering plugin for Wordpress brought to you by <a href="http://www.designsandcode.com" target="_blank">Designs &amp; Code</a>.<br /><br />
 				It is essentially an advancement of the WordPress search box, adding taxonomy and post type filters to really refine your searches.<br /><br />
-				You can search by Category, Tag, Custom Taxonomy, Post Type or any combination of these easily - you can even remove the search box and simply use it as a filtering system for your posts and pages.  Taxonomies and Post Types can be displayed as dropdown selects, checkboxes or radio buttons.
+				You can search by Category, Tag, Custom Taxonomy, Post Type or any combination of these easily - you can even remove the search box and simply use it as a filtering system for your posts and pages.  Taxonomies and Post Types can be displayed as dropdown selects, checkboxes, radio buttons or multiselects.
 			</div>';
 		echo "<h3>Documentation</h3>";
 		echo '<div class="of-caption">

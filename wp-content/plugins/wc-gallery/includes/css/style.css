@@ -17,11 +17,12 @@
 	overflow: hidden;
 }
 .wc-gallery .gallery.gallery-masonry {
-	visibility: hidden;
+}
+.wc-gallery .gallery.gallery-masonry .gallery-item {
+	display: none;
 }
 .wc-gallery .gallery.gallery-masonry,
 .wc-gallery .gallery.gallery-default {
-	/* margin-right: -5px; */
 }
 
 .wc-gallery .wc-gallery-bottomspace-default {
@@ -154,6 +155,9 @@
 	}
 	body .wc-gallery .wc-image-links .gallery-caption {
 		display: block;
+	}
+	body .wc-gallery .wc-image-links-bottomlinks {
+		margin: 0;
 	}
 }
 /**
