@@ -103,7 +103,6 @@
 
       .widget-title { font-size: 1.4rem; }
       .menu a { font-size: 1.25rem; }
-      &:last-child { width: 25%; }
     }
 
     .copyright {
@@ -127,4 +126,8 @@
       }
     }
   }
+}
+
+@media #{$large-up} {
+  .footer-container .widget:last-child { width: 25%; }
 }

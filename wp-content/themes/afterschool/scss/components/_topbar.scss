@@ -1,19 +1,19 @@
 .top-bar-container {
-  .top-bar {
 
+  .top-bar {
     /**
      * Logo and Brand Name
      */
     .title-area {
       .name {
-        padding-right: 0.5rem;
+        padding: 0 0.6rem;
       }
 
       .header-logo {
-        max-width: 8.5rem;
+        width: 8rem;
         padding: 0;
         background: url(../assets/img/logos/logo-white.png) no-repeat;
-        background-size: 90%;
+        background-size: contain;
         background-position: 50% 50%;
         text-indent: 100%;
         white-space: nowrap;
@@ -111,3 +111,31 @@
     }
   }
 }
+
+
+/**
+ * [Fixtop settings]
+ */
+ .top-bar-container {
+
+   &.cloned {
+     position: fixed;
+     top: -65px;
+     left: 0;
+     right: 0;
+     z-index: 999;
+     transition: 0.2s top cubic-bezier(.3,.73,.3,.74);
+   }
+ }
+
+
+ body.is-out {
+  .top-bar-container.cloned {
+    top: 0;
+  }
+
+  &.admin-bar .top-bar-container.cloned {
+    top: 32px;
+  }
+ }
+
