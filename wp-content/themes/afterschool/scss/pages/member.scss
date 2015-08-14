@@ -244,6 +244,14 @@
     .link-text {
       float: left;
       margin: .15rem 0;
+
+
+      /**
+       * [Hide registration form links]
+       */
+      & + .link-text {
+        display: none;
+      }
     }
   }
 }

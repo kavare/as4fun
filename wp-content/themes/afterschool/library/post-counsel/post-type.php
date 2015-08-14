@@ -36,6 +36,6 @@ function as_set_counsel_post() {
     // flush_rewrite_rules();
 }
 
-add_action( 'init', 'as_set_counsel_post' );
+// add_action( 'init', 'as_set_counsel_post' );
 
 ?>

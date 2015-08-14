@@ -2,19 +2,19 @@
 
 function as_set_connection_post() {
     $labels = array(
-        'name'               => _x( '社區連結', 'post type general name', 'AfterSchool' ),
-        'singular_name'      => _x( '社區連結', 'post type singular name', 'AfterSchool' ),
-        'add_new'            => __( '新增社區連結', 'AfterSchool' ),
-        'add_new_item'       => __( '建立新社區連結', 'AfterSchool' ),
+        'name'               => _x( '放心計畫', 'post type general name', 'AfterSchool' ),
+        'singular_name'      => _x( '放心計畫', 'post type singular name', 'AfterSchool' ),
+        'add_new'            => __( '新增放心計畫', 'AfterSchool' ),
+        'add_new_item'       => __( '建立新放心計畫', 'AfterSchool' ),
         'edit_item'          => __( '編輯連結', 'AfterSchool' ),
-        'new_item'           => __( '新社區連結', 'AfterSchool' ),
+        'new_item'           => __( '新放心計畫', 'AfterSchool' ),
         'all_items'          => __( '所有連結', 'AfterSchool' ),
         'view_item'          => __( '檢視連結', 'AfterSchool' ),
         'search_items'       => __( '搜尋連結', 'AfterSchool' ),
-        'not_found'          => __( '沒有發現任何社區連結', 'AfterSchool' ),
-        'not_found_in_trash' => __( '沒有在垃圾桶中發現任何社區連結', 'AfterSchool' ),
+        'not_found'          => __( '沒有發現任何放心計畫', 'AfterSchool' ),
+        'not_found_in_trash' => __( '沒有在垃圾桶中發現任何放心計畫', 'AfterSchool' ),
         'parent_item_colon'  => '',
-        'menu_name'          => '社區連結'
+        'menu_name'          => '放心計畫'
     );
 
     $supports = array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' );
