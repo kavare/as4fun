@@ -10,9 +10,10 @@
       }
 
       .header-logo {
-        max-width: 12rem;
+        max-width: 8.5rem;
+        padding: 0;
         background: url(../assets/img/logos/logo-white.png) no-repeat;
-        background-size: 75%;
+        background-size: 90%;
         background-position: 50% 50%;
         text-indent: 100%;
         white-space: nowrap;
@@ -66,8 +67,8 @@
     .top-bar-menu {
 
       .sub-menu {
-        left: -15%;
-        min-width: 130%;
+        // left: -15%;
+        // min-width: 130%;
 
         .parent-link {
           display: none;
@@ -81,12 +82,12 @@
 
           &:first-of-type,
           &:first-of-type > a {
-            border-radius: 0.5rem 0.5rem 0 0;
+            // border-radius: 0.5rem 0.5rem 0 0;
           }
 
           &:last-of-type,
           &:last-of-type > a {
-            border-radius: 0 0 0.5rem 0.5rem;
+            // border-radius: 0 0 0.5rem 0.5rem;
           }
 
           &:last-of-type > a {

@@ -20,6 +20,7 @@
 .page-template-member-login { @include page-heading('/headlines/family.png', post, 0, 67%); }
 .page-template-member-profile { @include page-heading('/headlines/family.png', post, 0, 67%); }
 
+.page-template-volunteer-join { @include page-jumbotron('/headlines/family.png', 'ballon.png', 0, 88%); }
 /* -------------------------------------------- \
   [Connection Headfold Image]
   @type [archive] archive-connection
@@ -78,7 +79,7 @@
   @type [category]    blog, press
 \ --------------------------------------------- */
 .category-blog { @include page-heading('/headlines/toys.png', post, 0, 88%); }
-.category-press { @include page-heading('/headlines/talks.png', post, 0, 39%); }
+.category-news { @include page-heading('/headlines/talks.png', post, 0, 39%); }
 
 /* -------------------------------------------- \
   [Tag Headfold Image]

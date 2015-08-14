@@ -83,6 +83,9 @@ if (!function_exists('page_specific_scripts')):
             case 'member-profile':
                 wp_enqueue_style( 'member', get_template_directory_uri() . '/css/pages/member.css', array(), '1.0.0' );
                 break;
+            case 'volunteer-join':
+                wp_enqueue_style( 'volunteer', get_template_directory_uri() . '/css/pages/volunteer-join.css', array(), '1.0.0' );
+                break;
 
             default:
 
