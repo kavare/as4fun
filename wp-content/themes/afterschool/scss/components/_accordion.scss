@@ -1,0 +1,42 @@
+.accordion-section-title {
+  font-weight: bold;
+}
+
+.accordion {
+  margin-bottom: 1.5rem;
+
+  .accordion-navigation {
+    > a {
+      font-size: 1.2rem;
+    }
+    .content,
+    .content a,
+    .content > p,
+    .content ol > li,
+    .content ul > li {
+      font-size: 1.1rem;
+    }
+
+    .content ol,
+    .content ul {
+      padding-left: 2rem;
+    }
+
+    &.active {
+      > a {
+        font-size: 1.3rem;
+        font-weight: bold;
+        background-color: $green;
+        color: $white;
+        transition: all .2s ease-in;
+      }
+
+      .content {
+        border-radius: 5px;
+        background-color: $snow;
+        box-shadow: 0 4px 0 0 #f1f1f1;
+      }
+    }
+  }
+
+}

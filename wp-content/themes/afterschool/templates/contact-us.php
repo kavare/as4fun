@@ -14,9 +14,9 @@ get_header(); ?>
       </div>
     </article>
   </div>
-  <div class="small-12 large-8 columns contact-us-container" role="main">
+  <div class="small-12 large-8 columns contact-form-container" role="main">
     <!-- NOTICE: this form dependens on "Contact Form 7" plugin, the id may change with data migration -->
-    <h2 class="contact-us-title">聯絡我們</h2>
+    <h2 class="contact-form-title">聯絡我們</h2>
     <?php echo do_shortcode( '[contact-form-7 id="257" title="Contact Us Page Message Board"]' ); ?>
   </div>
 </div>
