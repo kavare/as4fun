@@ -57,6 +57,9 @@ if (!function_exists('page_specific_scripts')):
             case 'contact-us':
                 wp_enqueue_style( 'contact-us', get_template_directory_uri() . '/css/pages/contact-us.css', array(), '1.0.0' );
                 break;
+            case 'faq':
+                wp_enqueue_style( 'faq', get_template_directory_uri() . '/css/pages/faq.css', array(), '1.0.0' );
+                break;
             case 'community-links':
                 wp_enqueue_script( 'links', get_template_directory_uri() . '/js/links.js', array('jquery'), '1.0.0', true );
                 wp_enqueue_style( 'links', get_template_directory_uri() . '/css/pages/community-links.css', array(), '1.0.0' );

@@ -105,6 +105,53 @@ function as_shortcode_contact_card($atts, $content = null) {
   return $link;
 }
 
+/**
+ * [as_shortcode_accordion generate accordion container]
+ * @param  [array]  $atts    [attributes from shortcodes]
+ * @param  [string] $content [content inside shortcode tags]
+ * @return [string]          [html tags that will be printed on the page]
+ */
+function as_shortcode_accordion($atts, $content = null) {
+  $signature = array(
+    'title' => '',
+    'class' => '',
+  );
+  extract(shortcode_atts($signature, $atts));
+
+
+  $accordion =
+  '<h3 class="accordion-section-title">' . $title . '</h3>' .
+  '<ul class="accordion ' . $class . '" data-accordion>' .
+    do_shortcode( $content ) .
+  '</ul>';
+
+  return $accordion;
+}
+
+/**
+ * [as_shortcode_accordion_item generate accordion item]
+ * @param  [array]  $atts    [attributes from shortcodes]
+ * @param  [string] $content [content inside shortcode tags]
+ * @return [string]          [html tags that will be printed on the page]
+ */
+function as_shortcode_accordion_item($atts, $content = null) {
+  $signature = array(
+    'id' => '',
+    'question' => '',
+    'active' => false,
+  );
+  extract(shortcode_atts($signature, $atts));
+  $active = ($active) ? 'active' : '';
+
+  $item =
+  '<li class="accordion-navigation ' . $active . '">' .
+    '<a href="#' . $id . '">' . $question . '</a>' .
+    '<div id="' . $id . '" class="content ' . $active . '">' .
+      $content .
+    '</div>' .
+  '</li>';
+  return $item;
+}
 
 /**
  * [Afterschool shortcodes registration list]
@@ -113,6 +160,8 @@ function as_register_shortcodes(){
    add_shortcode('home-section', 'as_shortcode_home_section');
    add_shortcode('community-link', 'as_shortcode_community_link');
    add_shortcode('contact-card', 'as_shortcode_contact_card');
+   add_shortcode('accordion', 'as_shortcode_accordion');
+   add_shortcode('accordion-item', 'as_shortcode_accordion_item');
 }
 
 add_action('init', 'as_register_shortcodes');

@@ -10,6 +10,7 @@
   box-shadow: 0 1px 5px rgba(0,0,0,.28);
   visibility: hidden;
   opacity: 0;
+  z-index: 9999;
   transition: opacity .3s 0s ease-in, visibility 0s .3s;
 
   &:after {
