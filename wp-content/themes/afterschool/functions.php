@@ -67,6 +67,9 @@ require_once('library/opengraph.php');
 // Customized ninja-form default setting
 require_once('library/ninja-form.php');
 
+// Customized author page displayed post type
+require_once('library/author-posttype.php');
+
 // Add Connection post type
 require_once('library/post-connection/post-type.php');
 require_once('library/post-connection/taxonomy.php');

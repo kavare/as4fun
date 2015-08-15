@@ -81,8 +81,9 @@
 
       .edm-cta {
         @include cta-btn($orange);
-        width: 20%;
-        padding: .4rem;
+        box-sizing: border-box;
+        width: 25%;
+        padding: .4rem 0;
         border: 0;
         float: left;
         border-radius: 0 5px 5px 0;

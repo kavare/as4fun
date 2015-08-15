@@ -4,19 +4,19 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title><?php if ( is_category() ) {
-			echo 'Category Archive for &quot;'; single_cat_title(); echo '&quot; | '; bloginfo( 'name' );
+			echo '所有 &quot;'; single_cat_title(); echo '&quot; 類別的文章列表 | '; bloginfo( 'name' );
 		} elseif ( is_tag() ) {
-			echo 'Tag Archive for &quot;'; single_tag_title(); echo '&quot; | '; bloginfo( 'name' );
+			echo '所有包含 &quot;'; single_tag_title(); echo '&quot; 標籤的文章列表 | '; bloginfo( 'name' );
 		} elseif ( is_archive() ) {
-			wp_title(''); echo ' Archive | '; bloginfo( 'name' );
+			wp_title(''); echo ' 列表 | '; bloginfo( 'name' );
 		} elseif ( is_search() ) {
-			echo 'Search for &quot;'.esc_html($s).'&quot; | '; bloginfo( 'name' );
+			echo '搜尋 &quot;'.esc_html($s).'&quot; 的結果 | '; bloginfo( 'name' );
 		} elseif ( is_home() || is_front_page() ) {
 			bloginfo( 'name' ); echo ' | '; bloginfo( 'description' );
 		}  elseif ( is_404() ) {
 			echo 'Error 404 Not Found | '; bloginfo( 'name' );
 		} elseif ( is_single() ) {
-			wp_title('');
+			echo wp_title( ' | ', 'false', 'right' ); bloginfo( 'name' );
 		} else {
 			echo wp_title( ' | ', 'false', 'right' ); bloginfo( 'name' );
 		} ?></title>
