@@ -16,7 +16,14 @@
 				<div class="entry-meta">
 					<div class="row">
 						<div class="small-12 medium-6 column">
-							<a href="#">明細下載</a>
+							<?php $file = get_post_meta($post->ID, 'as_donation_file', true); ?>
+							<?php if($file): ?>
+								<hr>
+								<strong>明細下載：</strong>
+							  <a href="<?php echo $file['url'] ?>">
+							    <?php echo basename($file['file']) ?>&nbsp;&nbsp;<i class="fa fa-download fa-fx fa-lg"></i>
+							  </a>
+							<?php endif; ?>
 						</div>
 						<div class="small-12 medium-6 column">
 							<?php get_template_part( 'parts/content', 'share-icons' ); ?>
