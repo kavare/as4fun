@@ -83,6 +83,7 @@
         @include cta-btn($orange);
         box-sizing: border-box;
         width: 25%;
+        min-width: auto;
         padding: .4rem 0;
         border: 0;
         float: left;
