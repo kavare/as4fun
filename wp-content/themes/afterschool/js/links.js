@@ -1,1 +1,0 @@
-!function(n){n(function(){console.log("community links")})}(jQuery);

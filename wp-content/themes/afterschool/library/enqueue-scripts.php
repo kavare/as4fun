@@ -51,7 +51,6 @@ if (!function_exists('page_specific_scripts')):
             switch( $template_name ):
             case 'about':
             case 'about-plans':
-                wp_enqueue_script( 'about', get_template_directory_uri() . '/js/about.js', array('jquery'), '1.0.0', true );
                 wp_enqueue_style( 'about', get_template_directory_uri() . '/css/pages/about.css', array(), '1.0.0' );
                 break;
             case 'contact-us':
@@ -61,21 +60,17 @@ if (!function_exists('page_specific_scripts')):
                 wp_enqueue_style( 'faq', get_template_directory_uri() . '/css/pages/faq.css', array(), '1.0.0' );
                 break;
             case 'community-links':
-                wp_enqueue_script( 'links', get_template_directory_uri() . '/js/links.js', array('jquery'), '1.0.0', true );
                 wp_enqueue_style( 'links', get_template_directory_uri() . '/css/pages/community-links.css', array(), '1.0.0' );
                 break;
             case 'counsel-contacts':
             case 'counsel-terms':
             case 'form-counsel':
-                wp_enqueue_script( 'counsel-terms', get_template_directory_uri() . '/js/counsel.js', array('jquery'), '1.0.0', true );
                 wp_enqueue_style( 'counsel-terms', get_template_directory_uri() . '/css/pages/counsel.css', array(), '1.0.0' );
                 break;
             case 'donation-receipts':
-                wp_enqueue_script( 'donation-receipts', get_template_directory_uri() . '/js/donation-receipts.js', array('jquery'), '1.0.0', true );
                 wp_enqueue_style( 'donation-receipts', get_template_directory_uri() . '/css/pages/donation-receipts.css', array(), '1.0.0' );
                 break;
             case 'donation-terms':
-                wp_enqueue_script( 'donation-terms', get_template_directory_uri() . '/js/donation-terms.js', array('jquery'), '1.0.0', true );
                 wp_enqueue_style( 'donation-terms', get_template_directory_uri() . '/css/pages/donation-terms.css', array(), '1.0.0' );
                 break;
             case 'gallery':
@@ -111,8 +106,6 @@ if (!function_exists('page_specific_scripts')):
             else:
                 wp_enqueue_style('archive-list', get_template_directory_uri() . '/css/pages/archive-list.css', array(), '1.0.0');
             endif;
-
-            wp_enqueue_script( 'archive', get_template_directory_uri() . '/js/archive.js', array('jquery'), '1.0.0', true );
         }
 
         if ( is_tax() ) {
@@ -126,34 +119,11 @@ if (!function_exists('page_specific_scripts')):
             else:
                 wp_enqueue_style('archive-list', get_template_directory_uri() . '/css/pages/archive-list.css', array(), '1.0.0' );
             endif;
-
-            wp_enqueue_script( 'archive', get_template_directory_uri() . '/js/archive.js', array('jquery'), '1.0.0', true );
         }
 
         if ( is_single() ) {
-            switch( $post->post_type ):
-            // case 'activity':
-            //     wp_enqueue_style('single-activity', get_template_directory_uri() . '/css/pages/single-activity.css', array(), '1.0.0' );
-            //     break;
-            // case 'connection':
-            //     wp_enqueue_style('single-connection', get_template_directory_uri() . '/css/pages/single-connection.css', array(), '1.0.0' );
-            //     break;
-            // case 'counsel':
-            //     wp_enqueue_style('single-counsel', get_template_directory_uri() . '/css/pages/single-counsel.css', array(), '1.0.0' );
-            //     break;
-            // case 'donation':
-            //     wp_enqueue_style('single-donation', get_template_directory_uri() . '/css/pages/single-donation.css', array(), '1.0.0' );
-            //     break;
-            // case 'volunteer':
-            //     wp_enqueue_style('single-volunteer', get_template_directory_uri() . '/css/pages/single-volunteer.css', array(), '1.0.0' );
-            //     break;
-            default:
-                wp_enqueue_style('post', get_template_directory_uri() . '/css/pages/post.css', array(), '1.0.0' );
-            endswitch;
-
-            wp_register_script( 'post', get_template_directory_uri() . '/js/post.js', array('jquery'), '1.0.0', true );
+            wp_enqueue_style('post', get_template_directory_uri() . '/css/pages/post.css', array(), '1.0.0' );
         }
-
     }
 
     add_action( 'wp_enqueue_scripts', 'page_specific_scripts' );

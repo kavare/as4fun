@@ -1,1 +1,0 @@
-!function(n){n(function(){console.log("counsel contacts")})}(jQuery);
