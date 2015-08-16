@@ -8,7 +8,6 @@
           object: location.href,
         })
       }, function(response){});
-      console.log('Share Clicked');
     });
 
   });
