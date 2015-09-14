@@ -1,0 +1,25 @@
+@import "../base/mixins";
+
+/* -------------------------------------------- \
+  Top News template layouts settings
+\ --------------------------------------------- */
+.page-template-top-news {
+  .accordion-section-title { display: none; }
+  .accordion-navigation .content {
+    ul {
+      list-style: decimal-leading-zero;
+
+      li {
+        line-height: 2.5;
+
+        &:hover { background-color: $yellow; }
+
+        &:nth-child(n+6) { display: none; }
+
+        > a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

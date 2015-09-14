@@ -24,16 +24,16 @@ class DavesWordPressLiveSearch {
 				wp_enqueue_script( 'daves-wordpress-live-search', plugin_dir_url( __FILE__ ) . 'js/daves-wordpress-live-search.js', array(
 					'jquery',
 					'underscore'
-				) );
-				wp_enqueue_script( 'excanvas', plugin_dir_url( __FILE__ ) . 'js/excanvas.js', 'jquery' );
-				wp_enqueue_script( 'spinners', plugin_dir_url( __FILE__ ) . 'js/spinners.js', 'explorercanvas' );
+				), false, true );
+				wp_enqueue_script( 'excanvas', plugin_dir_url( __FILE__ ) . 'js/excanvas.js', array( 'jquery' ), false, true );
+				wp_enqueue_script( 'spinners', plugin_dir_url( __FILE__ ) . 'js/spinners.js', array( 'excanvas' ), false, true );
 			} else {
 				wp_enqueue_script( 'daves-wordpress-live-search', plugin_dir_url( __FILE__ ) . 'js/daves-wordpress-live-search.min.js', array(
 					'jquery',
 					'underscore'
-				) );
-				wp_enqueue_script( 'excanvas', plugin_dir_url( __FILE__ ) . 'js/excanvas.compiled.js', 'jquery' );
-				wp_enqueue_script( 'spinners', plugin_dir_url( __FILE__ ) . 'js/spinners.min.js', 'explorercanvas' );
+				), false, true );
+				wp_enqueue_script( 'excanvas', plugin_dir_url( __FILE__ ) . 'js/excanvas.compiled.js', array( 'jquery' ), false, true );
+				wp_enqueue_script( 'spinners', plugin_dir_url( __FILE__ ) . 'js/spinners.min.js', array( 'excanvas' ), false, true );
 			}
 			self::inlineSettings();
 		}
@@ -150,7 +150,7 @@ STYLE;
 
 		$resultsDirection    = stripslashes( get_option( 'daves-wordpress-live-search_results_direction' ) );
 		$showThumbs          = ( true === self::isTruthy( get_option( 'daves-wordpress-live-search_thumbs' ) ) );
-		$showExcerpt         = intval( ( "true" == get_option( 'daves-wordpress-live-search_excerpt' ) ) );
+		$showExcerpt         = ( true === self::isTruthy( get_option( 'daves-wordpress-live-search_excerpt' ) ) );
 		$showMoreResultsLink = ( true === self::isTruthy( get_option( 'daves-wordpress-live-search_more_results', true ) ) );
 		$minCharsToSearch    = intval( get_option( 'daves-wordpress-live-search_minchars' ) );
 		$xOffset             = intval( get_option( 'daves-wordpress-live-search_xoffset' ) );
@@ -260,6 +260,8 @@ STYLE;
 			$searchSource     = intval( get_option( 'daves-wordpress-live-search_source' ) );
 		}
 
+		$wp_pre_4_3 = version_compare( $GLOBALS['wp_version'], '4.3', 'lt' );
+
 		include "$thisPluginsDirectory/admin/daves-wordpress-live-search-admin.tpl.php";
 
 	}
@@ -308,6 +310,8 @@ STYLE;
 			$customOptions       = get_option( 'daves-wordpress-live-search_custom_options' );
 		}
 
+		$wp_pre_4_3 = version_compare( $GLOBALS['wp_version'], '4.3', 'lt' );
+
 		include "$thisPluginsDirectory/admin/daves-wordpress-live-search-admin-appearance.tpl.php";
 
 	}
@@ -343,6 +347,8 @@ STYLE;
 			$applyContentFilter = (bool) get_option( 'daves-wordpress-live-search_apply_content_filter' );
 
 		}
+
+		$wp_pre_4_3 = version_compare( $GLOBALS['wp_version'], '4.3', 'lt' );
 
 		include "$thisPluginsDirectory/admin/daves-wordpress-live-search-admin-advanced.tpl.php";
 
