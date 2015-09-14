@@ -10,6 +10,95 @@ msgstr ""
 "X-Generator: GlotPress/1.0-alpha-1100\n"
 "Project-Id-Version: Development (trunk)\n"
 
+#: views/start.php:78
+msgid "Log in or sign up now."
+msgstr ""
+
+#: views/start.php:64
+msgid "Already have your key? Enter it here."
+msgstr ""
+
+#: views/start.php:63
+msgid "Enter an API key"
+msgstr ""
+
+#: views/start.php:59
+msgid "Sign up with a different email address"
+msgstr ""
+
+#: views/start.php:57
+msgid "Use this option to use Akismet independently of your Jetpack connection."
+msgstr ""
+
+#: views/start.php:56
+msgid "Sign up for a plan with a different email address"
+msgstr ""
+
+#: views/start.php:50
+msgid "Use this account"
+msgstr ""
+
+#: views/start.php:40 views/start.php:74
+msgid "Akismet eliminates spam from your site. To set up Akismet, select one of the options below."
+msgstr ""
+
+#: views/start.php:18 views/start.php:32
+msgid "Akismet eliminates spam from your site."
+msgstr ""
+
+#: views/start.php:14
+msgid "Register for Akismet"
+msgstr ""
+
+#: views/start.php:4
+msgid "Akismet eliminates spam from your site. Register below to get started."
+msgstr ""
+
+#: views/notice.php:86
+msgid "Akismet is now activated. Happy blogging!"
+msgstr ""
+
+#: views/notice.php:77
+msgid "You don&#8217;t have an Akismet plan."
+msgstr ""
+
+#: views/notice.php:57
+msgid "Your Akismet plan has been cancelled."
+msgstr ""
+
+#: views/notice.php:62
+msgid "Your Akismet subscription is suspended."
+msgstr ""
+
+#: views/notice.php:53
+msgid "We cannot process your payment. Please <a href=\"%s\" target=\"_blank\">update your payment details</a>."
+msgstr ""
+
+#: views/notice.php:52
+msgid "Please update your payment information."
+msgstr ""
+
+#: views/notice.php:14
+msgid "<strong>Almost done</strong> - activate Akismet and say goodbye to spam"
+msgstr ""
+
+#: class.akismet-admin.php:887
+msgid "Akismet has saved you %d minutes!"
+msgstr ""
+
+#: class.akismet-admin.php:885
+msgid "Akismet has saved you %d hours!"
+msgstr ""
+
+#: class.akismet-admin.php:883
+msgid "Akismet has saved you %s days!"
+msgstr ""
+
+#: class.akismet-admin.php:132 class.akismet-admin.php:170
+#: class.akismet-admin.php:183
+msgid "Akismet filters out spam, so you can focus on more important things."
+msgstr ""
+
 #: views/notice.php:94
 msgid "Your API key is no longer valid. Please enter a new key or contact support@akismet.com."
 msgstr ""
@@ -27,7 +116,7 @@ msgid "Please <a href=\"%s\" target=\"_blank\">contact our support team</a> with
 msgstr ""
 
 #: views/notice.php:79
-msgid "Since 2012, Akismet began using subscriptions for all accounts (even free ones). It looks like a subscription has not been assigned to your account, and we’d appreciate it if you’d <a href=\"%s\" target=\"_blank\">sign into your account</a> and choose one."
+msgid "In 2012, Akismet began using subscription plans for all accounts (even free ones). A plan has not been assigned to your account, and we&#8217;d appreciate it if you&#8217;d <a href=\"%s\" target=\"_blank\">sign into your account</a> and choose one."
 msgstr ""
 
 #: class.akismet-admin.php:555
@@ -79,11 +168,11 @@ msgid "Akismet re-checked and cleared this comment."
 msgstr ""
 
 #: views/notice.php:98
-msgid "The key you entered could not be verified."
+msgid "The API key you entered could not be verified."
 msgstr ""
 
 #: views/notice.php:99
-msgid "The connection to akismet.com cannot be established. Please refer to <a href=\"%s\" target=\"_blank\">our guide about firewalls</a> and check your server configuration."
+msgid "The connection to akismet.com could not be established. Please refer to <a href=\"%s\" target=\"_blank\">our guide about firewalls</a> and check your server configuration."
 msgstr ""
 
 #: views/config.php:76
@@ -124,7 +213,7 @@ msgid "http://akismet.com/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from comment and trackback spam</strong>. It keeps your site protected from spam even while you sleep. To get started: 1) Click the \"Activate\" link to the left of this description, 2) <a href=\"http://akismet.com/get/\">Sign up for an Akismet API key</a>, and 3) Go to your Akismet configuration page, and save your API key."
+msgid "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. It keeps your site protected even while you sleep. To get started: 1) Click the \"Activate\" link to the left of this description, 2) <a href=\"http://akismet.com/get/\">Sign up for an Akismet plan</a> to get an API key, and 3) Go to your Akismet configuration page, and save your API key."
 msgstr ""
 
 #: class.akismet-admin.php:785
@@ -136,20 +225,16 @@ msgid "Some comments have not yet been checked for spam by Akismet. They have be
 msgstr "部分留言尚未經過 Akismet 檢查是否為垃圾。這些留言已暫時擱置以待審核，並將在稍後自動重新檢查。"
 
 #: views/notice.php:43
-msgid "Your web host or server administrator has disabled PHP&#8217;s <code>gethostbynamel</code> functions.  <strong>Akismet cannot work correctly until this is fixed.</strong>  Please contact your web host or firewall administrator and give them <a href=\"%s\" target=\"_blank\">this information about Akismet&#8217;s system requirements</a>."
-msgstr "你的網頁主機商或伺服器管理員已停用 PHP 的 <code>gethostbynamel</code> 功能。<strong>在修正此問題之前，Akismet 將無法正常運作。</strong>請聯絡你的網頁主機商或防火牆管理員，並向他們提供<a href=\"%s\" target=\"_blank\">這項關於 Akismet 系統需求的資訊</a>。"
+msgid "Your web host or server administrator has disabled PHP&#8217;s <code>gethostbynamel</code> function.  <strong>Akismet cannot work correctly until this is fixed.</strong>  Please contact your web host or firewall administrator and give them <a href=\"%s\" target=\"_blank\">this information about Akismet&#8217;s system requirements</a>."
+msgstr ""
 
 #: views/start.php:77
 msgid "Activate Akismet"
 msgstr "啟用 Akismet"
 
-#: views/start.php:64 views/start.php:85
+#: views/start.php:85
 msgid "If you already know your API key."
 msgstr "(如果你已經知道你的 API 金鑰。)"
-
-#: views/start.php:78
-msgid "Log in or create an account to get your API key."
-msgstr "登入或建立帳號以取得你的 API 金鑰。"
 
 #: views/start.php:80
 msgid "Get your API key"
@@ -184,8 +269,8 @@ msgid "Active"
 msgstr "使用中"
 
 #: views/notice.php:72
-msgid "There is a problem with your key."
-msgstr "你的金鑰有問題。"
+msgid "There is a problem with your API key."
+msgstr ""
 
 #: class.akismet-admin.php:196 views/config.php:114
 msgid "Strictness"
@@ -206,10 +291,6 @@ msgstr "一律將垃圾移至垃圾資料夾中，以供稍後審查。"
 #: class.akismet-admin.php:195 views/config.php:105
 msgid "Comments"
 msgstr "留言"
-
-#: views/notice.php:77
-msgid "Your subscription is missing."
-msgstr "你的訂閱已遺失。"
 
 #: views/notice.php:104
 msgid "You&#8217;re using your Akismet key on more sites than your Pro subscription allows."
@@ -242,32 +323,16 @@ msgid "Network functions are disabled."
 msgstr "網誌網路功能已被停用。"
 
 #: views/notice.php:47
-msgid "We can&#8217;t connect to your site."
-msgstr "我們無法連線至你的網站。"
+msgid "Akismet can&#8217;t connect to your site."
+msgstr ""
 
 #: views/notice.php:48
-msgid "Your firewall may be blocking us. Please contact your host and refer to <a href=\"%s\" target=\"_blank\">our guide about firewalls</a>."
-msgstr "你的防火牆可能設為封鎖我們。請聯絡你的主機商，並參考<a href=\"%s\" target=\"_blank\">我們的防火牆指南</a>。"
-
-#: views/notice.php:52
-msgid "Please update your payment details."
-msgstr "請更新你的付款詳細資料。"
-
-#: views/notice.php:53
-msgid "We cannot process your transaction. Please contact your bank for assistance, and <a href=\"%s\" target=\"_blank\">update your payment details</a>."
-msgstr "我們無法處理你的交易。請向你的銀行尋求協助，並<a href=\"%s\" target=\"_blank\">更新你的付款詳細資料</a>。"
-
-#: views/notice.php:57
-msgid "Your subscription is cancelled."
-msgstr "你的訂閱已取消。"
+msgid "Your firewall may be blocking Akismet. Please contact your host and refer to <a href=\"%s\" target=\"_blank\">our guide about firewalls</a>."
+msgstr ""
 
 #: views/notice.php:58
-msgid "Please visit the <a href=\"%s\" target=\"_blank\">Akismet account page</a> to reactivate your subscription."
-msgstr "請造訪 <a href=\"%s\" target=\"_blank\">Akismet 帳號頁面</a>以重新啟用訂閱。"
-
-#: views/notice.php:62
-msgid "Your subscription is suspended."
-msgstr "你的訂閱已暫停。"
+msgid "Please visit your <a href=\"%s\" target=\"_blank\">Akismet account page</a> to reactivate your subscription."
+msgstr ""
 
 #: views/notice.php:63 views/notice.php:73
 msgid "Please contact <a href=\"%s\" target=\"_blank\">Akismet support</a> for assistance."
@@ -277,39 +342,15 @@ msgstr "請向 <a href=\"%s\" target=\"_blank\">Akismet 支援團隊</a>尋求�
 msgid "You can help us fight spam and upgrade your account by <a href=\"%s\" target=\"_blank\">contributing a token amount</a>."
 msgstr "只要<a href=\"%s\" target=\"_blank\">支付一筆象徵性的款項</a>，就能協助我們打擊垃圾，並且升級你的帳號。"
 
-#: views/notice.php:86
-msgid "Your Akismet account has been successfully set up and activated. Happy blogging!"
-msgstr "你的 Akismet 帳號已經成功設定並啟動。開心地寫 blog 吧！"
-
 #: views/notice.php:90
 msgid "The key you entered is invalid. Please double-check it."
 msgstr "你輸入的鑰匙並不正確。請再確認一次。"
-
-#: views/start.php:40 views/start.php:74
-msgid "Akismet eliminates the comment and trackback spam you get on your site. To setup Akismet, select one of the options below."
-msgstr "Akismet 可為你清除網站上的垃圾留言和引用。若要設定 Akismet，請選擇以下其中一個選項。"
 
 #: views/start.php:7 views/start.php:21 views/start.php:34 views/start.php:43
 msgid "Connected via Jetpack"
 msgstr "已透過 Jetpack 連結"
 
-#: views/start.php:50
-msgid "Use this Akismet account"
-msgstr "使用此 Akismet 帳號"
-
-#: views/start.php:56
-msgid "Create a new API key with a different email address"
-msgstr "使用其他電子郵件地址建立新的 API 金鑰"
-
-#: views/start.php:57
-msgid "Use this option if you want to setup a new Akismet account."
-msgstr "若要設定新的 Akismet 帳號，請使用此選項。"
-
-#: views/start.php:59
-msgid "Register a different email address"
-msgstr "註冊新的電子郵件地址"
-
-#: views/start.php:63 views/start.php:84
+#: views/start.php:84
 msgid "Manually enter an API key"
 msgstr "手動輸入 API 金鑰"
 
@@ -317,25 +358,13 @@ msgstr "手動輸入 API 金鑰"
 msgid "Use this key"
 msgstr "使用此金鑰"
 
-#: views/start.php:4
-msgid "Akismet eliminates the comment and trackback spam you get on your site. Register your email address below to get started."
-msgstr "Akismet 可為你清除網站上的垃圾留言和引用。在下方註冊你的電子郵件地址，即可開始使用。"
-
-#: views/start.php:14
-msgid "Register Akismet"
-msgstr "註冊 Akismet"
-
-#: views/start.php:18 views/start.php:32
-msgid "Akismet eliminates the comment and trackback spam you get on your site."
-msgstr "Akismet 可為你清除網站上的垃圾留言和引用。"
-
 #: views/start.php:35
 msgid "Your subscription for %s is suspended"
 msgstr "你的 %s 訂閱已暫停"
 
 #: views/start.php:36
-msgid "No worries! Get in touch and we&#8217;ll help sort this out."
-msgstr "別擔心！請跟我們聯絡，讓我們協助你解決問題。"
+msgid "No worries! Get in touch and we&#8217;ll sort this out."
+msgstr ""
 
 #: views/start.php:37
 msgid "Contact Akismet support"
@@ -402,14 +431,9 @@ msgstr "概述"
 msgid "Akismet Setup"
 msgstr "Akismet 設定"
 
-#: class.akismet-admin.php:132 class.akismet-admin.php:170
-#: class.akismet-admin.php:183
-msgid "Akismet filters out your comment and trackback spam for you, so you can focus on more important things."
-msgstr "Akismet 為你過濾垃圾留言和引用，讓你能夠專注於最重要的資訊。"
-
 #: class.akismet-admin.php:133
-msgid "On this page, you are able to setup the Akismet plugin."
-msgstr "你可以在本頁面設定 Akismet 外掛程式。"
+msgid "On this page, you are able to set up the Akismet plugin."
+msgstr ""
 
 #: class.akismet-admin.php:140
 msgid "New to Akismet"
@@ -420,8 +444,8 @@ msgid "You need to enter an API key to activate the Akismet service on your site
 msgstr "你需要輸入 API 金鑰，才能在你的網站上啟用 Akismet 服務。"
 
 #: class.akismet-admin.php:144
-msgid "Signup for an account on %s to get an API Key."
-msgstr "在 %s 註冊帳號以取得 API 金鑰。"
+msgid "Sign up for an account on %s to get an API Key."
+msgstr ""
 
 #: class.akismet-admin.php:151
 msgid "Enter an API Key"
@@ -586,18 +610,6 @@ msgstr "%s 之前"
 msgid "Cleaning up spam takes time."
 msgstr "清除垃圾需要一點時間。"
 
-#: class.akismet-admin.php:883
-msgid "Since you joined us, Akismet has saved you %s days!"
-msgstr "自從你加入我們之後，你已在 Akismet 的保護下度過 %s 天！"
-
-#: class.akismet-admin.php:885
-msgid "Since you joined us, Akismet has saved you %d hours!"
-msgstr "自從你加入我們之後，你已在 Akismet 的保護下度過 %d 小時！"
-
-#: class.akismet-admin.php:887
-msgid "Since you joined us, Akismet has saved you %d minutes!"
-msgstr "自從你加入我們之後，你已在 Akismet 的保護下度過 %d 分鐘！"
-
 #: class.akismet-widget.php:12
 msgid "Akismet Widget"
 msgstr "Akismet 小工具"
@@ -695,7 +707,3 @@ msgstr "變更"
 #: views/notice.php:11
 msgid "Activate your Akismet account"
 msgstr "啟動你的 Akismet 帳號"
-
-#: views/notice.php:14
-msgid "<strong>Almost done</strong> - activate your account and say goodbye to comment spam"
-msgstr "<strong>快要完成了</strong> - 啟動你的帳號並跟垃圾迴響說掰掰"

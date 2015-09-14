@@ -1,10 +1,10 @@
 === Tabby Responsive Tabs ===
 Contributors: numeeja
 Donate link: http://cubecolour.co.uk/wp
-Tags: tab, tabs, jquery, responsive shortcode
+Tags: tabs, tab, responsive, accordion, shortcode
 Requires at least: 3.7
-Tested up to: 4.2
-Stable tag: 1.2.1
+Tested up to: 4.3
+Stable tag: 1.2.2
 License: GPLv2 / MIT
 
 Create responsive tabs inside your posts, pages or custom post content by adding simple shortcodes inside the post editor.
@@ -42,8 +42,6 @@ Add a `[tabbyending]` shortcode after the content of the last tab in a tabgroup.
 
 `
 
-
-
 [tabby title="First Tab"]
 
 Tabby ipsum dolor sit amet, kitty sunbathe dolor, feed me.
@@ -57,8 +55,6 @@ Lay down in your way catnip stuck in a tree, sunbathe kittens.
 sleep in the sink climb the curtains attack, give me fish.
 
 [tabbyending]
-
-
 
 `
 
@@ -96,7 +92,7 @@ The markup required to show an icon alongside a tab title can be added by using 
 [tabby title="My Tab" icon="cog"]
 
 `
-This adds a pseudo element before the tab table with the classes "fa" and "fa-cog". Other icon font sets can be used if you ensure the CSS rules target the classes added by the plugin.
+This adds a pseudo element before the tab title with the classes "fa" and "fa-cog". Other icon font sets can be used if you ensure the CSS rules target the classes added by the plugin.
 
 The [Tabby Responsive Tabs Customiser](http://cubecolour.co.uk/tabby-responsive-tabs-customiser/ "Tabby Responsive Tabs Customiser") plugin can be used to add the Font Awesome files required to display the icons in the tab titles.
 
@@ -141,8 +137,8 @@ You can receive free support for the plugin if you have problems getting it work
 
 If you require a greater level of support than can be provided on the plugin support forum on WordPress.org - eg you prefer not to post the url or you require CSS support to fit specific requirements for your site, you can request non-free support via the [paid email support form for cubecolour plugins](http://cubecolour.co.uk/premium-support/ "paid email support form for cubecolour plugins") form.
 
-= How can I get rid of extra paragraph tags at the beginning or end of the tab content? =
-These can be added by the wpautop function. It is recommended to leave a blank line before and after each tabby shortcode to prevent these from appearing.
+= How can I remove extra paragraph tags which appear at the beginning or end of the tab content? =
+These extra tags are often be added by WordPress's wpautop function. It is recommended to leave a blank line before and after each tabby shortcode to prevent these from appearing.
 
 
 = Pasted-in shortcodes aren't working or the tabs have a 'stepped' appearance =
@@ -150,15 +146,15 @@ If you are copying & pasting the example shortcodes into the visual editor and t
 
 = Where is the plugin's admin page? =
 
-There isn't one. This is a lightweight plugin with no options. If you want to be able to configure your tabs using an admin page, the [Tabby Responsive Tabs Customiser plugin](http://cubecolour.co.uk/tabby-responsive-tabs-customiser/ "Tabby Responsive Tabs Customiser plugin") is available.
+There isn't one. This is a lightweight plugin with no options. If you want to be able to customise your tabs using an admin page, the [Tabby Responsive Tabs Customiser plugin](http://cubecolour.co.uk/tabby-responsive-tabs-customiser/ "Tabby Responsive Tabs Customiser plugin") is available.
 
-= Does it work with responsive Themes? =
+= Does this plugin work with responsive Themes? =
 
 Yes - it should work with any well-coded responsive theme.
 
 = Does it work with non-responsive Themes? =
 
-The plugin should also work with non-responsive Themes, however this is not really recommended; if you are using a non-responsive theme the tabs will not switch to an accordion display on a mobile device.
+The plugin should also work with non-responsive Themes, however this is not really recommended; if you are using a non-responsive theme the tabs may not switch to an accordion display on a mobile device.
 
 = Does it work with a multisite installation of WordPress? =
 
@@ -173,7 +169,7 @@ If you prefer to use a settings page in your WordPress admin to set a custom tab
 
 = Can I change the responsive breakpoint from the default 767px? =
 
-Yes, you'll find where that is set in the CSS. Refer to the answer above about using custom css.
+Yes, you can see where that is set in the plugin's CSS. Refer to the answer above about using custom css to use a custom value.
 
 This value can also be set using the Tabby Responsive Tabs Customiser plugin's admin panel.
 
@@ -250,7 +246,7 @@ If you like Tabby Responsive Tabs, you may like some of my other plugins in the 
 
 = Who or what is cubecolour? =
 
-My name is Michael Atkins. Cubecolour is the name of my web design and development business in South London where I work with businesses, organisations and individuals to build and support their websites using WordPress. I enjoy attending local WordCamps and WordPress meetups. I have used WordPress since 2007 and I am a moderator on the WordPress.org forums. When I'm not sitting in front of my MacBook I can usually be found playing bass or ukulele.
+My name is Michael Atkins. Cubecolour is the name of my web design and development business in South London where I work with businesses, organisations and individuals to build and support their websites using WordPress. I enjoy attending local WordCamps and WordPress meetups. I have used WordPress since 2007 and I am a moderator on the WordPress.org support forums. When I'm not sitting in front of my MacBook I can usually be found playing bass or ukulele.
 
 = Why do you spell the word 'color' incorrectly? =
 
@@ -270,16 +266,15 @@ No, Tabby Responsive Tabs works great on its own and customising how the tabs di
 
 The free Tabby Responsive Tabs plugin was designed as a lightweight plugin for WordPress developers to add responsive tabs to their WordPress site. The functionality provided by the optional add-on customiser plugin was never intended to be included as part of Tabby Responsive Tabs and is designed to be particularly useful for non-coders.
 
-= How much does the Tabby Responsive Tabs Customiser plugin cost? =
-
-The [Tabby Responsive Tabs Customiser plugin](http://cubecolour.co.uk/tabby-responsive-tabs-customiser/ "Tabby Responsive Tabs Customiser plugin") costs 15GBP.
-
 = What is the Tabby Link to Tab plugin? =
 
 Tabby Link to tab is an optional add-on for Tabby Responsive Tabs which provides a simple shortcode to create links to specific tabs which can appear anywhere on the same page as the tabgroup. When this is used, the tab becomes active without the page reloading. This add-on is not required in most cases but can be useful if you want to include links to specific tabs within the tab content or in a different area of the page.
 
-For more details please see: [Tabby Link to Tab plugin](http://cubecolour.co.uk/downloads/tabby-link-to-tab/ "Tabby Link to Tab plugin"). This add-on was developed after several users requested the functionality. This optional add-on plugin costs 15GBP.
+For more details please see: [Tabby Link to Tab plugin](http://cubecolour.co.uk/downloads/tabby-link-to-tab/ "Tabby Link to Tab plugin"). This add-on was developed after several users requested the functionality.
 
+= How much do the Tabby Responsive Tabs Customiser & Tabby Link to Tab add-ons cost? =
+
+These cost 19GBP each for use on a single site. A developer option for each is also available or 99GBP which can be used on all the sites you own or control.
 
 == Other Notes ==
 
@@ -292,6 +287,10 @@ The plugin is licenced under [GNU GPLv2](http://opensource.org/licenses/GPL-2.0 
 3. The basic print styles are intended to present the tab titles & content appropriately when printed out.
 
 == Changelog ==
+
+= 1.2.2 =
+
+* Included print stylesheet as a separate file
 
 = 1.2.1 =
 
@@ -331,6 +330,14 @@ The plugin is licenced under [GNU GPLv2](http://opensource.org/licenses/GPL-2.0 
 * Initial Version
 
 == Upgrade Notice ==
+
+= 1.2.2 =
+
+* Included print stylesheet as a separate file
+
+= 1.2.1 =
+
+* Added index.php to prevent the content of plugin directories being viewed if the site has not had directory browsing disallowed.
 
 = 1.2.0 =
 

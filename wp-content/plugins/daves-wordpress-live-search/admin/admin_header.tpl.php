@@ -14,7 +14,9 @@ $current_tab = isset( $_REQUEST['tab'] ) ? $_REQUEST['tab'] : 'settings';
 ?>
 
 <div class="wrap">
-<h2><?php _e( "Dave's WordPress Live Search Options", 'dwls' ); ?></h2>
+<?php if( $wp_pre_4_3 ) : ?><h2><?php else : ?><h1><?php endif; ?>
+	<?php _e( "Dave's WordPress Live Search Options", 'dwls' ); ?>
+<?php if( $wp_pre_4_3 ) : ?></h2><?php else : ?></h1><?php endif; ?>
 <ul class="subsubsub">
 <?php
 $tabs_keys = array_keys($tabs);

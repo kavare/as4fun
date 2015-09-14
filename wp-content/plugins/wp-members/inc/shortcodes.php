@@ -13,6 +13,15 @@
  * @subpackage WP-Members
  * @author Chad Butler 
  * @copyright 2006-2015
+ *
+ * Functions Included:
+ * - wpmem_sc_forms
+ * - wpmem_sc_logged_in
+ * - wpmem_sc_logged_out
+ * - wpmem_shortcode
+ * - wpmem_do_sc_pages
+ * - wpmem_do_sc_pages
+ * - wpmem_sc_user_count
  */
 
 
@@ -86,7 +95,7 @@ function wpmem_sc_forms( $atts, $content = null, $tag = 'wpmem_form' ) {
 					$wpmem_themsg = __( 'There was an error with the CAPTCHA form.' ) . '<br /><br />' . $wpmem_captcha_err;
 				}
 				$content  = ( $wpmem_themsg || $wpmem->regchk == 'success' ) ? wpmem_inc_regmessage( $wpmem->regchk, $wpmem_themsg ) : '';
-				$content .= ( $wpmem->regchk == 'success' ) ? wpmem_inc_login() : wpmem_inc_registration();
+				$content .= ( $wpmem->regchk == 'success' ) ? wpmem_inc_login() : wpmem_inc_registration( 'new', '', $redirect_to );
 			}
 			break;
 
@@ -113,7 +122,7 @@ function wpmem_sc_forms( $atts, $content = null, $tag = 'wpmem_form' ) {
 		// Fixes the wptexturize.
 		remove_filter( 'the_content', 'wpautop' );
 		remove_filter( 'the_content', 'wptexturize' );
-		add_filter( 'the_content', 'wpmem_texturize', 99 );
+		add_filter( 'the_content', 'wpmem_texturize', 999 );
 	}
 	// @todo - Look into shortcode_unautop().
 	/** End temporary texturize functions */
@@ -298,7 +307,7 @@ function wpmem_shortcode( $attr, $content = null, $tag = 'wp-members' ) {
 			// Fixes the wptexturize.
 			remove_filter( 'the_content', 'wpautop' );
 			remove_filter( 'the_content', 'wptexturize' );
-			add_filter( 'the_content', 'wpmem_texturize', 99 );
+			add_filter( 'the_content', 'wpmem_texturize', 999 );
 		}
 		return $content;
 	}
@@ -512,4 +521,4 @@ function wpmem_sc_user_count( $atts, $content = null ) {
 	return ( $do_query ) ? $atts['label'] . $user_meta_query : '';
 }
 
- /** End of File **/
+// End of file.

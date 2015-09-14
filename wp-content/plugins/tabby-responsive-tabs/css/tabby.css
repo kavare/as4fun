@@ -38,7 +38,7 @@
 .responsive-tabs ul.responsive-tabs__list {
 	font-size: 18px;
 	line-height: 18px;
-	margin: 20px 0 0 12px;	
+	margin: 20px 0 0 12px;
 	padding: 0;
 }
 
@@ -76,7 +76,7 @@
 	background: transparent;
 }
 
-.responsive-tabs .responsive-tabs__list__item--active, 
+.responsive-tabs .responsive-tabs__list__item--active,
 .responsive-tabs .responsive-tabs__list__item--active:hover {
 	background: #fff;
 	border-color: #ddd;
@@ -87,7 +87,7 @@
 	top: 1px;
 }
 
-.responsive-tabs .responsive-tabs__panel {	
+.responsive-tabs .responsive-tabs__panel {
 	background: #fff;
 	border: 1px solid #ddd;
 	border-top: 1px solid #ddd;
@@ -103,10 +103,10 @@
 	word-wrap: break-word;
 }
 
-.responsive-tabs .responsive-tabs__panel:after { 
+.responsive-tabs .responsive-tabs__panel:after {
 	content: "";
-	display: block; 
-	height: 0; 
+	display: block;
+	height: 0;
 	clear: both;
 }
 
@@ -122,16 +122,16 @@
 	.responsive-tabs .responsive-tabs__list {
 		display: none;
 	}
-	
+
 	.responsive-tabs .responsive-tabs__heading {
 		display: block;
 		cursor: pointer;
 	}
 
-	.responsive-tabs-wrapper {		
+	.responsive-tabs-wrapper {
 		border-top: 1px solid #ccc;
 	}
-		
+
 	.responsive-tabs .responsive-tabs__heading {
 		background: #fff;
 		border: 1px solid #ccc;
@@ -160,16 +160,16 @@
 		position: absolute;
 		right: 20px;
 		top: 20px;
-		height: 0; 
-		width: 0; 
+		height: 0;
+		width: 0;
 	}
 
 	.responsive-tabs .responsive-tabs__heading:hover {
 		background: #eee;
 		color: #777;
 	}
-	
-	.responsive-tabs .responsive-tabs__heading:hover:after {	
+
+	.responsive-tabs .responsive-tabs__heading:hover:after {
 		border-top: 6px solid #777;
 	}
 
@@ -196,29 +196,5 @@
 		margin: 0;
 		padding: 0 20px;
 		padding-top: 20px;
-	}
-}
-
-@media print {
-	.responsive-tabs .responsive-tabs__list {
-		display: none;
-	}
-
-	.responsive-tabs .responsive-tabs__heading {
-		background: none;
-		border: none;
-		display: block;
-		font-size: 22px;
-		font-weight: bold;
-		text-transform: inherit;
-		margin: 0!important;
-		padding: 10px 0 0;
-	}
-	
-	.responsive-tabs .responsive-tabs__panel {
-		display: block!important;
-		background: none;
-		border: none;
-		padding: 0;
 	}
 }

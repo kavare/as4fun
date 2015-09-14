@@ -4,10 +4,10 @@ Plugin Name: Tabby Responsive Tabs
 Plugin URI: http://cubecolour.co.uk/tabby-responsive-tabs
 Description: Create responsive tabs inside your posts, pages or custom post types by adding simple shortcodes. An easy to use admin page can be added to customise the tab styles with the optional Tabby Responsive Tabs Customiser add-on plugin.
 Author: cubecolour
-Version: 1.2.1
+Version: 1.2.2
 Author URI: http://cubecolour.co.uk
 
-	Tabby Responsive Tabs WordPress plugin Copyright 2013-2014 Michael Atkins
+	Tabby Responsive Tabs WordPress plugin Copyright 2013-2015 Michael Atkins
 
 	Licenced under the GNU GPL:
 
@@ -116,15 +116,26 @@ function cc_tabby_meta_links( $links, $file ) {
 //	Alternatively use the tabby responsive tabs customiser plugin
 //	available from from http:cubecolour.co.uk/tabby-responsive-tabs-customiser
 //
-//	Note: wp_print_styles has been deprecated since WP v3.3, so in a future version of this plugin this will be replaced with:
-//	add_action( 'wp_enqueue_scripts', 'cc_tabby_css',30 );
+//	Note: wp_print_styles has been deprecated since WP v3.3, so in a future version of this plugin this may be replaced with:
+//	add_action( 'wp_enqueue_scripts', 'cc_tabby_css' );
+//	However not breaking backwards compatibility for existing users is currently more important
+
+// Print styles now added separately and only to pages with at least one tab group
 // ==============================================
 
+//Screen Styles
 function cc_tabby_css() {
-	wp_enqueue_style('tabby.css', plugin_dir_url(__FILE__).'css/tabby.css' , false, cc_tabby_plugin_version() );
+	wp_register_style( 'tabby', plugins_url( '/css/tabby.css' , __FILE__ ), '', cc_tabby_plugin_version() );
 }
 
 add_action('wp_print_styles', 'cc_tabby_css', 30);
+
+//Print Styles
+function cc_tabby_register_print_css() {
+	wp_register_style( 'tabby-print', plugins_url( '/css/tabby-print.css' , __FILE__ ), '', cc_tabby_plugin_version() );
+}
+
+add_action('wp_enqueue_scripts', 'cc_tabby_register_print_css');
 
 // ==============================================
 // Trigger the script if it has not already been triggered on the page
@@ -148,17 +159,17 @@ function cc_tabbytrigger() {
 
 function cc_shortcode_tabby( $atts, $content = null ) {
 
-// initialise $firsttab flag so we can tell whether we are building the first tab
+	// initialise $firsttab flag so we can tell whether we are building the first tab
 
-global $reset_firsttab_flag;
-static $firsttab = TRUE;
+	global $reset_firsttab_flag;
+	static $firsttab = TRUE;
 
-if ($GLOBALS["reset_firsttab_flag"] === TRUE) {
-	$firsttab = TRUE;
-	$GLOBALS["reset_firsttab_flag"] = FALSE;
-}
+	if ($GLOBALS["reset_firsttab_flag"] === TRUE) {
+		$firsttab = TRUE;
+		$GLOBALS["reset_firsttab_flag"] = FALSE;
+	}
 
-// extract title & whether open
+	// extract title & whether open
 	extract(shortcode_atts(array(
 		"title" => '',
 		"open" => '',
@@ -177,6 +188,10 @@ if ($GLOBALS["reset_firsttab_flag"] === TRUE) {
 
 	//	Set Tab Panel Class - add active class if the open attribute is set or the target url parameter matches the dashed version of the tab title
 	$tabcontentclass = "tabcontent";
+
+	if ( isset( $class ) ) {
+		$tabcontentclass .= " " . $class . "-content";
+	}
 
 	if ( ( $open ) || ( isset( $urltarget ) && ( $urltarget == $tabtarget ) ) ) {
 		$tabcontentclass .= " responsive-tabs__panel--active";
@@ -212,6 +227,13 @@ add_shortcode('tabby', 'cc_shortcode_tabby');
 // ==============================================
 
 function cc_shortcode_tabbyending( $atts, $content = null ) {
+
+	// add screen & print-only styles
+	if ( wp_style_is( 'tabby', $list = 'registered' ) ) {
+		wp_enqueue_style( 'tabby' );
+	}
+
+	wp_enqueue_style( 'tabby-print' );
 
 	wp_enqueue_script('tabby', plugins_url('js/tabby.js', __FILE__), array('jquery'), cc_tabby_plugin_version(), true);
 
