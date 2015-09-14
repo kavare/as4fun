@@ -40,7 +40,6 @@ if (!function_exists('page_specific_scripts')):
         global $post;
 
         if ( is_front_page() || is_home() ) {
-            wp_enqueue_script('front-page', get_template_directory_uri() . '/js/front-page.js', array(), '1.0.0', true );
             wp_enqueue_style('front-page', get_template_directory_uri() . '/css/pages/front-page.css', array(), '1.0.0' );
         }
 
@@ -58,6 +57,9 @@ if (!function_exists('page_specific_scripts')):
                 break;
             case 'faq':
                 wp_enqueue_style( 'faq', get_template_directory_uri() . '/css/pages/faq.css', array(), '1.0.0' );
+                break;
+            case 'top-news':
+                wp_enqueue_style( 'top-news', get_template_directory_uri() . '/css/pages/top-news.css', array(), '1.0.0' );
                 break;
             case 'community-links':
                 wp_enqueue_style( 'links', get_template_directory_uri() . '/css/pages/community-links.css', array(), '1.0.0' );

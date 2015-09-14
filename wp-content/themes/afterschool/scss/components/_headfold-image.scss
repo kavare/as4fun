@@ -8,6 +8,7 @@
 .page-template-community-links { @include page-jumbotron('/headlines/toys.png', 'plane.png', 0, 88%); }
 .page-template-privacy { @include page-jumbotron('/headlines/toys.png', 'ballon.png', 0, 88%); }
 .page-template-faq { @include page-jumbotron('/headlines/classroom.png', 'paperplane.png', 0, 13%); }
+.page-template-top-news { @include page-jumbotron('/headlines/talks.png', 'paperplane.png', 0, 13%); }
 .page-template-gallery { @include page-jumbotron('/headlines/toys.png', 'ballon.png', 0, 88%); }
 
 .page-template-counsel-terms { @include page-jumbotron('/headlines/newborn.png', 'paperplane.png', 0, 8%); }
