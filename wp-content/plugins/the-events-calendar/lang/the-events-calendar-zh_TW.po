@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the The Events Calendar package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-09-15 01:32+0800\n"
+"PO-Revision-Date: 2015-09-15 10:34+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,7 +19,6 @@ msgid "The Events Calendar is a carefully crafted, extensible plugin that lets y
 msgstr ""
 
 #. Author of the plugin/theme
-#, fuzzy
 msgid "Modern Tribe, Inc."
 msgstr "Modern Tribe Inc"
 
@@ -52,87 +51,74 @@ msgid "Update complete: timezone data has been added to all events in the databa
 msgstr ""
 
 #: src/Tribe/Admin/Timezone_Updater.php:87
-#, fuzzy
 msgid "%d%% complete"
-msgstr "賣出 %d (%d %s)"
+msgstr "匯入完成！"
 
 #: src/Tribe/Admin/Timezone_Updater.php:105
 msgid "A problem stopped the timezone update process from completing. Please refresh and try again."
 msgstr ""
 
 #: src/Tribe/Importer/Column_Mapper.php:64
-#, fuzzy
 msgid "Event Currency Symbol"
 msgstr "貨幣符號："
 
 #: src/Tribe/Importer/Column_Mapper.php:65
-#, fuzzy
 msgid "Event Currency Position"
 msgstr "貨幣符號："
 
 #: src/Tribe/Importer/Column_Mapper.php:67
-#, fuzzy
 msgid "Event Tags"
 msgstr "活動標籤："
 
 #: src/Tribe/Main.php:2241
-#, fuzzy
 msgid "page"
-msgstr "個人資訊頁面："
+msgstr "Wordpress.org 外掛頁面"
 
 #: src/Tribe/Main.php:2242
-#, fuzzy
 msgid "event"
 msgstr "活動"
 
 #: src/Tribe/Main.php:2243
-#, fuzzy
 msgid "events"
 msgstr "活動"
 
 #: src/Tribe/Main.php:2244
-#, fuzzy
 msgid "all"
-msgstr "匯出所有帳戶"
+msgstr "全日的 %s:"
 
 #: src/Tribe/Settings.php:261
-#, fuzzy
 msgid "Save Changes"
 msgstr "儲存變更"
 
 #: src/Tribe/Template/Day.php:136
 msgid "No matching %1$s listed under %2$s scheduled for <strong>%3$s</strong>. Please try another day."
-msgstr ""
+msgstr "沒有符合的%1$s在 %2s$s行事曆中。請試著檢視完整的<strong>%3$s</strong>以取得完整的活動列表。請試試其他天。"
 
 #: src/Tribe/Template/Day.php:138
-#, fuzzy
 msgid "No %1$s scheduled for <strong>%2$s</strong>. Please try another day."
-msgstr "沒有 %s 排定於 <strong>%s</strong>. 請試試其他日期"
+msgstr "沒有%1$s排定於 <strong>%2$s</strong>. 請試試其他日期"
 
 #: src/Tribe/Template/Month.php:287
-#, fuzzy
 msgid "No matching %1$s listed under %2$s. Please try viewing the full calendar for a complete list of events."
-msgstr "沒有符合的 %s 在 %s 列表中。請試著檢視完整的時間表以取得完整的活動列表。"
+msgstr "沒有符合的%1$s在%2$s列表中。請試著檢視完整的時間表以取得完整的活動列表"
 
 #: src/Tribe/Template_Factory.php:355
-#, fuzzy
 msgid "No results were found for %1$s in or near <strong>\"%2$s\"</strong>."
-msgstr "%s 沒有在<strong>\"%s\"</strong>搜尋到任何結果"
+msgstr "%1$s 沒有在<strong>”%2$s”</strong>搜尋到任何結果"
 
 #: src/Tribe/Template_Factory.php:357
 msgid "No upcoming %1$s listed under %2$s. Check out upcoming %3$s for this category or view the full calendar."
-msgstr ""
+msgstr "沒有即將到來的%1$s在%2$s列表中。請查看即將來到的%3$s類別或參照完整的行事曆。"
 
 #: src/Tribe/Template_Factory.php:359 src/Tribe/Template_Factory.php:364
 msgid "No matching %1$s listed under %2$s. Please try viewing the full calendar for a complete list of %3$s."
-msgstr ""
+msgstr "沒有符合的%1$s在%2$s列表中。請試著檢視完整的時間表以取得完整的%3$s列表"
 
 #: src/admin-views/events-meta-box.php:121
 msgid "Timezone:"
-msgstr ""
+msgstr "時區："
 
 #: src/admin-views/tickets/attendees.php:103
-#, fuzzy
 msgid "Sold %1$d %2$s"
 msgstr "賣出 %d (%d %s)"
 
@@ -141,7 +127,6 @@ msgid "Sold %1$d of %2$d %3$s"
 msgstr ""
 
 #: src/admin-views/tickets/list.php:69
-#, fuzzy
 msgid "Sold %1$d of %2$d"
 msgstr "賣出 %d (%d %s)"
 
@@ -150,7 +135,6 @@ msgid "You cannot edit the slug for your events page as you do not have pretty p
 msgstr ""
 
 #: src/admin-views/tribe-options-help.php:199
-#, fuzzy
 msgid "If you find that you aren't getting the level of service you've come to expect from Modern Tribe, shoot us an email at %1$s or tweet %2$s and tell us why. We'll do what we can to make it right."
 msgstr "如果你發現 Modern Tribe 的服務未符合你的期待時，請來信寄至 %s 或 tweet %s 告訴我們原因，我們將盡全力改善。"
 
@@ -159,12 +143,10 @@ msgid "<p>The license key you received when completing your purchase from %1$s w
 msgstr ""
 
 #: src/admin-views/tribe-options-timezones.php:4
-#, fuzzy
 msgid "Enable timezone support"
 msgstr "支援"
 
 #: src/admin-views/tribe-options-timezones.php:6
-#, fuzzy
 msgid "Update Timezone Data"
 msgstr "更新設定"
 
@@ -173,12 +155,10 @@ msgid "Click this button to update your database and take advantage of additiona
 msgstr ""
 
 #: src/admin-views/tribe-options-timezones.php:27
-#, fuzzy
 msgid "Timezone Settings"
 msgstr "設定"
 
 #: src/admin-views/tribe-options-timezones.php:35
-#, fuzzy
 msgid "Timezone mode"
 msgstr "除錯模式"
 
@@ -191,7 +171,6 @@ msgid "Use the sitewide timezone everywhere"
 msgstr ""
 
 #: src/admin-views/tribe-options-timezones.php:45
-#, fuzzy
 msgid "Show timezone"
 msgstr "顯示："
 
@@ -203,39 +182,33 @@ msgstr ""
 msgctxt "category list label"
 msgid "%s Category"
 msgid_plural "%s Categories"
-msgstr[0] ""
+msgstr[0] "%s類別"
 
 #: src/io/csv/admin-views/general.php:48
-#, fuzzy
 msgid "Save Settings"
 msgstr "儲存變更"
 
 #: src/Tribe/Activation_Page.php:38
-#, fuzzy
 msgid "Go to plugins page"
 msgstr "頁面限制"
 
 #: src/Tribe/Activation_Page.php:38
-#, fuzzy
 msgid "Return to Plugins page"
-msgstr "個人資訊頁面："
+msgstr "頁面限制"
 
 #: src/Tribe/Activation_Page.php:46
 msgid "Go to WordPress Updates page"
 msgstr ""
 
 #: src/Tribe/Activation_Page.php:46
-#, fuzzy
 msgid "Return to WordPress Updates"
 msgstr "WordPress "
 
 #: src/Tribe/Admin/Organizer_Chooser_Meta_Box.php:88
-#, fuzzy
 msgid "Create New %s"
 msgstr "新增 %s 類別"
 
 #: src/Tribe/Admin/Organizer_Chooser_Meta_Box.php:148
-#, fuzzy
 msgid "Add another organizer"
 msgstr "主辦人"
 
@@ -245,7 +218,6 @@ msgid " - "
 msgstr ""
 
 #: src/Tribe/PUE/Checker.php:416
-#, fuzzy
 msgid "unknown date"
 msgstr "未知或未設定"
 
@@ -254,17 +226,14 @@ msgid "Rewrite rules were purged on load of this help page. Chances are there is
 msgstr ""
 
 #: src/admin-views/tribe-options-help.php:155
-#, fuzzy
 msgid "If you're looking for help with The Events Calendar, you've come to the right place. We are committed to helping make your calendar be spectacular... and hope the resources provided below will help get you there."
 msgstr "如果你正在尋求The Events Calendar的協助，你來對地方了。我們致力於讓你的時間表更屌...希望下面的資源能夠幫到你"
 
 #: src/admin-views/tribe-options-help.php:209
-#, fuzzy
 msgid "Hi! We are Modern Tribe and we are here to help you be awesome. Thanks so much for installing our labor of love!"
 msgstr "嗨！我們是 Modern Tribe，我們在此幫助你更得心應手。非常感謝你安裝我們的產品！"
 
 #: src/admin-views/tribe-options-help.php:231
-#, fuzzy
 msgid "Support Resources To Help You Be Awesome"
 msgstr "支援資源幫助你更得心應手"
 
@@ -549,7 +518,7 @@ msgstr "活動標籤："
 
 #: src/Tribe/iCal.php:29
 msgid "%1$s %2$s iCal Feed"
-msgstr "%1$s %2$s iCal Feed"
+msgstr "%1$s %2$s"
 
 #: src/functions/advanced-functions/meta_registration.php:112
 msgid "Origin:"
@@ -560,7 +529,6 @@ msgid "Add to Google Calendar"
 msgstr "增加至 Google 日曆"
 
 #: src/functions/advanced-functions/meta_registration.php:286
-#, fuzzy
 msgid "%s:"
 msgstr "%s:"
 
@@ -569,12 +537,10 @@ msgid "Google Calendar"
 msgstr "Google 日曆"
 
 #: src/functions/template-tags/date.php:261
-#, fuzzy
 msgid "The function needs to be passed an $event or used in the loop."
 msgstr "這個函數需要傳入$event或在主迴圈中使用"
 
 #: src/Tribe/iCal.php:76
-#, fuzzy
 msgid "Download .ics file"
 msgstr "下載 .ics檔"
 
@@ -583,16 +549,14 @@ msgid "<span>&laquo;</span> Previous Day"
 msgstr "<span>&laquo;</span> 前一天"
 
 #: src/Tribe/iCal.php:76
-#, fuzzy
 msgid "iCal Export"
-msgstr "匯出"
+msgstr "匯出 iCal"
 
 #: src/functions/template-tags/day.php:109
 msgid "Next Day <span>&raquo;</span>"
 msgstr "後一天 <span>&raquo;</span>"
 
 #: src/Tribe/iCal.php:106
-#, fuzzy
 msgid "Month's %s"
 msgstr "每月 %s"
 
@@ -601,7 +565,6 @@ msgid "Yesterday"
 msgstr "昨天"
 
 #: src/Tribe/iCal.php:109
-#, fuzzy
 msgid "Week's %s"
 msgstr "每週 %s"
 
@@ -610,7 +573,6 @@ msgid "Tomorrow"
 msgstr "明天"
 
 #: src/Tribe/iCal.php:112
-#, fuzzy
 msgid "Day's %s"
 msgstr "每日 %s"
 
@@ -627,18 +589,15 @@ msgid "Tags:"
 msgstr "標籤："
 
 #: src/Tribe/iCal.php:120
-#, fuzzy
 msgid "Use this to share calendar data with Google Calendar, Apple iCal and other compatible apps"
 msgstr "使用這個來分享行程資訊到Google Calendar, Apple iCal和其他相容的apps"
 
 #: src/functions/template-tags/general.php:562
-#, fuzzy
 msgid "Loading %s"
 msgstr "讀取 %s"
 
 #: src/admin-views/admin-update-message.php:9
 #: src/admin-views/admin-welcome-message.php:11
-#, fuzzy
 msgid "You are running Version %s and deserve a hug :-)"
 msgstr "你正在執行版本 %s 並值得被擁抱 :-)"
 
@@ -647,7 +606,6 @@ msgid "Free"
 msgstr "免費"
 
 #: src/admin-views/admin-update-message.php:32
-#, fuzzy
 msgid "Keep the Core Plugin <strong>FREE</strong>!"
 msgstr "讓核心插件維持<strong>免費 </strong>!"
 
@@ -656,7 +614,6 @@ msgid "Calendar powered by %sThe Events Calendar%s"
 msgstr "行事曆由 %sThe Events Calendar%s 所提供"
 
 #: src/admin-views/admin-update-message.php:33
-#, fuzzy
 msgid "Every time you rate <strong>5 stars</strong>, a fairy is born. Okay maybe not, but more happy users mean more contributions and help on the forums. The community NEEDS your voice."
 msgstr "每當你給分<strong>五顆星</strong>時，就有一個童話誕生。好啦也許沒有，但是更多快樂的使用者代表更多貢獻者和論壇的協助。論壇需要你的聲音。"
 
@@ -666,39 +623,32 @@ msgstr "未來 %s"
 
 #: src/admin-views/admin-update-message.php:34
 #: src/admin-views/admin-welcome-message.php:22
-#, fuzzy
 msgid "Rate It"
 msgstr "評分"
 
 #: src/functions/template-tags/loop.php:145
-#, fuzzy
 msgid "%1$s for %2$s - %3$s"
 msgstr "%1$s (%2$s - %3$s)"
 
 #: src/admin-views/admin-update-message.php:37
-#, fuzzy
 msgid "PSST... Want a Discount?"
 msgstr "嘖嘖…想要有折扣嗎？"
 
 #: src/functions/template-tags/loop.php:147
-#, fuzzy
 msgid "Past %s"
 msgstr "過去的 %s"
 
 #: src/admin-views/admin-update-message.php:38
-#, fuzzy
 msgid "We send out discounts to our core users via our newsletter."
 msgstr "我們會透過電子報寄出折扣給我們的核心使用者"
 
 #: src/functions/template-tags/loop.php:152
 #: src/functions/template-tags/loop.php:161
-#, fuzzy
 msgid "%1$s for %2$s"
-msgstr "%1$s %2$s iCal Feed"
+msgstr "%1$s %2$s"
 
 #: src/admin-views/admin-update-message.php:43
 #: src/admin-views/admin-welcome-message.php:31
-#, fuzzy
 msgid "Sign Up"
 msgstr "註冊"
 
@@ -707,7 +657,6 @@ msgid "Your current Events URL is %s"
 msgstr "你目前活動的網址為 %s"
 
 #: src/admin-views/admin-update-message.php:49
-#, fuzzy
 msgid "Looking for Something Special?"
 msgstr "在找什麼特別的東西嗎？"
 
@@ -716,7 +665,6 @@ msgid "You <strong>cannot</strong> use the same slug as above. The above should 
 msgstr "你<strong>不能</strong>使用和上面相同的代稱，上面代稱適合複數與此單數。<br />你的單一活動網址應如：%s"
 
 #: src/admin-views/admin-update-message.php:51
-#, fuzzy
 msgid "Pro"
 msgstr "專業版"
 
@@ -725,17 +673,14 @@ msgid "Column Mapping: %s"
 msgstr "Column Mapping: %s"
 
 #: src/admin-views/admin-update-message.php:53
-#, fuzzy
 msgid "Community Events"
 msgstr "社群活動"
 
 #: src/io/csv/admin-views/columns.php:27
-#, fuzzy
 msgid "Columns have been mapped based on your last import. Please ensure the selected fields match the columns in your CSV file."
 msgstr "欄位已經根據你的前一次匯入進行比對連結。請卻人選擇的欄位符合您的CSV檔案中的欄位"
 
 #: src/admin-views/admin-update-message.php:54
-#, fuzzy
 msgid "Filters"
 msgstr "過濾器"
 
@@ -744,7 +689,6 @@ msgid "Column Headings"
 msgstr "欄標題"
 
 #: src/admin-views/admin-update-message.php:55
-#, fuzzy
 msgid "Facebook"
 msgstr "Facebook"
 
@@ -754,7 +698,6 @@ msgstr "活動欄位"
 
 #: src/admin-views/admin-update-message.php:58
 #: src/admin-views/admin-welcome-message.php:53
-#, fuzzy
 msgid "News For Events Users"
 msgstr "給活動使用者的新聞"
 
@@ -763,52 +706,42 @@ msgid "Perform Import"
 msgstr "執行匯入"
 
 #: src/admin-views/admin-welcome-message.php:19
-#, fuzzy
 msgid "Keep The Events Calendar Core FREE"
 msgstr "讓The Events Calendar的核心保持免費"
 
 #: src/io/csv/admin-views/general.php:10
-#, fuzzy
 msgid "The Events Calendar: Import"
 msgstr "The Events Calendar: 匯入"
 
 #: src/admin-views/admin-welcome-message.php:20
-#, fuzzy
 msgid "5 star ratings help us bring TEC to more users. More happy users mean more support, more features, and more of everything you know and love about The Events Calendar. We couldn't do this without your support."
 msgstr "五星評價將幫助我們把TEC散播給更多使用者。更多快樂的使用者代表更多的支援、更多特色功能、和更多你在The Events Calendar想要的東西。沒有你的協助我們無法做到這些。"
 
 #: src/io/csv/admin-views/general.php:12
-#, fuzzy
 msgid "Instructions"
 msgstr "指示"
 
 #: src/admin-views/admin-welcome-message.php:21
-#, fuzzy
 msgid "Rate it five stars today!"
 msgstr "今天就給五顆星吧！"
 
 #: src/io/csv/admin-views/general.php:14
-#, fuzzy
 msgid "To import events, first select a %sDefault Import Event Status%s below to assign to your imported events."
 msgstr "要匯入活動，請先在下面選擇一個%s預設活動匯入狀態%s指定給匯入的活動。"
 
 #: src/admin-views/admin-welcome-message.php:25
-#, fuzzy
 msgid "Newsletter Signup"
 msgstr "訂閱電子報"
 
 #: src/io/csv/admin-views/general.php:17
-#, fuzzy
 msgid "Once your setting is saved, move to the applicable Import tab to select import specific criteria."
 msgstr "一旦你的設定已經儲存，請移至可用的匯入頁籤並選擇這個匯入的特別設置"
 
 #: src/admin-views/admin-welcome-message.php:26
-#, fuzzy
 msgid "Stay in touch with The Events Calendar Pro. We send out periodic updates, key developer notices, and even the occasional discount."
 msgstr "和The Events Calendar保持聯繫。我們會定期寄送更新、核心開發者的注意事項、甚至有不定期的優惠折扣。"
 
 #: src/io/csv/admin-views/general.php:24
-#, fuzzy
 msgid "Import Settings"
 msgstr "匯入設定"
 
@@ -818,52 +751,42 @@ msgid "Getting Started"
 msgstr "入門指南"
 
 #: src/io/csv/admin-views/general.php:27
-#, fuzzy
 msgid "Default imported event status:"
 msgstr "預設匯入活動狀態:"
 
 #: src/admin-views/admin-welcome-message.php:41
-#, fuzzy
 msgid "Check out the New User Primer &amp; Tutorials"
 msgstr "請參閱新用戶簡介 &amp; 使用指南"
 
 #: src/io/csv/admin-views/general.php:30
-#, fuzzy
 msgid "Published"
 msgstr "已發佈"
 
 #: src/admin-views/admin-welcome-message.php:43
-#, fuzzy
 msgid "Looking for More Features?"
 msgstr "在尋找更多特色功能嗎？"
 
 #: src/io/csv/admin-views/general.php:31
-#, fuzzy
 msgid "Pending"
 msgstr "待審核"
 
 #: src/admin-views/admin-welcome-message.php:44
-#, fuzzy
 msgid "Addons for Community, Tickets, Filters, Facebook and more."
 msgstr "更多社群、票券、過濾器、和Facebook等附加元件"
 
 #: src/io/csv/admin-views/general.php:32
-#, fuzzy
 msgid "Draft"
 msgstr "草稿"
 
 #: src/admin-views/admin-welcome-message.php:46
-#, fuzzy
 msgid "Support Resources"
 msgstr "協助資源"
 
 #: src/io/csv/admin-views/header.php:17
-#, fuzzy
 msgid "Events Import"
 msgstr "匯入活動"
 
 #: src/admin-views/admin-welcome-message.php:47
-#, fuzzy
 msgid "FAQs, Documentation, Tutorials and Forums"
 msgstr "常間問題、文件、教學、和論壇"
 
@@ -872,7 +795,6 @@ msgid "Import Instructions"
 msgstr "匯入操作說明"
 
 #: src/admin-views/admin-welcome-message.php:50
-#, fuzzy
 msgid "Release Notes"
 msgstr "發佈說明"
 
@@ -881,7 +803,6 @@ msgid "If your events have Organizers or Venues, please import those first."
 msgstr "如果你的活動含有主辦人或地點時，請先匯入它們。"
 
 #: src/admin-views/admin-welcome-message.php:51
-#, fuzzy
 msgid "Get the Skinny on the Latest Updates"
 msgstr "取得最新的簡短更新"
 
@@ -890,7 +811,6 @@ msgid "To import organizers or venues:"
 msgstr "匯入主辦人和地點："
 
 #: src/admin-views/admin-welcome-message.php:54
-#, fuzzy
 msgid "Product Releases, Tutorials and Community Activity"
 msgstr "產品發佈、教學、和社群活動"
 
@@ -923,7 +843,6 @@ msgid "After you upload your file, you'll have the opportunity to indicate how t
 msgstr "檔案上傳後，你將有機會指定如何將 CSV 中的欄安排至 The Events Calendar 的欄位中。"
 
 #: src/admin-views/event-sidebar-options.php:13
-#, fuzzy
 msgid "Hide From %s Listings"
 msgstr "從%s列表隱藏"
 
@@ -932,7 +851,6 @@ msgid "After importing your Organizers and Venues, import your Events:"
 msgstr "匯入你的主辦人和地點後，請接著匯入你的活動："
 
 #: src/admin-views/event-sidebar-options.php:15
-#, fuzzy
 msgid "Sticky in Month View"
 msgstr "固定於月檢視模式"
 
@@ -941,7 +859,6 @@ msgid "One column in your CSV should have the Event title. Another should have t
 msgstr "你的 CSV 中應有一欄必須是活動標題，另一欄是活動開始日期，其餘則不限。"
 
 #: src/admin-views/event-sidebar-options.php:16
-#, fuzzy
 msgid "When events are sticky in month view, they'll display first in the list of events shown within a given day block."
 msgstr "當活動固定於月檢視模式，他們會在列表清單中優先顯示顯示（月曆樣式）"
 
@@ -958,7 +875,6 @@ msgid "Import Type:"
 msgstr "匯入類型："
 
 #: src/admin-views/events-meta-box.php:67
-#, fuzzy
 msgid "You have changed the recurrence rules of this %1$s.  Saving the %1$s will update all future %2$s.  If you did not mean to change all %2$s, then please refresh the page."
 msgstr "你已改變這個循環的規則 %1$s。儲存 %1$s會更新所有未來的 %2$s。如果你不想改變所有的 %2$s，請重新整理此頁。"
 
@@ -1008,7 +924,6 @@ msgid "Import complete!"
 msgstr "匯入完成！"
 
 #: src/admin-views/events-meta-box.php:195
-#, fuzzy
 msgid "%s Website"
 msgstr "%s 網址"
 
@@ -1025,7 +940,6 @@ msgid "Updated: %d"
 msgstr "更新：%d"
 
 #: src/admin-views/events-meta-box.php:229
-#, fuzzy
 msgid "%s Cost"
 msgstr "%s 費用"
 
@@ -1066,14 +980,12 @@ msgid "Cost:"
 msgstr "費用："
 
 #: src/admin-views/events-meta-box.php:263
-#, fuzzy
 msgid "Enter a 0 for %s that are free or leave blank to hide the field."
 msgstr "在%s 輸入 0會顯示「免費」；維持空白則會隱藏此欄位"
 
 #: src/admin-views/new-organizer-meta-section.php:15
 #: src/admin-views/organizer-meta-box.php:24
 #: src/admin-views/venue-meta-box.php:25
-#, fuzzy
 msgid "%s Name:"
 msgstr "%s 名稱："
 
@@ -1108,7 +1020,6 @@ msgid "Website:"
 msgstr "網址："
 
 #: src/views/list/nav.php:19
-#, fuzzy
 msgid "%s List Navigation"
 msgstr "%s 列表導覽"
 
@@ -1120,7 +1031,6 @@ msgid "Email:"
 msgstr "電子郵件信箱"
 
 #: src/views/list/nav.php:25
-#, fuzzy
 msgid "<span>&laquo;</span> Previous %s"
 msgstr "<span>&laquo;</span> 前一個 %s"
 
@@ -1130,14 +1040,12 @@ msgid "You may want to consider <a href=\"http://wordpress.org/plugins/tags/obfu
 msgstr "你可能會考慮使用 <a href=\"http://wordpress.org/plugins/tags/obfuscate\">反垃圾信過濾外掛</a> 來避免垃圾蟲蒐集任何發佈於你網站上的電子郵件地址。"
 
 #: src/views/list/nav.php:32
-#, fuzzy
 msgid "Next %s <span>&raquo;</span>"
 msgstr "下一個 %s <span>&raquo;</span>"
 
 #: src/admin-views/new-organizer-meta-section.php:69
 #: src/admin-views/organizer-meta-box.php:75
 #: src/admin-views/venue-meta-box.php:193
-#, fuzzy
 msgid "%s Name Already Exists"
 msgstr "%s 這個名稱已被使用過"
 
@@ -1166,7 +1074,6 @@ msgid "Start Date / Time:"
 msgstr "開始日期／時間"
 
 #: src/views/modules/meta/details.php:119
-#, fuzzy
 msgid "%s Tags:"
 msgstr "%s 標籤:"
 
@@ -1201,7 +1108,6 @@ msgid_plural "View All %2$s %3$s"
 msgstr[0] ""
 
 #: src/views/single-event.php:27
-#, fuzzy
 msgid "&laquo; All %s"
 msgstr "&laquo; 全部 %s"
 
@@ -1210,12 +1116,10 @@ msgid "Tickets sold:"
 msgstr "票券已售："
 
 #: src/views/single-event.php:46 src/views/single-event.php:79
-#, fuzzy
 msgid "%s Navigation"
 msgstr "%s 導覽"
 
 #: src/admin-views/tickets/attendees.php:136
-#, fuzzy
 msgid "Finalized:"
 msgstr "完成："
 
@@ -1224,7 +1128,6 @@ msgid "Attendee List"
 msgstr "出席者名單"
 
 #: src/admin-views/tickets/attendees.php:139
-#, fuzzy
 msgid "Awaiting review:"
 msgstr "等待審閱："
 
@@ -1261,7 +1164,6 @@ msgid "Select..."
 msgstr "選擇..."
 
 #: src/views/widgets/list-widget.php:71
-#, fuzzy
 msgid "There are no upcoming %s at this time."
 msgstr "現在沒有即將到的 %s"
 
@@ -1339,12 +1241,10 @@ msgid "(0 or empty for free tickets)"
 msgstr "(0 或 空白為免費票券)"
 
 #: src/admin-views/tickets/meta-box.php:125
-#, fuzzy
 msgid "Sale Price:"
 msgstr "售價："
 
 #: src/admin-views/tickets/meta-box.php:131
-#, fuzzy
 msgid "(Current sale price - this can be managed via the product editor)"
 msgstr "(目前售價 - 這可以透過產品編輯器進行管理)"
 
@@ -1377,9 +1277,8 @@ msgid "Display Settings"
 msgstr "顯示設定"
 
 #: src/admin-views/tribe-options-display.php:56
-#, fuzzy
 msgid "The settings below control the display of your calendar. If things don't look right, try switching between the three style sheet options or pick a page template from your theme.</p><p>There are going to be situations where no out-of-the-box template is 100&#37; perfect. Check out our <a href=\"%s\">our themer's guide</a> for instructions on custom modifications."
-msgstr "這邊的設定會影響時間表的顯示。如果情況看起來不對，可以從三種樣式選項中選擇一個，或另外選取一個你的主題的頁面模板。</p><p>有時候現存的模板都不100&#37; perfect完美。檢閱我們的<a href=\"%s\">主題開發指南</a>來取得客製化修改的指示。"
+msgstr "這邊的設定會影響時間表的顯示。如果情況看起來不對，可以從三種樣式選項中選擇一個，或另外選取一個你的主題的頁面模板。</p><p>有時候現存的模板都不100&#37; perfect完美。檢閱我們的<a href=“%s”>主題開發指南</a>來取得客製化修改的指示。"
 
 #: src/admin-views/tribe-options-display.php:70
 msgid "Basic Template Settings"
@@ -1446,19 +1345,16 @@ msgid "Month view events per day"
 msgstr "每日活動月檢視表"
 
 #: src/admin-views/tribe-options-display.php:127
-#, fuzzy
 msgid "Change the default 3 events per day in month view. Please note there may be performance issues if you set this too high. <a href=\"%s\">Read more</a>."
-msgstr "改變預設的「每天3個活動」檢視模式。請注意數值設定過高可能會造成效能問題。<a href=\"%s\">瞭解更多</a>."
+msgstr "改變預設的「每天3個活動」檢視模式。請注意數值設定過高可能會造成效能問題。<a href=“%s”>瞭解更多</a>."
 
 #: src/admin-views/tribe-options-display.php:134
-#, fuzzy
 msgid "Enable the Month View Cache"
 msgstr "啟用月份檢視快取"
 
 #: src/admin-views/tribe-options-display.php:135
-#, fuzzy
 msgid "Check this to cache your month view HTML in transients, which can help improve calendar speed on sites with many events. <a href=\"%s\">Read more</a>."
-msgstr "勾選這個選項可以啟用HTML快取, 這將在月檢視模式中包含大量活動時提升效能 <a href=\"%s\">”解更多</a>."
+msgstr "勾選這個選項可以啟用HTML快取, 這將在月檢視模式中包含大量活動時提升效能 <a href=“%s”>”解更多</a>."
 
 #: src/admin-views/tribe-options-display.php:141
 msgid "Date Format Settings"
@@ -1959,7 +1855,6 @@ msgid "Andorra"
 msgstr "安道爾公國"
 
 #: src/Tribe/Activation_Page.php:196
-#, fuzzy
 msgid "Welcome to The Events Calendar"
 msgstr "歡迎來到The Events Calendar"
 
@@ -1968,7 +1863,6 @@ msgid "Angola"
 msgstr "安哥拉共和國"
 
 #: src/Tribe/Activation_Page.php:216
-#, fuzzy
 msgid "Thanks for Updating The Events Calendar"
 msgstr "感謝您更新The Events Calendar"
 
@@ -1977,7 +1871,6 @@ msgid "Anguilla"
 msgstr "安圭拉"
 
 #: src/Tribe/Admin_List.php:219 src/Tribe/Main.php:1295
-#, fuzzy
 msgid "%s Categories"
 msgstr "%s類別"
 
@@ -2083,7 +1976,6 @@ msgid "Barbados"
 msgstr "巴貝多"
 
 #: src/Tribe/Credits.php:31
-#, fuzzy
 msgid "This calendar is powered by The Events Calendar."
 msgstr "這個時間表是由The Events Calendar提供"
 
@@ -2092,16 +1984,14 @@ msgid "Belarus"
 msgstr "白俄羅斯"
 
 #: src/Tribe/Credits.php:48
-#, fuzzy
 msgid "Rate <strong>The Events Calendar</strong> <a href=\"%1$s\" target=\"_blank\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href=\"%1$s\" target=\"_blank\">WordPress.org</a> to keep this plugin free.  Thanks from the friendly folks at Modern Tribe."
-msgstr "為了讓這個插件維持免費，請給 <strong>The Events Calendar</strong> <a href=\"%1$s\" target=\"_blank\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> 在 <a href=\"%1$s\" target=\"_blank\">WordPress.org</a>。 感謝所有在Modern Tribe的友善夥伴."
+msgstr "為了讓這個插件維持免費，請給 <strong>The Events Calendar</strong> <a href=“%1$s” target=“_blank”>&#9733;&#9733;&#9733;&#9733;&#9733;</a> 在 <a href=“%1$s” target=“_blank”>WordPress.org</a>。 感謝所有在Modern Tribe的友善夥伴."
 
 #: src/Tribe/View_Helpers.php:67
 msgid "Belgium"
 msgstr "比利時"
 
 #: src/Tribe/Credits.php:48
-#, fuzzy
 msgid "http://wordpress.org/support/view/plugin-reviews/the-events-calendar?filter=5"
 msgstr "http://wordpress.org/support/view/plugin-reviews/the-events-calendar?filter=5"
 
@@ -2638,7 +2528,6 @@ msgid "Grenada"
 msgstr "格瑞納達"
 
 #: src/Tribe/Main.php:709
-#, fuzzy
 msgid "The following plugins are out of date: <b>%s</b>. All add-ons contain dependencies on The Events Calendar and will not function properly unless paired with the right version. %sLearn More%s."
 msgstr "以下的插件已經過期: <b>%s</b>。除非配合符合的版本，所有依賴於The Events Calendar的附加元件可能會出現異常。%s瞭解更多%s."
 
@@ -2716,7 +2605,6 @@ msgstr "洪都拉斯"
 
 #: src/Tribe/Main.php:1244 src/Tribe/Main.php:1262 src/Tribe/Main.php:1280
 #: src/Tribe/Main.php:1405 src/Tribe/Main.php:1406
-#, fuzzy
 msgid "Add New %s"
 msgstr "新增 %s 類別"
 
@@ -2727,7 +2615,6 @@ msgstr "香港"
 #: src/Tribe/Admin/Organizer_Chooser_Meta_Box.php:112 src/Tribe/Main.php:1245
 #: src/Tribe/Main.php:1263 src/Tribe/Main.php:1281 src/Tribe/Main.php:1425
 #: src/Tribe/Main.php:1477 src/Tribe/Main.php:3998
-#, fuzzy
 msgid "Edit %s"
 msgstr "編輯 %s 類別"
 
@@ -2736,7 +2623,6 @@ msgid "Hungary"
 msgstr "匈牙利"
 
 #: src/Tribe/Main.php:1246 src/Tribe/Main.php:1264 src/Tribe/Main.php:1282
-#, fuzzy
 msgid "New %s"
 msgstr "新增 %s 類別"
 
@@ -2745,16 +2631,14 @@ msgid "Iceland"
 msgstr "冰島"
 
 #: src/Tribe/Main.php:1247 src/Tribe/Main.php:1265 src/Tribe/Main.php:1283
-#, fuzzy
 msgid "View %s"
-msgstr "檢視所有 %s"
+msgstr "檢視所有的 %s"
 
 #: src/Tribe/View_Helpers.php:147
 msgid "India"
 msgstr "印度"
 
 #: src/Tribe/Main.php:1248 src/Tribe/Main.php:1266 src/Tribe/Main.php:1284
-#, fuzzy
 msgid "Search %s"
 msgstr "搜尋 %s 類別"
 
@@ -2779,7 +2663,6 @@ msgid "Iraq"
 msgstr "伊拉克"
 
 #: src/Tribe/Main.php:1296
-#, fuzzy
 msgid "%s Category"
 msgstr "%s 類別"
 
@@ -2788,7 +2671,6 @@ msgid "Ireland"
 msgstr "愛爾蘭"
 
 #: src/Tribe/Main.php:1297
-#, fuzzy
 msgid "Search %s Categories"
 msgstr "搜尋 %s 類別"
 
@@ -2797,7 +2679,6 @@ msgid "Israel"
 msgstr "以色列"
 
 #: src/Tribe/Main.php:1298
-#, fuzzy
 msgid "All %s Categories"
 msgstr "所有 %s 類別"
 
@@ -2806,7 +2687,6 @@ msgid "Italy"
 msgstr "義大利"
 
 #: src/Tribe/Main.php:1299
-#, fuzzy
 msgid "Parent %s Category"
 msgstr "父 %s 類別"
 
@@ -2815,7 +2695,6 @@ msgid "Jamaica"
 msgstr "牙買加"
 
 #: src/Tribe/Main.php:1300
-#, fuzzy
 msgid "Parent %s Category:"
 msgstr "父 %s 類別："
 
@@ -2824,7 +2703,6 @@ msgid "Japan"
 msgstr "日本"
 
 #: src/Tribe/Main.php:1301
-#, fuzzy
 msgid "Edit %s Category"
 msgstr "編輯 %s 類別"
 
@@ -2833,7 +2711,6 @@ msgid "Jordan"
 msgstr "約旦"
 
 #: src/Tribe/Main.php:1302
-#, fuzzy
 msgid "Update %s Category"
 msgstr "更新 %s 類別"
 
@@ -2842,7 +2719,6 @@ msgid "Kazakhstan"
 msgstr "哈薩克"
 
 #: src/Tribe/Main.php:1303
-#, fuzzy
 msgid "Add New %s Category"
 msgstr "新增 %s 類別"
 
@@ -2851,7 +2727,6 @@ msgid "Kenya"
 msgstr "肯亞"
 
 #: src/Tribe/Main.php:1304
-#, fuzzy
 msgid "New %s Category Name"
 msgstr "新 %s 類別名稱"
 
@@ -2860,9 +2735,8 @@ msgid "Kiribati"
 msgstr "吉里巴斯共和國"
 
 #: src/Tribe/Main.php:1320
-#, fuzzy
 msgid "%1$s updated. <a href=\"%2$s\">View %3$s</a>"
-msgstr "%1$s 已更新. <a href=\"%2$s\">檢視 %3$s</a>"
+msgstr "%1$s 已更新. <a href=“%2$s”>檢視 %3$s</a>"
 
 #: src/Tribe/View_Helpers.php:160
 msgid "Korea, Democratic People's Republic Of"
@@ -2886,7 +2760,6 @@ msgstr "科威特"
 
 #: src/Tribe/Main.php:1323 src/Tribe/Main.php:1356 src/Tribe/Main.php:1359
 #: src/Tribe/Main.php:1375 src/Tribe/Main.php:1378
-#, fuzzy
 msgid "%s updated."
 msgstr "授權密鑰已更新。"
 
@@ -2895,7 +2768,6 @@ msgid "Kyrgyzstan"
 msgstr "吉爾吉斯斯坦"
 
 #: src/Tribe/Main.php:1325
-#, fuzzy
 msgid "%1$s restored to revision from %2$s"
 msgstr "%1$s 從 %2$s 復原"
 
@@ -2904,16 +2776,14 @@ msgid "Lao People's Democratic Republic"
 msgstr "寮國"
 
 #: src/Tribe/Main.php:1327
-#, fuzzy
 msgid "Event published. <a href=\"%1$s\">View %2$s</a>"
-msgstr "活動已發佈. <a href=\"%1$s\">檢視 %2$s</a>"
+msgstr "活動已發佈. <a href=“%1$s”>檢視 %2$s</a>"
 
 #: src/Tribe/View_Helpers.php:165
 msgid "Latvia"
 msgstr "拉脫維亞"
 
 #: src/Tribe/Main.php:1331 src/Tribe/Main.php:1363 src/Tribe/Main.php:1382
-#, fuzzy
 msgid "%s saved."
 msgstr "設定已儲存。"
 
@@ -2922,18 +2792,16 @@ msgid "Lebanon"
 msgstr "黎巴嫩"
 
 #: src/Tribe/Main.php:1333
-#, fuzzy
 msgid "%1$s submitted. <a target=\"_blank\" href=\"%2$s\">Preview %3$s</a>"
-msgstr "%1$s 已提交. <a target=\"_blank\" href=\"%2$s\">預覽 %3$s</a>"
+msgstr "%1$s 已提交. <a target=“_blank” href=“%2$s”>預覽 %3$s</a>"
 
 #: src/Tribe/View_Helpers.php:167
 msgid "Lesotho"
 msgstr "賴索托"
 
 #: src/Tribe/Main.php:1339
-#, fuzzy
 msgid "%1$s scheduled for: <strong>%2$s</strong>. <a target=\"_blank\" href=\"%3$s\">Preview %4$s</a>"
-msgstr "%1$s 時間表: <strong>%2$s</strong>. <a target=\"_blank\" href=\"%3$s\">預覽 %4$s</a>"
+msgstr "%1$s 時間表: <strong>%2$s</strong>. <a target=“_blank” href=“%3$s”>預覽 %4$s</a>"
 
 #: src/Tribe/View_Helpers.php:168
 msgid "Liberia"
@@ -2948,16 +2816,14 @@ msgid "Libya"
 msgstr "利比亞"
 
 #: src/Tribe/Main.php:1347
-#, fuzzy
 msgid "%1$s draft updated. <a target=\"_blank\" href=\"%2$s\">Preview %3$s</a>"
-msgstr "%1$s 草稿已更新 <a target=\"_blank\" href=\"%2$s\">預覽 %3$s</a>"
+msgstr "%1$s 草稿已更新 <a target=“_blank” href=“%2$s”>預覽 %3$s</a>"
 
 #: src/Tribe/View_Helpers.php:170
 msgid "Liechtenstein"
 msgstr "列支敦斯登"
 
 #: src/Tribe/Main.php:1361 src/Tribe/Main.php:1380
-#, fuzzy
 msgid "%s restored to revision from %s"
 msgstr "%1$s 從 %2$s 復原"
 
@@ -2966,7 +2832,6 @@ msgid "Lithuania"
 msgstr "立陶宛"
 
 #: src/Tribe/Main.php:1362 src/Tribe/Main.php:1381
-#, fuzzy
 msgid "%s published."
 msgstr "已發佈"
 
@@ -2975,27 +2840,24 @@ msgid "Luxembourg"
 msgstr "盧森堡"
 
 #: src/Tribe/Main.php:1364 src/Tribe/Main.php:1383
-#, fuzzy
 msgid "%s submitted."
-msgstr "%1$s 已提交. <a target=\"_blank\" href=\"%2$s\">預覽 %3$s</a>"
+msgstr "%1$s 已提交. <a target=“_blank” href=“%2$s”>預覽 %3$s</a>"
 
 #: src/Tribe/View_Helpers.php:173
 msgid "Macau"
 msgstr "澳門"
 
 #: src/Tribe/Main.php:1366 src/Tribe/Main.php:1385
-#, fuzzy
 msgid "%s scheduled for: <strong>%2$s</strong>."
-msgstr "%1$s 時間表: <strong>%2$s</strong>. <a target=\"_blank\" href=\"%3$s\">預覽 %4$s</a>"
+msgstr "%1$s 時間表: <strong>%2$s</strong>. <a target=“_blank” href=“%3$s”>預覽 %4$s</a>"
 
 #: src/Tribe/View_Helpers.php:174
 msgid "Macedonia"
 msgstr "馬其頓"
 
 #: src/Tribe/Main.php:1370 src/Tribe/Main.php:1389
-#, fuzzy
 msgid "%s draft updated."
-msgstr "%1$s 草稿已更新 <a target=\"_blank\" href=\"%2$s\">預覽 %3$s</a>"
+msgstr "%1$s 草稿已更新 <a target=“_blank” href=“%2$s”>預覽 %3$s</a>"
 
 #: src/Tribe/View_Helpers.php:175
 msgid "Madagascar"
@@ -3003,7 +2865,6 @@ msgstr "馬達加斯加"
 
 #: src/Tribe/Admin/Organizer_Chooser_Meta_Box.php:88 src/Tribe/Main.php:1424
 #: src/Tribe/Main.php:1475
-#, fuzzy
 msgid "Use Saved %s:"
 msgstr "設定已儲存。"
 
@@ -3012,7 +2873,6 @@ msgid "Malawi"
 msgstr "馬拉威"
 
 #: src/Tribe/Main.php:1452
-#, fuzzy
 msgid "Without a defined location your event will not display a <a href=\"https://support.google.com/webmasters/answer/164506\" target=\"_blank\">Google Rich Snippet</a> on the search results."
 msgstr "Without a defined location your event will not display a <a href=\"https://support.google.com/webmasters/answer/164506\" target=\"_blank\">Google Rich Snippet</a> on the search results."
 
@@ -3021,7 +2881,6 @@ msgid "Malaysia"
 msgstr "馬來西亞"
 
 #: src/Tribe/Main.php:1543 src/Tribe/Main.php:1625
-#, fuzzy
 msgid "Use New %s"
 msgstr "新增 %s 類別"
 
@@ -3030,7 +2889,6 @@ msgid "Maldives"
 msgstr "馬爾地夫"
 
 #: src/Tribe/Main.php:1545 src/Tribe/Main.php:1627
-#, fuzzy
 msgid "My %s"
 msgstr "我的 %s"
 
@@ -3047,7 +2905,6 @@ msgid "Malta"
 msgstr "馬爾他"
 
 #: src/Tribe/Main.php:1561 src/Tribe/Main.php:1643
-#, fuzzy
 msgid "No saved %s exists."
 msgstr "%s 這個名稱已被使用過"
 
@@ -3106,7 +2963,6 @@ msgid "Micronesia, Federated States Of"
 msgstr "密克羅尼西亞聯邦"
 
 #: src/Tribe/Main.php:3579
-#, fuzzy
 msgid "%s Options"
 msgstr "%s 選項"
 
@@ -3115,7 +2971,6 @@ msgid "Moldova, Republic Of"
 msgstr "摩爾多瓦"
 
 #: src/Tribe/Main.php:3586 src/Tribe/Main.php:3597
-#, fuzzy
 msgid "%s Information"
 msgstr "%s 資訊"
 
@@ -3172,7 +3027,6 @@ msgid "Myanmar"
 msgstr "緬甸"
 
 #: src/Tribe/Main.php:3940
-#, fuzzy
 msgid "%s"
 msgstr "%s"
 
@@ -3189,7 +3043,6 @@ msgid "Nauru"
 msgstr "諾魯"
 
 #: src/Tribe/Main.php:3987
-#, fuzzy
 msgid "Add %s"
 msgstr "新增 %s"
 
@@ -3262,7 +3115,6 @@ msgid "Niue"
 msgstr "紐埃"
 
 #: src/Tribe/Main.php:4296
-#, fuzzy
 msgid "%s In"
 msgstr "%s 在"
 
@@ -3271,7 +3123,6 @@ msgid "Norfolk Island"
 msgstr "諾福克島"
 
 #: src/Tribe/Main.php:4298
-#, fuzzy
 msgid "%s From"
 msgstr "%s 從"
 
@@ -3288,7 +3139,6 @@ msgid "Norway"
 msgstr "挪威"
 
 #: src/Tribe/Main.php:4375
-#, fuzzy
 msgid "Once Every 30 Mins"
 msgstr "每 30 分鐘一次"
 
@@ -3353,7 +3203,6 @@ msgid "Philippines"
 msgstr "菲律賓"
 
 #: src/Tribe/PUE/Checker.php:425
-#, fuzzy
 msgid "Why am I seeing this message?"
 msgstr "為什麼我會看到這個訊息？"
 
@@ -3503,7 +3352,6 @@ msgid "Seychelles"
 msgstr "塞席爾群島"
 
 #: src/Tribe/Support.php:137
-#, fuzzy
 msgid "Unknown or not set"
 msgstr "未知或未設定"
 
@@ -3520,7 +3368,6 @@ msgid "Singapore"
 msgstr "新加坡"
 
 #: src/Tribe/Template/Day.php:102 src/Tribe/Template/Day.php:118
-#, fuzzy
 msgid "Ongoing"
 msgstr "進行中"
 
@@ -3557,16 +3404,14 @@ msgid "South Georgia, South Sandwich Islands"
 msgstr "南喬治亞與南三明治群島"
 
 #: src/Tribe/Template/Month.php:692
-#, fuzzy
 msgid "The requested date \"%s\" was not valid &ndash; showing the current month instead"
-msgstr "查詢的日期 \"%s\" 格式錯誤 &ndash; 僅顯示這個月的訊息"
+msgstr "查詢的日期 “%s” 格式錯誤 &ndash; 僅顯示這個月的訊息"
 
 #: src/Tribe/View_Helpers.php:245
 msgid "Spain"
 msgstr "西班牙"
 
 #: src/Tribe/Template/Single_Event.php:120
-#, fuzzy
 msgid "This %s has passed."
 msgstr "這個 %s 已經過期"
 
@@ -3595,7 +3440,6 @@ msgid "Suriname"
 msgstr "蘇利南莫河"
 
 #: src/Tribe/Template_Factory.php:361
-#, fuzzy
 msgid "No previous %s "
 msgstr "沒有前一個 %s"
 
@@ -3719,7 +3563,6 @@ msgid "Turkey"
 msgstr "土耳其"
 
 #: src/Tribe/Tickets/Attendees_Table.php:219
-#, fuzzy
 msgid "Filter by purchaser name, ticket #, order # or security code"
 msgstr "從購買者姓名、票卷編號, 訂單編號、或者安全碼進行過濾"
 

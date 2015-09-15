@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: WP-Members 2.4.0 beta 4\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-members\n"
 "POT-Creation-Date: 2014-07-08 10:47-0600\n"
-"PO-Revision-Date: 2015-06-27 23:31+0800\n"
+"PO-Revision-Date: 2015-09-15 10:56+0800\n"
 "Last-Translator: \n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: admin/admin.php:60 admin/admin.php:129
 msgid "Settings"
-msgstr "設定"
+msgstr "  設定"
 
 #: admin/admin.php:187
 msgid "Options"
@@ -28,11 +28,11 @@ msgstr "選項"
 
 #: admin/admin.php:188
 msgid "Fields"
-msgstr "註冊欄位"
+msgstr "區塊 "
 
 #: admin/admin.php:189
 msgid "Dialogs"
-msgstr "表單訊息"
+msgstr "對話框"
 
 #: admin/admin.php:190
 msgid "Emails"
@@ -150,7 +150,7 @@ msgstr ""
 
 #: admin/dialogs.php:171
 msgid "Version:"
-msgstr "版本："
+msgstr "版本:"
 
 #: admin/dialogs.php:172
 msgid "Quick Start Guide"
@@ -162,7 +162,7 @@ msgstr "線上使用手冊"
 
 #: admin/dialogs.php:174
 msgid "FAQs"
-msgstr "常見問題"
+msgstr ""
 
 #: admin/dialogs.php:181
 msgid "Thank you for using WP-Members"
@@ -170,7 +170,7 @@ msgstr "感謝您使用WP-Members！"
 
 #: admin/dialogs.php:182
 msgid "A plugin developed by"
-msgstr "此插件的開發者："
+msgstr ""
 
 #: admin/dialogs.php:183
 msgid "Follow"
@@ -190,7 +190,7 @@ msgstr "封鎖"
 
 #: admin/post.php:37 admin/post.php:39
 msgid "Unblock"
-msgstr "解鎖"
+msgstr ""
 
 #: admin/post.php:120
 #, php-format
@@ -216,7 +216,7 @@ msgstr "確定封鎖？"
 #: admin/tab-captcha.php:35 admin/tab-dialogs.php:44 admin/tab-emails.php:113
 #: admin/tab-fields.php:45 admin/tab-options.php:37
 msgid "Need help?"
-msgstr "需要協助？"
+msgstr ""
 
 #: admin/tab-captcha.php:46
 msgid "Manage reCAPTCHA Options"
@@ -231,7 +231,7 @@ msgstr ""
 "部落格中的垃圾留言,訊息. "
 
 #: admin/tab-captcha.php:61
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "reCAPTCHA asks commenters to retype two words scanned from a book to prove "
 "that they are a human. This verifies that they are not a spambot while also "
@@ -242,20 +242,20 @@ msgstr ""
 "驗証碼服務要求使用者重新輸入從一本書掃描來的二個字以證明輸入者是人類.如此可以"
 "識別輸入者不是製造垃圾文件的機器人, 同時也對原文的掃描作自動更正.如此, 你比較"
 "不會收到垃圾文件, 大家也獲得正確數字化的電子文件. 對大家皆有利! 詳細介紹請參"
-"訪reCAPTCHA的網站."
+"訪%s reCAPTCHA的網站%s."
 
 #: admin/tab-captcha.php:66
 msgid "reCAPTCHA Keys"
 msgstr " 驗証碼服務鍵"
 
 #: admin/tab-captcha.php:68
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "reCAPTCHA requires an API key, consisting of a \"public\" and a \"private\" "
 "key. You can sign up for a %s free reCAPTCHA key%s"
 msgstr ""
-"驗証碼服務需要應用程式介面鍵, 由一個 \"public\"和一個 \"private\"鍵組成. 你可"
-"以註冊一組免費的驗證碼服務鍵"
+"驗証碼服務需要應用程式介面鍵, 由一個 “public”和一個 “private”鍵組成. 你可以註"
+"冊一組免費的%s驗證碼服務鍵%s"
 
 #: admin/tab-captcha.php:69
 msgid "Public Key"
@@ -271,7 +271,7 @@ msgstr "選擇主題"
 
 #: admin/tab-captcha.php:77
 msgid "Red"
-msgstr "紅"
+msgstr " 紅"
 
 #: admin/tab-captcha.php:78
 msgid "White"
@@ -291,7 +291,7 @@ msgstr ""
 
 #: admin/tab-captcha.php:116
 msgid "Number of characters"
-msgstr "字元數"
+msgstr ""
 
 #: admin/tab-captcha.php:120
 msgid "Image dimensions"
@@ -314,9 +314,8 @@ msgid "Width between characters"
 msgstr ""
 
 #: admin/tab-captcha.php:140
-#, fuzzy
 msgid "Image type"
-msgstr "欄位類型"
+msgstr "匯入類型："
 
 #: admin/tab-captcha.php:154
 msgid ""
@@ -389,7 +388,7 @@ msgstr "更新對話框"
 
 #: admin/tab-dialogs.php:115
 msgid "WP-Members dialogs were updated"
-msgstr "WP_Members表單訊息已更新"
+msgstr "WP_Members對話框已更新"
 
 #: admin/tab-emails.php:30
 msgid "New Registration"
@@ -397,11 +396,11 @@ msgstr "新註冊"
 
 #: admin/tab-emails.php:34
 msgid "Registration is Moderated"
-msgstr "註冊正在等待審核"
+msgstr "註冊正在核可"
 
 #: admin/tab-emails.php:35
 msgid "Registration is Moderated, User is Approved"
-msgstr "註冊正在等待審核，帳戶已經核准"
+msgstr "註冊正在核可,用戶核准"
 
 #: admin/tab-emails.php:40
 msgid "Password Reset"
@@ -441,11 +440,11 @@ msgstr "設置自定義的電子郵件名稱"
 
 #: admin/tab-emails.php:84
 msgid "Subject"
-msgstr "信件主題"
+msgstr "主題"
 
 #: admin/tab-emails.php:88
 msgid "Body"
-msgstr "信件內容"
+msgstr "主體"
 
 #: admin/tab-emails.php:105
 msgid "Update Emails"
@@ -469,7 +468,7 @@ msgstr "姓名選填是用來增加新的欄位.沒有任何更新"
 
 #: admin/tab-fields.php:184
 msgid "A field with that option name already exists"
-msgstr "已有與該欄位名稱相同的欄位存在"
+msgstr ""
 
 #: admin/tab-fields.php:201
 msgid "Checked value is required for checkboxes. Nothing was updated."
@@ -481,7 +480,7 @@ msgstr "欄位已加入表單"
 
 #: admin/tab-fields.php:241
 msgid "field was updated"
-msgstr "欄位已更新"
+msgstr "自訂欄位已更新。"
 
 #: admin/tab-fields.php:289 admin/tab-fields.php:385
 msgid "Edit Field"
@@ -489,15 +488,15 @@ msgstr "編輯欄位"
 
 #: admin/tab-fields.php:289
 msgid "Add a Field"
-msgstr "增加表單欄位"
+msgstr "新增註冊欄位"
 
 #: admin/tab-fields.php:295 admin/tab-fields.php:416
 msgid "Field Label"
-msgstr "欄位標籤"
+msgstr "區塊標籤"
 
 #: admin/tab-fields.php:297
 msgid "The name of the field as it will be displayed to the user."
-msgstr "使用者會在表單中看到的標籤"
+msgstr ""
 
 #: admin/tab-fields.php:300 admin/tab-fields.php:417
 msgid "Option Name"
@@ -507,7 +506,7 @@ msgstr "選項名稱"
 msgid ""
 "The database meta value for the field. It must be unique and contain no "
 "spaces (underscores are ok)."
-msgstr "會存進資料庫的meta value。必須視唯一值且不能包含空白（底線是可以的）。"
+msgstr ""
 
 #: admin/tab-fields.php:310 admin/tab-fields.php:418
 msgid "Field Type"
@@ -523,11 +522,11 @@ msgstr "文字區 "
 
 #: admin/tab-fields.php:318
 msgid "checkbox"
-msgstr "多選框"
+msgstr "核選框"
 
 #: admin/tab-fields.php:319
 msgid "dropdown"
-msgstr "下拉選單"
+msgstr "下拉"
 
 #: admin/tab-fields.php:320
 msgid "password"
@@ -535,11 +534,11 @@ msgstr "密碼"
 
 #: admin/tab-fields.php:325 admin/tab-fields.php:419
 msgid "Display?"
-msgstr "在註冊表單顯示？"
+msgstr "顯示?"
 
 #: admin/tab-fields.php:329 admin/tab-fields.php:420
 msgid "Required?"
-msgstr "必填欄位？"
+msgstr "必要?"
 
 #: admin/tab-fields.php:334
 msgid "Additional information for checkbox fields"
@@ -575,7 +574,7 @@ msgstr "新增註冊欄位"
 
 #: admin/tab-fields.php:407
 msgid "Manage Fields"
-msgstr "註冊欄位管理"
+msgstr "區塊管理"
 
 #: admin/tab-fields.php:409
 msgid ""
@@ -587,7 +586,7 @@ msgstr ""
 
 #: admin/tab-fields.php:410
 msgid "(Note: Email is always mandatory and cannot be changed.)"
-msgstr "(註：電子郵件永遠是有管制並不能改變的。)"
+msgstr "(註: 電子郵件永遠是有管制並不能改變的.)"
 
 #: admin/tab-fields.php:415
 msgid "Add/Delete"
@@ -595,7 +594,7 @@ msgstr "增加/刪除"
 
 #: admin/tab-fields.php:421
 msgid "Checked?"
-msgstr "預設勾選？"
+msgstr "合格?"
 
 #: admin/tab-fields.php:423
 msgid "Users Screen"
@@ -680,9 +679,8 @@ msgid "Holds new registrations for admin approval"
 msgstr "保留新註冊以待管理員核准"
 
 #: admin/tab-options.php:91
-#, fuzzy
 msgid "Enable CAPTCHA"
-msgstr "開啟註冊使用驗證碼功能"
+msgstr "啟用 CAPTCHA"
 
 #: admin/tab-options.php:59
 msgid "Turns on CAPTCHA for registration"
@@ -788,7 +786,7 @@ msgstr "使用下面指定的URL"
 
 #: admin/user-export.php:57 admin/user-export.php:172
 msgid "Activated?"
-msgstr "核准開通？"
+msgstr "開通?"
 
 #: admin/user-export.php:61 admin/user-export.php:175
 msgid "Subscription"
@@ -804,7 +802,7 @@ msgstr "註冊過的"
 
 #: admin/user-export.php:65 admin/user-export.php:179
 msgid "IP"
-msgstr "IP位址"
+msgstr " 位址"
 
 #: admin/user-profile.php:46
 msgid "WP-Members Additional Fields"
@@ -813,7 +811,7 @@ msgstr "WP-members附加區塊"
 #: admin/user-profile.php:66 native-registration.php:36
 #: native-registration.php:159 users.php:62
 msgid "(required)"
-msgstr "(必填)"
+msgstr "必要?"
 
 #: admin/user-profile.php:98
 msgid "Activate this user?"
@@ -825,15 +823,15 @@ msgstr "重新開通此用戶?"
 
 #: admin/user-profile.php:108
 msgid "Deactivate this user?"
-msgstr "將此用戶停權?"
+msgstr "開除此用戶?"
 
 #: admin/user-profile.php:129
 msgid "IP @ registration"
-msgstr "註冊的IP位址"
+msgstr "註冊位址"
 
 #: admin/users.php:45 admin/users.php:49
 msgid "Export"
-msgstr "匯出"
+msgstr "輸出"
 
 #: admin/users.php:50 admin/users.php:91
 msgid "Export All Users"
@@ -853,23 +851,23 @@ msgstr "更新密碼"
 
 #: forms.php:227
 msgid "Reset Forgotten Password"
-msgstr "重設密碼"
+msgstr "重設遺忘密碼"
 
 #: forms.php:403
 msgid "Forgot password?"
-msgstr "忘記密碼了？"
+msgstr "忘記密碼?"
 
 #: forms.php:403
 msgid "Click here to reset"
-msgstr "點此重設密碼"
+msgstr "點擊此處重設"
 
 #: forms.php:418
 msgid "New User?"
-msgstr "還沒有帳號？"
+msgstr "新用戶?"
 
 #: forms.php:418
 msgid "Click here to register"
-msgstr "註冊新帳號"
+msgstr "點擊此處註冊Cheatin&#8217;uh?"
 
 #: forms.php:515
 msgid "Required field"
@@ -885,7 +883,7 @@ msgstr "更新個人資料"
 
 #: forms.php:561
 msgid "Choose a Username"
-msgstr "帳號（你的登入帳號）"
+msgstr "選取用戶名稱選取用戶名稱"
 
 #: forms.php:683 native-registration.php:65
 #, php-format
@@ -894,15 +892,15 @@ msgstr "我同意本網站的%s使用條款 %s"
 
 #: forms.php:852
 msgid "New User Registration"
-msgstr "會員註冊"
+msgstr "新用戶？"
 
 #: forms.php:1018
 msgid "Input the code:"
-msgstr "輸入這段驗證碼："
+msgstr "輸入code："
 
 #: users.php:38
 msgid "Additional Information"
-msgstr "額外功能"
+msgstr "額外資訊"
 
 #: wp-members-core.php:118 wp-members-core.php:245
 msgid "There was an error with the CAPTCHA form."
@@ -910,16 +908,16 @@ msgstr "驗證碼表單有錯誤"
 
 #: wp-members-core.php:287 wp-members-dialogs.php:338
 msgid "Edit Your Information"
-msgstr "編輯你的個人資料"
+msgstr "編輯你的資訊"
 
 #: wp-members-core.php:544
 msgid "<strong>ERROR</strong>: User has not been activated."
-msgstr "<strong>錯誤</strong>：此帳號尚未開通"
+msgstr "錯誤,用戶名尚未開通"
 
 #: wp-members-core.php:903 wp-members-register.php:93
 #, php-format
 msgid "Sorry, %s is a required field."
-msgstr "抱歉，%s是必填欄位"
+msgstr "抱歉, %s 是必須的"
 
 #: wp-members-dialogs.php:42
 msgid "Login Failed!"
@@ -927,7 +925,7 @@ msgstr "登入失敗"
 
 #: wp-members-dialogs.php:45
 msgid "You entered an invalid username or password."
-msgstr "你輸入了一個無效的帳號或密碼"
+msgstr "你輸入了一個無效的用戶名或密碼"
 
 #: wp-members-dialogs.php:47
 msgid "Click here to continue."
@@ -935,14 +933,14 @@ msgstr "點擊此處繼續"
 
 #: wp-members-dialogs.php:191
 msgid "Edit My Information"
-msgstr "編輯我的個人資訊 "
+msgstr "編輯我的資訊 "
 
 #: wp-members-dialogs.php:206 wp-members-dialogs.php:224
 #: wp-members-dialogs.php:239 wp-members-sidebar.php:46
 #: wp-members-sidebar.php:246
 #, php-format
 msgid "You are logged in as %s"
-msgstr "你已經以%s的身份登入"
+msgstr "你已以%s名義登入"
 
 #: wp-members-dialogs.php:208
 msgid "Click to log out."
@@ -970,11 +968,11 @@ msgstr "表單提交失敗"
 
 #: wp-members-register.php:110
 msgid "Sorry, username is a required field"
-msgstr "抱歉，帳戶是必填欄位"
+msgstr "抱歉, 用戶名是必須的"
 
 #: wp-members-register.php:111
 msgid "The username cannot include non-alphanumeric characters."
-msgstr "帳戶不可包含非字母形式的字元（請使用英文字母和數字）"
+msgstr "用戶名不可包含非字母形式的字元."
 
 #: wp-members-register.php:112 wp-members-register.php:282
 msgid "You must enter a valid email address."
@@ -1023,7 +1021,7 @@ msgstr "驗證碼功能伺服器無法連線. 請嘗試重新提交."
 
 #: wp-members-register.php:405
 msgid "You have entered an incorrect code value. Please try again."
-msgstr "你輸入了錯誤的驗證碼。請再嘗試一次"
+msgstr ""
 
 #: wp-members-sidebar.php:117
 msgid "Login Failed!<br />You entered an invalid username or password."
@@ -1031,7 +1029,7 @@ msgstr "登入失敗! 你輸入了一個無效的用戶名或密碼."
 
 #: wp-members-sidebar.php:118
 msgid "You are not logged in."
-msgstr "您尚未登入"
+msgstr "你已經以%s的身份登入"
 
 #: wp-members-sidebar.php:169
 msgid "log in"
@@ -1039,7 +1037,7 @@ msgstr "登入"
 
 #: wp-members-sidebar.php:180
 msgid "Forgot?"
-msgstr "忘記密碼?"
+msgstr "忘記?"
 
 #: wp-members-sidebar.php:247
 msgid "click here to log out"
@@ -1051,7 +1049,7 @@ msgstr ""
 
 #: wp-members-sidebar.php:294 wp-members-sidebar.php:333
 msgid "Login Status"
-msgstr "登入狀態"
+msgstr "會員登入"
 
 #: wp-members-sidebar.php:299
 msgid "Title:"
@@ -1059,7 +1057,7 @@ msgstr "標題"
 
 #: wp-members-tos.php:24
 msgid "Terms of Service"
-msgstr "使用條款"
+msgstr "服務條款"
 
 #: wp-members-tos.php:36
 #, php-format
@@ -1090,7 +1088,7 @@ msgstr "地址 2"
 
 #: wp-members-install.php:53
 msgid "City"
-msgstr "城市"
+msgstr " 城市"
 
 #: wp-members-install.php:54
 msgid "State"
@@ -1106,7 +1104,7 @@ msgstr "國家"
 
 #: wp-members-install.php:57
 msgid "Day Phone"
-msgstr "電話"
+msgstr "日間電話"
 
 #: wp-members-install.php:59
 msgid "Website"
@@ -1126,7 +1124,7 @@ msgstr "Jabber/Google Talk"
 
 #: wp-members-install.php:63
 msgid "Biographical Info"
-msgstr "自我介紹"
+msgstr "關於我"
 
 #: wp-members-install.php:64 wp-members-install.php:211
 msgid "TOS"
@@ -1140,12 +1138,12 @@ msgstr "本內容只限會員使用。如果您是現有會員請登入，新用
 
 #: wp-members-install.php:97
 msgid "Sorry, that username is taken, please try another."
-msgstr "抱歉，此用戶名已被使用，請換一個再試."
+msgstr "抱歉,此用戶名已被採用, 請換一個再試."
 
 #: wp-members-install.php:98
 msgid ""
 "Sorry, that email address already has an account.<br />Please try another."
-msgstr "抱歉，此電子郵件已經被註冊過，請換一個再試."
+msgstr "抱歉, 此電子郵件已經有所屬帳戶. 請換一個再試."
 
 #: wp-members-install.php:99
 msgid ""
@@ -1155,11 +1153,11 @@ msgstr "恭喜！您已註冊成功。您現在可用我們電子郵件發給您
 
 #: wp-members-install.php:100
 msgid "Your information was updated!"
-msgstr "你的資料已更新！"
+msgstr "你的資料已更新!"
 
 #: wp-members-install.php:101
 msgid "Passwords did not match.<br /><br />Please try again."
-msgstr "密碼不符。<br>請再試一次"
+msgstr "密碼不符. 請再試一次.."
 
 #: wp-members-install.php:102
 msgid ""
